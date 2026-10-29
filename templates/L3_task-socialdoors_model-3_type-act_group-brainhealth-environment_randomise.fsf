@@ -1,0 +1,151 @@
+# FEAT template used to create the design files for Katie's paired randomise tests.
+
+# FEAT version number
+set fmri(version) 6.00
+
+# Higher-level analysis
+set fmri(inmelodic) 0
+set fmri(level) 2
+set fmri(analysis) 2
+set fmri(relative_yn) 0
+set fmri(help_yn) 1
+set fmri(featwatcher_yn) 0
+set fmri(sscleanup_yn) 0
+
+# Output directory
+set fmri(outputdir) "OUTPUT"
+
+# Number of inputs
+set fmri(tr) 3
+set fmri(npts) NPTS
+set fmri(ndelete) 0
+set fmri(tagfirst) 1
+set fmri(multiple) NPTS
+
+# Inputs are cope images
+set fmri(inputtype) 2
+set fmri(filtering_yn) 0
+
+# Standard FEAT settings retained from the repository's historical L3 designs
+set fmri(brain_thresh) 10
+set fmri(critical_z) 5.3
+set fmri(noise) 0.66
+set fmri(noisear) 0.34
+set fmri(mc) 1
+set fmri(sh_yn) 0
+set fmri(regunwarp_yn) 0
+set fmri(gdc) ""
+set fmri(dwell) 0.0
+set fmri(te) 0.0
+set fmri(signallossthresh) 10
+set fmri(unwarp_dir) y-
+set fmri(st) 0
+set fmri(st_file) ""
+set fmri(bet_yn) 1
+set fmri(smooth) 5
+set fmri(norm_yn) 0
+set fmri(perfsub_yn) 0
+set fmri(temphp_yn) 1
+set fmri(templp_yn) 0
+set fmri(melodic_yn) 0
+set fmri(stats_yn) 1
+set fmri(prewhiten_yn) 1
+set fmri(motionevs) 0
+set fmri(motionevsbeta) ""
+set fmri(scriptevsbeta) ""
+set fmri(robust_yn) 0
+
+# Match the historical FLAME 1 group templates; randomise performs inference
+set fmri(mixed_yn) 2
+set fmri(randomisePermutations) PERMUTATIONS
+
+# One intercept EV and positive/negative group-mean contrasts
+set fmri(evs_orig) 1
+set fmri(evs_real) 1
+set fmri(evs_vox) 0
+set fmri(ncon_orig) 1
+set fmri(ncon_real) 2
+set fmri(nftests_orig) 0
+set fmri(nftests_real) 0
+set fmri(constcol) 0
+
+# No FEAT post-statistics; randomise performs TFCE inference
+set fmri(poststats_yn) 0
+set fmri(threshmask) ""
+set fmri(thresh) 3
+set fmri(prob_thresh) 0.05
+set fmri(z_thresh) 3.1
+set fmri(zdisplay) 0
+set fmri(zmin) 2
+set fmri(zmax) 8
+set fmri(rendertype) 1
+set fmri(bgimage) 1
+set fmri(tsplot_yn) 0
+
+# Registration fields retained for FEAT compatibility
+set fmri(reginitial_highres_yn) 0
+set fmri(reginitial_highres_search) 90
+set fmri(reginitial_highres_dof) 3
+set fmri(reghighres_yn) 0
+set fmri(reghighres_search) 90
+set fmri(reghighres_dof) BBR
+set fmri(regstandard_yn) 1
+set fmri(alternateReference_yn) 0
+set fmri(regstandard) "$FSLDIR/data/standard/MNI152_T1_2mm_brain"
+set fmri(regstandard_search) 90
+set fmri(regstandard_dof) 12
+set fmri(regstandard_nonlinear_yn) 0
+set fmri(regstandard_nonlinear_warpres) 10
+set fmri(paradigm_hp) 100
+set fmri(totalVoxels) 215460
+set fmri(ncopeinputs) 0
+
+# Intercept EV
+set fmri(evtitle1) "group mean"
+set fmri(shape1) 2
+set fmri(convolve1) 0
+set fmri(convolve_phase1) 0
+set fmri(tempfilt_yn1) 0
+set fmri(deriv_yn1) 0
+set fmri(custom1) "dummy"
+set fmri(gammasigma1) 3
+set fmri(gammadelay1) 6
+set fmri(skip1) 0
+set fmri(off1) 30
+set fmri(on1) 30
+set fmri(stop1) -1
+set fmri(phase1) 0
+
+# Orthogonalisation
+set fmri(ortho1.0) 0
+set fmri(ortho1.1) 0
+
+# Contrasts
+set fmri(con_mode_old) real
+set fmri(con_mode) real
+
+# Positive group mean
+set fmri(conpic_real.1) 1
+set fmri(conname_real.1) "group mean positive"
+set fmri(con_real1.1) 1
+
+# Negative group mean
+set fmri(conpic_real.2) 1
+set fmri(conname_real.2) "group mean negative"
+set fmri(con_real2.1) -1
+
+# Contrast masking
+set fmri(conmask_zerothresh_yn) 0
+set fmri(conmask1_2) 0
+set fmri(conmask2_1) 0
+set fmri(conmask1_1) 0
+
+# Options that do not appear in the FEAT GUI
+set fmri(alternative_mask) ""
+set fmri(init_initial_highres) ""
+set fmri(init_highres) ""
+set fmri(init_standard) ""
+set fmri(overwrite_yn) 0
+
+# Subject-specific feat_files, evg, and groupmem rows are appended by
+# L3stats.sh in the order stored in data/derived/l3/L3-act-subjects.txt.
