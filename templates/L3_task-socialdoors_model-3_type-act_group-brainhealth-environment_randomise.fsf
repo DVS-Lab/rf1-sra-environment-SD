@@ -148,4 +148,4 @@ set fmri(init_standard) ""
 set fmri(overwrite_yn) 0
 
 # Subject-specific feat_files, evg, and groupmem rows are appended by
-# L3stats.sh in the order stored in data/derived/l3/L3-act-subjects.txt.
+# L3stats.sh in the order stored in code/L3-act-subjects.txt.

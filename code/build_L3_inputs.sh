@@ -15,13 +15,12 @@ monetary_inputs="${HANDOFF_ROOT}/doors/selected_inputs.tsv"
 
 l3_dir="${PROJECT_ROOT}/data/derived/l3"
 mkdir -p "$l3_dir"
-subjects_file="${l3_dir}/L3-act-subjects.txt"
+subjects_file="${SCRIPT_DIR}/L3-act-subjects.txt"
 paths_file="${l3_dir}/L3-act-input-paths.txt"
-selected_file="${l3_dir}/L3-act-selected-inputs.tsv"
-contrast_dir="${l3_dir}/L3-act-contrast-inputs"
-final_qc_file="${l3_dir}/L3-act-final-qc.csv"
-covariates_file="${l3_dir}/L3-act-covariates.xlsx"
-exclusions_file="${l3_dir}/L3-act-exclusions.tsv"
+selected_file="${SCRIPT_DIR}/L3-act-selected-inputs.tsv"
+final_qc_file="${SCRIPT_DIR}/L3-act-final-qc.csv"
+covariates_file="${SCRIPT_DIR}/L3-act-covariates.xlsx"
+exclusions_file="${SCRIPT_DIR}/L3-act-exclusions.tsv"
 
 for required in "$analysis_file" "$SELECTED_INPUTS" "$monetary_inputs" "$RUN_DECISIONS" "$helper"; do
     [[ -r "$required" ]] || {
@@ -49,7 +48,6 @@ python3 "$helper" inputs \
     --run-decisions "$RUN_DECISIONS" \
     --subjects-output "${tmpdir}/subjects.txt" \
     --selected-output "${tmpdir}/selected-inputs.tsv" \
-    --contrast-output-dir "${tmpdir}/contrast-inputs" \
     --final-qc-output "${tmpdir}/final-qc.csv" \
     --exclusions-output "${tmpdir}/exclusions.tsv"
 
@@ -67,23 +65,20 @@ selected_n="$(awk 'NR > 1 {print $1}' "${tmpdir}/selected-inputs.tsv" | sort -u 
     exit 1
 }
 
-for contrast_file in "${tmpdir}"/contrast-inputs/contrast-*.tsv; do
-    row_n="$(( $(wc -l < "$contrast_file") - 1 ))"
-    [[ "$subject_n" -eq "$row_n" ]] || {
-        echo "ERROR: $(basename "$contrast_file") has $row_n rows; expected $subject_n." >&2
-        exit 1
-    }
-done
-
 # Keep the historical one-path-per-subject file used by the L3 template.
 # TASK is replaced with socialdoors or doors and COPENUM with the cope number
 # by L3stats.sh.
-awk -F '\t' 'NR > 1 {
-    path = $2
+awk -F '\t' '
+NR == 1 {
+    for (column = 1; column <= NF; column++) header[$column] = column
+    next
+}
+$(header["contrast"]) == 1 {
+    path = $(header["cope"])
     sub(/cope[0-9]+\.nii\.gz$/, "copeCOPENUM.nii.gz", path)
     sub(/task-socialdoors/, "task-TASK", path)
     print path
-}' "${tmpdir}/contrast-inputs/contrast-01.tsv" > "${tmpdir}/input-paths.txt"
+}' "${tmpdir}/selected-inputs.tsv" > "${tmpdir}/input-paths.txt"
 
 path_n="$(wc -l < "${tmpdir}/input-paths.txt")"
 [[ "$subject_n" -eq "$path_n" ]] || {
@@ -140,16 +135,23 @@ awk -F '\t' '
 mv "${tmpdir}/subjects.txt" "$subjects_file"
 mv "${tmpdir}/input-paths.txt" "$paths_file"
 mv "${tmpdir}/selected-inputs.tsv" "$selected_file"
-rm -rf -- "$contrast_dir"
-mv "${tmpdir}/contrast-inputs" "$contrast_dir"
 mv "${tmpdir}/final-qc.csv" "$final_qc_file"
 mv "${tmpdir}/covariates.xlsx" "$covariates_file"
 mv "${tmpdir}/exclusions.tsv" "$exclusions_file"
+
+# Remove outputs created by the earlier layout after the replacement files are
+# safely in place. The per-contrast manifests duplicated selected-inputs.tsv.
+rm -rf -- "${l3_dir}/L3-act-contrast-inputs"
+rm -f -- \
+    "${l3_dir}/L3-act-subjects.txt" \
+    "${l3_dir}/L3-act-selected-inputs.tsv" \
+    "${l3_dir}/L3-act-final-qc.csv" \
+    "${l3_dir}/L3-act-covariates.xlsx" \
+    "${l3_dir}/L3-act-exclusions.tsv"
 
 echo "Katie Social/Monetary Doors L3 inputs complete (session ${session}; n=${subject_n})."
 echo "Subjects:   $subjects_file"
 echo "Paths:      $paths_file"
 echo "Inputs:     $selected_file"
-echo "Contrasts:  $contrast_dir"
 echo "Covariates: $covariates_file"
 echo "Exclusions: $exclusions_file"

@@ -8,7 +8,7 @@ scriptdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 maindir="$(dirname "$scriptdir")"
 l3dir="${maindir}/data/derived/l3"
 
-subjects=${l3dir}/L3-act-subjects.txt
+subjects=${scriptdir}/L3-act-subjects.txt
 inputpaths=${l3dir}/L3-act-input-paths.txt
 templatedir=${maindir}/templates
 template=${templatedir}/L3_task-socialdoors_model-3_type-act_group-brainhealth-environment_randomise.fsf
