@@ -21,6 +21,13 @@ now supports the user-requested separate-score activation and VS-PPI analyses,
 without pulling over active code or interrupting the existing jobs. No
 interactions or new exclusions are introduced.
 
+**Financial-score moderation:** the separate [two-way moderation launcher](docs/run-financial-moderation.md)
+tests FEVS (lead) and OAFEM (secondary) interactions with MSPSS, ADI, PM2.5 and
+Ecog, one moderator per model, with both main effects included. It preserves
+N=97 and all existing jobs/results, queues behind the predictor batch, and adds
+no three-way interactions or exclusions. Its three-line launcher also provides
+a read-only status mode for diagnosing interrupted terminal pastes.
+
 The published [Linux2 completion record](https://github.com/DVS-Lab/rf1-sra-linux2/blob/main/logs/records/20261101-232106_katie-overnight-20261101-231810-randomise.md)
 confirms all **24 jobs / 48 directional corrected maps** passed with command and
 check exit 0. N=97 input/order, image arithmetic, live scanner-era and full-rank
