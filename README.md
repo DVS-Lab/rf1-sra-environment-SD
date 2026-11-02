@@ -6,6 +6,12 @@ component of the RF1 brain-health/environment project.
 
 ## Current Analysis Status: N=97 Randomise Completed and Verified
 
+**Launch the remaining task activation, conditional effects and VS PPI:** use
+the [single 48-worker Linux2 launcher](docs/run-all-remaining.md). It preserves
+the completed original batch, averages task effects/covariates within person,
+and reuses only connectivity inputs with verified matching no-TEDANA lineage.
+Any needed PPI rebuilds are isolated, with no new exclusions or production reruns.
+
 The published [Linux2 completion record](https://github.com/DVS-Lab/rf1-sra-linux2/blob/main/logs/records/20261101-232106_katie-overnight-20261101-231810-randomise.md)
 confirms all **24 jobs / 48 directional corrected maps** passed with command and
 check exit 0. N=97 input/order, image arithmetic, live scanner-era and full-rank
