@@ -1,4 +1,5 @@
 import io
+import fcntl
 import json
 import os
 from pathlib import Path
@@ -89,6 +90,26 @@ class ModerationFlow(unittest.TestCase):
         self.assertNotIn("kill ", launcher)
         self.assertIn("git archive", launcher)
         self.assertIn("umask 0000", launcher)
+
+    def test_concurrent_mode_keeps_predictors_and_exclusive_moderation_lease(self):
+        root = self.fixture.root / "derivatives/fsl/randomise"
+        root.mkdir(parents=True)
+        with (root / ".katie-financial-v1.lock").open("a") as predictor_owner:
+            fcntl.flock(predictor_owner, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            def inspect(args):
+                self.assertTrue(args.concurrent_predictors)
+                with (root / ".katie-financial-v1.lock").open("a") as other:
+                    with self.assertRaises(BlockingIOError):
+                        fcntl.flock(other, fcntl.LOCK_EX | fcntl.LOCK_NB)
+                with (root / ".katie-financial-moderation-v1.lock").open("a") as other:
+                    self.assertEqual(os.fstat(base.LEASE_FD).st_ino, os.fstat(other.fileno()).st_ino)
+                    with self.assertRaises(BlockingIOError):
+                        fcntl.flock(other, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            with patch.object(sys, "argv", ["runner", "--project", str(self.fixture.root), "--concurrent-predictors"]), \
+                    patch.object(moderation, "run", side_effect=inspect), \
+                    patch.object(moderation.predictor, "wait_shared", wraps=moderation.predictor.wait_shared) as waiting:
+                moderation.main()
+            self.assertEqual([call.args[0].name for call in waiting.call_args_list], [".katie-remaining-v1.lock", ".katie-v1.lock"])
 
 
 if __name__ == "__main__":

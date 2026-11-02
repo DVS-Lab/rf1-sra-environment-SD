@@ -51,13 +51,26 @@ Paste these **three lines only**, without Markdown fences or terminal prompts:
 ```bash
 cd /ZPOOL/data/projects/rf1-sra-environment-SD
 git -c remote.origin.url=https://github.com/DVS-Lab/rf1-sra-environment-SD.git fetch origin main
-bash <(git show FETCH_HEAD:code/launch_financial_followup.sh) moderation
+bash <(git show FETCH_HEAD:code/launch_financial_followup.sh) moderation-concurrent
 ```
 
 This is a Bash launcher. It extracts a frozen release under ignored `work/`,
 does not pull, switch, reset or edit the running checkout, and starts a detached
-job with umask 0000. It waits for the earlier predictor/remaining batches' locks
-rather than killing them or increasing their concurrency. Default: 16 workers.
+job with umask 0000. Concurrent mode permits **16 moderation workers alongside
+the separate predictor batch**, which remains untouched. It first checks for
+at least 16 GiB available memory (a guard, not a peak-memory guarantee) and
+gracefully stops only an unbuilt moderation `--prepare-only` coordinator using
+a Linux pidfd. Its old log-publishing wrapper must exit before replacement.
+No lock files are removed. No full inference coordinator is stopped. If the
+old preflight has already produced outputs, this switch refuses to replace
+their frozen code: preserve them and resume their recorded release instead.
+
+The exclusive moderation lock remains, is inherited by native children, and
+prevents duplicate coordinators even after parent exit. Original/remaining
+input-building locks are still respected. This changes scheduling only; no
+roster, matrix, contrast, threshold or permutation changes are introduced.
+Use `moderation` instead of `moderation-concurrent` to retain conservative
+queuing behind the predictor batch. Default: 16 workers in either mode.
 It uses the existing `work/venv-katie` environment and native FSL smoke tests.
 Inputs, roster order, source hashes, image grids and all designs are checked.
 Run records are automatically published after preflight and again on exit.
@@ -90,6 +103,11 @@ Verified summaries, all 128 maps including nulls, are under:
 Progress log: `logs/runs/katie-moderation-*.nohup.out`.
 Settled exclusions, completed financial predictor results and all earlier jobs
 are preserved. Resume with the recorded frozen release if code later changes.
+
+For a partial concurrent batch, use its recorded `release_root` rather than the
+unqueue helper (which refuses nonempty outputs). Inspect that plan and active
+coordinator state before constructing its resume command. The initial three-line
+command above needs no edits. Completed receipts are reused, never overwritten.
 
 Manual log publication (safe even if already published):
 

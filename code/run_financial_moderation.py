@@ -208,6 +208,8 @@ def main():
     parser.add_argument("--project", required=True, type=Path)
     parser.add_argument("--jobs", type=int, default=16)
     parser.add_argument("--prepare-only", action="store_true")
+    parser.add_argument("--concurrent-predictors", action="store_true",
+                        help="Allow read-only input sharing with the separate predictor batch")
     args = parser.parse_args(); args.project = args.project.resolve()
     if not 1 <= args.jobs <= 48: parser.error("--jobs must be 1..48")
     root = args.project / "derivatives/fsl/randomise"
@@ -221,10 +223,15 @@ def main():
     try:
         own = (root / ".katie-financial-moderation-v1.lock").open("a")
         fcntl.flock(own, fcntl.LOCK_EX | fcntl.LOCK_NB); locks.append(own)
-        # Queue behind the predictor batch; its outputs and active children are never signalled.
-        for name in (".katie-financial-v1.lock", ".katie-remaining-v1.lock", ".katie-v1.lock"):
+        names = [".katie-remaining-v1.lock", ".katie-v1.lock"]
+        if not args.concurrent_predictors:
+            names.insert(0, ".katie-financial-v1.lock")
+        else:
+            print("CONCURRENT: separate predictor outputs untouched; 16 moderation workers by default.", flush=True)
+        for name in names:
             locks.append(predictor.wait_shared(root / name))
-        base.LEASE_FD = locks[1].fileno()
+        # Keep the exclusive moderation lease alive in native children too.
+        base.LEASE_FD = own.fileno()
         run(args)
     finally:
         for lock in reversed(locks): lock.close()

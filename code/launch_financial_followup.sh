@@ -4,8 +4,8 @@ set -euo pipefail
 umask 0000
 MODE=${1:-moderation}
 PROJECT=$(pwd -P)
-[[ "$MODE" == predictors || "$MODE" == moderation || "$MODE" == status ]] || {
-  echo "Usage: launch_financial_followup.sh [predictors|moderation|status]"; exit 1;
+[[ "$MODE" == predictors || "$MODE" == moderation || "$MODE" == moderation-concurrent || "$MODE" == status ]] || {
+  echo "Usage: launch_financial_followup.sh [predictors|moderation|moderation-concurrent|status]"; exit 1;
 }
 echo "=== Current financial coordinators ==="
 pgrep -u "$USER" -af '[p]ython[^ ]* .*code/run_financial_(models|moderation)\.py' || true
@@ -29,7 +29,7 @@ if [[ "$MODE" == predictors ]]; then
 else
   SCRIPT=run_financial_moderation; LABEL=katie-moderation
 fi
-if pgrep -u "$USER" -af "[r]un_financial_$( [[ "$MODE" == predictors ]] && echo models || echo moderation )\.(py|sh)( |$)"; then
+if [[ "$MODE" != moderation-concurrent ]] && pgrep -u "$USER" -af "[r]un_financial_$( [[ "$MODE" == predictors ]] && echo models || echo moderation )\.(py|sh)( |$)"; then
   echo "Already active: preserving it; no second launcher started."
   exit 0
 fi
@@ -46,7 +46,15 @@ fi
 [[ -x "$PROJECT/work/venv-katie/bin/python" ]] || { echo "Missing existing Katie environment; stopped."; exit 1; }
 STAMP="$LABEL-$(date +%Y%m%d-%H%M%S)"
 LOG="$PROJECT/logs/runs/$STAMP.nohup.out"
-nohup setsid -f -w bash "$RELEASE/code/$SCRIPT.sh" "$PROJECT" "$STAMP" > "$LOG" 2>&1 &
+EXTRA=()
+if [[ "$MODE" == moderation-concurrent ]]; then
+  UPSTREAM=/ZPOOL/data/projects/rf1-sra-linux2
+  bash "$UPSTREAM/code/run_logged.sh" --label "$STAMP-unqueue" --include-full-log -- \
+    "$PROJECT/work/venv-katie/bin/python" "$RELEASE/code/unqueue_financial_moderation.py" --project "$PROJECT"
+  python3 "$UPSTREAM/code/publish_run_logs.py" --project "$UPSTREAM"
+  EXTRA+=(concurrent)
+fi
+nohup setsid -f -w bash "$RELEASE/code/$SCRIPT.sh" "$PROJECT" "$STAMP" "${EXTRA[@]}" > "$LOG" 2>&1 &
 echo "LAUNCHED: $LOG"
 sleep 5
 tail -30 "$LOG"
