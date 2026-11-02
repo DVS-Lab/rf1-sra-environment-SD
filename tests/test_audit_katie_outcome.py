@@ -2,6 +2,7 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 import numpy as np
 
@@ -74,6 +75,34 @@ class OutcomeAudit(unittest.TestCase):
     def test_wrong_selected_cope_rejected(self):
         with self.assertRaisesRegex(ValueError, "not this run's COPE 4"):
             audit.inspect_run("10001", "doors", self.feat, self.feat / "stats/cope3.nii.gz", self.events)
+
+    def test_existing_awk_numeric_format_is_reproduced_not_globally_relaxed(self):
+        expected = np.array([[12.123456789, 2., 1.], [325.123456789, 2., 1.]])
+        actual = np.array([[12.1235, 2., 1.], [325.123, 2., 1.]])
+        result = audit.compare_events(actual, expected, "format test")
+        self.assertEqual(result["timing_match"], "awk_6_significant_digit_onsets")
+        self.assertAlmostEqual(result["max_abs_onset_delta_s"], .000456789, places=8)
+        for column, value in ((0, 325.124), (1, 2.0001), (2, .999999)):
+            changed = actual.copy(); changed[1, column] = value
+            with self.assertRaisesRegex(ValueError, "timing/duration/amplitude"):
+                audit.compare_events(changed, expected, "must reject")
+
+    def test_actual_converter_uses_documented_awk_format(self):
+        import subprocess
+        converted = subprocess.check_output(["awk", 'BEGIN {printf("%s\\n",325.123456789-0)}'], text=True)
+        self.assertEqual(float(converted), 325.123)
+
+    def test_failed_audit_report_is_saved_and_exits_nonzero(self):
+        report = self.root / "report"
+        record = dict(subject="10001", task="doors", status="failed", detail="timing mismatch")
+        provenance = dict(failures=1)
+        with patch.object(sys, "argv", ["audit", "--report", str(report)]), \
+                patch.object(audit, "audit", return_value=([record], provenance)):
+            with self.assertRaises(SystemExit) as caught:
+                audit.main()
+        self.assertEqual(caught.exception.code, 1)
+        self.assertIn("timing mismatch", (report / "runs.tsv").read_text())
+        self.assertIn("1 failures", (report / "README.md").read_text())
 
     def test_actual_templates_define_feedback_contrast(self):
         repository = Path(__file__).resolve().parents[2] / "rf1-sra-socdoors-handoff"

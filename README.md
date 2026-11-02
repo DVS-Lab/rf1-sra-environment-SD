@@ -26,6 +26,10 @@ Its runner does not modify or repeat the completed original tests.
 Before launching that follow-up, run the [actual L1 outcome-phase audit and
 financial-measure availability check](docs/outcome-and-financial-measures.md).
 The follow-up launcher also requires the outcome audit to pass first.
+The original batch tested predictor slopes/interactions, **not** the group
+win-loss activation intercept. [Task-signal checks](docs/task-signal-check.md)
+separately audit outcome timing, summarize descriptive VS signal, and inventory
+existing VS PPI files before any connectivity reuse or further inference.
 
 The canonical paired analysis roster is now **97 participants**, frozen from the
 unchanged 110-person linked workbook intersected with the settled 121-person

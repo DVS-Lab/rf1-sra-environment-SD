@@ -26,7 +26,9 @@ checks each of the 97 participants' two selected L1 runs (194 total):
 - Actual `design.con` row 4 has those two weights, with zero on decision,
   missed-decision and any additional nuisance columns.
 - Actual win/loss EV files match canonical BIDS win/loss onset, duration and
-  amplitude exactly apart from <=0.00001-second text-formatting tolerance.
+  amplitude directly or with the converter's specific documented awk `%.6g`
+  numeric onset formatting. Durations and amplitudes must still match; arbitrary
+  offsets or a generally wider timing tolerance are not accepted.
 - The frozen original analysis inputs and order remain unchanged.
 
 This is a read-only semantic/timing audit, not an L1 or randomise rerun. It does
@@ -59,9 +61,14 @@ exit "$STATUS"
 )
 ```
 
-The report is `results/validation/outcome-phase-v1/`. No study files are changed.
+The report is `results/validation/outcome-phase-v2/`. No study files are changed.
 The separate main-effect launcher automatically requires this same audit before
 starting any of its new inference. Hold further launches until this passes.
+The initial v1 audit used a too-strict onset comparison and stopped on Linux2;
+the revised audit reproduces the existing converter's numeric transform and
+records actual onset/duration residuals. It checks all 194 runs and publishes
+all genuine mismatches rather than stopping at the first one. This does not
+alter the converter or any timing/model file. See [task-signal checks](task-signal-check.md).
 
 ## FEVS and OAFEM: Available Historically, Current Join Still Needed
 
