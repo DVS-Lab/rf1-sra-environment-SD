@@ -1,0 +1,134 @@
+{
+  "alpha": 0.05,
+  "components": "26-connected significant-map components, descriptive only",
+  "cross_analysis_correction": "none; exploratory across models/outcomes/directions/CDTs",
+  "exclusions_changed": false,
+  "images_changed": false,
+  "jobs": 24,
+  "maps": 48,
+  "n": 97,
+  "plan_sha256": "62b6bd8528f561dd4dcf8c220e790bad36c975432cf56e7afabade42bbcb2aec",
+  "receipts": [
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/social_specific/adi/z-2p6/success.json",
+      "sha256": "ebfd846d83b880c87588f1cdaf3ce6ade1a839eec6bd81d0af807dacabd7452d",
+      "size": 2803
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/social_specific/adi/z-3p1/success.json",
+      "sha256": "1984be2e87a348f5544332ccaeff052459c4e2b67a36e8e12fce81f41708c47d",
+      "size": 2804
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/social_specific/pm25/z-2p6/success.json",
+      "sha256": "f030d273d2a2804c79529dd43c49c17a7f2b79cc5038b2480b11bfd19044206c",
+      "size": 2815
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/social_specific/pm25/z-3p1/success.json",
+      "sha256": "2cd4db35ebe6e44abf8d6edfbfb236dbcc94dfab20a5c7ba0fe10b5e57270c98",
+      "size": 2816
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/social_specific/adixmspss/z-2p6/success.json",
+      "sha256": "bda44bc2db504db1db4dd4dbbf4f6e302e8c1322ef7a51b666044f6bec833890",
+      "size": 2877
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/social_specific/adixmspss/z-3p1/success.json",
+      "sha256": "5b72ba23115bc85177fead3db667bc55f8ad80856a97dae9a0f6448b234b78c0",
+      "size": 2877
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/social_specific/pm25xmspss/z-2p6/success.json",
+      "sha256": "48a8b2ecbfc28ce8586b92b7e91530051eb7e98ccee77cedbc0067c1eebaba29",
+      "size": 2889
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/social_specific/pm25xmspss/z-3p1/success.json",
+      "sha256": "52a32869c5a81d1699928363c419ec434b2a97efd7dfe8f74a429fab545a8b42",
+      "size": 2889
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/social_specific/adixecog/z-2p6/success.json",
+      "sha256": "5919410d11fa6ca87ccc73174ee483e71d631f956090a712dd7e2bf2b3b9d1d2",
+      "size": 2865
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/social_specific/adixecog/z-3p1/success.json",
+      "sha256": "783ee6b85d32c2e6ec9eb4f4bf5edd4e0e91e038ef3b22bc916c1945ac69258a",
+      "size": 2865
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/social_specific/pm25xecog/z-2p6/success.json",
+      "sha256": "1237c4e10978014a61727b686d7836b890640bfc80d74f3f682af5f76c50a0c5",
+      "size": 2877
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/social_specific/pm25xecog/z-3p1/success.json",
+      "sha256": "c13f7cd8cd2598a10ee4719a8c0c5329bb527b2e3e2773c97715c6f7d212cc23",
+      "size": 2877
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/average/adi/z-2p6/success.json",
+      "sha256": "b91ffff8ee0a48a29e45dc2fb9de917723c26367a8ed471b5ff995aa2fbcc357",
+      "size": 2714
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/average/adi/z-3p1/success.json",
+      "sha256": "4da3e75faebee02a1dcd7789b7d57a0be5bdf2e31ff36325a9a8697d22030d0c",
+      "size": 2715
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/average/pm25/z-2p6/success.json",
+      "sha256": "f8b62d6af965e529efa085a3542fd76e144b3260af06c3f580c2eb9d68815ca7",
+      "size": 2726
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/average/pm25/z-3p1/success.json",
+      "sha256": "5741fcc5c9e9bf6843a58989ea941ae04be3303d4a448a14bc8e9bdeb792690c",
+      "size": 2727
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/average/adixmspss/z-2p6/success.json",
+      "sha256": "a50fb50a0314090fe9ee5f47527a7d02217906d48d72273ab007ede2d7e09041",
+      "size": 2788
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/average/adixmspss/z-3p1/success.json",
+      "sha256": "8815eebfa25c117f17651b4c0d20b1771773dee11f4f07ab5fe584bb8742c445",
+      "size": 2788
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/average/pm25xmspss/z-2p6/success.json",
+      "sha256": "3a5f8676530d413531c78689866903da76b75c478df1557631003260cb09293f",
+      "size": 2800
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/average/pm25xmspss/z-3p1/success.json",
+      "sha256": "4dfe65486f29354f6eded7e24e2d74a2c6a270cb0197b7006e113e044208c14e",
+      "size": 2800
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/average/adixecog/z-2p6/success.json",
+      "sha256": "e9bef408736c7822bc0e257c06ce8e84dbb3288978e22ab6e5bad97369321ce8",
+      "size": 2776
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/average/adixecog/z-3p1/success.json",
+      "sha256": "6af0d095800f0224398a122c472d20106eb112dd96829aa8f31071838f77e156",
+      "size": 2776
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/average/pm25xecog/z-2p6/success.json",
+      "sha256": "c191702a4af70d21a57e55efaaee812b1c1c2d56d9a3beef1a533232b8d955dd",
+      "size": 2788
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/jobs/average/pm25xecog/z-3p1/success.json",
+      "sha256": "8535b9db975ff7558cd660788cbcca4f8d39ef3ffe461a4db74c5463410293f7",
+      "size": 2788
+    }
+  ],
+  "rule": "corrected_1_minus_p > 0.95 inside the frozen common mask"
+}
