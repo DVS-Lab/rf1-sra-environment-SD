@@ -1,0 +1,1004 @@
+{
+  "common_support_vs_voxels": 114,
+  "n": 97,
+  "note": "ROI summaries are descriptive, not permutation tests or striatal activation claims. PPI inventory is bounded to fsl and fsl-no-tedana-age55, subject/ses-01 and legacy subject folders; file presence does not establish model/seed/confound compatibility. A seed mask is not a completed PPI.",
+  "original_processing_changed": false,
+  "ppi_availability": {
+    "doors": {
+      "runs_with_any_candidate": 97,
+      "runs_with_files_present": 97
+    },
+    "socialdoors": {
+      "runs_with_any_candidate": 97,
+      "runs_with_files_present": 97
+    }
+  },
+  "seed_mask_voxels": 114,
+  "sources": [
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/code/inspect_katie_activation.py",
+      "sha256": "3f7941328e76ad0b374945e5e7f544a7a4487eb17cd584d0ae903ed564cfe236",
+      "size": 7516
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-v1/plan.json",
+      "sha256": "62b6bd8528f561dd4dcf8c220e790bad36c975432cf56e7afabade42bbcb2aec",
+      "size": 301018
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-10809/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "477d744d95cf377638fd5bf46a2f4abfcf16386cee5184470dc7f9adff2d5fb7",
+      "size": 388598
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-10809/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "be074f59c73a50fb3577763bf4534331a4456efa9db049016eadd25ebec71cd8",
+      "size": 373660
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-10862/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "1d09041f20b3b4a955eb0bb2102754da15c3362c3e479df48e8cde00fe0e739a",
+      "size": 397222
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-10862/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "f827ec7d792652ae53e2bac78521d3333ce9d788cd2a4a70ba46a3fbec92d834",
+      "size": 400567
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-10866/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "c04d18307a4a18219acf7ace4872a6982e7c40a84146d1662177bb3143a56389",
+      "size": 383783
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-10866/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "c5719a665f084b8c7b61c615e85f07382a45714cd163db3430b0bddf70863136",
+      "size": 392700
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-10898/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "35751824848ed6e1d9370d28629d92dc80e7ab28c9dfff9045b503db4105f53a",
+      "size": 397243
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-10898/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "8bbe6151053e25e9b4d1c0f58385d939e9433199355e3d6de9d2b4528bb0cb0c",
+      "size": 380412
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-10938/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "77bd4454a73e5f7ff162ff4f360072718888b9c183c38e43f2d2058234936461",
+      "size": 401753
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-10938/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "bf8d87c64cb4b21e14ca47be3014ff114871b0fe982ab09d1f9a34bf675cc5ed",
+      "size": 383044
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-10964/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "093e37ffc24e9ad1aaf61785d52572b3f461ca5fc0fe13f6b81de0ffdc23d6a3",
+      "size": 388274
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-10964/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "9e3fbe918efe65136faa49aa16d92c81fac620bc9130f2653f57de99158b03e4",
+      "size": 402440
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11012/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "75e3e7760664c1930070979af41c4d10bbed18456ad618491ad577fbca873ba5",
+      "size": 396174
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11012/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "4e4fd622063bc5479d53843b582bc47145c05d854e55c5940dcfc0d7fae29c90",
+      "size": 412731
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11071/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "7cae7efe88351eb70c0e4b476c1a492a45294104618c0185c07e0c7fb74ab07f",
+      "size": 394276
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11071/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "3c741bbdc118dd396abf830cafec89a5f4cfafcdcf93f1dcce694dd9b5494269",
+      "size": 392074
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11076/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "e5f3defb33f0172f0b93e7438ed8bf62093e24e794c47fc7ee3af1ab6c2ae48c",
+      "size": 379454
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11076/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "4e75fd29d5a1f5f052d9d305a771154c516e872bbf1a6fd63bdfcd515088e9d9",
+      "size": 364939
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11078/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "1b167fb01d10f660304a737cca5adda1bb0caca0f9c8af7cdc63aa23da4fd815",
+      "size": 383843
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11078/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "d7725829716d958cdf8c7a5c131e30ef658924589cddf257e1f5e852f9b5c95c",
+      "size": 396771
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11084/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "45a38422e5f5d8a4add1ce111cd19a77ac30ca3fa1c56b3f08bf032d460f77de",
+      "size": 390212
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11084/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "ff7528a6c9373d4d3da06c8abf8b18b689c841ab81c39703cc706762b46b51ca",
+      "size": 404508
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11116/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "f7d16a9f69da316457c5e3ccdc2bb9ba01e1ca72fe68459fe2281d5519492d55",
+      "size": 399807
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11116/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "a4d3ec23ca930f09116011e79adba9849d33e9e9547504f9c6a9ee602ebb928d",
+      "size": 400292
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11120/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "f8ae3d26db58a3369944f07a232568d21131c5714bfa4e22b0ce2365d4d52813",
+      "size": 380927
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11120/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "9e4084a57c5cf3522ac0b20544eb1d594999b803a9d9510c87e1c69d84b24931",
+      "size": 389577
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11126/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "03409b3cc782f69df9a24da863df7aa155b73d8b1ed10166d4bd2dfffd20c595",
+      "size": 402995
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11126/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "dafb879181719abcede623075cbd42ef1d794445cd98fdcee893f501f8679ecf",
+      "size": 393366
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11134/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "f071f4016be2a0b399b9af7792edac9e5f10a6f8003ab005f17ba87793913db2",
+      "size": 387881
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11134/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "187c560f2feb3e3c00a3616283cc483091c8fe1200863ff9ac281c1c694ee814",
+      "size": 396503
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11177/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "5dfda0162d5ba16f6413a099c1655096b04295c45d8aa0638c3e348d49479db8",
+      "size": 379828
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11177/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "57295c6deb23954742e967637d283406afd231747912adad89dd8dd1d5364882",
+      "size": 381413
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11192/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "156fe5de0736f2e9302e561a908ceab8a40a091e68c6f1c569677a8483be46fb",
+      "size": 378458
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11192/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "78509406e3eeec8c8b2ab461d11db56483fa94bc3894daf9420fc5d585fd40f2",
+      "size": 384795
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11193/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "4e2f03f7873298109aabe5015561c2c38cfae6e1089ed366d0f5fceca2c44c03",
+      "size": 395986
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11193/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "8e6f4f88ca81b3fdd644df5b92200d2e4bfa55c8248463baea6c40d62746cc5a",
+      "size": 392658
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11209/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "7463b4a044e0092cccd5c22f71951ee587586583915986990644785181b860ba",
+      "size": 374839
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11209/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "cbf6e09e992bb76bffaf1e133853ee5919ba48723232df6785134b8e37dc3ca7",
+      "size": 378963
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11367/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "6296e1e251d36272250aebe17699d9395e0dad128453ddaa748dcdf5ab473a24",
+      "size": 381941
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11367/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "2ab9572a732dfd6af295b095545fc5541bb7cef55edd72a881e72fd46c76d7ff",
+      "size": 398905
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11376/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "30751662449f1444eed3d525cbb14d99915bbfb8e28c789f99e496f9545aab2b",
+      "size": 385885
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11376/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "9d8dffd2c475aefbb45f84d8fb7cf50675c534fd8d8afd94f6ba62dd4fe41d20",
+      "size": 390967
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11377/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "6e1f22b5fd7855dd11d43cf0164e04269bb755e07ef0bedb397ddfcbc151da31",
+      "size": 409335
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11377/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "2cbd257d403ec1ee5dc959069f3ff7550264ea15917e3e60fa818b042b2059a6",
+      "size": 408195
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11439/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "604e66c7b1e9196baed5cd37652497263c1aaac73faa277dac446a79deec15d2",
+      "size": 403133
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11439/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "79ad4671fb9ffe5f2a103a4c3baefcf836376b6c97ea30dbc43029f34996cd8b",
+      "size": 390439
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11440/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "d61dae9d3129ae8e1b4827b7e8ba3ad50c4ab1b86cae399b73a792d327c90768",
+      "size": 382114
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11440/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "cfe669afe1f6d7f64f573cf511459e25f86396567b3a89317bddb41c4d9231d0",
+      "size": 369341
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11461/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "62bb8a9e4203fc1725204dfbc9de12d2300c22109af2e42a509e557d82e9c0af",
+      "size": 402792
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11461/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "366ccb0228f7eda142437295b7eb6702d4f8649c19f2e9f2ee95fad2a2d9ad76",
+      "size": 402803
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11462/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "0832820da4b47194a7afe2703dfea220648d5596b1fb13270fc3d1f7236d50ca",
+      "size": 399259
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11462/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "94b47a8662936e294a4a913edfbce005d56838eba932b1d7fcfdb75c219811d2",
+      "size": 403225
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11472/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "ce3ece7aaddb37b20b604d42a9d3a40428a7a82cfaea1333e16071e94f9d1c91",
+      "size": 376236
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11472/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "f0ea31c9d6f495c5a29c18891ab650adc93d491a293192b95744388201b98bc7",
+      "size": 389166
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11542/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "b48d61532e6b336dc992656c3efd6c80dfe982e58a8aeb98017e92ec8f5e04c6",
+      "size": 412025
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11542/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "c53b10aba9979e3691d2dea5511b5230a71a7125073d5011fc85f2949ffaf381",
+      "size": 396018
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11545/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "d14a861fa75b40c1d026971253621152cd11079b45a1866527356d8712c86d36",
+      "size": 381923
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11545/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "b056d3529c03c1037f480072bd006755088cea394e3706b39e23236621533ce9",
+      "size": 384129
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11551/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "484e942cb1d4f1a268ae900abd3d003c5a4b1f2876bf197d1ae9ca69e25bc7b0",
+      "size": 410133
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11551/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "2b69b5c9d3608d4d91941c6230d9a2437b6602073194ed22044347d9a31295f3",
+      "size": 423999
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11559/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "57b0f474e3bf070a9a49a0b4c71b3864324d4aeba9442aa87881aaa3591a3281",
+      "size": 399069
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11559/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "9d994428ea9acbbd11ec939af0b9be3b3621a168459b7e40b78c72f6ca538904",
+      "size": 394046
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11563/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "234ab7cfda0d9dc42f0097ad064f8e303750481577133ee5323ca871b29d7d7c",
+      "size": 386772
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11563/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "798957d4ce7d716816224cc5ab48f11e5b87d60e0dcdbe09c7a72ea51a3ef80e",
+      "size": 387413
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11565/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "39ded7121a6599560a8a27ec9ace67d7d919add9a20d0b4c7e5ebfe6b407d0f8",
+      "size": 400570
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11565/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "914d25121164cd5e11d1b616f2abb09c6ac0978f559f697868db321c93914540",
+      "size": 396649
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11591/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "7940b8664643f0635d12982a5b4b795f2206356cab663b8b602fb65d9cda320f",
+      "size": 415430
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11591/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "f7cfbb7f5210af6a21cc35755264739db45725fd5637ac6a34f35d2657bee1f2",
+      "size": 414746
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11606/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "88938228adafe6020829775613138305fe118accba713dc8ea93c64acf865c90",
+      "size": 407523
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11606/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "dc6b719631b254bea4ce259e22f76b9a39b87a7acd514021e4c5bc7937cfb203",
+      "size": 407861
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11614/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "f3614f4de93523300d4097b7ecbf86d6c9f754d5d1f75f5f796cf4e3c0e70fd3",
+      "size": 385222
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11614/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "72070e032766bb99aba89e20b1bd0f14da46c4b9e311055e3c722e178e05a14f",
+      "size": 396832
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11623/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "2ad19f858edc4425507835337b675cd6ea2d712f31bfc2afbd221e33ac2c7b33",
+      "size": 394208
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11623/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "0d1bf1d4094633f1de98141d8d359b92ab9af3ba7abe98ad65f578cf0e386250",
+      "size": 394044
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11625/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "29f39192df391121ebba41c8422ca67ef7586edb931f826f7ba9aac0510b4906",
+      "size": 413119
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11625/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "5463cbc06cf04a46bddd8659b389d3a36d7d4e8d573ec2dda55ec4c5b4af76a4",
+      "size": 418316
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11626/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "4c1ee0f6857a220211d94297f1cd0246458ab52669093955a332fb145ac60c3e",
+      "size": 405084
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11626/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "493c3b0d251b93339497957bbf3222a51da633e59023ee0d880c0e3298e2c798",
+      "size": 400669
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11628/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "47a0de162b8366bf2cf9599ecd3a79d6ad46878100327820638b9a84c23e09bc",
+      "size": 400256
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11628/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "9f6cd78d2a3c60571f665ebfa0ab55538a0117cc5c4d621bba37e6e9f6a1d293",
+      "size": 390840
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11631/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "a7b8612ec0503758271b48b39b225f415b98cec40ac1b87198e7af0ada883c2e",
+      "size": 411243
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11631/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "6d78d8adeab81a520a0503481fb29ff67ccbc4b1d9a8ab0cf0ecaec5bd4d9e0a",
+      "size": 412610
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11651/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "570aca347344bc7e93758eca0d1072a4d412ad54bebdccdb7c58d66e27a29278",
+      "size": 421293
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11651/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "5e2440f4e243f6baad408aa96b7675a265042b6391733c77910731b2a7151d03",
+      "size": 419758
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11674/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "94d0e539cd89bd8e4e79890516649b4be60ecf56f1f64bc242f038430111ecf7",
+      "size": 391079
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11674/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "45a064d035470502930ef4ab22711612c18860714ede68209911939614eb17d8",
+      "size": 383327
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11679/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "92f5fc0cbd9ff72968d8ee85511f36bb41ce80e4b401396abbf15e2e3bfe8783",
+      "size": 392901
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11679/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "222727370da3a7a3e45c8cb8699d222aeaf4edafe4ae1763da4f5e356011116f",
+      "size": 393565
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11681/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "c80f16e2c1b82d28b3594eefeaee73513a2205218bf613491b9aef7c6de9eb69",
+      "size": 404907
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11681/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "45c7b701ae171dc9183185628d52f4c1147743dcce016f19d97f103e6f1c247d",
+      "size": 415699
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11701/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "d4d93bff878f8ccc73776f8cf333b1d3a28a767bba37b9d01c3d519bc9e1f389",
+      "size": 423089
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11701/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "49b0074bba747a1ff4dc9dbef2970cc354e749a87fddbdce4b1c7bc5bf829de9",
+      "size": 422954
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11710/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "5e536ada9c64fb12ca349ba5ffda60c011586ea2196b9f82d1c9016459eed1b2",
+      "size": 382522
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11710/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "9f00a9667a2f7727228cb1f0da2ed355189fb019b0d8f84ae26c2a9df37436b3",
+      "size": 383725
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11714/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "e22faae17cb642608692d771e5e0a787ce45dab0027589df46ba168074dd7883",
+      "size": 408580
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11714/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "6b047974951def4440d08725d7d06cc15586f2832f75988a3b24ea7324b5778d",
+      "size": 395463
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11722/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "5d0ddfbdc03a9b10a5c49501df4b95be134dd1064c96266578454ed7029d01ad",
+      "size": 427873
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11722/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "5324d00ca1a23f15c9dfbbba6a4247a4aa14927bed45a74430c6f6cfe0ed2b1f",
+      "size": 418673
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11723/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "a8bdc6a4d7a5ccac1b4ee8198fbfb626c90fa3b66d80bbd2f34fdba4cc6e52a3",
+      "size": 409748
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11723/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "0509cbede01509d04848527d3187a6bca5b930e8d71bb9eb329ab6d1373ecbf8",
+      "size": 414085
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11736/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "bb43b37d9382804be6c6ef6e78f1459c52aad0da0b71579d8847ac4fba024ba1",
+      "size": 400012
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11736/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "9c2d20edc46d47a7fcb347c33718b6af4560c319bd453ddc16f1f6154cfb9e28",
+      "size": 401352
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11744/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "a90001791bfeece7aaa9599db1b60f58a7c4c0cdc893ab2e67d5302af898fb53",
+      "size": 406961
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11744/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "b44539e249df8e64a13250f3051f5b9bb037df46849705ba7e8bed7739e55844",
+      "size": 414766
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11746/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "1a731b6fd76f586cd80378f93663091ae8881a9c87c9086ee772d032bb79dcbd",
+      "size": 411057
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11746/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "dd8a8081cd49f156e593ab8e8319f9ed129b80a25434b26312d816a07c278265",
+      "size": 418087
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11764/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "b8dfa1ae77ad6138949c137ea0aa2362cb4295386ffbcfafbe5011e4eb14eee0",
+      "size": 399520
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11764/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "c4ea5a348abc77d6aaf5003e66c532afeb453ed33d4df035f1a1f7e4a1c8a5ed",
+      "size": 394406
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11773/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "3ff33803556562a217fa1527743a28aa048c40248d409c8f0b1dd92691a95a9a",
+      "size": 396478
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11773/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "095588cbde78e52e68d5354eaec30b890442627dc5782bc8f06be67293a60f0b",
+      "size": 390565
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11815/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "872ab70a43b9b74d5bddf4777ced12d3a30af9e4fe1d8690b69f3710bb8b0bf1",
+      "size": 395646
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11815/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "c9a31168c62b1845f340b6e80c1e98f7d78bdbcf994700f2e9960c6b41b4cf52",
+      "size": 400957
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11822/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "bdc29685e9f02578e02d666f80ab286b35c4f7f670360615a87db784c7527e0d",
+      "size": 389230
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11822/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "da4083e9c2025793b5e57f1f7dc3b7a1bee9d980afd2608d580611934079d154",
+      "size": 390079
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11823/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "6b4af525dfd22ff257abc30248ea705cb5bdae401aa5d41234222a2ebb7969d3",
+      "size": 411750
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11823/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "fd474607752c0fc8c34e9c03a87e353679b1bcf72d32347762806ed9ac23bbd0",
+      "size": 415013
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11824/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "182bce5e0da9f95815f08eb9904a25aeefe0c9ee4f7872bd41bb6679b00fc757",
+      "size": 412738
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11824/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "34a3322eded883405b0eecea5d6beca8350ebff9b76559635ef948778044bac3",
+      "size": 407014
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11828/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "1e3125e9468287d1f7135b4b74426a8b1c4bb86bb960d9fbd609b59e1ca598d0",
+      "size": 386959
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11828/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "93590285776da28dae8c75a681596f2345cd3019b2369d778d176c403a37edef",
+      "size": 386236
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11829/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "cb1051643e6101119cf926999e51951972d84d9410bc41a06434505c1b7a9854",
+      "size": 395563
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11829/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "829f56f58452872e6b57869ec8d229611453f8cb50d6bd97d2202cd08fb19454",
+      "size": 409694
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11840/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "e89a5a249245f3d3fb5d17d2e7820b87714a29234b2e2b0b8c39702f892b4fd3",
+      "size": 412069
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11840/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "6b064bd7af0343547b5e608a704a3d52a82bd04262600a153e66af44faa6140d",
+      "size": 401211
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11847/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "3b027f689d17626de7299800349fa02a6966361e9fbf941f2923d1b0db8530f1",
+      "size": 389377
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11847/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "22487d87c8ec771d2c096e9c53acbc7da1c72c9c9848a88a0bea86a169c959db",
+      "size": 386588
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11853/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "1f7eefb31df83f035134224eea8e9f680f92d8c98da62040bd20787b598c81a3",
+      "size": 401922
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11853/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "15f050a40c7982d4651ad4a3779f930ed4cdb14616fc70d20e0e5eb80465ca8a",
+      "size": 399355
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11854/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "c02bca649ac38ffd8ba5180b5a8a77ebb6d0ad389c9192295260d1ff0428b0e0",
+      "size": 416175
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11854/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "72b10a06ceae7516c04fc9cf7773f9ee4b9980640c18ba85ea624d396b5d87a3",
+      "size": 416872
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11881/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "e0aac05998a5d6b26e596b303c2369191954856ee20ef9b7067ed1bb013deeec",
+      "size": 378673
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11881/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "198550cb7aae6b6e5c5643fcde83ee74fc40326949aa8ec700c96c2625607b9b",
+      "size": 387597
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11885/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "59aa4fa33edb9237efd6a4039fae8c7b88ff7480bf70963e641718a192a25745",
+      "size": 410644
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11885/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "f591036875a6ae61ba12f629ee6627056b129badd16051f586239803b5ef46f9",
+      "size": 409963
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11891/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "d696ff17f44e10cf78ff362cfa8ae478d8031b537cb525f600fabdda7c60494c",
+      "size": 410455
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11891/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "606c5d101dc1da2e3e622af18ce12296361a52913894816a90b519fc87d13765",
+      "size": 399711
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11897/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "1bbb8b5c7e7cd2035fe480fc60ee549b86c881398c4f52ade11c75c7d4e7753d",
+      "size": 402918
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11897/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "af48fbcf35466e024840b7f79ef614be793089eb16e0f30052a5c3d7c20f7a2a",
+      "size": 401824
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11900/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "6400f77f70de45b04a0979a5e7ee82b289ddf6046b9a65da3a04bce5fc2245dc",
+      "size": 399736
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11900/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "6132d1cf271f596b1066a8b310eac8bc938a0fa7f944267a9fa8eb1bd3d211ff",
+      "size": 388524
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11902/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "da16580f4d0cc0cc045da0dc99d9d9728fe6c7cb0e05eeead8441a04d1841ab1",
+      "size": 407332
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11902/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "c20a9876aac2023d751b979c441c334fa0e7ebc34ed316b827adb2e695a988af",
+      "size": 394833
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11909/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "194dd0fe89e5c8224651a7e1f0b3d5d98fcc3e0a5a8f9f919626d4e2af916c72",
+      "size": 384727
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11909/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "77c4d1057455b3572fa2c1f3b57dbe95b13575ec5abf06972c1f5f505d632a82",
+      "size": 407493
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11913/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "b7b6c56f32556018facba619bd2426fae1f7afc4fcd53af68093b56b2b412f96",
+      "size": 381917
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11913/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "77035451a3d6ce62a987ae01a9503be41b32faf49d71644b50a81983e07d7744",
+      "size": 382276
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11914/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "437f9e78d7bf2fd4509a1e9904f6b03da4fd7db0f2565afcae44b5685a97396a",
+      "size": 401979
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11914/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "c28795b7e8a1a71a28feb2c5abbdd50076271721263bf9300df00a6d96cd7c40",
+      "size": 402269
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11922/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "0edfcc0258a2e4cac97c8887855ccbd85a8b4e830259195a4610e93748b1be22",
+      "size": 400414
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11922/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "10de9b1df9298e1c9c792b88435b5bd1fbb46f76555e2b651e8cc160e18f4767",
+      "size": 385086
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11923/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "eace7ac6167298b181e96888fb4708cdae7c1b74ef65eb2824799b7952e5bd63",
+      "size": 408335
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11923/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "ce3c3a60e10e341a5b6ef8c1a0667c32227a60d2a174a36b3bf16f2c6b2e829f",
+      "size": 412425
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11924/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "edf656439a6c8797a768a857ad870d6698d1698bd1d30a97e6070ffc9787aebf",
+      "size": 398903
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11924/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "92dcda3261a4f9a9e2a897508c595b6074bfbf5887e358f9a2523cab69e4735e",
+      "size": 392516
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11926/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "2a00303d98822a8209333980aca3f81330b4ecaf7d328a1224f73ee401ea4af6",
+      "size": 385434
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11926/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "94837a120445b0c499ff1b5d2eea5c1a7737bf751309981406cfc80676634507",
+      "size": 386337
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11928/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "5b34fbe2e961c5eb2ac37b470349d64752fb8170ebce34cc960bdfa57c10dd3b",
+      "size": 395327
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11928/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "abe5bfdc487142af67d4cb081a7b0ae8c904b29dc457fb252718ed2399d6221b",
+      "size": 396098
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11929/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "2fba3db0176256dff4bbdd44f293bd180593043738823f0a920251595f60110b",
+      "size": 398064
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11929/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "ad3ffd533f1822ea003ed9897bcef06c1c0207dbfa495e67564105324d2bee8a",
+      "size": 403351
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11939/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "5f5a5330e956556b398230dfdfd320f1b7cf362da70daed03541b95166254b9c",
+      "size": 402393
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11939/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "b6363e187ac8e6895beca49df273189845400f7b639ff6650c0e73ecc6dc8d94",
+      "size": 396151
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11943/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "aeb505e61aba66e2175f59e89b351fd8ae1916985ed20a41a5ebbe56d57f0e7c",
+      "size": 394335
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11943/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "212a967dc673330e3e47505cc3aa40f590a7b24a59e86b6169a9cf85ecde7e96",
+      "size": 390956
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11969/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "31da26d8af5a6c301a30b921cf301e5185c402b131bf113e2545b8bb4d54c934",
+      "size": 399092
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11969/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "bac7d2777abe7f526879090fe69c9260d65e43472598b879e388b0c4417d814f",
+      "size": 399123
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11974/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "c331f8751aafbb439c3c271c9beb38fac7ef80cc36aeb28744b37a6ca2574ab2",
+      "size": 411506
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11974/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "c869280c10c69e51074627bf2748f6b1edc156f9cee31280d7571963d147ef02",
+      "size": 407785
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11976/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "971e26c09db3854492c7ac12ebd6f422bb4545b0a9f7f9c911e825aa12649cee",
+      "size": 407078
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11976/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "fcfa8052f1b4a38b251c0e91be47f2dc3621835d9d3f03b843347c39e31fce76",
+      "size": 407885
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11982/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "8091d3d55e70f6ec2077d9015be50ebd01ae9874480ff000dec6417d8642d8e5",
+      "size": 410301
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11982/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "68de9a23992610acc8baac9d2f539595def3b76e2a4b23b7035dbcb2dba98d16",
+      "size": 418727
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11984/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "bff2ff37a731e5e478e3b10a866001eac12a707e0d4e5015e9696dd421b291aa",
+      "size": 395122
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-11984/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "c58f1a15d65bebd9e4596bfb186b6b9ad0f88f426f264a70063a7664d647283b",
+      "size": 407742
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12008/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "59e9438f1eaf964e12b9126a532bdc2b63167275ff4612fec1e8fed47f6c4d20",
+      "size": 414221
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12008/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "198efe158bfe033fe494054671b139ac3dbfb5d818d0d01756699662866e59e9",
+      "size": 411230
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12011/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "cb1bcf9df93d3568fac619892111c0e779139ceadad43d901fc801abf1ed18d8",
+      "size": 394917
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12011/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "beb40d5e808b47e640105cd8e82a6e6dff937e32e0a906b7b4a4b69e7209d771",
+      "size": 385943
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12013/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "faef9dae06b0a2a65b2a26802f6acb94b130fe31902ffe674f8f544a80170c7c",
+      "size": 408364
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12013/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "8af86efa500e1aac0bada21ec0c431b3d92f74f5e07c8a161436871ef80db491",
+      "size": 406420
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12018/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "bc9b7977be64f33eac4b9269140ac7c6459f75272e56aa92bb3ed3e1e4192b3c",
+      "size": 409061
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12018/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "2e83095c85ab4f8a7089497710c7d43efaef36ecef984199267726e18bb479ee",
+      "size": 412966
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12020/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "ca288a78002511eec91c32f1abfbde961260f64b8b038fabf5f12adca632c040",
+      "size": 403430
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12020/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "046f50cc204e54e93f706e704cf9c75087579920292c469722419ec835508a53",
+      "size": 390102
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12021/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "330d30977562b5e074d86bc8f82c38d970a728fade0adefae7daf3a0886dd6ca",
+      "size": 417790
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12021/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "ef20dc5ccb7a83163ef74b10e78637ee6d84799005a3ba85772b14b4bb133bb4",
+      "size": 407898
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12031/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "0141bf31239913ca5229470f6e625fdefca44cda176b1b9ead02ecd2c4955c3d",
+      "size": 399966
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12031/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "5fc431c7f0c021896415a49f0a1f952c56e210f4554928f5c024193329fc8577",
+      "size": 398355
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12032/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "d0f62ca42a75bc3cf74aea38e489f4f423a8cb331cae52b03df5a151a421f3cd",
+      "size": 412998
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12032/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "bae3a6af2d62011283fe706a7005aa8d0e81b9c85e6e52731873078cec72bb69",
+      "size": 427135
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12033/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "91690374c089173af548831220c4b10bcc16e94e80a969b8eeab4ecac7ccf27a",
+      "size": 412970
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12033/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "b7831afded9ea60305ee2f4a25b6b68b905e339e28a75105809c71a481ec6954",
+      "size": 408091
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12036/ses-01/L1_task-doors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "2b04db95864085292a37736cbd96061570e9beb4d0e0234394c9db32a9904602",
+      "size": 402856
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/derivatives/fsl-no-tedana-age55/sub-12036/ses-01/L1_task-socialdoors_ses-01_model-1_type-act_run-1_sm-5.feat/stats/cope4.nii.gz",
+      "sha256": "3cba1851578346e3186eaf9705c7280c3df761ae2612e36f138ee25cd1c9d4c3",
+      "size": 405683
+    },
+    {
+      "path": "/ZPOOL/data/projects/rf1-sra-socdoors/masks/seed-VS.nii.gz",
+      "sha256": "bffdd7fdb2022d491ee7800a2bd91a8520cf6736b4024a3f7ca4f351028a39d7",
+      "size": 1142
+    }
+  ]
+}
