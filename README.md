@@ -4,14 +4,17 @@ This repository contains the reproducible participant-generation, environmental
 linkage, Level 3 input-building, and group-analysis code for the Social Doors
 component of the RF1 brain-health/environment project.
 
-## Current Analysis Status: Plan Specified, Linux2 Verification Pending
+## Current Analysis Status: N=97 Randomise Completed and Verified
 
-**Ready to launch on Linux2:** use the [exact overnight build/check/smoke/run
-commands](docs/overnight-run.md). The new resumable runner validates N=97 inputs,
-assembles the difference/average outcomes and approved designs, requires an actual
-FSL smoke test, then starts 24 isolated cluster-extent randomise jobs. Existing
-processed data and completed analyses remain untouched. Code/tests passing on the
-Mac are not a claim that the Linux2 image checks or inference have finished.
+The published [Linux2 completion record](https://github.com/DVS-Lab/rf1-sra-linux2/blob/main/logs/records/20261101-232106_katie-overnight-20261101-231810-randomise.md)
+confirms all **24 jobs / 48 directional corrected maps** passed with command and
+check exit 0. N=97 input/order, image arithmetic, live scanner-era and full-rank
+design checks passed before the actual FSL smoke test and inference. No failures
+were recorded and no exclusions changed. This establishes successful execution,
+not statistical significance: use the [read-only results summary](docs/results-review.md)
+to extract the findings from the completed images. Do not relaunch inference to
+make this report. The [overnight runbook](docs/overnight-run.md) remains available
+for provenance and preservation/resume instructions.
 
 The canonical paired analysis roster is now **97 participants**, frozen from the
 unchanged 110-person linked workbook intersected with the settled 121-person
@@ -37,15 +40,16 @@ previews remain an unchanged pre-approval audit snapshot. The user has now chose
 **randomise cluster-extent inference at Z-equivalent CDTs 2.6 and 3.1**, with
 per-map cluster-FWE p<0.05 and no extra cross-model/outcome correction. No PALM
 or TFCE. See the [approved exploratory inference plan](docs/inference-plan.md),
-including model-specific Z-to-t conversion. Group execution has not started.
+including model-specific Z-to-t conversion. The decision file is an immutable
+approval snapshot; live completion is recorded separately in the run receipts.
 
 **Do not run the legacy `run_L3stats.sh` or `build_L3_inputs.sh` workflow below
 for this analysis.** It still defaults to the superseded coverage-only handoff,
 and its randomise template is intercept-only and does not consume the covariate
 workbook. It is retained as historical code; the currently selected model and
-inference settings are in the decision file above. No group jobs have been launched.
-The 97-person table freeze is verified locally; image subset/mask/QC-covariate
-validation still requires the documented Linux2 build/check. UGR is unchanged.
+inference settings are in the decision file above. The approved separate runner
+has now completed the image subset/mask/QC-covariate validation and all 24 jobs.
+UGR is unchanged.
 
 The workflow deliberately separates private participant information from files
 that may be published. The participant-generation stages run on the authorized
