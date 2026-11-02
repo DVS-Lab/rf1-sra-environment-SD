@@ -254,3 +254,6 @@ sub-*.html
 
 # other files
 *.out
+
+# Cohort coordination lock; preserve the lock file locally, never publish it.
+/data/derived/.*.lock

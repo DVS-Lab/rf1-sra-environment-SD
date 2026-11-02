@@ -1,0 +1,69 @@
+{
+  "outputs": {
+    "analysis_variables.tsv": "ba52a03932f48ded6582b747009de1c23aaa0ff84a0e1dcb54254749d627b00f",
+    "reconciliation.tsv": "b2e332156971fce2284e15cc6207e590a0541a9604aed0515ed62be8f1622652",
+    "selected_pairs.tsv": "15050112ddf7cfa36b3aa91fffd919f8af90bbc0c4ecce81ed94ca99568b20ed",
+    "strict_pool_not_in_workbook.tsv": "dd544402d9c27141b99b5044bc90945b229a751f35c4e4e4ca075a930ab73c30",
+    "subjects.tsv": "bd0fa87fdf4c40b2aff5b6a209965056db87dec3c56d1e246fe2fd5f95036895",
+    "summary.json": "1c9c12825b7d63033f9c79a13bd24b2f69491dfbb519eab8dace3060af99c575"
+  },
+  "policy": {
+    "age": "original_approved_imaging_age55_pool_no_new_screener_age_filter",
+    "coverage_minimum_pct": 95,
+    "effect_outlier_exclusion": false,
+    "fd_tsnr": "existing_task_session_1.5_IQR_fences",
+    "image_bundle_validated": false,
+    "model_specification": "pending_user_agreement",
+    "order": "ascending_RF1_ID",
+    "randomise_run": false,
+    "selection": "intersection_only_preserve_settled_source_and_run_QC_decisions",
+    "session": "01",
+    "tedana_component_exclusion": false,
+    "version": 1,
+    "workbook_unchanged": true
+  },
+  "repositories": {
+    "analysis": "https://github.com/DVS-Lab/rf1-sra-environment-SD",
+    "preprocessing": "https://github.com/DVS-Lab/rf1-sra-linux2"
+  },
+  "schema_version": 1,
+  "sources": [
+    {
+      "last_file_commit": "86389efdc821f27202da6336efa47e75c7c74afb",
+      "path": "data/derived/SD_analysis_data_2026-10-26.xlsx",
+      "repository": "analysis_repository",
+      "sha256": "d60cf6208eb419fb6e9dcef20d6bd26bbaaa61e4ee48cbfaa453223d0cc1e875"
+    },
+    {
+      "last_file_commit": "692b84f0b799cb6951712b3d7b49fb7831997969",
+      "path": "qc/paired_difference/socialdoors-v1/strict_pairs.tsv",
+      "repository": "preprocessing_repository",
+      "sha256": "da88f9502a7e4387b0097edef5aa58b4a367c5a020ff3b6ab8153834a87c3b9a"
+    },
+    {
+      "last_file_commit": "692b84f0b799cb6951712b3d7b49fb7831997969",
+      "path": "qc/paired_difference/socialdoors-v1/diagnostic_pairs.tsv",
+      "repository": "preprocessing_repository",
+      "sha256": "ae8b35b515e87bba1c3d064f58296fce76fb4efc055208df5616f466943ee2c2"
+    },
+    {
+      "last_file_commit": "692b84f0b799cb6951712b3d7b49fb7831997969",
+      "path": "qc/paired_difference/socialdoors-v1/pair_membership.tsv",
+      "repository": "preprocessing_repository",
+      "sha256": "65aaba1782519217b657def175622d808c6965d9db606ff6177a4e7ccb461620"
+    },
+    {
+      "last_file_commit": "692b84f0b799cb6951712b3d7b49fb7831997969",
+      "path": "qc/paired_difference/socialdoors-v1/run_membership.tsv",
+      "repository": "preprocessing_repository",
+      "sha256": "d045abe84e2cda92205e111e3f6f54bacd372658ee3dedd74b1e7ed62a63aba3"
+    },
+    {
+      "path": "code/freeze_katie_cohort.py",
+      "repository": "analysis_repository",
+      "sha256": "9ee9a85295564d5a1f67367f52140b45d363c833bb20e8c54ebe48d0b0081be7"
+    }
+  ],
+  "workbook_range": "A1:G111",
+  "workbook_sheet": "Data"
+}

@@ -4,6 +4,28 @@ This repository contains the reproducible participant-generation, environmental
 linkage, Level 3 input-building, and group-analysis code for the Social Doors
 component of the RF1 brain-health/environment project.
 
+## Current Analysis Status: Cohort Frozen, Models Pending
+
+The canonical paired analysis roster is now **97 participants**, frozen from the
+unchanged 110-person linked workbook intersected with the settled 121-person
+Social Doors/Doors imaging pool. The 13 not retained preserve existing decisions:
+11 FD/tSNR-flagged pairs and two Doors coverage failures. No new exclusions or
+reprocessing were introduced.
+
+- [Canonical roster](data/derived/katie-cohort-v1/subjects.tsv)
+- [Counts, raw-code summaries and policy](data/derived/katie-cohort-v1/summary.json)
+- [Reconciliation of all 110 workbook participants](data/derived/katie-cohort-v1/reconciliation.tsv)
+- [Provenance, verification and exact Linux2 input-assembly commands](docs/katie-cohort.md)
+- [Model-specification discussion](docs/model-specification.md)
+
+**Do not run the legacy `run_L3stats.sh` or `build_L3_inputs.sh` workflow below
+for this analysis.** It still defaults to the superseded coverage-only handoff,
+and its randomise template is intercept-only and does not consume the covariate
+workbook. It is retained as historical code while the scientific models are
+specified. No randomise model has been approved or launched in this update.
+The 97-person table freeze is verified locally; image subset/mask/QC-covariate
+validation still requires the documented Linux2 build/check. UGR is unchanged.
+
 The workflow deliberately separates private participant information from files
 that may be published. The participant-generation stages run on the authorized
 Windows machine with access to private data. Their cleaned output is committed
@@ -90,8 +112,9 @@ point-in-polygon linkage, and the fixed reviewed re-geocoding audit. Participant
 must have numeric ADI ranks and all 11 annual PM2.5 values. The PM2.5 mean is
 rounded to four decimal places.
 
-The validated public result contains 110 participants. A different count is a
-reason to stop and investigate rather than silently continue.
+The validated public **linked export** contains 110 participants. A different
+export count is a reason to stop and investigate rather than silently continue.
+This is not the final paired imaging-analysis N, which is 97 as documented above.
 
 ## Part 1: run the private participant pipeline on Windows
 

@@ -1,0 +1,33 @@
+{
+  "analysis_variables_centered": false,
+  "counts": {
+    "existing_coverage": 2,
+    "existing_run_qc": 11,
+    "linked": 110,
+    "retained": 97,
+    "strict_imaging_pool": 121,
+    "strict_pool_not_in_workbook": 24
+  },
+  "gender_recode_applied": false,
+  "gender_source_code_counts": {
+    "0": 48,
+    "1": 49
+  },
+  "policy": {
+    "age": "original_approved_imaging_age55_pool_no_new_screener_age_filter",
+    "coverage_minimum_pct": 95,
+    "effect_outlier_exclusion": false,
+    "fd_tsnr": "existing_task_session_1.5_IQR_fences",
+    "image_bundle_validated": false,
+    "model_specification": "pending_user_agreement",
+    "order": "ascending_RF1_ID",
+    "randomise_run": false,
+    "selection": "intersection_only_preserve_settled_source_and_run_QC_decisions",
+    "session": "01",
+    "tedana_component_exclusion": false,
+    "version": 1,
+    "workbook_unchanged": true
+  },
+  "screener_age_max": 89.0,
+  "screener_age_min": 55.0
+}
