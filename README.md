@@ -16,6 +16,17 @@ to extract the findings from the completed images. Do not relaunch inference to
 make this report. The [overnight runbook](docs/overnight-run.md) remains available
 for provenance and preservation/resume instructions.
 
+The [published original summary](results/randomise/katie-v1/README.md) now shows
+**no cluster-FWE p<0.05 clusters in any of the 48 maps** at either CDT. The
+smallest corrected p is 0.1114; this is not a significant finding. The next
+separate [conditional main-effect batch](docs/conditional-main-effects.md) tests
+the exposure and moderator coefficients in the four unchanged interaction
+designs: 16 jobs / 64 maps, with the same N=97, images, masks and thresholds.
+Its runner does not modify or repeat the completed original tests.
+Before launching that follow-up, run the [actual L1 outcome-phase audit and
+financial-measure availability check](docs/outcome-and-financial-measures.md).
+The follow-up launcher also requires the outcome audit to pass first.
+
 The canonical paired analysis roster is now **97 participants**, frozen from the
 unchanged 110-person linked workbook intersected with the settled 121-person
 Social Doors/Doors imaging pool. The 13 not retained preserve existing decisions:
