@@ -1,0 +1,47 @@
+{
+  "additional_adjustment_for_adi_pm25_mspss_ecog": false,
+  "cohort_changed": false,
+  "common_covariates": [
+    "age",
+    "gender_code1",
+    "e11",
+    "xa30",
+    "two_outcome_specific_QC_terms"
+  ],
+  "exclusions_changed": false,
+  "future_jobs_per_image_family": 8,
+  "image_families": "activation_first; same designs can later be applied to lineage-validated VS PPI",
+  "imputation": false,
+  "interpretation": "Association, not causation; score direction follows Jacob's scoring",
+  "join_method": "RF1_ID_keyed_then_frozen_roster_order",
+  "lead_supplemental_score": "fevs",
+  "models": {
+    "fevs": {
+      "centering": "mean_centered_raw_score",
+      "interactions": false,
+      "role": "separate_continuous_predictor",
+      "source_field": "fevs",
+      "transformation": "none"
+    },
+    "oafem": {
+      "centering": "mean_centered_raw_score",
+      "interactions": false,
+      "role": "separate_continuous_predictor",
+      "source_field": "OAFEM",
+      "transformation": "none"
+    }
+  },
+  "n": 97,
+  "outcomes": {
+    "average": "((Social win-loss)+(Doors win-loss))/2",
+    "social_specific": "(Social win-loss)-(Doors win-loss)"
+  },
+  "qc": {
+    "average": "pair_means",
+    "social_specific": "signed_differences"
+  },
+  "scoring_metadata_supplied_in_csv": false,
+  "source_file_order_already_matches_roster": true,
+  "status": "numerical_previews_only_not_launched",
+  "zero_scores_preserved": true
+}

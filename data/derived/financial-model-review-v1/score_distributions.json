@@ -1,0 +1,24 @@
+{
+  "fevs": {
+    "maximum": 17.0,
+    "mean": 5.257731958762887,
+    "median": 4.0,
+    "minimum": 0.0,
+    "missing": 0,
+    "n": 97,
+    "sd": 4.5466983224906,
+    "skewness": 0.8759499225056482,
+    "zero_count": 10
+  },
+  "oafem": {
+    "maximum": 78.0,
+    "mean": 10.051546391752577,
+    "median": 4.0,
+    "minimum": 0.0,
+    "missing": 0,
+    "n": 97,
+    "sd": 14.182861674996913,
+    "skewness": 2.239468421256799,
+    "zero_count": 32
+  }
+}

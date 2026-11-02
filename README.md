@@ -12,6 +12,12 @@ the completed original batch, averages task effects/covariates within person,
 and reuses only connectivity inputs with verified matching no-TEDANA lineage.
 Any needed PPI rebuilds are isolated, with no new exclusions or production reruns.
 
+**Financial-score previews:** Jacob's [FEVS/OAFEM file](data/derived/FEVS_OAFEM_scores_katie-cohort-v1.csv)
+has complete numeric data for all 97 frozen participants. Separate predictor
+[model previews](data/derived/financial-model-review-v1/README.md) are prepared,
+with FEVS leading this supplemental analysis and OAFEM secondary. No new jobs
+were launched and no running source code or original analysis configuration changed.
+
 The published [Linux2 completion record](https://github.com/DVS-Lab/rf1-sra-linux2/blob/main/logs/records/20261101-232106_katie-overnight-20261101-231810-randomise.md)
 confirms all **24 jobs / 48 directional corrected maps** passed with command and
 check exit 0. N=97 input/order, image arithmetic, live scanner-era and full-rank
@@ -117,6 +123,10 @@ and exactly these approved fields:
 | `pm25_mean_2013_2023` | Mean of the 11 annual PM2.5 values, in µg/m³ |
 
 The final R stage enforces this allowlist before writing into the repository.
+The separate, user-approved `FEVS_OAFEM_scores_katie-cohort-v1.csv` adds only RF1
+ID (`sub-num`) and the two financial scores (`fevs`, `OAFEM`). It does not change
+the original seven-column workbook or its R export allowlist. Model previews
+join these scores by RF1 ID; they contain no raw survey items or direct identifiers.
 The `.gitignore` rules provide an additional guard against common raw and
 linkage filenames, but they are not a substitute for reviewing every commit.
 

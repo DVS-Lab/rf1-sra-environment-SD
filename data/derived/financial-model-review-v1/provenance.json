@@ -1,0 +1,48 @@
+{
+  "live_processing_changed": false,
+  "original_code_or_config_changed": false,
+  "outputs": {
+    "README.md": "4fef931f0114dd4769ecb2de48659a4c19521236c90cbc8c0c027f83c477132d",
+    "aligned_scores.tsv": "286de61fc25bcdfea1c4d192196d6121358d4f8b50d32778f2cb1dd3289f6056",
+    "correlations.tsv": "292ebe2160ae517d4a5872088fdf1b07693e436385832d70ce45d3f363f14227",
+    "design_diagnostics.json": "581166572312f98c2125a82f0c8be7ca997852e868d7e9e2c6c22234168d86c9",
+    "leverage_diagnostics.tsv": "75de63d3fbda899e4bea115eedcc1de4b86497265acf1574f4dbd5153900065e",
+    "model_catalog.json": "30eb8709854a93d05a2971dc08d57219f316b8f0c163972b18087e0fa0dd9256",
+    "previews/average/fevs/contrasts.tsv": "d68b57eb969a87ade9ca43e5ead379a0a8c1242bced038352cac8a037490b9ed",
+    "previews/average/fevs/design.tsv": "f034b1dfbf89431a0fc0bbef09190d595771da8e50c121f1016c30ece29d914e",
+    "previews/average/oafem/contrasts.tsv": "66b32c2e95f25e442a9dc4c1bbf3904a7ae67c266e2160d40435d572b76b03d4",
+    "previews/average/oafem/design.tsv": "6aaab452db1bcb9e8801cef1ce19ea255e45201eb7ebf2cc33bccc9f6866a7a6",
+    "previews/social_specific/fevs/contrasts.tsv": "7a1ca6acdf84e1573a004e3c587275aead4f9287ae9c54f186314391ce19b299",
+    "previews/social_specific/fevs/design.tsv": "263eaf1ceca5bea0db0bc4497c3b702ecfbc30a5fdd351c70d2472ac6cf7845c",
+    "previews/social_specific/oafem/contrasts.tsv": "f777606d30192d6be9fe0a1cbe873ae16bf7cd21792cd18ffd526d75c5d43e9c",
+    "previews/social_specific/oafem/design.tsv": "56a0b40b9758512fa44f5bc9ac7ee969a181f5d03d0e32097b341ae6bab19861",
+    "score_distributions.json": "a42a1a8bebbd75603b6c41fa23c903fde1835bcfee5f255d1b3535ffae97c243",
+    "score_frequencies.tsv": "69179b5e17b963d62607310c67a4ecb10eb92ff30156ec95fc84eb830d0fea2c"
+  },
+  "sources": [
+    {
+      "path": "data/derived/FEVS_OAFEM_scores_katie-cohort-v1.csv",
+      "sha256": "5da8913fece651b6309139080c95a23d1bdba6daa09432a13aeb35f9a0e8723a"
+    },
+    {
+      "path": "data/derived/katie-cohort-v1/subjects.tsv",
+      "sha256": "bd0fa87fdf4c40b2aff5b6a209965056db87dec3c56d1e246fe2fd5f95036895"
+    },
+    {
+      "path": "data/derived/model-review-v1/aligned_raw_terms.tsv",
+      "sha256": "cc975978ed099b7cb5acded868bc876a4081e7ca7b0d5767da96467c990e535b"
+    },
+    {
+      "path": "data/derived/model-review-v1/centered_candidate_terms.tsv",
+      "sha256": "23f04abc52183f42100166a0d809ea4fc80971980b11ef817241b98ec05dbc56"
+    },
+    {
+      "path": "data/derived/model-review-v1/provenance.json",
+      "sha256": "0a5b1397d3a1a026be490531038621fafc02060d04530b9d080e0f05514840b7"
+    },
+    {
+      "path": "code/review_financial_models.py",
+      "sha256": "632d3d1fb00970e2a65cc2d0457ea01a05173c35d5f58b5a137744d765d89587"
+    }
+  ]
+}

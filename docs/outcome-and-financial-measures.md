@@ -70,7 +70,7 @@ records actual onset/duration residuals. It checks all 194 runs and publishes
 all genuine mismatches rather than stopping at the first one. This does not
 alter the converter or any timing/model file. See [task-signal checks](task-signal-check.md).
 
-## FEVS and OAFEM: Available Historically, Current Join Still Needed
+## FEVS and OAFEM: Current Join Complete
 
 The current approved 97-person analysis workbook intentionally contains seven
 fields: RF1 ID, age, gender, Ecog, MSPSS, ADI and PM2.5. It does not contain FEVS
@@ -90,15 +90,25 @@ old exports, not current survey availability: absence from a 2024 snapshot must
 not become a new exclusion. The historical CSVs contain additional private
 fields; do not copy or republish them into this environment repository.
 
-Jacob's concrete next step is to join the **current** linked survey exports to
-`data/derived/katie-cohort-v1/subjects.tsv` and deliver a separate table with all
-97 RF1 IDs in that order, `fevs_sum` and `oafem_total`. Preserve missing values;
-do not replace them with zero, silently choose between conflicting records, or
-drop anyone. Supply counts available for each score and jointly, plus unresolved
-duplicates and the scoring/missing-item policy and chosen source wave/timepoint.
-Measurement dates/provenance can stay in the authorized private audit.
+Those historical gaps motivated the request for a separate **current** RF1-ID
+join to the frozen roster, not new imaging exclusions or reuse of an outdated
+export. Jacob has delivered that current join as described below. Measurement
+dates/provenance can remain in the authorized private audit.
 
-The original seven-column workbook and settled imaging cohort remain unchanged.
-Whether these scores enter as predictors or moderators, and whether a separate
-complete-case supplemental sample is needed, should be specified after current
-coverage and score definitions are confirmed. No FEVS/OAFEM models have launched.
+Jacob has now supplied `data/derived/FEVS_OAFEM_scores_katie-cohort-v1.csv`, with
+columns `sub-num`, `fevs`, and `OAFEM`. It contains exactly the 97 frozen RF1 IDs,
+unique and in the same order. Both scores are numeric and nonmissing for all 97;
+no complete-case subset or additional exclusion is needed. FEVS ranges 0-17
+(10 zeros); OAFEM ranges 0-78 (32 zeros). Zero scores are retained, not recoded.
+
+The user chose separate predictor models first, with FEVS leading the financial
+extension. The [four numerical previews](../data/derived/financial-model-review-v1/README.md)
+use the same outcomes, paired-QC conventions, age, gender and scanner indicators.
+Each has eight columns, full rank and residual df=89. There are no interactions,
+joint FEVS+OAFEM model, or additional adjustments for ADI/PM2.5/MSPSS/Ecog in
+these first score models. Original workbook, cohort and running jobs are unchanged.
+The score file does not include scoring/timepoint metadata; Jacob should document
+that separately, including legitimate zeros and missing-item handling. Numeric
+completeness has been verified, not the underlying scoring calculation.
+No financial-score inference has launched. Do not pull Linux2 while its current
+frozen analyses run; previews can be inspected on GitHub now.
