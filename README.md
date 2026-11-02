@@ -18,6 +18,14 @@ reprocessing were introduced.
 - [Provenance, verification and exact Linux2 input-assembly commands](docs/katie-cohort.md)
 - [Model-specification discussion](docs/model-specification.md)
 
+The model review now audits Jacob's six existing UG exposure/moderation models
+and adapts them to N=97 as **review-only numerical design tables**. It includes
+[predictor correlations](data/derived/model-review-v1/correlations.tsv), source
+hashes and rank checks for pair-mean versus signed-difference FD/tSNR adjustments.
+The social-minus-monetary win-loss effect is primary; their average win-loss
+effect is secondary. Paired QC strategy and exploratory inference-family handling
+remain to be agreed before executable FSL designs or randomise jobs are created.
+
 **Do not run the legacy `run_L3stats.sh` or `build_L3_inputs.sh` workflow below
 for this analysis.** It still defaults to the superseded coverage-only handoff,
 and its randomise template is intercept-only and does not consume the covariate

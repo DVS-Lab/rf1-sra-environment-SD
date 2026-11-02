@@ -1,0 +1,93 @@
+{
+  "outputs": {
+    "aligned_raw_terms.tsv": "cc975978ed099b7cb5acded868bc876a4081e7ca7b0d5767da96467c990e535b",
+    "centered_candidate_terms.tsv": "23f04abc52183f42100166a0d809ea4fc80971980b11ef817241b98ec05dbc56",
+    "correlations.tsv": "963df9126d71ea7cbdff2b8d8b80afa7200e23c7829638f3232278c5f00a9e8e",
+    "model_catalog.json": "a1ab984540df68f99a943d1990b7d3a3f7842763d7cc3fc1dec009be0bb98131",
+    "preview_diagnostics.json": "98441a41992745abaa39a125d96a9ce20a8881193bcbafe0383f328b3c344d44",
+    "previews/pair_means/adi/design.tsv": "236a18ee55fab4959eea7d104f05c1e46dcdaf7142393478d9742d7a323e77fc",
+    "previews/pair_means/adi/focal_contrasts.tsv": "14784245f300a5d950c07a66cd1b8199a81a992b5b1b463784ae2805da8896a4",
+    "previews/pair_means/adixecog/design.tsv": "48ed88fb3b7dab8fd24ba529ea98fe679a6ae0f3b311457c69d91dc2964e027f",
+    "previews/pair_means/adixecog/focal_contrasts.tsv": "70c99d73c0f7d0f43be77b68ceeef623e2f5cdd93af9f8bd6ddbd77c0a6d1f03",
+    "previews/pair_means/adixmspss/design.tsv": "c73bc5e90e12d7d8c4d2c7c7c2848dc82ec93c1984311db19245140cc2ba8c89",
+    "previews/pair_means/adixmspss/focal_contrasts.tsv": "63b551b63871652d5c897bdd22d2b2abb0e9f54382f57f47e92833ade321a59a",
+    "previews/pair_means/pm25/design.tsv": "050fa06a18ae92e4c875ceb01c2745bcb662d6edf401f457a0bd09eb6e81796e",
+    "previews/pair_means/pm25/focal_contrasts.tsv": "3df191515c8c9bae32f81341f0a914c93170676f1dc87c337d4f43f1098f06ed",
+    "previews/pair_means/pm25xecog/design.tsv": "5ec22b9a60c446f178ac6bed3b9e31f975fa44071a56ac045e28739e9b76838b",
+    "previews/pair_means/pm25xecog/focal_contrasts.tsv": "c2a68da0d2db4c22699fb703a8f78a60c63cf028e25fa842cf8da83fa4f5c021",
+    "previews/pair_means/pm25xmspss/design.tsv": "297ef472a05825a8ce04df5147dab8810d955f7ca9f180c3a1901730bd71e5ae",
+    "previews/pair_means/pm25xmspss/focal_contrasts.tsv": "6d636dc22dad4b190ce8d04ee8b3c9bec877122344b1f04cb35b6a6dd69635e6",
+    "previews/signed_differences/adi/design.tsv": "cec14bd1f07a4a07db48d3deab928df9b601c69cb228aee3e16ef3f184c5b463",
+    "previews/signed_differences/adi/focal_contrasts.tsv": "8c3b8eddae1c4ca59d9f2edfde9d74eb07a12d434e9579364be89f72f29dccfe",
+    "previews/signed_differences/adixecog/design.tsv": "e007c13385cb885f2fcaae459498b5c2f278741ac163fcdc5716f4267d062317",
+    "previews/signed_differences/adixecog/focal_contrasts.tsv": "3e06950ba49fc881b6bac625180864ed2675e3aacfc845144a2743dfa161ab6a",
+    "previews/signed_differences/adixmspss/design.tsv": "5522316e7932cb26ac15879af4f2f0cb406446ed8ac47fe88ab64dad94f6eb42",
+    "previews/signed_differences/adixmspss/focal_contrasts.tsv": "d1c563e849583953176388eb8dc7856f13e19a33e93375ed48767cb859a2d02a",
+    "previews/signed_differences/pm25/design.tsv": "ab5fded2cb47d0226c75e8d0d49b14b9d4d9fcd566a0ea07b666221ca20822f1",
+    "previews/signed_differences/pm25/focal_contrasts.tsv": "9a013be3c9c0109001d39de705ef7bd5f7b84fe7612fa72e754fee16483d5e02",
+    "previews/signed_differences/pm25xecog/design.tsv": "eabb233ce5e845cb01ebb26eadd9632bbe107858f0c5a8a899ae1c5c3e8de27d",
+    "previews/signed_differences/pm25xecog/focal_contrasts.tsv": "e0006b450696d6141552264e4b832b1238bd47d65c6b1fb63e7689b67e2f7501",
+    "previews/signed_differences/pm25xmspss/design.tsv": "704738e5120e26718894d00158bdc6b369c20ea26adaf711df635b33be61b015",
+    "previews/signed_differences/pm25xmspss/focal_contrasts.tsv": "2021d159f133320e4b133add7f433e684765f9dfc1d12379e2420bd868f56bf6",
+    "summary.json": "cbe1f3a638d04a529e4d04a1db750a63caba4d2d2fb79feb2f3a9ea8a3511548",
+    "ug_template_audit.json": "66a207f7773050024bb4584676c377b1b34cc757090c023358748e475aa22186"
+  },
+  "sources": [
+    {
+      "path": "data/derived/katie-cohort-v1/provenance.json",
+      "repository": "analysis",
+      "sha256": "86394bb4956ae19522eaa1b672fc94fbc544b54c7a8bb36fd74d0c5fcadb3e7e"
+    },
+    {
+      "path": "data/derived/katie-cohort-v1/analysis_variables.tsv",
+      "repository": "analysis",
+      "sha256": "ba52a03932f48ded6582b747009de1c23aaa0ff84a0e1dcb54254749d627b00f"
+    },
+    {
+      "path": "data/derived/katie-cohort-v1/selected_pairs.tsv",
+      "repository": "analysis",
+      "sha256": "15050112ddf7cfa36b3aa91fffd919f8af90bbc0c4ecce81ed94ca99568b20ed"
+    },
+    {
+      "path": "code/review_katie_models.py",
+      "repository": "analysis",
+      "sha256": "d2ce91a289531c610b3f0451bb14de3d01d0d704609eec9335bd5a2d33c2de06"
+    },
+    {
+      "path": "qc/scanner_era/run_metrics.tsv",
+      "repository": "preprocessing",
+      "sha256": "484461d94d900f822d50ceaab9523316fcc28ae1b6fe3de5b9cca85ac1676215",
+      "use": "cached_preview_metadata_live_BIDS_verification_needed_before_execution"
+    },
+    {
+      "path": "templates/L3_task-ugr_model-3_type-act_group-adi_n116_flame1.fsf",
+      "repository": "UG",
+      "sha256": "ba7368e610e12d5cccc33e126d4d594b5d0190a9e0d95765962cf85c1c7abecf"
+    },
+    {
+      "path": "templates/L3_task-ugr_model-3_type-act_group-pm25_n116_flame1.fsf",
+      "repository": "UG",
+      "sha256": "7b9653c8d3254825eb2db18497192f2d243c46faebc2d7984604238a68a6dcb1"
+    },
+    {
+      "path": "templates/L3_task-ugr_model-3_type-act_group-adixmspss_n116_flame1.fsf",
+      "repository": "UG",
+      "sha256": "29945e2f5b739911fa2fe53da50a37311391fb73561d984d719f46633d092af1"
+    },
+    {
+      "path": "templates/L3_task-ugr_model-3_type-act_group-pm25xmspss_n116_flame1.fsf",
+      "repository": "UG",
+      "sha256": "922754d9e6688369528f1393894ac249e2aa75f144c735cf68670579812f44ee"
+    },
+    {
+      "path": "templates/L3_task-ugr_model-3_type-act_group-adixecog_n116_flame1.fsf",
+      "repository": "UG",
+      "sha256": "26c3aa4763027dcd50a526f47bfde12ccebacf629e7ae9cab0beda5099b66801"
+    },
+    {
+      "path": "templates/L3_task-ugr_model-3_type-act_group-pm25xecog_n116_flame1.fsf",
+      "repository": "UG",
+      "sha256": "09882482e9890b1cee8ff19ca16a6437c9b7e87e8f6b0e43bf94c180a85c35f5"
+    }
+  ]
+}

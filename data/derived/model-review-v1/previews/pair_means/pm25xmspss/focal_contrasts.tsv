@@ -1,0 +1,3 @@
+name	ones	pair_mean_fd	pair_mean_tsnr	e11	xa30	gender_code1	age	pm25	mspss	pm25xmspss
+pm25xmspss_pos	0	0	0	0	0	0	0	0	0	1
+pm25xmspss_neg	0	0	0	0	0	0	0	0	0	-1

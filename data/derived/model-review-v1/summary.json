@@ -1,0 +1,24 @@
+{
+  "all_previews_full_rank": true,
+  "image_bundle_verified": false,
+  "models": 6,
+  "mspss_observed_max": 7.0,
+  "mspss_observed_min": 0.0,
+  "mspss_zero_count": 1,
+  "n": 97,
+  "new_exclusions": 0,
+  "previews": 12,
+  "qc_preview_options": 2,
+  "randomise_run": false,
+  "scanner_era_counts": {
+    "E11": 25,
+    "XA30": 5,
+    "XA60": 67
+  },
+  "scientific_predictor_only_vif": {
+    "adi": 1.094478260147131,
+    "ecog": 1.0944069051980063,
+    "mspss": 1.0698248373477899,
+    "pm25": 1.0129837779258153
+  }
+}

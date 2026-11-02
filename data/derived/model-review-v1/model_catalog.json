@@ -1,0 +1,89 @@
+{
+  "gender": "one_centered_source_code1_indicator_not_both_dummies",
+  "models": {
+    "adi": {
+      "exposure": "adi",
+      "inherited_from": "Jacob_UG",
+      "moderator": null,
+      "product": "mean_centered_main_terms_no_orthogonalization",
+      "scientific_terms": [
+        "adi"
+      ]
+    },
+    "adixecog": {
+      "exposure": "adi",
+      "inherited_from": "Jacob_UG",
+      "moderator": "ecog",
+      "product": "mean_centered_main_terms_no_orthogonalization",
+      "scientific_terms": [
+        "adi",
+        "ecog",
+        "adixecog"
+      ]
+    },
+    "adixmspss": {
+      "exposure": "adi",
+      "inherited_from": "Jacob_UG",
+      "moderator": "mspss",
+      "product": "mean_centered_main_terms_no_orthogonalization",
+      "scientific_terms": [
+        "adi",
+        "mspss",
+        "adixmspss"
+      ]
+    },
+    "pm25": {
+      "exposure": "pm25",
+      "inherited_from": "Jacob_UG",
+      "moderator": null,
+      "product": "mean_centered_main_terms_no_orthogonalization",
+      "scientific_terms": [
+        "pm25"
+      ]
+    },
+    "pm25xecog": {
+      "exposure": "pm25",
+      "inherited_from": "Jacob_UG",
+      "moderator": "ecog",
+      "product": "mean_centered_main_terms_no_orthogonalization",
+      "scientific_terms": [
+        "pm25",
+        "ecog",
+        "pm25xecog"
+      ]
+    },
+    "pm25xmspss": {
+      "exposure": "pm25",
+      "inherited_from": "Jacob_UG",
+      "moderator": "mspss",
+      "product": "mean_centered_main_terms_no_orthogonalization",
+      "scientific_terms": [
+        "pm25",
+        "mspss",
+        "pm25xmspss"
+      ]
+    }
+  },
+  "multiplicity_family": "pending_user_agreement",
+  "n": 97,
+  "outcomes": {
+    "primary": "(Social_win-loss)-(Doors_win-loss)",
+    "secondary": "((Social_win-loss)+(Doors_win-loss))/2"
+  },
+  "ppi": "not_in_this_activation_bundle",
+  "qc_option_approved": false,
+  "qc_options_for_review": {
+    "pair_means": [
+      "pair_mean_fd",
+      "pair_mean_tsnr"
+    ],
+    "signed_differences": [
+      "delta_fd",
+      "delta_tsnr"
+    ]
+  },
+  "randomise_run": false,
+  "scanner_reference": "XA60",
+  "secondary_selection": "run_and_report_as_secondary_not_only_when_primary_is_null",
+  "status": "review_only_no_randomise_or_FSL_design_files"
+}
