@@ -16,7 +16,10 @@ Any needed PPI rebuilds are isolated, with no new exclusions or production rerun
 has complete numeric data for all 97 frozen participants. Separate predictor
 [model previews](data/derived/financial-model-review-v1/README.md) are prepared,
 with FEVS leading this supplemental analysis and OAFEM secondary. No new jobs
-were launched and no running source code or original analysis configuration changed.
+were launched during preview generation. The [isolated financial-model launcher](docs/run-financial-models.md)
+now supports the user-requested separate-score activation and VS-PPI analyses,
+without pulling over active code or interrupting the existing jobs. No
+interactions or new exclusions are introduced.
 
 The published [Linux2 completion record](https://github.com/DVS-Lab/rf1-sra-linux2/blob/main/logs/records/20261101-232106_katie-overnight-20261101-231810-randomise.md)
 confirms all **24 jobs / 48 directional corrected maps** passed with command and
