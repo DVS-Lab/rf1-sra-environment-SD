@@ -4,7 +4,7 @@ This repository contains the reproducible participant-generation, environmental
 linkage, Level 3 input-building, and group-analysis code for the Social Doors
 component of the RF1 brain-health/environment project.
 
-## Current Analysis Status: Cohort Frozen, Models Pending
+## Current Analysis Status: Plan Specified, Linux2 Verification Pending
 
 The canonical paired analysis roster is now **97 participants**, frozen from the
 unchanged 110-person linked workbook intersected with the settled 121-person
@@ -23,14 +23,20 @@ and adapts them to N=97 as **review-only numerical design tables**. It includes
 [predictor correlations](data/derived/model-review-v1/correlations.tsv), source
 hashes and rank checks for pair-mean versus signed-difference FD/tSNR adjustments.
 The social-minus-monetary win-loss effect is primary; their average win-loss
-effect is secondary. Paired QC strategy and exploratory inference-family handling
-remain to be agreed before executable FSL designs or randomise jobs are created.
+effect is secondary. The user has approved signed FD/tSNR differences for the
+social-specific outcome and pair means for the average. These choices are in
+[analysis_decisions.json](config/analysis_decisions.json). The older numerical
+previews remain an unchanged pre-approval audit snapshot. The user has now chosen
+**randomise cluster-extent inference at Z-equivalent CDTs 2.6 and 3.1**, with
+per-map cluster-FWE p<0.05 and no extra cross-model/outcome correction. No PALM
+or TFCE. See the [approved exploratory inference plan](docs/inference-plan.md),
+including model-specific Z-to-t conversion. Group execution has not started.
 
 **Do not run the legacy `run_L3stats.sh` or `build_L3_inputs.sh` workflow below
 for this analysis.** It still defaults to the superseded coverage-only handoff,
 and its randomise template is intercept-only and does not consume the covariate
-workbook. It is retained as historical code while the scientific models are
-specified. No randomise model has been approved or launched in this update.
+workbook. It is retained as historical code; the currently selected model and
+inference settings are in the decision file above. No group jobs have been launched.
 The 97-person table freeze is verified locally; image subset/mask/QC-covariate
 validation still requires the documented Linux2 build/check. UGR is unchanged.
 

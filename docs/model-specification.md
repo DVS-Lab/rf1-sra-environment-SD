@@ -2,8 +2,14 @@
 
 **Status: six inherited model structures adapted to N=97 as numerical previews.
 No FSL design files or randomise jobs have been created.** The settled cohort
-and exclusion decisions are unchanged. The remaining choices concern paired QC
-adjustment and inference, not whether ADI/MSPSS/ECog moderation was ever intended.
+and exclusion decisions are unchanged. The user has now approved signed FD/tSNR
+differences for the social-specific outcome and pair means for the average.
+[Recorded decisions](../config/analysis_decisions.json) supersede the earlier
+review catalog's pending-QC status without changing that audit snapshot.
+The user has also selected randomise cluster-extent inference at Z-equivalent
+CDTs 2.6 and 3.1, without PALM or TFCE. The approved plan is in
+[inference-plan.md](inference-plan.md). Linux2 input/design verification remains
+pending; the cohort and model structures are not reopened.
 
 ## What Jacob Already Specified
 
@@ -42,7 +48,7 @@ decline. Its neuroimaging analyses section defines the social-minus-monetary
 feedback-valence outcome. It also discusses PPI/connectivity, which is a separate
 analysis not added to this activation batch.
 The draft describes FLAME1/cluster inference; the current requested implementation
-is randomise/TFCE, so the methods will need that implementation update rather
+is randomise permutation-based cluster extent, so the methods need that update rather
 than wholesale invention of new hypotheses. `FINAL_PIPELINE_METHODS.docx`
 describes centered covariates and K-1 software indicators but has older cohort
 counts and cannot override the frozen imaging handoff.
@@ -125,21 +131,21 @@ not have mean zero. The gender term is one centered source-code indicator, not
 both male/female dummies. Changing which binary category is the reference does
 not change the other coefficients' fits or tests.
 
-## What Genuinely Still Needs Agreement
+## Approved Choices and Remaining Verification
 
-1. **Paired QC mapping.** Jacob used FD/tSNR from the selected UGR input. We have
-   two runs here, so copying only Social Doors' QC is not an equivalent adjustment.
-   The previews compare pair-mean FD/tSNR (overall pair quality) with signed
-   Social-minus-Doors FD/tSNR (task imbalance). A reasonable proposal is signed
-   differences for S-D and pair means for the average, with an explicitly labeled
-   sensitivity check for overall quality in S-D. This is a proposal, not a choice
-   made by the code. Do not choose based on which version produces significance.
-2. **Inference family and reporting.** The requested six models across two
+1. **Paired QC mapping is now approved.** Use signed Social-minus-Doors FD/tSNR
+   differences for S-D and pair-mean FD/tSNR for (S+D)/2. The older previews show
+   both options for audit; only the user-selected specification applies to each
+   outcome. Do not choose a different version based on significance.
+2. **Inference scope is now specified.** The requested six models across two
    outcomes give 12 focal coefficient/outcome questions, each with positive and
-   negative directions. Agree how the exploratory family and directions will be
-   handled. Per-map TFCE/FWE does not by itself correct across separate models,
+   negative directions. Report the exploratory scope and directions transparently.
+   Per-map cluster FWE does not by itself correct across separate models,
    outcomes or tail-specific maps. The legacy group-mean/age contrasts need not
    silently become additional primary environmental hypotheses.
+   The user selected cluster-extent randomise at Z-equivalent CDTs 2.6 and 3.1,
+   per-map cluster-FWE p<0.05, and no extra cross-model/outcome correction. No PALM
+   or TFCE. See the [approved plan and reporting limits](inference-plan.md).
 3. **Scope beyond this inherited family.** A joint ADI+PM2.5 model could be a
    labeled sensitivity analysis given the modest correlation, but is not required
    to reproduce Jacob's model family. Do not add three-way interactions, split
@@ -165,4 +171,5 @@ location, pass its actual root; missing source inputs fail rather than changing 
 FSL's [randomise documentation](https://fsl.fmrib.ox.ac.uk/fsl/docs/statistics/randomise.html)
 describes testing contrasts against the full design including nuisance terms,
 and exchangeability restrictions for dependent observations. Scientific model
-and family agreement precede executable designs and randomise.
+choices above precede executable designs and randomise. The next step is Linux2
+input/design verification under the selected settings, not a new correction debate.
