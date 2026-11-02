@@ -44,9 +44,8 @@ class ApprovedChoices(unittest.TestCase):
         self.assertEqual(self.plan["inference"]["method"], "cluster_extent_permutation_FWE")
         self.assertFalse(self.plan["inference"]["palm_allowed"])
         self.assertFalse(self.plan["inference"]["tfce"])
-        self.assertFalse(self.plan["execution_authorized"])
-        self.assertFalse(self.plan["randomise_launched"])
-        self.assertFalse(self.plan["palm_launched"])
+        self.assertTrue(self.plan["execution_authorized"])
+        self.assertEqual(self.plan["runtime_status"], "derivatives/fsl/randomise/katie-v1/status.json")
 
     def test_cluster_thresholds_match_current_design_dof_not_raw_Z(self):
         info = json.loads((ROOT / "data/derived/model-review-v1/preview_diagnostics.json").read_text())

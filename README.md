@@ -6,6 +6,13 @@ component of the RF1 brain-health/environment project.
 
 ## Current Analysis Status: Plan Specified, Linux2 Verification Pending
 
+**Ready to launch on Linux2:** use the [exact overnight build/check/smoke/run
+commands](docs/overnight-run.md). The new resumable runner validates N=97 inputs,
+assembles the difference/average outcomes and approved designs, requires an actual
+FSL smoke test, then starts 24 isolated cluster-extent randomise jobs. Existing
+processed data and completed analyses remain untouched. Code/tests passing on the
+Mac are not a claim that the Linux2 image checks or inference have finished.
+
 The canonical paired analysis roster is now **97 participants**, frozen from the
 unchanged 110-person linked workbook intersected with the settled 121-person
 Social Doors/Doors imaging pool. The 13 not retained preserve existing decisions:

@@ -47,7 +47,6 @@
     "permutation_count_source": "existing_SD_runner",
     "paper_wide_or_joint_two_sided_FWER_claim": false
   },
-  "execution_authorized": false,
-  "randomise_launched": false,
-  "palm_launched": false
+  "execution_authorized": true,
+  "runtime_status": "derivatives/fsl/randomise/katie-v1/status.json"
 }

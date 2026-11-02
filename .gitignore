@@ -257,3 +257,5 @@ sub-*.html
 
 # Cohort coordination lock; preserve the lock file locally, never publish it.
 /data/derived/.*.lock
+/work/
+/logs/runs/
