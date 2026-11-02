@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import errno
 import os
 from pathlib import Path
 import signal
@@ -34,22 +35,66 @@ def processes(project, proc=Path("/proc")):
     return coordinators, wrappers
 
 
+def process_identity(pid, proc=Path("/proc")):
+    path = proc / str(pid)
+    uid = path.stat().st_uid
+    first = (path / "stat").read_bytes()
+    argv = tuple(os.fsdecode(v) for v in (path / "cmdline").read_bytes().split(b"\0") if v)
+    last = (path / "stat").read_bytes()
+    # Linux stat field 22 is starttime. comm may contain spaces and ')'.
+    def started(data):
+        prefix, separator, rest = data.rpartition(b")")
+        fields = rest.split()
+        if not separator or int(prefix.split(b" ", 1)[0]) != pid or len(fields) < 20:
+            raise RuntimeError("Cannot establish preflight process identity; no process signalled")
+        return int(fields[19])
+    start = started(first)
+    if uid != os.getuid() or started(last) != start:
+        raise RuntimeError("Preflight owner/start time changed; no process signalled")
+    return uid, start, argv
+
+
 def stop_preflight(pid, expected, project):
-    if not hasattr(os, "pidfd_open") or not hasattr(signal, "pidfd_send_signal"):
-        raise RuntimeError("Linux pidfd support required for a race-safe stop; no process signalled")
+    if "--prepare-only" not in expected:
+        raise RuntimeError("Refusing to signal a full moderation runner")
+    current, _ = processes(project)
+    if (pid, expected) not in current:
+        raise RuntimeError("Preflight changed during inspection; no process signalled")
     try:
-        descriptor = os.pidfd_open(pid)
-    except ProcessLookupError:
+        identity = process_identity(pid)
+    except (FileNotFoundError, ProcessLookupError):
         return
+    if identity[2] != tuple(expected):
+        raise RuntimeError("Preflight command changed; no process signalled")
+    unsupported = {errno.ENOSYS, errno.EINVAL, errno.EOPNOTSUPP}
+    opener = getattr(os, "pidfd_open", None)
+    sender = getattr(signal, "pidfd_send_signal", None)
+    if callable(opener) and callable(sender):
+        descriptor = None
+        try:
+            descriptor = opener(pid)
+            if process_identity(pid) != identity:
+                raise RuntimeError("Preflight identity changed; no process signalled")
+            sender(descriptor, signal.SIGTERM)
+            print(f"TERM sent only to queued moderation preflight PID {pid} via pidfd; predictors untouched.", flush=True)
+            return
+        except (FileNotFoundError, ProcessLookupError):
+            return
+        except OSError as exc:
+            if exc.errno not in unsupported:
+                raise
+        finally:
+            if descriptor is not None:
+                os.close(descriptor)
+    # Compatibility path: tightly recheck UID, starttime and the entire argv.
+    # Unlike pidfd this is not atomic with kill, so never use broad PID matches.
     try:
-        current, _ = processes(project)
-        if (pid, expected) not in current:
-            raise RuntimeError("Preflight changed during inspection; no process signalled")
-        # The pidfd pins the inspected process, avoiding PID-reuse signalling.
-        signal.pidfd_send_signal(descriptor, signal.SIGTERM)
-        print(f"TERM sent only to queued moderation preflight PID {pid}; predictors untouched.", flush=True)
-    finally:
-        os.close(descriptor)
+        if process_identity(pid) != identity:
+            raise RuntimeError("Preflight identity changed; no process signalled")
+        os.kill(pid, signal.SIGTERM)
+    except (FileNotFoundError, ProcessLookupError):
+        return
+    print(f"TERM sent only to queued moderation preflight PID {pid} via UID/starttime/argv-checked compatibility path; predictors untouched.", flush=True)
 
 
 def memory_available_kib():

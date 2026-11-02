@@ -59,8 +59,12 @@ does not pull, switch, reset or edit the running checkout, and starts a detached
 job with umask 0000. Concurrent mode permits **16 moderation workers alongside
 the separate predictor batch**, which remains untouched. It first checks for
 at least 16 GiB available memory (a guard, not a peak-memory guarantee) and
-gracefully stops only an unbuilt moderation `--prepare-only` coordinator using
-a Linux pidfd. Its old log-publishing wrapper must exit before replacement.
+gracefully stops only an unbuilt moderation `--prepare-only` coordinator.
+It prefers a Linux pidfd. When the Python build or kernel lacks pidfd support,
+the compatibility path rechecks the UID, kernel process start time and full
+command immediately before sending TERM to that one PID. That fallback is
+not atomic like pidfd, but rejects observed PID reuse/command changes, and never
+uses a broad process-name kill. Its old log-publishing wrapper must exit before replacement.
 No lock files are removed. No full inference coordinator is stopped. If the
 old preflight has already produced outputs, this switch refuses to replace
 their frozen code: preserve them and resume their recorded release instead.
@@ -74,6 +78,13 @@ queuing behind the predictor batch. Default: 16 workers in either mode.
 It uses the existing `work/venv-katie` environment and native FSL smoke tests.
 Inputs, roster order, source hashes, image grids and all designs are checked.
 Run records are automatically published after preflight and again on exit.
+Launcher failures during the unqueue step now publish their run records too.
+
+The previously reported `Linux pidfd support required` error was a portability
+bug in the stop helper, not a data/model failure; that version sent no signal.
+No environment reinstall or elevated privileges are required. API availability
+depends on the Python build and OS; see the [Python documentation](https://docs.python.org/3.12/library/signal.html#signal.pidfd_send_signal).
+The compatibility identity uses Linux [stat field 22, starttime](https://man7.org/linux/man-pages/man5/proc_pid_stat.5.html).
 
 The prior pasted-shell syntax errors do not prove the detached predictor job
 failed: its printed input-stage record proves it launched, but not that it passed.

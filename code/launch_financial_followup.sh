@@ -49,9 +49,11 @@ LOG="$PROJECT/logs/runs/$STAMP.nohup.out"
 EXTRA=()
 if [[ "$MODE" == moderation-concurrent ]]; then
   UPSTREAM=/ZPOOL/data/projects/rf1-sra-linux2
+  trap 'python3 "$UPSTREAM/code/publish_run_logs.py" --project "$UPSTREAM" || true' EXIT
   bash "$UPSTREAM/code/run_logged.sh" --label "$STAMP-unqueue" --include-full-log -- \
     "$PROJECT/work/venv-katie/bin/python" "$RELEASE/code/unqueue_financial_moderation.py" --project "$PROJECT"
   python3 "$UPSTREAM/code/publish_run_logs.py" --project "$UPSTREAM"
+  trap - EXIT
   EXTRA+=(concurrent)
 fi
 nohup setsid -f -w bash "$RELEASE/code/$SCRIPT.sh" "$PROJECT" "$STAMP" "${EXTRA[@]}" > "$LOG" 2>&1 &

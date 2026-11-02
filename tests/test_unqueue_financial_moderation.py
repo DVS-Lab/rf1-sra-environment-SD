@@ -1,4 +1,6 @@
 from pathlib import Path
+import errno
+import os
 import signal
 import sys
 import tempfile
@@ -56,7 +58,8 @@ class UnqueueSafety(unittest.TestCase):
         with patch.object(unqueue.os, "pidfd_open", return_value=900, create=True), \
                 patch.object(unqueue.signal, "pidfd_send_signal", create=True) as send, \
                 patch.object(unqueue.os, "close") as close, \
-                patch.object(unqueue, "processes", return_value=([(100, self.argv)], [])):
+                patch.object(unqueue, "processes", return_value=([(100, self.argv)], [])), \
+                patch.object(unqueue, "process_identity", return_value=(os.getuid(), 1234, tuple(self.argv))):
             unqueue.stop_preflight(100, self.argv, self.project)
         send.assert_called_once_with(900, signal.SIGTERM)
         close.assert_called_once_with(900)
@@ -66,6 +69,47 @@ class UnqueueSafety(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, "changed"):
                 unqueue.stop_preflight(100, self.argv, self.project)
             send.assert_not_called()
+
+    def test_missing_pidfd_and_unsupported_kernel_use_identity_checked_term(self):
+        identity = (os.getuid(), 1234, tuple(self.argv))
+        for opener in (None, unittest.mock.Mock(side_effect=OSError(errno.ENOSYS, "not supported"))):
+            with patch.object(unqueue.os, "pidfd_open", opener, create=True), \
+                    patch.object(unqueue.signal, "pidfd_send_signal", create=True), \
+                    patch.object(unqueue, "processes", return_value=([(100, self.argv)], [])), \
+                    patch.object(unqueue, "process_identity", return_value=identity) as inspected, \
+                    patch.object(unqueue.os, "kill") as kill:
+                unqueue.stop_preflight(100, self.argv, self.project)
+            kill.assert_called_once_with(100, signal.SIGTERM)
+            self.assertEqual(inspected.call_count, 2)
+
+    def test_fallback_refuses_reused_pid_changed_command_and_full_runner(self):
+        identity = (os.getuid(), 1234, tuple(self.argv))
+        for changed in ((os.getuid(), 9999, tuple(self.argv)), (os.getuid(), 1234, ("python", "another-job"))):
+            with patch.object(unqueue.os, "pidfd_open", None, create=True), \
+                    patch.object(unqueue, "processes", return_value=([(100, self.argv)], [])), \
+                    patch.object(unqueue, "process_identity", side_effect=[identity, changed]), \
+                    patch.object(unqueue.os, "kill") as kill, self.assertRaisesRegex(RuntimeError, "identity changed"):
+                unqueue.stop_preflight(100, self.argv, self.project)
+            kill.assert_not_called()
+        with patch.object(unqueue.os, "kill") as kill, self.assertRaisesRegex(RuntimeError, "full moderation"):
+            unqueue.stop_preflight(100, self.argv[:-1], self.project)
+        kill.assert_not_called()
+
+    def test_permission_error_is_not_treated_as_missing_pidfd_support(self):
+        with patch.object(unqueue.os, "pidfd_open", side_effect=PermissionError(errno.EPERM, "denied"), create=True), \
+                patch.object(unqueue.signal, "pidfd_send_signal", create=True), \
+                patch.object(unqueue, "processes", return_value=([(100, self.argv)], [])), \
+                patch.object(unqueue, "process_identity", return_value=(os.getuid(), 1234, tuple(self.argv))), \
+                patch.object(unqueue.os, "kill") as kill, self.assertRaises(PermissionError):
+            unqueue.stop_preflight(100, self.argv, self.project)
+        kill.assert_not_called()
+
+    def test_proc_starttime_parser_handles_parentheses_in_comm(self):
+        directory = self.project / "100"; directory.mkdir()
+        fields = ["S"] + ["0"] * 18 + ["1234"] + ["0"] * 5
+        (directory / "stat").write_text("100 (python ) worker) " + " ".join(fields))
+        (directory / "cmdline").write_bytes(b"\0".join(a.encode() for a in self.argv))
+        self.assertEqual(unqueue.process_identity(100, self.project), (os.getuid(), 1234, tuple(self.argv)))
 
     def test_wrapper_timeout_never_forces_exit_or_starts_replacement(self):
         with patch.object(unqueue, "processes", return_value=([], [101])), \
