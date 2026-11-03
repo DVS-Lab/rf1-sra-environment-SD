@@ -25,12 +25,10 @@ if [[ ! -f "$ENVIRONMENT/.requirements-complete" ]]; then
   "$PYTHON" -m pip check
   touch "$ENVIRONMENT/.requirements-complete"
 fi
-BACKGROUND="${TEMPLATEFLOW_HOME:-$HOME/.cache/templateflow}/tpl-MNI152NLin6Asym/tpl-MNI152NLin6Asym_res-02_T1w.nii.gz"
-if [[ ! -f "$BACKGROUND" ]]; then
-  BACKGROUND="${FSLDIR:-/usr/local/fsl}/data/standard/MNI152_T1_2mm.nii.gz"
-fi
-[[ -f "$BACKGROUND" ]] || { echo "STOP: no local MNI anatomical background; no template downloaded or guessed."; exit 1; }
 cd "$RELEASE"
+bash "$UPSTREAM/code/run_logged.sh" --label "$STAMP-background" --include-full-log -- \
+  "$PYTHON" code/select_katie_background.py --output "$ROOT/background-selection.json"
+BACKGROUND=$("$PYTHON" -c 'import json,sys; print(json.load(open(sys.argv[1]))["path"])' "$ROOT/background-selection.json")
 if [[ ! -f "$REPORT/review_manifest.json" ]]; then
   bash "$UPSTREAM/code/run_logged.sh" --label "$STAMP-audit" --include-full-log -- \
     "$PYTHON" code/audit_katie_results.py --project "$PROJECT" --report "$REPORT" --jobs "$JOBS"

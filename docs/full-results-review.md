@@ -22,6 +22,17 @@ with the chosen filename/hash recorded. There is no template download or data
 resampling saved back into the analysis tree. Network is needed for first-time
 Python installation and HTTPS Git publication, not for rerunning MRI tools.
 
+Background selection checks the file contents, not just existence. TemplateFlow
+can contain zero-byte cache placeholders. Empty, corrupt, nonfinite or constant
+anatomical candidates are rejected before launching rendering workers, and the
+installed FSL background is tried next. The rejected candidates and selected
+background are logged. Nothing is downloaded, deleted or repaired in the cache.
+This fixes the 2026-11-02 review failure: the data audit passed, 64 association
+plots completed, but all 84 brain panels hit an empty TemplateFlow placeholder.
+The retry leaves the renderer unchanged, so those completed PNG receipts are
+reused; only previously failed brain panels are newly rendered. No inference
+or preprocessing is repeated.
+
 Progress:
 
 ```bash
