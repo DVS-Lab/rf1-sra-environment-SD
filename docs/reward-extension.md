@@ -89,6 +89,12 @@ This does not start or stop analyses. It records live matching processes, state,
 receipt metadata, product presence, the latest log ending and any complete
 1,328-row results table. It does not substitute for full image/source hash checks.
 
+To also summarize already-completed extension maps before the batch finishes,
+use `--partial-results` instead of `--status`. This adds a read-only source/input
+and completed-result hash check, then records every corrected finding from those
+completed maps. Pending jobs are not summarized or treated as nulls. No bulk
+figures/tables are published and no analysis is restarted.
+
 Retry log publication with:
 
 ```bash

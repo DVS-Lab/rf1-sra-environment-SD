@@ -20,10 +20,12 @@ fi
 
 JOBS=60
 MODE=run
+PARTIAL=0
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --jobs) JOBS=${2:?Missing worker count}; shift 2;;
     --status) MODE=status; shift;;
+    --partial-results) MODE=status; PARTIAL=1; shift;;
     *) echo "Unknown argument: $1"; exit 1;;
   esac
 done
@@ -44,6 +46,10 @@ if [[ "$MODE" == status ]]; then
   trap 'python3 "$UPSTREAM/code/publish_run_logs.py" --project "$UPSTREAM" || echo "Log publication failed; retry publish_run_logs.py."' EXIT
   bash "$UPSTREAM/code/run_logged.sh" --label "$STAMP" --include-full-log -- \
     python3 "$RELEASE/code/snapshot_reward_extension.py" --project "$PROJECT"
+  if [[ "$PARTIAL" == 1 ]]; then
+    bash "$UPSTREAM/code/run_logged.sh" --label "$STAMP-results" --include-full-log -- \
+      "$PROJECT/work/venv-katie/bin/python" "$RELEASE/code/preview_reward_extension.py" --project "$PROJECT"
+  fi
   exit 0
 fi
 STAMP=reward-extension-$(date +%Y%m%d-%H%M%S)

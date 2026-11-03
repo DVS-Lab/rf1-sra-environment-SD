@@ -8,6 +8,7 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import shlex
 import socket
 import subprocess
 
@@ -95,6 +96,16 @@ def processes(pattern):
         return [f"Process query unavailable: {exc}"]
 
 
+def output_prefixes(lines):
+    prefixes=set()
+    for line in lines:
+        try:
+            fields=shlex.split(line)
+            if "-o" in fields:prefixes.add(fields[fields.index("-o")+1])
+        except (ValueError,IndexError):continue
+    return prefixes
+
+
 def snapshot(project):
     print("READ-ONLY SNAPSHOT:",datetime.now(timezone.utc).isoformat(),socket.gethostname(),flush=True)
     print("No jobs started/stopped, no inputs changed, no exclusions changed.",flush=True)
@@ -103,6 +114,7 @@ def snapshot(project):
     print("=== Matching extension randomise processes ===",flush=True)
     native=processes(r"[r]andomise .*katie-reward-extension-v1")
     print("Matching process count:",len(native),flush=True)
+    print("Distinct active output prefixes (wrappers/executables deduplicated):",len(output_prefixes(native)),flush=True)
     for line in native[:5]:print(line,flush=True)
     parent=project/"derivatives/fsl/randomise"
     for name,total in (("katie-pm25-components-v1",6),("katie-reward-extension-v1",220)):
