@@ -76,6 +76,19 @@ passing clusters; `validation.json` records the final checks and receipts;
 The existing six-job additive folder remains separate and untouched.
 
 Only compact run logs are published automatically, not bulk figures or tables.
+To capture and publish a read-only progress/result snapshot (including failures
+and any final result-table findings), run:
+
+```bash
+cd /ZPOOL/data/projects/rf1-sra-environment-SD
+git -c remote.origin.url=https://github.com/DVS-Lab/rf1-sra-environment-SD.git fetch origin main
+bash <(git show FETCH_HEAD:code/launch_reward_extension.sh) --status
+```
+
+This does not start or stop analyses. It records live matching processes, state,
+receipt metadata, product presence, the latest log ending and any complete
+1,328-row results table. It does not substitute for full image/source hash checks.
+
 Retry log publication with:
 
 ```bash

@@ -19,9 +19,11 @@ if [[ ${1:-} == --worker ]]; then
 fi
 
 JOBS=60
+MODE=run
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --jobs) JOBS=${2:?Missing worker count}; shift 2;;
+    --status) MODE=status; shift;;
     *) echo "Unknown argument: $1"; exit 1;;
   esac
 done
@@ -35,6 +37,14 @@ if [[ ! -d "$RELEASE" ]]; then
   STAGE=$(mktemp -d "$PROJECT/work/.reward-extension-release.XXXXXX"); chmod 0777 "$STAGE"
   git archive "$REV" code data config | tar -x -C "$STAGE"
   mv "$STAGE" "$RELEASE"
+fi
+if [[ "$MODE" == status ]]; then
+  UPSTREAM=/ZPOOL/data/projects/rf1-sra-linux2
+  STAMP=reward-extension-status-$(date +%Y%m%d-%H%M%S)
+  trap 'python3 "$UPSTREAM/code/publish_run_logs.py" --project "$UPSTREAM" || echo "Log publication failed; retry publish_run_logs.py."' EXIT
+  bash "$UPSTREAM/code/run_logged.sh" --label "$STAMP" --include-full-log -- \
+    python3 "$RELEASE/code/snapshot_reward_extension.py" --project "$PROJECT"
+  exit 0
 fi
 STAMP=reward-extension-$(date +%Y%m%d-%H%M%S)
 LOG="$PROJECT/logs/runs/$STAMP.nohup.out"
