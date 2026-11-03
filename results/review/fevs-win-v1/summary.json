@@ -1,0 +1,215 @@
+{
+  "atlas_available": true,
+  "clusters": [
+    {
+      "atlas_annotations": [
+        {
+          "atlas": "HarvardOxford-cort",
+          "cluster_overlap": [
+            {
+              "fraction": 0.5535714285714286,
+              "label": "Unlabeled",
+              "voxels": 31
+            },
+            {
+              "fraction": 0.44642857142857145,
+              "label": "Frontal Pole",
+              "voxels": 25
+            }
+          ],
+          "peak_label": "Frontal Pole"
+        },
+        {
+          "atlas": "HarvardOxford-sub",
+          "cluster_overlap": [
+            {
+              "fraction": 0.7857142857142857,
+              "label": "Left Cerebral White Matter",
+              "voxels": 44
+            },
+            {
+              "fraction": 0.21428571428571427,
+              "label": "Left Cerebral Cortex",
+              "voxels": 12
+            }
+          ],
+          "peak_label": "Left Cerebral White Matter"
+        }
+      ],
+      "cluster_fwe_p": 0.04110002517700195,
+      "component": 1,
+      "context": "FEVS main effect, standalone",
+      "model": "fevs",
+      "peak_atlas_labels": "HarvardOxford-cort: Frontal Pole; HarvardOxford-sub: Left Cerebral White Matter",
+      "peak_mni_x": -31.60000228881836,
+      "peak_mni_y": 49.49999976158142,
+      "peak_mni_z": -6.659999370574951,
+      "peak_t": 4.067407131195068,
+      "term": "fevs",
+      "volume_mm3": 1212.4728545059213,
+      "voxels": 56
+    },
+    {
+      "atlas_annotations": [
+        {
+          "atlas": "HarvardOxford-cort",
+          "cluster_overlap": [
+            {
+              "fraction": 0.5970149253731343,
+              "label": "Frontal Pole",
+              "voxels": 40
+            },
+            {
+              "fraction": 0.40298507462686567,
+              "label": "Unlabeled",
+              "voxels": 27
+            }
+          ],
+          "peak_label": "Unlabeled"
+        },
+        {
+          "atlas": "HarvardOxford-sub",
+          "cluster_overlap": [
+            {
+              "fraction": 0.6567164179104478,
+              "label": "Left Cerebral White Matter",
+              "voxels": 44
+            },
+            {
+              "fraction": 0.34328358208955223,
+              "label": "Left Cerebral Cortex",
+              "voxels": 23
+            }
+          ],
+          "peak_label": "Left Cerebral White Matter"
+        }
+      ],
+      "cluster_fwe_p": 0.03149998188018799,
+      "component": 1,
+      "context": "FEVS main effect at mean PM2.5; NOT the interaction",
+      "model": "fevsxpm25",
+      "peak_atlas_labels": "HarvardOxford-cort: Unlabeled; HarvardOxford-sub: Left Cerebral White Matter",
+      "peak_mni_x": -31.60000228881836,
+      "peak_mni_y": 49.49999976158142,
+      "peak_mni_z": -3.6899993419647217,
+      "peak_t": 4.409648418426514,
+      "term": "fevs",
+      "volume_mm3": 1450.6371652124415,
+      "voxels": 67
+    }
+  ],
+  "exclusions_changed": false,
+  "model_columns": {
+    "fevs": [
+      "ones",
+      "delta_fd",
+      "delta_tsnr",
+      "e11",
+      "xa30",
+      "gender_code1",
+      "age",
+      "fevs"
+    ],
+    "fevsxpm25": [
+      "ones",
+      "delta_fd",
+      "delta_tsnr",
+      "e11",
+      "xa30",
+      "gender_code1",
+      "age",
+      "fevs",
+      "pm25",
+      "fevsxpm25"
+    ]
+  },
+  "n": 97,
+  "new_inference": false,
+  "original_results_changed": false,
+  "outcome": "Social Doors win minus Doors win",
+  "overlap": {
+    "dice": 0.7804878048780488,
+    "intersection_voxels": 48,
+    "peak_distance_mm": 2.9700000286102295,
+    "union_voxels": 75
+  },
+  "region_fits": [
+    {
+      "estimate": 9.789723083444057,
+      "exclusions_made": false,
+      "hc3_ci": [
+        4.035771293969448,
+        15.543674872918666
+      ],
+      "id": "fevs-cluster-1",
+      "leave_one_out_estimate_max": 10.439822115917956,
+      "leave_one_out_estimate_min": 7.864436450898169,
+      "max_cooks_d": 0.2061583721664219,
+      "max_leverage": 0.28407590005047245,
+      "n": 97,
+      "n_cooks_above_4_over_n": 8,
+      "ols_ci": [
+        6.187391657799329,
+        13.392054509088787
+      ],
+      "residual_df": 89.0,
+      "residual_sd_by_era": {
+        "E11": {
+          "n": 25,
+          "sd": 80.46200161075859
+        },
+        "XA30": {
+          "n": 5,
+          "sd": 70.14472393854163
+        },
+        "XA60": {
+          "n": 67,
+          "sd": 74.09435167937667
+        }
+      },
+      "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+      "term": "fevs",
+      "title": "Social win minus nonsocial win | FEVS main effect, standalone | cluster 1"
+    },
+    {
+      "estimate": 11.739537633906775,
+      "exclusions_made": false,
+      "hc3_ci": [
+        4.309312346678788,
+        19.16976292113476
+      ],
+      "id": "fevsxpm25-cluster-1",
+      "leave_one_out_estimate_max": 12.661146031714559,
+      "leave_one_out_estimate_min": 9.702897438390453,
+      "max_cooks_d": 0.25502646710280397,
+      "max_leverage": 0.500868889540428,
+      "n": 97,
+      "n_cooks_above_4_over_n": 7,
+      "ols_ci": [
+        7.45249900825849,
+        16.026576259555057
+      ],
+      "residual_df": 87.0,
+      "residual_sd_by_era": {
+        "E11": {
+          "n": 25,
+          "sd": 95.88247601039318
+        },
+        "XA30": {
+          "n": 5,
+          "sd": 74.58140244296231
+        },
+        "XA60": {
+          "n": 67,
+          "sd": 83.02253195769126
+        }
+      },
+      "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+      "term": "fevs",
+      "title": "Social win minus nonsocial win | FEVS main effect at mean PM2.5; NOT the interaction | cluster 1"
+    }
+  ],
+  "selection_warning": "Cluster-selected scatterplots and analytical confidence intervals are descriptive, not independent inference.",
+  "target_z": 3.1,
+  "term": "positive FEVS main effect"
+}
