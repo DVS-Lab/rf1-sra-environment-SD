@@ -1,0 +1,41 @@
+{
+  "png_sha256": "9f04f9e402029a848872d63accb3a3552b5f31dfbf079e3418f13567161d5459",
+  "result": {
+    "estimate": -0.012788476742648228,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.023966677727645193,
+      -0.0016102757576512642
+    ],
+    "id": "94d98771b24c9b",
+    "leave_one_out_estimate_max": -0.007936692889871984,
+    "leave_one_out_estimate_min": -0.014080482356081787,
+    "max_cooks_d": 1.4115249442457267,
+    "max_leverage": 0.38956179012212716,
+    "n": 97,
+    "n_cooks_above_4_over_n": 7,
+    "ols_ci": [
+      -0.017330181537016133,
+      -0.008246771948280322
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.38306467389345317
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.583088240034664
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.20222445964814076
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "oafem",
+    "title": "financial_predictors | connectivity | average | oafem | oafem | z-2.6-negative-c1"
+  },
+  "signature": "3334f9d7cf465a562c3814ef4b5a1e3699eaf2179266a00d4298bfe1503d7414"
+}

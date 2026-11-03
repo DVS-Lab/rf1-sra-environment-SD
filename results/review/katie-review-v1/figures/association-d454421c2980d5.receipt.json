@@ -1,0 +1,83 @@
+{
+  "png_sha256": "0dedec458d798beec5e5aa01c6cffb59f5f2649012869cd77865eb0a84e70b3c",
+  "result": {
+    "estimate": 0.04105642057793515,
+    "exclusions_made": false,
+    "hc3_ci": [
+      0.006660773873405579,
+      0.07545206728246472
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2472058594945392
+      },
+      {
+        "lower_raw": 1.2472058594945392,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.185153269378011
+      },
+      {
+        "lower_raw": 2.185153269378011,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.2472058594945392,
+      2.185153269378011
+    ],
+    "id": "d454421c2980d5",
+    "leave_one_out_estimate_max": 0.04824521735248202,
+    "leave_one_out_estimate_min": 0.027702710255204845,
+    "max_cooks_d": 0.7247986245265421,
+    "max_leverage": 0.31979355742610777,
+    "n": 97,
+    "n_cooks_above_4_over_n": 10,
+    "ols_ci": [
+      0.026839469720616158,
+      0.05527337143525414
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2820507939656907
+      },
+      {
+        "lower_raw": 1.2820507939656907,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.5486088142517744
+      },
+      {
+        "lower_raw": 1.5486088142517744,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.2820507939656907,
+      1.5486088142517744
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.7570112228583745
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.7700424535806518
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.3876120453462572
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "adixecog",
+    "title": "environment_connectivity | connectivity | social_specific | adixecog | adixecog | z-2.6-positive-c1"
+  },
+  "signature": "24a64795a3c3559b2d74de9d830683f7721fb84ce4f421f442bc70d3c31a4ee0"
+}

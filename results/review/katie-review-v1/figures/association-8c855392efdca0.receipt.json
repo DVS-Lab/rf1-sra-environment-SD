@@ -1,0 +1,41 @@
+{
+  "png_sha256": "657614b3198273e9059210e3d7e24bae6b9d2a0be5d6b421f7df344942145a1c",
+  "result": {
+    "estimate": -0.012609013260819093,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.0213436839600984,
+      -0.0038743425615397845
+    ],
+    "id": "8c855392efdca0",
+    "leave_one_out_estimate_max": -0.008750338250267522,
+    "leave_one_out_estimate_min": -0.013429754871855734,
+    "max_cooks_d": 0.7378286872815856,
+    "max_leverage": 0.26838173455906666,
+    "n": 97,
+    "n_cooks_above_4_over_n": 6,
+    "ols_ci": [
+      -0.016854444934486405,
+      -0.00836358158715178
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.5327013977070404
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.48071019086594097
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.4139840291223103
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "adi",
+    "title": "environment_connectivity | connectivity | average | adi | adi | z-3.1-negative-c1"
+  },
+  "signature": "55bbc2eb9167b2babdd1a9de4a08cd194769377ba04e7ed688e96eeb2f8a4112"
+}

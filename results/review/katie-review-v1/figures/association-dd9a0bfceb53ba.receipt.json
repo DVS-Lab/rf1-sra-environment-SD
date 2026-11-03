@@ -1,0 +1,41 @@
+{
+  "png_sha256": "3cd3080b3186df892d1787e77290058753f1463c8414bbc0d501da533264d06f",
+  "result": {
+    "estimate": 0.571554594702739,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.3476001625227815,
+      1.4907093519282593
+    ],
+    "id": "dd9a0bfceb53ba",
+    "leave_one_out_estimate_max": 0.6750819346161182,
+    "leave_one_out_estimate_min": 0.3567315367508246,
+    "max_cooks_d": 0.1313133633076901,
+    "max_leverage": 0.25069791447628403,
+    "n": 97,
+    "n_cooks_above_4_over_n": 9,
+    "ols_ci": [
+      -0.2669982044316801,
+      1.410107393837158
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 92.4055276608607
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 91.9272942804075
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 87.69434687470807
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "adi",
+    "title": "environment_activation | activation | social_specific | adi | adi | anatomical-VS"
+  },
+  "signature": "d3428e0d81ca108b8acfca6f6588249aba020b2ff0c605045f0e9c7a3262db9c"
+}

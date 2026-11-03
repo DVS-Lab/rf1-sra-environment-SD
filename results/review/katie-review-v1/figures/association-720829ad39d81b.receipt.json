@@ -1,0 +1,83 @@
+{
+  "png_sha256": "87ce02498cd9633637a757449aab938158d7fb99fe51048709191509ac1041e9",
+  "result": {
+    "estimate": -0.08480394485648572,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.13804782136986854,
+      -0.03156006834310292
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.22269316928032
+      },
+      {
+        "lower_raw": 1.22269316928032,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.8735201842254225
+      },
+      {
+        "lower_raw": 1.8735201842254225,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.22269316928032,
+      1.8735201842254225
+    ],
+    "id": "720829ad39d81b",
+    "leave_one_out_estimate_max": -0.07231044253739072,
+    "leave_one_out_estimate_min": -0.10296150483006948,
+    "max_cooks_d": 0.858277146849775,
+    "max_leverage": 0.45940713285546014,
+    "n": 97,
+    "n_cooks_above_4_over_n": 11,
+    "ols_ci": [
+      -0.10613860064961719,
+      -0.06346928906335425
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.4102150259167063
+      },
+      {
+        "lower_raw": 1.4102150259167063,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.6683765688035823
+      },
+      {
+        "lower_raw": 1.6683765688035823,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.4102150259167063,
+      1.6683765688035823
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.8016685378073061
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.7717227856273545
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.4661136165934061
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "oafemxecog",
+    "title": "financial_moderation | connectivity | social_specific | oafemxecog | oafemxecog | z-3.1-negative-c4"
+  },
+  "signature": "37a793559bf88f73a26f3c58d7d11752cb8589137c199821b354465795cc0ee6"
+}

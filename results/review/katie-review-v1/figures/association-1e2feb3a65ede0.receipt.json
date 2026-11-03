@@ -1,0 +1,41 @@
+{
+  "png_sha256": "c07cfcfe6480d9e6983ea8185f1eec97a2bebb2aa45f9554075d3a6e32efc5b3",
+  "result": {
+    "estimate": -6.233368584072394,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -29.982466932895683,
+      17.515729764750894
+    ],
+    "id": "1e2feb3a65ede0",
+    "leave_one_out_estimate_max": -1.9543553493115557,
+    "leave_one_out_estimate_min": -10.823802102936051,
+    "max_cooks_d": 0.13079302903355353,
+    "max_leverage": 0.2627005682439003,
+    "n": 97,
+    "n_cooks_above_4_over_n": 5,
+    "ols_ci": [
+      -29.926668570917485,
+      17.459931402772696
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 93.67975101618848
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 93.23139076734596
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 88.24481969262175
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "pm25",
+    "title": "environment_activation | activation | social_specific | pm25 | pm25 | anatomical-VS"
+  },
+  "signature": "00c73222693e5a7472716d2adbd3af3238bf46a82025eb0251bf74eed4fbda2d"
+}

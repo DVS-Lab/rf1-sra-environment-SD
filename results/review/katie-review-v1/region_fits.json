@@ -1,0 +1,3941 @@
+[
+  {
+    "estimate": 0.571554594702739,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.3476001625227815,
+      1.4907093519282593
+    ],
+    "id": "dd9a0bfceb53ba",
+    "leave_one_out_estimate_max": 0.6750819346161182,
+    "leave_one_out_estimate_min": 0.3567315367508246,
+    "max_cooks_d": 0.1313133633076901,
+    "max_leverage": 0.25069791447628403,
+    "n": 97,
+    "n_cooks_above_4_over_n": 9,
+    "ols_ci": [
+      -0.2669982044316801,
+      1.410107393837158
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 92.4055276608607
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 91.9272942804075
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 87.69434687470807
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "adi",
+    "title": "environment_activation | activation | social_specific | adi | adi | anatomical-VS"
+  },
+  {
+    "estimate": -6.233368584072394,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -29.982466932895683,
+      17.515729764750894
+    ],
+    "id": "1e2feb3a65ede0",
+    "leave_one_out_estimate_max": -1.9543553493115557,
+    "leave_one_out_estimate_min": -10.823802102936051,
+    "max_cooks_d": 0.13079302903355353,
+    "max_leverage": 0.2627005682439003,
+    "n": 97,
+    "n_cooks_above_4_over_n": 5,
+    "ols_ci": [
+      -29.926668570917485,
+      17.459931402772696
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 93.67975101618848
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 93.23139076734596
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 88.24481969262175
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "pm25",
+    "title": "environment_activation | activation | social_specific | pm25 | pm25 | anatomical-VS"
+  },
+  {
+    "estimate": 0.013799724106097044,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.39010368468418993,
+      0.417703132896384
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "80e9f08798572e",
+    "leave_one_out_estimate_max": 0.12198448311461653,
+    "leave_one_out_estimate_min": -0.047520397308347395,
+    "max_cooks_d": 0.10964159574830654,
+    "max_leverage": 0.2519932452025012,
+    "n": 97,
+    "n_cooks_above_4_over_n": 7,
+    "ols_ci": [
+      -0.42311410125482696,
+      0.450713549467021
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 92.02649374026079
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 93.1161814069966
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 87.64984681373623
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "adixmspss",
+    "title": "environment_activation | activation | social_specific | adixmspss | adixmspss | anatomical-VS"
+  },
+  {
+    "estimate": 5.6725992848037095,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -4.246864316198172,
+      15.592062885805591
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "3ef4315bc1ae3e",
+    "leave_one_out_estimate_max": 7.183115772305691,
+    "leave_one_out_estimate_min": 3.613016011047675,
+    "max_cooks_d": 0.1075802445453939,
+    "max_leverage": 0.3201340712779812,
+    "n": 97,
+    "n_cooks_above_4_over_n": 4,
+    "ols_ci": [
+      -5.178118262554374,
+      16.523316832161793
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 94.30721830360507
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 93.14645912584442
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 87.18615193538461
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "pm25xmspss",
+    "title": "environment_activation | activation | social_specific | pm25xmspss | pm25xmspss | anatomical-VS"
+  },
+  {
+    "estimate": -0.39090547093532707,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -2.6987368065827884,
+      1.916925864712134
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "9de4560c4a4003",
+    "leave_one_out_estimate_max": 0.22076519052309665,
+    "leave_one_out_estimate_min": -0.8867760394443824,
+    "max_cooks_d": 0.10508189333395351,
+    "max_leverage": 0.31979355742610777,
+    "n": 97,
+    "n_cooks_above_4_over_n": 8,
+    "ols_ci": [
+      -2.7922683643369064,
+      2.010457422466252
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 91.25572281725532
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 94.2939267359722
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 87.6924108472675
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "adixecog",
+    "title": "environment_activation | activation | social_specific | adixecog | adixecog | anatomical-VS"
+  },
+  {
+    "estimate": -58.28287825017601,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -144.1544461542021,
+      27.588689653850082
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "764e188e005253",
+    "leave_one_out_estimate_max": -42.59859215443964,
+    "leave_one_out_estimate_min": -77.48577237785221,
+    "max_cooks_d": 0.10868395918862853,
+    "max_leverage": 0.40865967289539507,
+    "n": 97,
+    "n_cooks_above_4_over_n": 5,
+    "ols_ci": [
+      -143.31075752811267,
+      26.745001027760665
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 94.39624808089214
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 93.33027840439979
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 86.55659497451366
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "pm25xecog",
+    "title": "environment_activation | activation | social_specific | pm25xecog | pm25xecog | anatomical-VS"
+  },
+  {
+    "estimate": 0.3738009054513156,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.13228487031664127,
+      0.8798866812192725
+    ],
+    "id": "58c6b085e91d46",
+    "leave_one_out_estimate_max": 0.45813777215350915,
+    "leave_one_out_estimate_min": 0.29910865936921394,
+    "max_cooks_d": 0.12732229840981732,
+    "max_leverage": 0.26838173455906666,
+    "n": 97,
+    "n_cooks_above_4_over_n": 3,
+    "ols_ci": [
+      -0.2208526143800581,
+      0.9684544252826893
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 49.77398740132782
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 59.28571649355173
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 67.43724978954153
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "adi",
+    "title": "environment_activation | activation | average | adi | adi | anatomical-VS"
+  },
+  {
+    "estimate": 9.34067055244441,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -7.450663216228131,
+      26.132004321116952
+    ],
+    "id": "bc4fb60b176872",
+    "leave_one_out_estimate_max": 13.43249449752801,
+    "leave_one_out_estimate_min": 7.263045600777246,
+    "max_cooks_d": 0.11386707515080309,
+    "max_leverage": 0.2809338007111498,
+    "n": 97,
+    "n_cooks_above_4_over_n": 5,
+    "ols_ci": [
+      -7.3533887732403915,
+      26.034729878129212
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 46.58682970035925
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 57.93375774773451
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 68.47918108502064
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "pm25",
+    "title": "environment_activation | activation | average | pm25 | pm25 | anatomical-VS"
+  },
+  {
+    "estimate": 0.04323357459008705,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.240348555034699,
+      0.3268157042148731
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "bb39fdc1f4063a",
+    "leave_one_out_estimate_max": 0.10445250830004787,
+    "leave_one_out_estimate_min": -0.018548506789698105,
+    "max_cooks_d": 0.09968022286712545,
+    "max_leverage": 0.2684712364966777,
+    "n": 97,
+    "n_cooks_above_4_over_n": 5,
+    "ols_ci": [
+      -0.256733157108125,
+      0.34320030628829906
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 49.802480859750396
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 58.4359405029467
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 67.35088225627779
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "adixmspss",
+    "title": "environment_activation | activation | average | adixmspss | adixmspss | anatomical-VS"
+  },
+  {
+    "estimate": -1.6984314170390202,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -9.59490382766838,
+      6.19804099359034
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "35113060aed372",
+    "leave_one_out_estimate_max": 0.7311042331779114,
+    "leave_one_out_estimate_min": -2.788508640356716,
+    "max_cooks_d": 0.09302984795830896,
+    "max_leverage": 0.30280978328237995,
+    "n": 97,
+    "n_cooks_above_4_over_n": 4,
+    "ols_ci": [
+      -9.398738927819393,
+      6.001876093741352
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 46.95540076140058
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 58.281661692986184
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 68.27601185633843
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "pm25xmspss",
+    "title": "environment_activation | activation | average | pm25xmspss | pm25xmspss | anatomical-VS"
+  },
+  {
+    "estimate": -0.8435679398364717,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -2.532661515490382,
+      0.8455256358174383
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "f65ce009d1e520",
+    "leave_one_out_estimate_max": -0.48503022228040593,
+    "leave_one_out_estimate_min": -1.2046104540778466,
+    "max_cooks_d": 0.10025878878371305,
+    "max_leverage": 0.31693239841993215,
+    "n": 97,
+    "n_cooks_above_4_over_n": 4,
+    "ols_ci": [
+      -2.5381001303245,
+      0.8509642506515567
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 48.74776970040502
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 58.22389335857683
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 67.1794262465521
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "adixecog",
+    "title": "environment_activation | activation | average | adixecog | adixecog | anatomical-VS"
+  },
+  {
+    "estimate": -18.531742237396738,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -90.06895451397885,
+      53.00547003918537
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "12bf30a7487421",
+    "leave_one_out_estimate_max": -3.4021211328523258,
+    "leave_one_out_estimate_min": -41.180770579014094,
+    "max_cooks_d": 0.09658881254824782,
+    "max_leverage": 0.41065328313045346,
+    "n": 97,
+    "n_cooks_above_4_over_n": 5,
+    "ols_ci": [
+      -78.04194787264933,
+      40.97846339785586
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 49.75775807651331
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 59.018722134399404
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 67.23341836679506
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "pm25xecog",
+    "title": "environment_activation | activation | average | pm25xecog | pm25xecog | anatomical-VS"
+  },
+  {
+    "estimate": 0.04105642057793515,
+    "exclusions_made": false,
+    "hc3_ci": [
+      0.006660773873405579,
+      0.07545206728246472
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2472058594945392
+      },
+      {
+        "lower_raw": 1.2472058594945392,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.185153269378011
+      },
+      {
+        "lower_raw": 2.185153269378011,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.2472058594945392,
+      2.185153269378011
+    ],
+    "id": "d454421c2980d5",
+    "leave_one_out_estimate_max": 0.04824521735248202,
+    "leave_one_out_estimate_min": 0.027702710255204845,
+    "max_cooks_d": 0.7247986245265421,
+    "max_leverage": 0.31979355742610777,
+    "n": 97,
+    "n_cooks_above_4_over_n": 10,
+    "ols_ci": [
+      0.026839469720616158,
+      0.05527337143525414
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2820507939656907
+      },
+      {
+        "lower_raw": 1.2820507939656907,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.5486088142517744
+      },
+      {
+        "lower_raw": 1.5486088142517744,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.2820507939656907,
+      1.5486088142517744
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.7570112228583745
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.7700424535806518
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.3876120453462572
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "adixecog",
+    "title": "environment_connectivity | connectivity | social_specific | adixecog | adixecog | z-2.6-positive-c1"
+  },
+  {
+    "estimate": 0.06695999833221171,
+    "exclusions_made": false,
+    "hc3_ci": [
+      0.004885880710776079,
+      0.12903411595364733
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.377128394386199
+      },
+      {
+        "lower_raw": 2.377128394386199,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      2.377128394386199
+    ],
+    "id": "f05dfdc92bc454",
+    "leave_one_out_estimate_max": 0.07480347480978246,
+    "leave_one_out_estimate_min": 0.04477566625364374,
+    "max_cooks_d": 0.5740002552684387,
+    "max_leverage": 0.31979355742610777,
+    "n": 97,
+    "n_cooks_above_4_over_n": 7,
+    "ols_ci": [
+      0.04041984019139867,
+      0.09350015647302475
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.315914353118331
+      },
+      {
+        "lower_raw": 1.315914353118331,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.6275547175379173
+      },
+      {
+        "lower_raw": 1.6275547175379173,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.315914353118331,
+      1.6275547175379173
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 1.5088093781715657
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.5250727452799986
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.7283629600409052
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "adixecog",
+    "title": "environment_connectivity | connectivity | social_specific | adixecog | adixecog | z-3.1-positive-c1"
+  },
+  {
+    "estimate": 1.817846812807377,
+    "exclusions_made": false,
+    "hc3_ci": [
+      0.02417863095807382,
+      3.6115149946566802
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.680984756963869
+      },
+      {
+        "lower_raw": 1.680984756963869,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.680984756963869
+    ],
+    "id": "d1353cb8f315d3",
+    "leave_one_out_estimate_max": 2.020889044509266,
+    "leave_one_out_estimate_min": 1.1513447937500625,
+    "max_cooks_d": 1.2396047590564399,
+    "max_leverage": 0.40865967289539507,
+    "n": 97,
+    "n_cooks_above_4_over_n": 9,
+    "ols_ci": [
+      1.1810053163971515,
+      2.4546883092176026
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1437933444348092
+      },
+      {
+        "lower_raw": 1.1437933444348092,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.3581835519629584
+      },
+      {
+        "lower_raw": 1.3581835519629584,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.1437933444348092,
+      1.3581835519629584
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.9462018086913017
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.6691084783619332
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.5281732777782286
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "pm25xecog",
+    "title": "environment_connectivity | connectivity | social_specific | pm25xecog | pm25xecog | z-2.6-positive-c1"
+  },
+  {
+    "estimate": 1.8551184860683676,
+    "exclusions_made": false,
+    "hc3_ci": [
+      0.41122182049699196,
+      3.2990151516397432
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1468393489234758
+      },
+      {
+        "lower_raw": 1.1468393489234758,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.409096511185991
+      },
+      {
+        "lower_raw": 1.409096511185991,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.1468393489234758,
+      1.409096511185991
+    ],
+    "id": "3953c3f2d68c51",
+    "leave_one_out_estimate_max": 1.9859740788409423,
+    "leave_one_out_estimate_min": 1.3008365996059956,
+    "max_cooks_d": 0.7262811125854058,
+    "max_leverage": 0.40865967289539507,
+    "n": 97,
+    "n_cooks_above_4_over_n": 8,
+    "ols_ci": [
+      1.2854984733902879,
+      2.4247384987464473
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.176855774498894
+      },
+      {
+        "lower_raw": 1.176855774498894,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.3600195515412288
+      },
+      {
+        "lower_raw": 1.3600195515412288,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.176855774498894,
+      1.3600195515412288
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.8933268086496637
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.7000938669122037
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.43064240178953733
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "pm25xecog",
+    "title": "environment_connectivity | connectivity | social_specific | pm25xecog | pm25xecog | z-2.6-positive-c2"
+  },
+  {
+    "estimate": -1.4117154119531847,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -2.796402452984541,
+      -0.027028370921828637
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.4851931336204167
+      },
+      {
+        "lower_raw": 1.4851931336204167,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.4851931336204167
+    ],
+    "id": "6bf0ca08058d03",
+    "leave_one_out_estimate_max": -0.9086077989592511,
+    "leave_one_out_estimate_min": -1.7693883516653726,
+    "max_cooks_d": 1.0068271704748022,
+    "max_leverage": 0.40865967289539507,
+    "n": 97,
+    "n_cooks_above_4_over_n": 10,
+    "ols_ci": [
+      -1.945117765761982,
+      -0.8783130581443874
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1177538444491977
+      },
+      {
+        "lower_raw": 1.1177538444491977,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.3540901857325753
+      },
+      {
+        "lower_raw": 1.3540901857325753,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.1177538444491977,
+      1.3540901857325753
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.9115580215065968
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.3328597136915993
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.366411927234162
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "pm25xecog",
+    "title": "environment_connectivity | connectivity | social_specific | pm25xecog | pm25xecog | z-2.6-negative-c1"
+  },
+  {
+    "estimate": 2.09586385026839,
+    "exclusions_made": false,
+    "hc3_ci": [
+      0.06514847327512818,
+      4.126579227261652
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.5341154941207726
+      },
+      {
+        "lower_raw": 1.5341154941207726,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.5341154941207726
+    ],
+    "id": "1c655f10aa6af2",
+    "leave_one_out_estimate_max": 2.331801484206327,
+    "leave_one_out_estimate_min": 1.3872719481580025,
+    "max_cooks_d": 0.960704874839366,
+    "max_leverage": 0.40865967289539507,
+    "n": 97,
+    "n_cooks_above_4_over_n": 9,
+    "ols_ci": [
+      1.3267817743830466,
+      2.8649459261537333
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1285590793722566
+      },
+      {
+        "lower_raw": 1.1285590793722566,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.35597049478625
+      },
+      {
+        "lower_raw": 1.35597049478625,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.1285590793722566,
+      1.35597049478625
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 1.0893420179669036
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.8102403692192863
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.6707672925681778
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "pm25xecog",
+    "title": "environment_connectivity | connectivity | social_specific | pm25xecog | pm25xecog | z-3.1-positive-c1"
+  },
+  {
+    "estimate": 2.130494272632001,
+    "exclusions_made": false,
+    "hc3_ci": [
+      0.394040568550428,
+      3.866947976713574
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.106606358603913
+      },
+      {
+        "lower_raw": 1.106606358603913,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.4148827637115469
+      },
+      {
+        "lower_raw": 1.4148827637115469,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.106606358603913,
+      1.4148827637115469
+    ],
+    "id": "6555da4dbd3ced",
+    "leave_one_out_estimate_max": 2.3125052081822473,
+    "leave_one_out_estimate_min": 1.3988746428396899,
+    "max_cooks_d": 0.8530158815438464,
+    "max_leverage": 0.40865967289539507,
+    "n": 97,
+    "n_cooks_above_4_over_n": 8,
+    "ols_ci": [
+      1.4367271440093003,
+      2.824261401254702
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1652799688870268
+      },
+      {
+        "lower_raw": 1.1652799688870268,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.3612962875450672
+      },
+      {
+        "lower_raw": 1.3612962875450672,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.1652799688870268,
+      1.3612962875450672
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 1.0728885888123503
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.9067348860070606
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.5303109434886517
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "pm25xecog",
+    "title": "environment_connectivity | connectivity | social_specific | pm25xecog | pm25xecog | z-3.1-positive-c2"
+  },
+  {
+    "estimate": -1.8229354942805347,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -3.5961316861962906,
+      -0.04973930236477875
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.3825206438098239
+      },
+      {
+        "lower_raw": 1.3825206438098239,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.3825206438098239
+    ],
+    "id": "5c42493a70bbe9",
+    "leave_one_out_estimate_max": -1.2223101271351244,
+    "leave_one_out_estimate_min": -2.3020580795377255,
+    "max_cooks_d": 0.8351310707416228,
+    "max_leverage": 0.40865967289539507,
+    "n": 97,
+    "n_cooks_above_4_over_n": 10,
+    "ols_ci": [
+      -2.522129750286832,
+      -1.1237412382742376
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.0931922134141145
+      },
+      {
+        "lower_raw": 1.0931922134141145,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.3379633355278482
+      },
+      {
+        "lower_raw": 1.3379633355278482,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.0931922134141145,
+      1.3379633355278482
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 1.187789962344213
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.32271542286656313
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.4920000705318517
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "pm25xecog",
+    "title": "environment_connectivity | connectivity | social_specific | pm25xecog | pm25xecog | z-3.1-negative-c1"
+  },
+  {
+    "estimate": -1.9303602025645383,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -4.128908683945449,
+      0.2681882788163721
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "daac74a612407b",
+    "leave_one_out_estimate_max": -0.952548468659617,
+    "leave_one_out_estimate_min": -2.216248808489605,
+    "max_cooks_d": 1.8748207537088988,
+    "max_leverage": 0.40865967289539507,
+    "n": 97,
+    "n_cooks_above_4_over_n": 11,
+    "ols_ci": [
+      -2.6900685015163748,
+      -1.1706519036127019
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1280863959672733
+      },
+      {
+        "lower_raw": 1.1280863959672733,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.3733329442762585
+      },
+      {
+        "lower_raw": 1.3733329442762585,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.1280863959672733,
+      1.3733329442762585
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 1.210448894822681
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.883909263667233
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.564592782655286
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "pm25xecog",
+    "title": "environment_connectivity | connectivity | social_specific | pm25xecog | pm25xecog | z-3.1-negative-c2"
+  },
+  {
+    "estimate": -0.00792463185331516,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.011487042470123273,
+      -0.004362221236507046
+    ],
+    "id": "325ef1b59427a9",
+    "leave_one_out_estimate_max": -0.007055570311810896,
+    "leave_one_out_estimate_min": -0.008455093393074441,
+    "max_cooks_d": 0.2288204323533084,
+    "max_leverage": 0.26838173455906666,
+    "n": 97,
+    "n_cooks_above_4_over_n": 7,
+    "ols_ci": [
+      -0.010637620278890043,
+      -0.005211643427740276
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.4028155297996122
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.34656223350025034
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.2270746954838354
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "adi",
+    "title": "environment_connectivity | connectivity | average | adi | adi | z-3.1-negative-c2"
+  },
+  {
+    "estimate": -0.012609013260819093,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.0213436839600984,
+      -0.0038743425615397845
+    ],
+    "id": "8c855392efdca0",
+    "leave_one_out_estimate_max": -0.008750338250267522,
+    "leave_one_out_estimate_min": -0.013429754871855734,
+    "max_cooks_d": 0.7378286872815856,
+    "max_leverage": 0.26838173455906666,
+    "n": 97,
+    "n_cooks_above_4_over_n": 6,
+    "ols_ci": [
+      -0.016854444934486405,
+      -0.00836358158715178
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.5327013977070404
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.48071019086594097
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.4139840291223103
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "adi",
+    "title": "environment_connectivity | connectivity | average | adi | adi | z-3.1-negative-c1"
+  },
+  {
+    "estimate": 0.025242802691929588,
+    "exclusions_made": false,
+    "hc3_ci": [
+      0.004864126477318032,
+      0.04562147890654114
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2996448126239888
+      },
+      {
+        "lower_raw": 1.2996448126239888,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.121753778626023
+      },
+      {
+        "lower_raw": 2.121753778626023,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.2996448126239888,
+      2.121753778626023
+    ],
+    "id": "3cff034f181365",
+    "leave_one_out_estimate_max": 0.028600575851239197,
+    "leave_one_out_estimate_min": 0.016781036054561254,
+    "max_cooks_d": 0.972607739265535,
+    "max_leverage": 0.31693239841993215,
+    "n": 97,
+    "n_cooks_above_4_over_n": 11,
+    "ols_ci": [
+      0.01630655746330514,
+      0.03417904792055404
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2935792271176885
+      },
+      {
+        "lower_raw": 1.2935792271176885,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.5667871342367652
+      },
+      {
+        "lower_raw": 1.5667871342367652,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.2935792271176885,
+      1.5667871342367652
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.4777947230240638
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.442622963483109
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.24570245979066038
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "adixecog",
+    "title": "environment_connectivity | connectivity | average | adixecog | adixecog | z-2.6-positive-c1"
+  },
+  {
+    "estimate": 0.025835075807407144,
+    "exclusions_made": false,
+    "hc3_ci": [
+      0.0013992763170460228,
+      0.05027087529776826
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1635389559206195
+      },
+      {
+        "lower_raw": 1.1635389559206195,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.1635389559206195
+    ],
+    "id": "4202b9d43c4548",
+    "leave_one_out_estimate_max": 0.029084808230118702,
+    "leave_one_out_estimate_min": 0.015919359269851344,
+    "max_cooks_d": 1.282254425064244,
+    "max_leverage": 0.31693239841993215,
+    "n": 97,
+    "n_cooks_above_4_over_n": 8,
+    "ols_ci": [
+      0.0167149696294895,
+      0.03495518198532479
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.3030012003013132
+      },
+      {
+        "lower_raw": 1.3030012003013132,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.5749659524652293
+      },
+      {
+        "lower_raw": 1.5749659524652293,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.3030012003013132,
+      1.5749659524652293
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.53307690866163
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.4958646762313487
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.20850593774072942
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "adixecog",
+    "title": "environment_connectivity | connectivity | average | adixecog | adixecog | z-3.1-positive-c1"
+  },
+  {
+    "estimate": -5.131306180220822,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -8.823470575122492,
+      -1.4391417853191522
+    ],
+    "id": "e78f86194cd47c",
+    "leave_one_out_estimate_max": -4.640020597410803,
+    "leave_one_out_estimate_min": -5.79261136116806,
+    "max_cooks_d": 0.14987298382696831,
+    "max_leverage": 0.28407590005047245,
+    "n": 97,
+    "n_cooks_above_4_over_n": 4,
+    "ols_ci": [
+      -9.28153744501181,
+      -0.9810749154298328
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 92.77154835151748
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 103.87797678045487
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 83.80917476051437
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "fevs",
+    "title": "financial_predictors | activation | social_specific | fevs | fevs | anatomical-VS"
+  },
+  {
+    "estimate": 0.4234595728448021,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -2.21179544905587,
+      3.0587145947454744
+    ],
+    "id": "ee403194115aa7",
+    "leave_one_out_estimate_max": 0.8246075602015122,
+    "leave_one_out_estimate_min": 0.03363772622740524,
+    "max_cooks_d": 0.1338298160662021,
+    "max_leverage": 0.28771887009005626,
+    "n": 97,
+    "n_cooks_above_4_over_n": 3,
+    "ols_ci": [
+      -2.594613016035535,
+      3.441532161725139
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 49.10683053572555
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 61.03807365642671
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 68.21442620631744
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "fevs",
+    "title": "financial_predictors | activation | average | fevs | fevs | anatomical-VS"
+  },
+  {
+    "estimate": 0.47993416819271034,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -1.3062996610996174,
+      2.266167997485038
+    ],
+    "id": "bf7ae0358e5c5d",
+    "leave_one_out_estimate_max": 0.704121578801296,
+    "leave_one_out_estimate_min": -0.17716266129856278,
+    "max_cooks_d": 0.2535824169357801,
+    "max_leverage": 0.3938201343840712,
+    "n": 97,
+    "n_cooks_above_4_over_n": 3,
+    "ols_ci": [
+      -0.9240909139168247,
+      1.8839592503022453
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 93.61620394523148
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 78.2740624334602
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 89.00989825548086
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "oafem",
+    "title": "financial_predictors | activation | social_specific | oafem | oafem | anatomical-VS"
+  },
+  {
+    "estimate": 0.5575112895169214,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.717329025903021,
+      1.8323516049368638
+    ],
+    "id": "041ee3ea44d9fa",
+    "leave_one_out_estimate_max": 0.9965756764941577,
+    "leave_one_out_estimate_min": 0.3542141849973404,
+    "max_cooks_d": 0.23358452129477786,
+    "max_leverage": 0.38956179012212716,
+    "n": 97,
+    "n_cooks_above_4_over_n": 5,
+    "ols_ci": [
+      -0.45282957332929885,
+      1.5678521523631417
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 48.876413679327065
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 69.60653888464093
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 67.24450168554112
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "oafem",
+    "title": "financial_predictors | activation | average | oafem | oafem | anatomical-VS"
+  },
+  {
+    "estimate": -0.012788476742648228,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.023966677727645193,
+      -0.0016102757576512642
+    ],
+    "id": "94d98771b24c9b",
+    "leave_one_out_estimate_max": -0.007936692889871984,
+    "leave_one_out_estimate_min": -0.014080482356081787,
+    "max_cooks_d": 1.4115249442457267,
+    "max_leverage": 0.38956179012212716,
+    "n": 97,
+    "n_cooks_above_4_over_n": 7,
+    "ols_ci": [
+      -0.017330181537016133,
+      -0.008246771948280322
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.38306467389345317
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.583088240034664
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.20222445964814076
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "oafem",
+    "title": "financial_predictors | connectivity | average | oafem | oafem | z-2.6-negative-c1"
+  },
+  {
+    "estimate": -0.014381688342078073,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.024974666899997108,
+      -0.0037887097841590375
+    ],
+    "id": "38be5ece8ec265",
+    "leave_one_out_estimate_max": -0.010024208086098538,
+    "leave_one_out_estimate_min": -0.01582061891567623,
+    "max_cooks_d": 0.9001207577615534,
+    "max_leverage": 0.38956179012212716,
+    "n": 97,
+    "n_cooks_above_4_over_n": 8,
+    "ols_ci": [
+      -0.019489639965160593,
+      -0.00927373671899555
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.43657891806707644
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.5524724246738526
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.2397455626831739
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "oafem",
+    "title": "financial_predictors | connectivity | average | oafem | oafem | z-3.1-negative-c1"
+  },
+  {
+    "estimate": -0.0481751083662564,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -2.1298781802695284,
+      2.0335279635370154
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.60533698498441
+      },
+      {
+        "lower_raw": 1.60533698498441,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 5.467464102938923
+      },
+      {
+        "lower_raw": 5.467464102938923,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "hc3_jn_roots": [
+      1.60533698498441,
+      5.467464102938923
+    ],
+    "id": "8d058b6b8f7508",
+    "leave_one_out_estimate_max": 0.2869593297073021,
+    "leave_one_out_estimate_min": -0.37988688231659173,
+    "max_cooks_d": 0.1178582560376973,
+    "max_leverage": 0.3501488405167861,
+    "n": 97,
+    "n_cooks_above_4_over_n": 5,
+    "ols_ci": [
+      -2.4323318509578433,
+      2.3359816342253303
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.409247193335766
+      },
+      {
+        "lower_raw": 2.409247193335766,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 5.266773625057458
+      },
+      {
+        "lower_raw": 5.266773625057458,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "ols_jn_roots": [
+      2.409247193335766,
+      5.266773625057458
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 91.98471994130223
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 103.53912888301082
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 83.84874850655503
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "fevsxmspss",
+    "title": "financial_moderation | activation | social_specific | fevsxmspss | fevsxmspss | anatomical-VS"
+  },
+  {
+    "estimate": 0.015931542384164134,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.1339931202640965,
+      0.16585620503242476
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 5.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 15.945871737561767
+      },
+      {
+        "lower_raw": 15.945871737561767,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 64.66226455425424
+      },
+      {
+        "lower_raw": 64.66226455425424,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 96.0
+      }
+    ],
+    "hc3_jn_roots": [
+      15.945871737561767,
+      64.66226455425424
+    ],
+    "id": "4bf0dc6c5ca736",
+    "leave_one_out_estimate_max": 0.04511783677668091,
+    "leave_one_out_estimate_min": -0.005862407810086588,
+    "max_cooks_d": 0.12717719115117082,
+    "max_leverage": 0.4269572826762434,
+    "n": 97,
+    "n_cooks_above_4_over_n": 8,
+    "ols_ci": [
+      -0.15316697687807126,
+      0.18503006164639954
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 5.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 19.428290809630226
+      },
+      {
+        "lower_raw": 19.428290809630226,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 59.04378146410095
+      },
+      {
+        "lower_raw": 59.04378146410095,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 96.0
+      }
+    ],
+    "ols_jn_roots": [
+      19.428290809630226,
+      59.04378146410095
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 89.96882127286673
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 103.8003592100345
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 83.23035549346679
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "fevsxadi",
+    "title": "financial_moderation | activation | social_specific | fevsxadi | fevsxadi | anatomical-VS"
+  },
+  {
+    "estimate": 1.6860696928538959,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -2.817640077284884,
+      6.189779462992676
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 6.3182,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.316213817612024
+      },
+      {
+        "lower_raw": 7.316213817612024,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 9.044166368630204
+      },
+      {
+        "lower_raw": 9.044166368630204,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 10.2364
+      }
+    ],
+    "hc3_jn_roots": [
+      7.316213817612024,
+      9.044166368630204
+    ],
+    "id": "65b0d8a57dbac6",
+    "leave_one_out_estimate_max": 2.738315542716919,
+    "leave_one_out_estimate_min": 1.2361384058114706,
+    "max_cooks_d": 0.12371653006121569,
+    "max_leverage": 0.500868889540428,
+    "n": 97,
+    "n_cooks_above_4_over_n": 5,
+    "ols_ci": [
+      -3.4663624788636804,
+      6.838501864571472
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 6.3182,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.478656443702088
+      },
+      {
+        "lower_raw": 7.478656443702088,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 8.845731997823076
+      },
+      {
+        "lower_raw": 8.845731997823076,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 10.2364
+      }
+    ],
+    "ols_jn_roots": [
+      7.478656443702088,
+      8.845731997823076
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 91.67269381560072
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 104.74101979968921
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 83.80867139791432
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "fevsxpm25",
+    "title": "financial_moderation | activation | social_specific | fevsxpm25 | fevsxpm25 | anatomical-VS"
+  },
+  {
+    "estimate": 0.39786069419780995,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -9.807128805637774,
+      10.602850194033394
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.0721122505693725
+      },
+      {
+        "lower_raw": 1.0721122505693725,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.839947464189728
+      },
+      {
+        "lower_raw": 1.839947464189728,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.0721122505693725,
+      1.839947464189728
+    ],
+    "id": "c79baaa7b56cbb",
+    "leave_one_out_estimate_max": 2.1558292997900477,
+    "leave_one_out_estimate_min": -0.7460523813234778,
+    "max_cooks_d": 0.1202156636458102,
+    "max_leverage": 0.43654059673109036,
+    "n": 97,
+    "n_cooks_above_4_over_n": 6,
+    "ols_ci": [
+      -10.322952846381446,
+      11.118674234777066
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.06766108127407
+      },
+      {
+        "lower_raw": 1.06766108127407,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.7360632623029029
+      },
+      {
+        "lower_raw": 1.7360632623029029,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.06766108127407,
+      1.7360632623029029
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 92.66589660407391
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 103.03541870964123
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 83.51441444175926
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "fevsxecog",
+    "title": "financial_moderation | activation | social_specific | fevsxecog | fevsxecog | anatomical-VS"
+  },
+  {
+    "estimate": -0.20484123107101915,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.4556616608101744,
+      0.0459791986681361
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "159f088687f05c",
+    "leave_one_out_estimate_max": -0.09091793071794013,
+    "leave_one_out_estimate_min": -0.240645885550931,
+    "max_cooks_d": 2.1490957087512856,
+    "max_leverage": 0.43654059673109036,
+    "n": 97,
+    "n_cooks_above_4_over_n": 13,
+    "ols_ci": [
+      -0.28225027697099886,
+      -0.12743218517103944
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.227751571562443
+      },
+      {
+        "lower_raw": 1.227751571562443,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.5731431050203282
+      },
+      {
+        "lower_raw": 1.5731431050203282,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.227751571562443,
+      1.5731431050203282
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.9613604468037991
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.7324253042196844
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.43745833272825824
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "fevsxecog",
+    "title": "financial_moderation | connectivity | social_specific | fevsxecog | fevsxecog | z-2.6-negative-c1"
+  },
+  {
+    "estimate": -0.23943412823262752,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.5642662763162607,
+      0.08539801985100567
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "d69df79cd1d70d",
+    "leave_one_out_estimate_max": -0.08959586545503842,
+    "leave_one_out_estimate_min": -0.28209912338654525,
+    "max_cooks_d": 2.486510427916719,
+    "max_leverage": 0.43654059673109036,
+    "n": 97,
+    "n_cooks_above_4_over_n": 12,
+    "ols_ci": [
+      -0.3340871802176431,
+      -0.14478107624761194
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.211543379595219
+      },
+      {
+        "lower_raw": 1.211543379595219,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.5760083855856037
+      },
+      {
+        "lower_raw": 1.5760083855856037,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.211543379595219,
+      1.5760083855856037
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 1.1654394901607443
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.9474474764461336
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.5375065021486642
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "fevsxecog",
+    "title": "financial_moderation | connectivity | social_specific | fevsxecog | fevsxecog | z-3.1-negative-c1"
+  },
+  {
+    "estimate": 0.39434574401206957,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.6145333565209169,
+      1.403224844545056
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "67ce0ee7d39195",
+    "leave_one_out_estimate_max": 0.7016944708055056,
+    "leave_one_out_estimate_min": 0.26446471107777797,
+    "max_cooks_d": 0.1983305493978134,
+    "max_leverage": 0.3944904688414541,
+    "n": 97,
+    "n_cooks_above_4_over_n": 4,
+    "ols_ci": [
+      -0.7313959959161457,
+      1.520087483940285
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 93.11132916702024
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 77.17352143304745
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 88.86503329337108
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "oafemxmspss",
+    "title": "financial_moderation | activation | social_specific | oafemxmspss | oafemxmspss | anatomical-VS"
+  },
+  {
+    "estimate": -0.011975483261277502,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.078252692945216,
+      0.054301726422661005
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 5.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 96.0
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "2ed3f9402e5069",
+    "leave_one_out_estimate_max": 9.383632604799375e-05,
+    "leave_one_out_estimate_min": -0.0236792358559818,
+    "max_cooks_d": 0.21028709186843744,
+    "max_leverage": 0.5517630671406735,
+    "n": 97,
+    "n_cooks_above_4_over_n": 9,
+    "ols_ci": [
+      -0.08341456539893649,
+      0.059463598876381495
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 5.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 96.0
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 91.55156489248006
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 80.77434694346893
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 88.41992517246926
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "oafemxadi",
+    "title": "financial_moderation | activation | social_specific | oafemxadi | oafemxadi | anatomical-VS"
+  },
+  {
+    "estimate": -0.0013066748172707826,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.0020743245849070124,
+      -0.0005390250496345528
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 5.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 24.60982245805499
+      },
+      {
+        "lower_raw": 24.60982245805499,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 50.0367664431391
+      },
+      {
+        "lower_raw": 50.0367664431391,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 96.0
+      }
+    ],
+    "hc3_jn_roots": [
+      24.60982245805499,
+      50.0367664431391
+    ],
+    "id": "7e000b3bdfd9df",
+    "leave_one_out_estimate_max": -0.0009780381947795181,
+    "leave_one_out_estimate_min": -0.0013598886408114656,
+    "max_cooks_d": 0.4516667870058663,
+    "max_leverage": 0.5517630671406735,
+    "n": 97,
+    "n_cooks_above_4_over_n": 8,
+    "ols_ci": [
+      -0.0016916907309943463,
+      -0.000921658903547219
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 5.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 35.21275634733647
+      },
+      {
+        "lower_raw": 35.21275634733647,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 47.570395977169504
+      },
+      {
+        "lower_raw": 47.570395977169504,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 96.0
+      }
+    ],
+    "ols_jn_roots": [
+      35.21275634733647,
+      47.570395977169504
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.6316904401417732
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.3285531798824284
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.41887089408290895
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "oafemxadi",
+    "title": "financial_moderation | connectivity | social_specific | oafemxadi | oafemxadi | z-2.6-negative-c1"
+  },
+  {
+    "estimate": -0.31391182455761635,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -3.6869525705961217,
+      3.0591289214808888
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 6.3182,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 10.2364
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "71b263e954da7c",
+    "leave_one_out_estimate_max": 1.0009598892498932,
+    "leave_one_out_estimate_min": -1.1020527925425043,
+    "max_cooks_d": 0.37022457054116437,
+    "max_leverage": 0.555461990160977,
+    "n": 97,
+    "n_cooks_above_4_over_n": 5,
+    "ols_ci": [
+      -2.2569390474307935,
+      1.6291153983155606
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 6.3182,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 10.2364
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 92.051139393674
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 81.91224998661674
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 89.0965468369187
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "oafemxpm25",
+    "title": "financial_moderation | activation | social_specific | oafemxpm25 | oafemxpm25 | anatomical-VS"
+  },
+  {
+    "estimate": -0.34947687960937573,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -3.3441556010134037,
+      2.6452018417946523
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "95c668108b816d",
+    "leave_one_out_estimate_max": 0.39144375033028245,
+    "leave_one_out_estimate_min": -0.6891444357510523,
+    "max_cooks_d": 0.23266132421152383,
+    "max_leverage": 0.45940713285546014,
+    "n": 97,
+    "n_cooks_above_4_over_n": 5,
+    "ols_ci": [
+      -3.6161014821370006,
+      2.917147722918249
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 92.72658534559945
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 70.92353840684923
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 89.36958061890634
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "oafemxecog",
+    "title": "financial_moderation | activation | social_specific | oafemxecog | oafemxecog | anatomical-VS"
+  },
+  {
+    "estimate": -0.06466571620821379,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.11117993010610885,
+      -0.018151502310318736
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1922706293102454
+      },
+      {
+        "lower_raw": 1.1922706293102454,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.8006631389261543
+      },
+      {
+        "lower_raw": 1.8006631389261543,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.1922706293102454,
+      1.8006631389261543
+    ],
+    "id": "f18300285eb02f",
+    "leave_one_out_estimate_max": -0.04935211377278119,
+    "leave_one_out_estimate_min": -0.07877575844276405,
+    "max_cooks_d": 0.4108072440722586,
+    "max_leverage": 0.45940713285546014,
+    "n": 97,
+    "n_cooks_above_4_over_n": 9,
+    "ols_ci": [
+      -0.08563305843168209,
+      -0.04369837398474549
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2442962392444477
+      },
+      {
+        "lower_raw": 1.2442962392444477,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.596895926807954
+      },
+      {
+        "lower_raw": 1.596895926807954,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.2442962392444477,
+      1.596895926807954
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.9013396995977385
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.3873628440143709
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.4073225856376849
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "oafemxecog",
+    "title": "financial_moderation | connectivity | social_specific | oafemxecog | oafemxecog | z-2.6-negative-c1"
+  },
+  {
+    "estimate": -0.06728782709331795,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.10764236308112897,
+      -0.02693329110550692
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1709973642898133
+      },
+      {
+        "lower_raw": 1.1709973642898133,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.830550790383247
+      },
+      {
+        "lower_raw": 1.830550790383247,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.1709973642898133,
+      1.830550790383247
+    ],
+    "id": "6ca32241189bc3",
+    "leave_one_out_estimate_max": -0.058123283457994515,
+    "leave_one_out_estimate_min": -0.08048441254416513,
+    "max_cooks_d": 0.6171329711941245,
+    "max_leverage": 0.45940713285546014,
+    "n": 97,
+    "n_cooks_above_4_over_n": 10,
+    "ols_ci": [
+      -0.08574378884980088,
+      -0.048831865336835
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.3754057274658784
+      },
+      {
+        "lower_raw": 1.3754057274658784,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.6595157337305315
+      },
+      {
+        "lower_raw": 1.6595157337305315,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.3754057274658784,
+      1.6595157337305315
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.7708006039534088
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.5868179635641803
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.35716519808608643
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "oafemxecog",
+    "title": "financial_moderation | connectivity | social_specific | oafemxecog | oafemxecog | z-2.6-negative-c2"
+  },
+  {
+    "estimate": -0.06469720666285568,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.13029148464738682,
+      0.0008970713216754633
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.238709078220337
+      },
+      {
+        "lower_raw": 1.238709078220337,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.238709078220337
+    ],
+    "id": "3bc0c6b81b2eaf",
+    "leave_one_out_estimate_max": -0.036418609753035756,
+    "leave_one_out_estimate_min": -0.0777263674596225,
+    "max_cooks_d": 1.1915024445292057,
+    "max_leverage": 0.45940713285546014,
+    "n": 97,
+    "n_cooks_above_4_over_n": 11,
+    "ols_ci": [
+      -0.08743223243818574,
+      -0.04196218088752562
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2854821280654847
+      },
+      {
+        "lower_raw": 1.2854821280654847,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.663179012093878
+      },
+      {
+        "lower_raw": 1.663179012093878,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.2854821280654847,
+      1.663179012093878
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.9159117327722897
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.7675913361455144
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.4607941922502692
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "oafemxecog",
+    "title": "financial_moderation | connectivity | social_specific | oafemxecog | oafemxecog | z-2.6-negative-c3"
+  },
+  {
+    "estimate": -0.07427236272012684,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.13441561399213042,
+      -0.014129111448123267
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.095413025159741
+      },
+      {
+        "lower_raw": 1.095413025159741,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.8547648272982524
+      },
+      {
+        "lower_raw": 1.8547648272982524,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.095413025159741,
+      1.8547648272982524
+    ],
+    "id": "8a1d04524f5a6d",
+    "leave_one_out_estimate_max": -0.05253287120356272,
+    "leave_one_out_estimate_min": -0.09171203817609568,
+    "max_cooks_d": 0.680748031759163,
+    "max_leverage": 0.45940713285546014,
+    "n": 97,
+    "n_cooks_above_4_over_n": 10,
+    "ols_ci": [
+      -0.09739520660177572,
+      -0.05114951883847796
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2251329222818608
+      },
+      {
+        "lower_raw": 1.2251329222818608,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.566664574964922
+      },
+      {
+        "lower_raw": 1.566664574964922,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.2251329222818608,
+      1.566664574964922
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.9558675242032304
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.4039361065515595
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.47956862759916646
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "oafemxecog",
+    "title": "financial_moderation | connectivity | social_specific | oafemxecog | oafemxecog | z-3.1-negative-c1"
+  },
+  {
+    "estimate": -0.05703259168725325,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.09493683476338283,
+      -0.01912834861112367
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1237349356666544
+      },
+      {
+        "lower_raw": 1.1237349356666544,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.72345959160367
+      },
+      {
+        "lower_raw": 1.72345959160367,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.1237349356666544,
+      1.72345959160367
+    ],
+    "id": "cdafe7fa80f9c1",
+    "leave_one_out_estimate_max": -0.04878159083449113,
+    "leave_one_out_estimate_min": -0.0694700476386943,
+    "max_cooks_d": 0.3948359836635802,
+    "max_leverage": 0.45940713285546014,
+    "n": 97,
+    "n_cooks_above_4_over_n": 9,
+    "ols_ci": [
+      -0.07657804292624218,
+      -0.037487140448264324
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2165396846979972
+      },
+      {
+        "lower_raw": 1.2165396846979972,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.594481798755401
+      },
+      {
+        "lower_raw": 1.594481798755401,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.2165396846979972,
+      1.594481798755401
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.8405980782359226
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.681500314267804
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.3516999640106662
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "oafemxecog",
+    "title": "financial_moderation | connectivity | social_specific | oafemxecog | oafemxecog | z-3.1-negative-c2"
+  },
+  {
+    "estimate": -0.04830878621172346,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.07557044591995027,
+      -0.02104712650349665
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1832353223404866
+      },
+      {
+        "lower_raw": 1.1832353223404866,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.6576100048883113
+      },
+      {
+        "lower_raw": 1.6576100048883113,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.1832353223404866,
+      1.6576100048883113
+    ],
+    "id": "9122733835a267",
+    "leave_one_out_estimate_max": -0.04307491100675105,
+    "leave_one_out_estimate_min": -0.05769743259969036,
+    "max_cooks_d": 0.3604991463288925,
+    "max_leverage": 0.45940713285546014,
+    "n": 97,
+    "n_cooks_above_4_over_n": 12,
+    "ols_ci": [
+      -0.06246029748533771,
+      -0.0341572749381092
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2636406027253968
+      },
+      {
+        "lower_raw": 1.2636406027253968,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.5789448078010373
+      },
+      {
+        "lower_raw": 1.5789448078010373,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.2636406027253968,
+      1.5789448078010373
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.5783394148579062
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.29051708309750457
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.2958924027166738
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "oafemxecog",
+    "title": "financial_moderation | connectivity | social_specific | oafemxecog | oafemxecog | z-3.1-negative-c3"
+  },
+  {
+    "estimate": -0.08480394485648572,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.13804782136986854,
+      -0.03156006834310292
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.22269316928032
+      },
+      {
+        "lower_raw": 1.22269316928032,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.8735201842254225
+      },
+      {
+        "lower_raw": 1.8735201842254225,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.22269316928032,
+      1.8735201842254225
+    ],
+    "id": "720829ad39d81b",
+    "leave_one_out_estimate_max": -0.07231044253739072,
+    "leave_one_out_estimate_min": -0.10296150483006948,
+    "max_cooks_d": 0.858277146849775,
+    "max_leverage": 0.45940713285546014,
+    "n": 97,
+    "n_cooks_above_4_over_n": 11,
+    "ols_ci": [
+      -0.10613860064961719,
+      -0.06346928906335425
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.4102150259167063
+      },
+      {
+        "lower_raw": 1.4102150259167063,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.6683765688035823
+      },
+      {
+        "lower_raw": 1.6683765688035823,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.4102150259167063,
+      1.6683765688035823
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.8016685378073061
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.7717227856273545
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.4661136165934061
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "oafemxecog",
+    "title": "financial_moderation | connectivity | social_specific | oafemxecog | oafemxecog | z-3.1-negative-c4"
+  },
+  {
+    "estimate": -0.07592275006890783,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.1609993719610725,
+      0.009153871823256818
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1479215101379419
+      },
+      {
+        "lower_raw": 1.1479215101379419,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.1479215101379419
+    ],
+    "id": "f6a1ee95c49a61",
+    "leave_one_out_estimate_max": -0.03828513048740648,
+    "leave_one_out_estimate_min": -0.09177688709450732,
+    "max_cooks_d": 1.4268419620019317,
+    "max_leverage": 0.45940713285546014,
+    "n": 97,
+    "n_cooks_above_4_over_n": 10,
+    "ols_ci": [
+      -0.10357428692852023,
+      -0.048271213209295435
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2331671238884787
+      },
+      {
+        "lower_raw": 1.2331671238884787,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.6327668655757828
+      },
+      {
+        "lower_raw": 1.6327668655757828,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.2331671238884787,
+      1.6327668655757828
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 1.1352950073720338
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.9524940797376097
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.5426787000989038
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "oafemxecog",
+    "title": "financial_moderation | connectivity | social_specific | oafemxecog | oafemxecog | z-3.1-negative-c5"
+  },
+  {
+    "estimate": 0.41829818243445904,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.9194675639550259,
+      1.7560639288239441
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "ab7430233e7a5c",
+    "leave_one_out_estimate_max": 0.622935968221515,
+    "leave_one_out_estimate_min": 0.19935665047131462,
+    "max_cooks_d": 0.10414968772305928,
+    "max_leverage": 0.315375772404467,
+    "n": 97,
+    "n_cooks_above_4_over_n": 4,
+    "ols_ci": [
+      -1.3150560881876063,
+      2.1516524530565246
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 48.58374773878005
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 61.24597496543765
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 68.20400451648126
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "fevsxmspss",
+    "title": "financial_moderation | activation | average | fevsxmspss | fevsxmspss | anatomical-VS"
+  },
+  {
+    "estimate": -0.029229830180977374,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.1521065472979672,
+      0.09364688693601245
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 5.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 96.0
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "bd67060b7af28f",
+    "leave_one_out_estimate_max": -0.01825753824829823,
+    "leave_one_out_estimate_min": -0.07416533825769546,
+    "max_cooks_d": 0.10856788179068137,
+    "max_leverage": 0.4236088561797653,
+    "n": 97,
+    "n_cooks_above_4_over_n": 4,
+    "ols_ci": [
+      -0.1509230508247877,
+      0.09246339046283297
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 5.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 96.0
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 48.606810745099935
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 60.47484237080335
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 67.55299764802334
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "fevsxadi",
+    "title": "financial_moderation | activation | average | fevsxadi | fevsxadi | anatomical-VS"
+  },
+  {
+    "estimate": -0.6600626733885802,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -3.664887623950067,
+      2.344762277172907
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 6.3182,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 10.2364
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "e8384dd5a4c0bf",
+    "leave_one_out_estimate_max": -0.3336046369503534,
+    "leave_one_out_estimate_min": -1.3223440876199426,
+    "max_cooks_d": 0.09501485348219027,
+    "max_leverage": 0.48000772541380415,
+    "n": 97,
+    "n_cooks_above_4_over_n": 4,
+    "ols_ci": [
+      -4.310058913424201,
+      2.989933566647041
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 6.3182,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 10.2364
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 46.28053205717582
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 57.885280095115085
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 68.48132059974368
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "fevsxpm25",
+    "title": "financial_moderation | activation | average | fevsxpm25 | fevsxpm25 | anatomical-VS"
+  },
+  {
+    "estimate": 10.213472756627345,
+    "exclusions_made": false,
+    "hc3_ci": [
+      6.816895606357821,
+      13.610049906896869
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.3143408779433545
+      },
+      {
+        "lower_raw": 1.3143408779433545,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.6032998974388766
+      },
+      {
+        "lower_raw": 1.6032998974388766,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.3143408779433545,
+      1.6032998974388766
+    ],
+    "id": "8026865926dc5c",
+    "leave_one_out_estimate_max": 10.986994680127744,
+    "leave_one_out_estimate_min": 9.558989213674243,
+    "max_cooks_d": 0.08616321272816135,
+    "max_leverage": 0.44438646130175824,
+    "n": 97,
+    "n_cooks_above_4_over_n": 6,
+    "ols_ci": [
+      6.655890949269343,
+      13.771054563985347
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2989259399890882
+      },
+      {
+        "lower_raw": 1.2989259399890882,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.616957982518869
+      },
+      {
+        "lower_raw": 1.616957982518869,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.2989259399890882,
+      1.616957982518869
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 31.656347085130346
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 19.309735858860783
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 28.60828690795473
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "fevsxecog",
+    "title": "financial_moderation | activation | average | fevsxecog | fevsxecog | z-2.6-positive-c1"
+  },
+  {
+    "estimate": -4.04198861161558,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -12.177105386654105,
+      4.0931281634229455
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "3c18d97e2397f8",
+    "leave_one_out_estimate_max": -2.3512481630736097,
+    "leave_one_out_estimate_min": -5.19915278269805,
+    "max_cooks_d": 0.10275042141294664,
+    "max_leverage": 0.44438646130175824,
+    "n": 97,
+    "n_cooks_above_4_over_n": 4,
+    "ols_ci": [
+      -11.747282775097581,
+      3.6633055518664204
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 50.275464514273324
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 63.34013217874458
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 67.02596340705574
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "fevsxecog",
+    "title": "financial_moderation | activation | average | fevsxecog | fevsxecog | anatomical-VS"
+  },
+  {
+    "estimate": -0.1068327587136963,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.15128448587931306,
+      -0.06238103154807954
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1991149208916836
+      },
+      {
+        "lower_raw": 1.1991149208916836,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.6152765939607694
+      },
+      {
+        "lower_raw": 1.6152765939607694,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.1991149208916836,
+      1.6152765939607694
+    ],
+    "id": "204123092f9ccd",
+    "leave_one_out_estimate_max": -0.0964203668969206,
+    "leave_one_out_estimate_min": -0.11355132832520748,
+    "max_cooks_d": 0.20426072949857804,
+    "max_leverage": 0.44438646130175824,
+    "n": 97,
+    "n_cooks_above_4_over_n": 8,
+    "ols_ci": [
+      -0.1427915524354288,
+      -0.0708739649919638
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2420702418562148
+      },
+      {
+        "lower_raw": 1.2420702418562148,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.5466329082383252
+      },
+      {
+        "lower_raw": 1.5466329082383252,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.2420702418562148,
+      1.5466329082383252
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.41803981369096027
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.427001597387269
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.22035188495305882
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "fevsxecog",
+    "title": "financial_moderation | connectivity | average | fevsxecog | fevsxecog | z-2.6-negative-c1"
+  },
+  {
+    "estimate": -0.1360151943244513,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.20367998499959084,
+      -0.06835040364931178
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1810576931556565
+      },
+      {
+        "lower_raw": 1.1810576931556565,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.6557278196114056
+      },
+      {
+        "lower_raw": 1.6557278196114056,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.1810576931556565,
+      1.6557278196114056
+    ],
+    "id": "3168175dcb5f52",
+    "leave_one_out_estimate_max": -0.11262590599720619,
+    "leave_one_out_estimate_min": -0.14592710719721208,
+    "max_cooks_d": 0.3175530447808968,
+    "max_leverage": 0.44438646130175824,
+    "n": 97,
+    "n_cooks_above_4_over_n": 9,
+    "ols_ci": [
+      -0.18695242546482574,
+      -0.08507796318407687
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2351304401661234
+      },
+      {
+        "lower_raw": 1.2351304401661234,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.5790312844859489
+      },
+      {
+        "lower_raw": 1.5790312844859489,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.2351304401661234,
+      1.5790312844859489
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.4221209052737096
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.6394918682126615
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.39691258099257676
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "fevsxecog",
+    "title": "financial_moderation | connectivity | average | fevsxecog | fevsxecog | z-3.1-negative-c1"
+  },
+  {
+    "estimate": -0.11207725969655667,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.16190765136789326,
+      -0.062246868025220094
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2163810330196025
+      },
+      {
+        "lower_raw": 1.2163810330196025,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.6658175760958984
+      },
+      {
+        "lower_raw": 1.6658175760958984,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.2163810330196025,
+      1.6658175760958984
+    ],
+    "id": "8d4f297221791b",
+    "leave_one_out_estimate_max": -0.09728304453351772,
+    "leave_one_out_estimate_min": -0.11839213999800491,
+    "max_cooks_d": 0.2574896462026534,
+    "max_leverage": 0.44438646130175824,
+    "n": 97,
+    "n_cooks_above_4_over_n": 8,
+    "ols_ci": [
+      -0.15523952679126768,
+      -0.06891499260184566
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2437585927977202
+      },
+      {
+        "lower_raw": 1.2437585927977202,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.5991417789567144
+      },
+      {
+        "lower_raw": 1.5991417789567144,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.2437585927977202,
+      1.5991417789567144
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.500952283020556
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.5580101930705222
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.2594421576556463
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "fevsxecog",
+    "title": "financial_moderation | connectivity | average | fevsxecog | fevsxecog | z-3.1-negative-c2"
+  },
+  {
+    "estimate": -0.1729654327270112,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.3166436597178418,
+      -0.02928720573618057
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.0367253563442347
+      },
+      {
+        "lower_raw": 1.0367253563442347,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.6273950238588248
+      },
+      {
+        "lower_raw": 1.6273950238588248,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.0367253563442347,
+      1.6273950238588248
+    ],
+    "id": "e29e4f9d331d75",
+    "leave_one_out_estimate_max": -0.1273173779387114,
+    "leave_one_out_estimate_min": -0.2178843688610613,
+    "max_cooks_d": 0.48994816481670656,
+    "max_leverage": 0.44438646130175824,
+    "n": 97,
+    "n_cooks_above_4_over_n": 8,
+    "ols_ci": [
+      -0.2392479705707572,
+      -0.1066828948832652
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1362341279654433
+      },
+      {
+        "lower_raw": 1.1362341279654433,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.4969079359873727
+      },
+      {
+        "lower_raw": 1.4969079359873727,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.1362341279654433,
+      1.4969079359873727
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.517312381007086
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.562462138289991
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.5495034936988349
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "fevsxecog",
+    "title": "financial_moderation | connectivity | average | fevsxecog | fevsxecog | z-3.1-negative-c3"
+  },
+  {
+    "estimate": -0.21208690172783343,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -1.3250033631330278,
+      0.9008295596773609
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "82de158ff7b48d",
+    "leave_one_out_estimate_max": 0.12355314615253363,
+    "leave_one_out_estimate_min": -0.5229559537562677,
+    "max_cooks_d": 0.18971733659968198,
+    "max_leverage": 0.391343653836,
+    "n": 97,
+    "n_cooks_above_4_over_n": 5,
+    "ols_ci": [
+      -0.9928423251491214,
+      0.5686685216934546
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 48.90749259200603
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 69.2299063601981
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 67.06664223310997
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "oafemxmspss",
+    "title": "financial_moderation | activation | average | oafemxmspss | oafemxmspss | anatomical-VS"
+  },
+  {
+    "estimate": 0.0030998550112393865,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.07222137494989314,
+      0.07842108497237191
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 5.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 96.0
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "16d7fddd9a2a3e",
+    "leave_one_out_estimate_max": 0.03735385881837407,
+    "leave_one_out_estimate_min": -0.0025635385333857997,
+    "max_cooks_d": 0.2895820239684843,
+    "max_leverage": 0.5516748357122083,
+    "n": 97,
+    "n_cooks_above_4_over_n": 5,
+    "ols_ci": [
+      -0.04711543052627129,
+      0.05331514054875007
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 5.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 96.0
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 49.38538253419033
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 67.6087133800181
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 66.62968067195017
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "oafemxadi",
+    "title": "financial_moderation | activation | average | oafemxadi | oafemxadi | anatomical-VS"
+  },
+  {
+    "estimate": -0.000955318655194521,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.0018569070412242275,
+      -5.373026916481445e-05
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 5.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 70.34745030174382
+      },
+      {
+        "lower_raw": 70.34745030174382,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 96.0
+      }
+    ],
+    "hc3_jn_roots": [
+      70.34745030174382
+    ],
+    "id": "98d7e324d201a9",
+    "leave_one_out_estimate_max": -0.0005240107875771125,
+    "leave_one_out_estimate_min": -0.000989880148909701,
+    "max_cooks_d": 1.2458970714719921,
+    "max_leverage": 0.5516748357122083,
+    "n": 97,
+    "n_cooks_above_4_over_n": 12,
+    "ols_ci": [
+      -0.0012601479436222473,
+      -0.0006504893667667946
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 5.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 45.85546017231751
+      },
+      {
+        "lower_raw": 45.85546017231751,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 60.87970106014077
+      },
+      {
+        "lower_raw": 60.87970106014077,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 96.0
+      }
+    ],
+    "ols_jn_roots": [
+      45.85546017231751,
+      60.87970106014077
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.5475518036738121
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.5294505430197911
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.283683017448272
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "oafemxadi",
+    "title": "financial_moderation | connectivity | average | oafemxadi | oafemxadi | z-3.1-negative-c1"
+  },
+  {
+    "estimate": -1.0767079180166754,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -2.722582716385247,
+      0.5691668803518963
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 6.3182,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 10.2364
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "08ee88d1e433bf",
+    "leave_one_out_estimate_max": -0.6011759545255675,
+    "leave_one_out_estimate_min": -1.383480525635519,
+    "max_cooks_d": 0.14366924322379246,
+    "max_leverage": 0.5546652343862435,
+    "n": 97,
+    "n_cooks_above_4_over_n": 7,
+    "ols_ci": [
+      -2.4067824519570724,
+      0.25336661592372134
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 6.3182,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 10.2364
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 49.815000942906984
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 56.36127235340989
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 66.00701841965473
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "oafemxpm25",
+    "title": "financial_moderation | activation | average | oafemxpm25 | oafemxpm25 | anatomical-VS"
+  },
+  {
+    "estimate": -0.3215089006233269,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -2.6111592896866136,
+      1.96814148843996
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "e372aa826276bc",
+    "leave_one_out_estimate_max": 0.010400724130705918,
+    "leave_one_out_estimate_min": -0.9454552864903163,
+    "max_cooks_d": 0.2625483132216365,
+    "max_leverage": 0.44992778302526437,
+    "n": 97,
+    "n_cooks_above_4_over_n": 6,
+    "ols_ci": [
+      -2.6754473718084983,
+      2.032429570561845
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 49.53822639663859
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 69.68006951735435
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 66.9958867866389
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "oafemxecog",
+    "title": "financial_moderation | activation | average | oafemxecog | oafemxecog | anatomical-VS"
+  }
+]

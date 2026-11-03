@@ -1,0 +1,77 @@
+{
+  "png_sha256": "9d80a265b73d4a9ad666e044d6d3522e03303da0c065806f874d450add99fb4f",
+  "result": {
+    "estimate": 0.025835075807407144,
+    "exclusions_made": false,
+    "hc3_ci": [
+      0.0013992763170460228,
+      0.05027087529776826
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1635389559206195
+      },
+      {
+        "lower_raw": 1.1635389559206195,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.1635389559206195
+    ],
+    "id": "4202b9d43c4548",
+    "leave_one_out_estimate_max": 0.029084808230118702,
+    "leave_one_out_estimate_min": 0.015919359269851344,
+    "max_cooks_d": 1.282254425064244,
+    "max_leverage": 0.31693239841993215,
+    "n": 97,
+    "n_cooks_above_4_over_n": 8,
+    "ols_ci": [
+      0.0167149696294895,
+      0.03495518198532479
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.3030012003013132
+      },
+      {
+        "lower_raw": 1.3030012003013132,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.5749659524652293
+      },
+      {
+        "lower_raw": 1.5749659524652293,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.3030012003013132,
+      1.5749659524652293
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.53307690866163
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.4958646762313487
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.20850593774072942
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "adixecog",
+    "title": "environment_connectivity | connectivity | average | adixecog | adixecog | z-3.1-positive-c1"
+  },
+  "signature": "341aa492883d11dfe4d947ea6976edcdea93a01a9cfb11d732d0e6d01286a9f4"
+}

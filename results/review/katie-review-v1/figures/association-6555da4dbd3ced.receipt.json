@@ -1,0 +1,83 @@
+{
+  "png_sha256": "2d87160ffa5681f96318953dd0d6b42caee35d99430fddd35daddb55a2a30cd1",
+  "result": {
+    "estimate": 2.130494272632001,
+    "exclusions_made": false,
+    "hc3_ci": [
+      0.394040568550428,
+      3.866947976713574
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.106606358603913
+      },
+      {
+        "lower_raw": 1.106606358603913,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.4148827637115469
+      },
+      {
+        "lower_raw": 1.4148827637115469,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.106606358603913,
+      1.4148827637115469
+    ],
+    "id": "6555da4dbd3ced",
+    "leave_one_out_estimate_max": 2.3125052081822473,
+    "leave_one_out_estimate_min": 1.3988746428396899,
+    "max_cooks_d": 0.8530158815438464,
+    "max_leverage": 0.40865967289539507,
+    "n": 97,
+    "n_cooks_above_4_over_n": 8,
+    "ols_ci": [
+      1.4367271440093003,
+      2.824261401254702
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1652799688870268
+      },
+      {
+        "lower_raw": 1.1652799688870268,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.3612962875450672
+      },
+      {
+        "lower_raw": 1.3612962875450672,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.1652799688870268,
+      1.3612962875450672
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 1.0728885888123503
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.9067348860070606
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.5303109434886517
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "pm25xecog",
+    "title": "environment_connectivity | connectivity | social_specific | pm25xecog | pm25xecog | z-3.1-positive-c2"
+  },
+  "signature": "17930da2dd644c85922455e1e042679e012fc2264f7d1944d54b0096e4c77194"
+}

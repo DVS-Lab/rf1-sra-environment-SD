@@ -1,0 +1,83 @@
+{
+  "png_sha256": "e73ecd2761f476365941ca9005806a305e8002406ba0d745d035f2beff96e568",
+  "result": {
+    "estimate": 0.015931542384164134,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.1339931202640965,
+      0.16585620503242476
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 5.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 15.945871737561767
+      },
+      {
+        "lower_raw": 15.945871737561767,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 64.66226455425424
+      },
+      {
+        "lower_raw": 64.66226455425424,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 96.0
+      }
+    ],
+    "hc3_jn_roots": [
+      15.945871737561767,
+      64.66226455425424
+    ],
+    "id": "4bf0dc6c5ca736",
+    "leave_one_out_estimate_max": 0.04511783677668091,
+    "leave_one_out_estimate_min": -0.005862407810086588,
+    "max_cooks_d": 0.12717719115117082,
+    "max_leverage": 0.4269572826762434,
+    "n": 97,
+    "n_cooks_above_4_over_n": 8,
+    "ols_ci": [
+      -0.15316697687807126,
+      0.18503006164639954
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 5.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 19.428290809630226
+      },
+      {
+        "lower_raw": 19.428290809630226,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 59.04378146410095
+      },
+      {
+        "lower_raw": 59.04378146410095,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 96.0
+      }
+    ],
+    "ols_jn_roots": [
+      19.428290809630226,
+      59.04378146410095
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 89.96882127286673
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 103.8003592100345
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 83.23035549346679
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "fevsxadi",
+    "title": "financial_moderation | activation | social_specific | fevsxadi | fevsxadi | anatomical-VS"
+  },
+  "signature": "e31753a8a3fdfb63f6de0f1dc5c725cb448ca4ec94a6a6860b1f3041e5552b76"
+}

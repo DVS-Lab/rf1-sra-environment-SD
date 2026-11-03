@@ -1,0 +1,57 @@
+{
+  "png_sha256": "4ce656f65d66eaab44c2cd074b87b0aff5cc2ae14b875e5b753f357861d4c6a4",
+  "result": {
+    "estimate": 5.6725992848037095,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -4.246864316198172,
+      15.592062885805591
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "3ef4315bc1ae3e",
+    "leave_one_out_estimate_max": 7.183115772305691,
+    "leave_one_out_estimate_min": 3.613016011047675,
+    "max_cooks_d": 0.1075802445453939,
+    "max_leverage": 0.3201340712779812,
+    "n": 97,
+    "n_cooks_above_4_over_n": 4,
+    "ols_ci": [
+      -5.178118262554374,
+      16.523316832161793
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 0.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 7.0
+      }
+    ],
+    "ols_jn_roots": [],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 94.30721830360507
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 93.14645912584442
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 87.18615193538461
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "pm25xmspss",
+    "title": "environment_activation | activation | social_specific | pm25xmspss | pm25xmspss | anatomical-VS"
+  },
+  "signature": "70b4cb3a215f3ee711bd78fc8d0f64017660c4aab31f1f069c5ca6b9a8b49110"
+}

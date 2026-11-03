@@ -1,0 +1,83 @@
+{
+  "png_sha256": "cc886b9ca9f3b22391c9d0f0e3f9bd00701c11dd246571fbba74a46e5e257886",
+  "result": {
+    "estimate": 10.213472756627345,
+    "exclusions_made": false,
+    "hc3_ci": [
+      6.816895606357821,
+      13.610049906896869
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.3143408779433545
+      },
+      {
+        "lower_raw": 1.3143408779433545,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.6032998974388766
+      },
+      {
+        "lower_raw": 1.6032998974388766,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.3143408779433545,
+      1.6032998974388766
+    ],
+    "id": "8026865926dc5c",
+    "leave_one_out_estimate_max": 10.986994680127744,
+    "leave_one_out_estimate_min": 9.558989213674243,
+    "max_cooks_d": 0.08616321272816135,
+    "max_leverage": 0.44438646130175824,
+    "n": 97,
+    "n_cooks_above_4_over_n": 6,
+    "ols_ci": [
+      6.655890949269343,
+      13.771054563985347
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2989259399890882
+      },
+      {
+        "lower_raw": 1.2989259399890882,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.616957982518869
+      },
+      {
+        "lower_raw": 1.616957982518869,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.2989259399890882,
+      1.616957982518869
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 31.656347085130346
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 19.309735858860783
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 28.60828690795473
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "fevsxecog",
+    "title": "financial_moderation | activation | average | fevsxecog | fevsxecog | z-2.6-positive-c1"
+  },
+  "signature": "995250312029e6efde9a11a2f25f6a3bfbae6d5a2630ee837ff649702958fe37"
+}

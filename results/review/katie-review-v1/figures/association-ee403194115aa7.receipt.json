@@ -1,0 +1,41 @@
+{
+  "png_sha256": "86993068b0def88284e8bd4d0d5b8eb0d12c65d8a5835fbd3a0976da9699fe0d",
+  "result": {
+    "estimate": 0.4234595728448021,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -2.21179544905587,
+      3.0587145947454744
+    ],
+    "id": "ee403194115aa7",
+    "leave_one_out_estimate_max": 0.8246075602015122,
+    "leave_one_out_estimate_min": 0.03363772622740524,
+    "max_cooks_d": 0.1338298160662021,
+    "max_leverage": 0.28771887009005626,
+    "n": 97,
+    "n_cooks_above_4_over_n": 3,
+    "ols_ci": [
+      -2.594613016035535,
+      3.441532161725139
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 49.10683053572555
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 61.03807365642671
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 68.21442620631744
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "fevs",
+    "title": "financial_predictors | activation | average | fevs | fevs | anatomical-VS"
+  },
+  "signature": "bc05f659870f32cd9890084c4842ddb7c9d6559111181d034dc132c7cc3c4704"
+}

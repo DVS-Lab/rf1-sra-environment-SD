@@ -1,0 +1,41 @@
+{
+  "png_sha256": "3ed8f0ea23ae3e46f0a0ba5699b0da8838f515f042ac965c542e051f57e6c64f",
+  "result": {
+    "estimate": 0.47993416819271034,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -1.3062996610996174,
+      2.266167997485038
+    ],
+    "id": "bf7ae0358e5c5d",
+    "leave_one_out_estimate_max": 0.704121578801296,
+    "leave_one_out_estimate_min": -0.17716266129856278,
+    "max_cooks_d": 0.2535824169357801,
+    "max_leverage": 0.3938201343840712,
+    "n": 97,
+    "n_cooks_above_4_over_n": 3,
+    "ols_ci": [
+      -0.9240909139168247,
+      1.8839592503022453
+    ],
+    "residual_df": 89.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 93.61620394523148
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 78.2740624334602
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 89.00989825548086
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "oafem",
+    "title": "financial_predictors | activation | social_specific | oafem | oafem | anatomical-VS"
+  },
+  "signature": "437808e7a5b70e2ac127aae6cab0eff3cf569b060ce25fd50953df7b60c703ff"
+}

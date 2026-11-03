@@ -1,0 +1,77 @@
+{
+  "png_sha256": "24ce2564e91ccbb584168aeec442e73a5d5c400e04aea873716c6e644c29ee61",
+  "result": {
+    "estimate": -1.8229354942805347,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -3.5961316861962906,
+      -0.04973930236477875
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.3825206438098239
+      },
+      {
+        "lower_raw": 1.3825206438098239,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.3825206438098239
+    ],
+    "id": "5c42493a70bbe9",
+    "leave_one_out_estimate_max": -1.2223101271351244,
+    "leave_one_out_estimate_min": -2.3020580795377255,
+    "max_cooks_d": 0.8351310707416228,
+    "max_leverage": 0.40865967289539507,
+    "n": 97,
+    "n_cooks_above_4_over_n": 10,
+    "ols_ci": [
+      -2.522129750286832,
+      -1.1237412382742376
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.0931922134141145
+      },
+      {
+        "lower_raw": 1.0931922134141145,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.3379633355278482
+      },
+      {
+        "lower_raw": 1.3379633355278482,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.0931922134141145,
+      1.3379633355278482
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 1.187789962344213
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.32271542286656313
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.4920000705318517
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "pm25xecog",
+    "title": "environment_connectivity | connectivity | social_specific | pm25xecog | pm25xecog | z-3.1-negative-c1"
+  },
+  "signature": "931c2eb8254f82a09248a117630467cbefbfaa7d4d18d0c5341075dc84e46141"
+}

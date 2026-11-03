@@ -1,0 +1,70 @@
+{
+  "png_sha256": "32c7bb3b20d9005afb159698e80a1c84310d9ac9cc9970f23c3fe6f5af9e1b54",
+  "result": {
+    "estimate": -0.20484123107101915,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.4556616608101744,
+      0.0459791986681361
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "159f088687f05c",
+    "leave_one_out_estimate_max": -0.09091793071794013,
+    "leave_one_out_estimate_min": -0.240645885550931,
+    "max_cooks_d": 2.1490957087512856,
+    "max_leverage": 0.43654059673109036,
+    "n": 97,
+    "n_cooks_above_4_over_n": 13,
+    "ols_ci": [
+      -0.28225027697099886,
+      -0.12743218517103944
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.227751571562443
+      },
+      {
+        "lower_raw": 1.227751571562443,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.5731431050203282
+      },
+      {
+        "lower_raw": 1.5731431050203282,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.227751571562443,
+      1.5731431050203282
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.9613604468037991
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.7324253042196844
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.43745833272825824
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "fevsxecog",
+    "title": "financial_moderation | connectivity | social_specific | fevsxecog | fevsxecog | z-2.6-negative-c1"
+  },
+  "signature": "d28b0fc0b459b18f308b815752daa8618d3e318d6b04b2bba0accaff71b5a6f5"
+}

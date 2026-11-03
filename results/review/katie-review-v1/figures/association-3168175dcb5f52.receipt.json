@@ -1,0 +1,83 @@
+{
+  "png_sha256": "825a96bda1e38f31d58edc60bbc18a8f80f3b76db740f32b642928856ed4bdf8",
+  "result": {
+    "estimate": -0.1360151943244513,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.20367998499959084,
+      -0.06835040364931178
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1810576931556565
+      },
+      {
+        "lower_raw": 1.1810576931556565,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.6557278196114056
+      },
+      {
+        "lower_raw": 1.6557278196114056,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.1810576931556565,
+      1.6557278196114056
+    ],
+    "id": "3168175dcb5f52",
+    "leave_one_out_estimate_max": -0.11262590599720619,
+    "leave_one_out_estimate_min": -0.14592710719721208,
+    "max_cooks_d": 0.3175530447808968,
+    "max_leverage": 0.44438646130175824,
+    "n": 97,
+    "n_cooks_above_4_over_n": 9,
+    "ols_ci": [
+      -0.18695242546482574,
+      -0.08507796318407687
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2351304401661234
+      },
+      {
+        "lower_raw": 1.2351304401661234,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.5790312844859489
+      },
+      {
+        "lower_raw": 1.5790312844859489,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.2351304401661234,
+      1.5790312844859489
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.4221209052737096
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.6394918682126615
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.39691258099257676
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "fevsxecog",
+    "title": "financial_moderation | connectivity | average | fevsxecog | fevsxecog | z-3.1-negative-c1"
+  },
+  "signature": "032fed74ad086c1cceaa2e71ce661bad6df1a032bc8a9619b03ccb648bd7b7c7"
+}

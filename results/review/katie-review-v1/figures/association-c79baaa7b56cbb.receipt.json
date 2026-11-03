@@ -1,0 +1,83 @@
+{
+  "png_sha256": "bf0998de1e50f302f1d16d7bab1ec55d07360d23bfb1d8d2a8ef9935fc0715f6",
+  "result": {
+    "estimate": 0.39786069419780995,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -9.807128805637774,
+      10.602850194033394
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.0721122505693725
+      },
+      {
+        "lower_raw": 1.0721122505693725,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.839947464189728
+      },
+      {
+        "lower_raw": 1.839947464189728,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.0721122505693725,
+      1.839947464189728
+    ],
+    "id": "c79baaa7b56cbb",
+    "leave_one_out_estimate_max": 2.1558292997900477,
+    "leave_one_out_estimate_min": -0.7460523813234778,
+    "max_cooks_d": 0.1202156636458102,
+    "max_leverage": 0.43654059673109036,
+    "n": 97,
+    "n_cooks_above_4_over_n": 6,
+    "ols_ci": [
+      -10.322952846381446,
+      11.118674234777066
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.06766108127407
+      },
+      {
+        "lower_raw": 1.06766108127407,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.7360632623029029
+      },
+      {
+        "lower_raw": 1.7360632623029029,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.06766108127407,
+      1.7360632623029029
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 92.66589660407391
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 103.03541870964123
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 83.51441444175926
+      }
+    },
+    "selection": "Anatomical VS ROI; exploratory region-level follow-up",
+    "term": "fevsxecog",
+    "title": "financial_moderation | activation | social_specific | fevsxecog | fevsxecog | anatomical-VS"
+  },
+  "signature": "102f34e29178d8417e2389ae37811bcb964d5c58cbf7337418d27c255b99e494"
+}

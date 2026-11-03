@@ -1,0 +1,77 @@
+{
+  "png_sha256": "0185a5d8f627c83222111c16b6ef5b06660bf1070397717bbf8d51299583bfd6",
+  "result": {
+    "estimate": -1.4117154119531847,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -2.796402452984541,
+      -0.027028370921828637
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.4851931336204167
+      },
+      {
+        "lower_raw": 1.4851931336204167,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.4851931336204167
+    ],
+    "id": "6bf0ca08058d03",
+    "leave_one_out_estimate_max": -0.9086077989592511,
+    "leave_one_out_estimate_min": -1.7693883516653726,
+    "max_cooks_d": 1.0068271704748022,
+    "max_leverage": 0.40865967289539507,
+    "n": 97,
+    "n_cooks_above_4_over_n": 10,
+    "ols_ci": [
+      -1.945117765761982,
+      -0.8783130581443874
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1177538444491977
+      },
+      {
+        "lower_raw": 1.1177538444491977,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.3540901857325753
+      },
+      {
+        "lower_raw": 1.3540901857325753,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.1177538444491977,
+      1.3540901857325753
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.9115580215065968
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.3328597136915993
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.366411927234162
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "pm25xecog",
+    "title": "environment_connectivity | connectivity | social_specific | pm25xecog | pm25xecog | z-2.6-negative-c1"
+  },
+  "signature": "885bab5ccc6c70e44be8011394d6236dc123ed157278d73d3271d79e04e62f92"
+}

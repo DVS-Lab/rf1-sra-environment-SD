@@ -1,0 +1,83 @@
+{
+  "png_sha256": "eb8499f663a1d166571d835280c476cb710046ec989ec579b0d2f2a54ea187d5",
+  "result": {
+    "estimate": -0.0013066748172707826,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -0.0020743245849070124,
+      -0.0005390250496345528
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 5.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 24.60982245805499
+      },
+      {
+        "lower_raw": 24.60982245805499,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 50.0367664431391
+      },
+      {
+        "lower_raw": 50.0367664431391,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 96.0
+      }
+    ],
+    "hc3_jn_roots": [
+      24.60982245805499,
+      50.0367664431391
+    ],
+    "id": "7e000b3bdfd9df",
+    "leave_one_out_estimate_max": -0.0009780381947795181,
+    "leave_one_out_estimate_min": -0.0013598886408114656,
+    "max_cooks_d": 0.4516667870058663,
+    "max_leverage": 0.5517630671406735,
+    "n": 97,
+    "n_cooks_above_4_over_n": 8,
+    "ols_ci": [
+      -0.0016916907309943463,
+      -0.000921658903547219
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 5.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 35.21275634733647
+      },
+      {
+        "lower_raw": 35.21275634733647,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 47.570395977169504
+      },
+      {
+        "lower_raw": 47.570395977169504,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 96.0
+      }
+    ],
+    "ols_jn_roots": [
+      35.21275634733647,
+      47.570395977169504
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.6316904401417732
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.3285531798824284
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.41887089408290895
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "oafemxadi",
+    "title": "financial_moderation | connectivity | social_specific | oafemxadi | oafemxadi | z-2.6-negative-c1"
+  },
+  "signature": "33666aa8aad6cb51f7d76648ad23e83789f8a9085e4deccec365f7d2bbe0012c"
+}

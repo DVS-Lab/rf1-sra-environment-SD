@@ -1,0 +1,77 @@
+{
+  "png_sha256": "ead6900337a96ba823327ad3af8e7aa82093c6aaeb8eae57938a6d0c75fe44e2",
+  "result": {
+    "estimate": 2.09586385026839,
+    "exclusions_made": false,
+    "hc3_ci": [
+      0.06514847327512818,
+      4.126579227261652
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.5341154941207726
+      },
+      {
+        "lower_raw": 1.5341154941207726,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.5341154941207726
+    ],
+    "id": "1c655f10aa6af2",
+    "leave_one_out_estimate_max": 2.331801484206327,
+    "leave_one_out_estimate_min": 1.3872719481580025,
+    "max_cooks_d": 0.960704874839366,
+    "max_leverage": 0.40865967289539507,
+    "n": 97,
+    "n_cooks_above_4_over_n": 9,
+    "ols_ci": [
+      1.3267817743830466,
+      2.8649459261537333
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1285590793722566
+      },
+      {
+        "lower_raw": 1.1285590793722566,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.35597049478625
+      },
+      {
+        "lower_raw": 1.35597049478625,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.1285590793722566,
+      1.35597049478625
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 1.0893420179669036
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.8102403692192863
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.6707672925681778
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "pm25xecog",
+    "title": "environment_connectivity | connectivity | social_specific | pm25xecog | pm25xecog | z-3.1-positive-c1"
+  },
+  "signature": "061a5435cac51188b6d2d8052e05a43ad2c7c74e5391b1bec0d84ed121cd6506"
+}

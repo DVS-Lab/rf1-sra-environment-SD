@@ -1,0 +1,70 @@
+{
+  "png_sha256": "c0e79acd4e69c0d7f4b0b25154cdeac5857633cfeec1ac3c3a2c08c8aacd3ab8",
+  "result": {
+    "estimate": -1.9303602025645383,
+    "exclusions_made": false,
+    "hc3_ci": [
+      -4.128908683945449,
+      0.2681882788163721
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [],
+    "id": "daac74a612407b",
+    "leave_one_out_estimate_max": -0.952548468659617,
+    "leave_one_out_estimate_min": -2.216248808489605,
+    "max_cooks_d": 1.8748207537088988,
+    "max_leverage": 0.40865967289539507,
+    "n": 97,
+    "n_cooks_above_4_over_n": 11,
+    "ols_ci": [
+      -2.6900685015163748,
+      -1.1706519036127019
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.1280863959672733
+      },
+      {
+        "lower_raw": 1.1280863959672733,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.3733329442762585
+      },
+      {
+        "lower_raw": 1.3733329442762585,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.1280863959672733,
+      1.3733329442762585
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 1.210448894822681
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.883909263667233
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.564592782655286
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "pm25xecog",
+    "title": "environment_connectivity | connectivity | social_specific | pm25xecog | pm25xecog | z-3.1-negative-c2"
+  },
+  "signature": "22e34c612e721faf380bec97e1f52aaf74a2ee71501a6939c3083627e01607c9"
+}

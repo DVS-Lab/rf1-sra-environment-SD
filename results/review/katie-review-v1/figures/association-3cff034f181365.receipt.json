@@ -1,0 +1,83 @@
+{
+  "png_sha256": "6b72664d8eb0d69e5482606d416f95fca724df2318251e8732caaeb885b1bbdb",
+  "result": {
+    "estimate": 0.025242802691929588,
+    "exclusions_made": false,
+    "hc3_ci": [
+      0.004864126477318032,
+      0.04562147890654114
+    ],
+    "hc3_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2996448126239888
+      },
+      {
+        "lower_raw": 1.2996448126239888,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 2.121753778626023
+      },
+      {
+        "lower_raw": 2.121753778626023,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "hc3_jn_roots": [
+      1.2996448126239888,
+      2.121753778626023
+    ],
+    "id": "3cff034f181365",
+    "leave_one_out_estimate_max": 0.028600575851239197,
+    "leave_one_out_estimate_min": 0.016781036054561254,
+    "max_cooks_d": 0.972607739265535,
+    "max_leverage": 0.31693239841993215,
+    "n": 97,
+    "n_cooks_above_4_over_n": 11,
+    "ols_ci": [
+      0.01630655746330514,
+      0.03417904792055404
+    ],
+    "ols_jn_regions": [
+      {
+        "lower_raw": 1.0,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 1.2935792271176885
+      },
+      {
+        "lower_raw": 1.2935792271176885,
+        "pointwise_ci_excludes_zero": false,
+        "upper_raw": 1.5667871342367652
+      },
+      {
+        "lower_raw": 1.5667871342367652,
+        "pointwise_ci_excludes_zero": true,
+        "upper_raw": 2.916666666666667
+      }
+    ],
+    "ols_jn_roots": [
+      1.2935792271176885,
+      1.5667871342367652
+    ],
+    "residual_df": 87.0,
+    "residual_sd_by_era": {
+      "E11": {
+        "n": 25,
+        "sd": 0.4777947230240638
+      },
+      "XA30": {
+        "n": 5,
+        "sd": 0.442622963483109
+      },
+      "XA60": {
+        "n": 67,
+        "sd": 0.24570245979066038
+      }
+    },
+    "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+    "term": "adixecog",
+    "title": "environment_connectivity | connectivity | average | adixecog | adixecog | z-2.6-positive-c1"
+  },
+  "signature": "5c9a4d668e120851a8db0d3feaefdcd48029493d88fd160868385b23154f4a55"
+}
