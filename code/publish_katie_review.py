@@ -38,7 +38,9 @@ def publish(project, report):
         if check and result.returncode:raise RuntimeError("Git command failed: "+" ".join(args)+"\n"+result.stderr[-4000:])
         return result
     try:
-        git("clone","--shared","--no-checkout",str(project),str(clone),cwd=project)
+        # Shared lab repositories may be owned by another account. Clone HTTPS,
+        # not the live .git directory, without weakening Git ownership checks.
+        git("clone","--no-checkout","--single-branch","--branch","main",REMOTE,str(clone),cwd=project)
         git("remote","set-url","origin",REMOTE)
         git("fetch","origin","main"); git("checkout","--detach","FETCH_HEAD")
         destination = clone / DESTINATION

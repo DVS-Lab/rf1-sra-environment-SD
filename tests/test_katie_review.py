@@ -233,11 +233,16 @@ class ReviewPublication(unittest.TestCase):
             report=root/"report";report.mkdir();(report/"README.md").write_text("Aggregate review\n")
             (report/"review_manifest.json").write_text(json.dumps(dict(n=97,outputs={"README.md":base.cohort.digest(report/"README.md")})))
             before=(git("rev-parse","HEAD"),base.cohort.digest(project/".git/index"),git("status","--porcelain"))
-            with patch.object(publisher,"REMOTE",str(remote)):
+            original_run=publisher.subprocess.run
+            with patch.object(publisher,"REMOTE",str(remote)),patch.object(publisher.subprocess,"run",wraps=original_run) as invoked:
                 publisher.publish(project,report)
                 head=git("--git-dir",str(remote),"rev-parse","main")
                 publisher.publish(project,report)
                 self.assertEqual(head,git("--git-dir",str(remote),"rev-parse","main"))
+                clone_calls=[call.args[0] for call in invoked.call_args_list if call.args[0][:2]==["git","clone"]]
+                self.assertEqual(len(clone_calls),2)
+                self.assertTrue(all(str(remote) in call and str(project) not in call and "--shared" not in call for call in clone_calls))
+                self.assertFalse(any("safe.directory" in str(call.args) for call in invoked.call_args_list))
             self.assertEqual(before,(git("rev-parse","HEAD"),base.cohort.digest(project/".git/index"),git("status","--porcelain")))
             self.assertEqual(git("--git-dir",str(remote),"show","main:results/review/katie-review-v1/README.md"),"Aggregate review\n")
 

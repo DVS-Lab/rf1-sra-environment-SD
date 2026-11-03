@@ -136,7 +136,9 @@ frozen live checkout; it is not a claim that paths are sensitive.
 
 After validation, aggregate PNGs, tables, Markdown and HTML are committed/pushed
 automatically to `results/review/katie-review-v1/` on GitHub through an isolated
-temporary clone over HTTPS. No SCP/rsync, force push, live-index change, or source
+temporary clone directly from the HTTPS remote (not from the shared live .git
+directory). This avoids shared-ownership clone failures without adding global
+safe.directory exceptions or changing ownership/permissions. No SCP/rsync, force push, live-index change, or source
 image publication is used. Participant-level influence tables are not in that
 published payload. Ordinary Git fetch/pull can retrieve the published figures
 on the Mac after the run completes.
@@ -144,6 +146,11 @@ on the Mac after the run completes.
 Start here after successful publication:
 
 https://github.com/DVS-Lab/rf1-sra-environment-SD/blob/main/results/review/katie-review-v1/README.md
+
+If a completed review failed only during publication, rerun the same three-line
+launcher above. An existing sealed review skips the audit/figure builders,
+rechecks its artifacts and original source hashes, and retries publication only.
+It does not rerender or rerun any analysis.
 
 The HTML is useful locally; GitHub itself displays HTML source, not an executed
 website. The README links directly to PNGs that GitHub renders.
