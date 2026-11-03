@@ -1,0 +1,4 @@
+id	outcome	model	term	direction	z	component	voxels	volume_mm3	cluster_fwe_p	peak_coefficient_t	peak_mni_x	peak_mni_y	peak_mni_z	peak_atlas_labels
+fevs-pm25-loss	loss_only	fevsxpm25	fevsxpm25	negative	3.1	1	90	1948.617087598802	0.0494999885559082	-4.9478888511657715	-26.200002193450928	-42.30000185966492	61.65000128746033	HarvardOxford-cort: Superior Parietal Lobule; HarvardOxford-sub: Left Cerebral Cortex
+ecog-pm25-loss	loss_only	pm25xecog	ecog	negative	2.6	1	290	6278.877282262807	0.03179997205734253	-4.097054481506348	54.79999923706055	-15.300001382827759	37.89000105857849	HarvardOxford-cort: Postcentral Gyrus; HarvardOxford-sub: Right Cerebral Cortex
+ecog-oafem-win	win_only	oafemxecog	ecog	negative	3.1	1	61	1320.7293593725215	0.04530000686645508	-4.429454803466797	-58.60000276565552	-63.900002241134644	20.070000886917114	HarvardOxford-cort: Lateral Occipital Cortex, superior division; HarvardOxford-sub: Left Cerebral Cortex

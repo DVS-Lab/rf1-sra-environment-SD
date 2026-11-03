@@ -1,0 +1,50 @@
+{
+  "exclusions_changed": false,
+  "n": 97,
+  "new_inference": false,
+  "outputs": {
+    "README.md": "5905fc50ce1416315e3ec36f4f1cb3c694da38ad8ea65bc284f60001416bfc7b",
+    "clusters.tsv": "9d927d1d05ff503243a429d1890b3a00664d5f3e8a6052510e0558b71c68fb01",
+    "ecog-oafem-win-brain.png": "d1817a0872bbd03ac6f18ce654488c1c083c9206625a76f9764b574e553a3f9a",
+    "ecog-oafem-win-cluster-1-scatter.png": "33e0880a2ef9004ef0f658f107672fa7e9d9d0e22f0fb4830a30e12fd2490f4e",
+    "ecog-pm25-loss-brain.png": "9488f3306b2cc3716ddf30a0f885d3904998fb946c080d84a5288dbf5dba7d1e",
+    "ecog-pm25-loss-cluster-1-scatter.png": "214c65c6d067e1bd8eb270225dde61c92ca8e042aa8660ce0a36a44bd6d13241",
+    "fevs-pm25-loss-brain.png": "6b4a748010d9e4bc1f8e9cc012edb91039f6db8c2595999bc4c86a2ceb60f641",
+    "fevs-pm25-loss-cluster-1-jn-curves.tsv": "1e434c63036c4b152ef28eccd57e644ee6845e70bd341598b9adfeba417012f2",
+    "fevs-pm25-loss-cluster-1-jn.png": "d73ce1db1a4a9e541bbb4dfe058e40010b52a830572624982c0872cf4d5af4f1",
+    "summary.json": "b9e25bf381e7414a090451e7f1ff1805efe0c2c38aacf1ba37279337c2911898"
+  },
+  "renderer_sha256": "cf5b01d76b65a07e103ec1b88e1114fc68e4f7a915dac43e605690701e111580",
+  "targets": [
+    {
+      "context": "FEVS x PM2.5 interaction",
+      "id": "fevs-pm25-loss",
+      "interaction": true,
+      "model": "fevsxpm25",
+      "outcome": "loss_only",
+      "outcome_label": "Social loss minus nonsocial loss",
+      "term": "fevsxpm25",
+      "z": 3.1
+    },
+    {
+      "context": "Ecog main effect at mean PM2.5",
+      "id": "ecog-pm25-loss",
+      "interaction": false,
+      "model": "pm25xecog",
+      "outcome": "loss_only",
+      "outcome_label": "Social loss minus nonsocial loss",
+      "term": "ecog",
+      "z": 2.6
+    },
+    {
+      "context": "Ecog main effect at mean OAFEM",
+      "id": "ecog-oafem-win",
+      "interaction": false,
+      "model": "oafemxecog",
+      "outcome": "win_only",
+      "outcome_label": "Social win minus nonsocial win",
+      "term": "ecog",
+      "z": 3.1
+    }
+  ]
+}

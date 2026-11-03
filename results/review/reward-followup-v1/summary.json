@@ -1,0 +1,424 @@
+{
+  "atlas_available": true,
+  "caution": "Same-sample selected clusters; descriptive ROI/JN intervals, not independent inference; mapwise FWE only.",
+  "clusters": [
+    {
+      "atlas_annotations": [
+        {
+          "atlas": "HarvardOxford-cort",
+          "cluster_overlap": [
+            {
+              "fraction": 0.6,
+              "label": "Superior Parietal Lobule",
+              "voxels": 54
+            },
+            {
+              "fraction": 0.37777777777777777,
+              "label": "Postcentral Gyrus",
+              "voxels": 34
+            },
+            {
+              "fraction": 0.022222222222222223,
+              "label": "Unlabeled",
+              "voxels": 2
+            }
+          ],
+          "peak_label": "Superior Parietal Lobule"
+        },
+        {
+          "atlas": "HarvardOxford-sub",
+          "cluster_overlap": [
+            {
+              "fraction": 0.9666666666666667,
+              "label": "Left Cerebral Cortex",
+              "voxels": 87
+            },
+            {
+              "fraction": 0.03333333333333333,
+              "label": "Left Cerebral White Matter",
+              "voxels": 3
+            }
+          ],
+          "peak_label": "Left Cerebral Cortex"
+        }
+      ],
+      "cluster_fwe_p": 0.0494999885559082,
+      "component": 1,
+      "direction": "negative",
+      "id": "fevs-pm25-loss",
+      "model": "fevsxpm25",
+      "outcome": "loss_only",
+      "peak_atlas_labels": "HarvardOxford-cort: Superior Parietal Lobule; HarvardOxford-sub: Left Cerebral Cortex",
+      "peak_coefficient_t": -4.9478888511657715,
+      "peak_mni_x": -26.200002193450928,
+      "peak_mni_y": -42.30000185966492,
+      "peak_mni_z": 61.65000128746033,
+      "term": "fevsxpm25",
+      "volume_mm3": 1948.617087598802,
+      "voxels": 90,
+      "z": 3.1
+    },
+    {
+      "atlas_annotations": [
+        {
+          "atlas": "HarvardOxford-cort",
+          "cluster_overlap": [
+            {
+              "fraction": 0.5413793103448276,
+              "label": "Postcentral Gyrus",
+              "voxels": 157
+            },
+            {
+              "fraction": 0.2689655172413793,
+              "label": "Unlabeled",
+              "voxels": 78
+            },
+            {
+              "fraction": 0.1724137931034483,
+              "label": "Precentral Gyrus",
+              "voxels": 50
+            },
+            {
+              "fraction": 0.013793103448275862,
+              "label": "Middle Frontal Gyrus",
+              "voxels": 4
+            },
+            {
+              "fraction": 0.0034482758620689655,
+              "label": "Supramarginal Gyrus, anterior division",
+              "voxels": 1
+            }
+          ],
+          "peak_label": "Postcentral Gyrus"
+        },
+        {
+          "atlas": "HarvardOxford-sub",
+          "cluster_overlap": [
+            {
+              "fraction": 0.7206896551724138,
+              "label": "Right Cerebral Cortex",
+              "voxels": 209
+            },
+            {
+              "fraction": 0.23793103448275862,
+              "label": "Right Cerebral White Matter",
+              "voxels": 69
+            },
+            {
+              "fraction": 0.041379310344827586,
+              "label": "Unlabeled",
+              "voxels": 12
+            }
+          ],
+          "peak_label": "Right Cerebral Cortex"
+        }
+      ],
+      "cluster_fwe_p": 0.03179997205734253,
+      "component": 1,
+      "direction": "negative",
+      "id": "ecog-pm25-loss",
+      "model": "pm25xecog",
+      "outcome": "loss_only",
+      "peak_atlas_labels": "HarvardOxford-cort: Postcentral Gyrus; HarvardOxford-sub: Right Cerebral Cortex",
+      "peak_coefficient_t": -4.097054481506348,
+      "peak_mni_x": 54.79999923706055,
+      "peak_mni_y": -15.300001382827759,
+      "peak_mni_z": 37.89000105857849,
+      "term": "ecog",
+      "volume_mm3": 6278.877282262807,
+      "voxels": 290,
+      "z": 2.6
+    },
+    {
+      "atlas_annotations": [
+        {
+          "atlas": "HarvardOxford-cort",
+          "cluster_overlap": [
+            {
+              "fraction": 0.7704918032786885,
+              "label": "Lateral Occipital Cortex, superior division",
+              "voxels": 47
+            },
+            {
+              "fraction": 0.14754098360655737,
+              "label": "Unlabeled",
+              "voxels": 9
+            },
+            {
+              "fraction": 0.04918032786885246,
+              "label": "Angular Gyrus",
+              "voxels": 3
+            },
+            {
+              "fraction": 0.03278688524590164,
+              "label": "Lateral Occipital Cortex, inferior division",
+              "voxels": 2
+            }
+          ],
+          "peak_label": "Lateral Occipital Cortex, superior division"
+        },
+        {
+          "atlas": "HarvardOxford-sub",
+          "cluster_overlap": [
+            {
+              "fraction": 0.9508196721311475,
+              "label": "Left Cerebral Cortex",
+              "voxels": 58
+            },
+            {
+              "fraction": 0.04918032786885246,
+              "label": "Unlabeled",
+              "voxels": 3
+            }
+          ],
+          "peak_label": "Left Cerebral Cortex"
+        }
+      ],
+      "cluster_fwe_p": 0.04530000686645508,
+      "component": 1,
+      "direction": "negative",
+      "id": "ecog-oafem-win",
+      "model": "oafemxecog",
+      "outcome": "win_only",
+      "peak_atlas_labels": "HarvardOxford-cort: Lateral Occipital Cortex, superior division; HarvardOxford-sub: Left Cerebral Cortex",
+      "peak_coefficient_t": -4.429454803466797,
+      "peak_mni_x": -58.60000276565552,
+      "peak_mni_y": -63.900002241134644,
+      "peak_mni_z": 20.070000886917114,
+      "term": "ecog",
+      "volume_mm3": 1320.7293593725215,
+      "voxels": 61,
+      "z": 3.1
+    }
+  ],
+  "exclusions_changed": false,
+  "n": 97,
+  "new_inference": false,
+  "original_results_changed": false,
+  "region_fits": [
+    {
+      "estimate": -22.741517924071868,
+      "exclusions_made": false,
+      "hc3_ci": [
+        -34.576991112134706,
+        -10.906044736009033
+      ],
+      "hc3_jn_regions": [
+        {
+          "lower_raw": 6.3182,
+          "pointwise_ci_excludes_zero": true,
+          "upper_raw": 8.21241067889275
+        },
+        {
+          "lower_raw": 8.21241067889275,
+          "pointwise_ci_excludes_zero": false,
+          "upper_raw": 8.956702438448882
+        },
+        {
+          "lower_raw": 8.956702438448882,
+          "pointwise_ci_excludes_zero": true,
+          "upper_raw": 10.2364
+        }
+      ],
+      "hc3_jn_roots": [
+        8.21241067889275,
+        8.956702438448882
+      ],
+      "id": "fevs-pm25-loss-cluster-1",
+      "leave_one_out_estimate_max": -19.082489862412963,
+      "leave_one_out_estimate_min": -24.496618991686404,
+      "max_cooks_d": 0.24518224250864723,
+      "max_leverage": 0.500868889540428,
+      "n": 97,
+      "n_cooks_above_4_over_n": 6,
+      "ols_ci": [
+        -31.745903890044545,
+        -13.73713195809919
+      ],
+      "ols_jn_regions": [
+        {
+          "lower_raw": 6.3182,
+          "pointwise_ci_excludes_zero": true,
+          "upper_raw": 8.178952818525275
+        },
+        {
+          "lower_raw": 8.178952818525275,
+          "pointwise_ci_excludes_zero": false,
+          "upper_raw": 8.88323722411498
+        },
+        {
+          "lower_raw": 8.88323722411498,
+          "pointwise_ci_excludes_zero": true,
+          "upper_raw": 10.2364
+        }
+      ],
+      "ols_jn_roots": [
+        8.178952818525275,
+        8.88323722411498
+      ],
+      "residual_df": 87.0,
+      "residual_sd_by_era": {
+        "E11": {
+          "n": 25,
+          "sd": 102.33943309287348
+        },
+        "XA30": {
+          "n": 5,
+          "sd": 81.23316886757546
+        },
+        "XA60": {
+          "n": 67,
+          "sd": 169.13638842014174
+        }
+      },
+      "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+      "term": "fevsxpm25",
+      "title": "Social loss minus nonsocial loss\nFEVS x PM2.5 interaction | cluster 1"
+    },
+    {
+      "estimate": -164.04289990833118,
+      "exclusions_made": false,
+      "hc3_ci": [
+        -352.08845332255,
+        24.002653505887594
+      ],
+      "id": "ecog-pm25-loss-cluster-1",
+      "leave_one_out_estimate_max": -75.27087386207208,
+      "leave_one_out_estimate_min": -175.06241263554864,
+      "max_cooks_d": 1.6368183253123383,
+      "max_leverage": 0.40865967289539507,
+      "n": 97,
+      "n_cooks_above_4_over_n": 3,
+      "ols_ci": [
+        -242.59414627786686,
+        -85.49165353879549
+      ],
+      "residual_df": 87.0,
+      "residual_sd_by_era": {
+        "E11": {
+          "n": 25,
+          "sd": 74.55252869422002
+        },
+        "XA30": {
+          "n": 5,
+          "sd": 66.18731855178463
+        },
+        "XA60": {
+          "n": 67,
+          "sd": 135.48766162567188
+        }
+      },
+      "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+      "term": "ecog",
+      "title": "Social loss minus nonsocial loss\nEcog main effect at mean PM2.5 | cluster 1"
+    },
+    {
+      "estimate": -176.34559517370047,
+      "exclusions_made": false,
+      "hc3_ci": [
+        -308.25960297996005,
+        -44.4315873674409
+      ],
+      "id": "ecog-oafem-win-cluster-1",
+      "leave_one_out_estimate_max": -119.41396794209787,
+      "leave_one_out_estimate_min": -188.20934855017464,
+      "max_cooks_d": 0.6645794387860184,
+      "max_leverage": 0.45940713285546014,
+      "n": 97,
+      "n_cooks_above_4_over_n": 6,
+      "ols_ci": [
+        -248.06370407640514,
+        -104.62748627099579
+      ],
+      "residual_df": 87.0,
+      "residual_sd_by_era": {
+        "E11": {
+          "n": 25,
+          "sd": 84.39581494747806
+        },
+        "XA30": {
+          "n": 5,
+          "sd": 67.25257095413275
+        },
+        "XA60": {
+          "n": 67,
+          "sd": 98.154506349099
+        }
+      },
+      "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+      "term": "ecog",
+      "title": "Social win minus nonsocial win\nEcog main effect at mean OAFEM | cluster 1"
+    }
+  ],
+  "targets": [
+    {
+      "columns": [
+        "ones",
+        "delta_fd",
+        "delta_tsnr",
+        "e11",
+        "xa30",
+        "gender_code1",
+        "age",
+        "fevs",
+        "pm25",
+        "fevsxpm25"
+      ],
+      "context": "FEVS x PM2.5 interaction",
+      "corrected_clusters": 1,
+      "id": "fevs-pm25-loss",
+      "interaction": true,
+      "model": "fevsxpm25",
+      "outcome": "loss_only",
+      "outcome_label": "Social loss minus nonsocial loss",
+      "term": "fevsxpm25",
+      "z": 3.1
+    },
+    {
+      "columns": [
+        "ones",
+        "delta_fd",
+        "delta_tsnr",
+        "e11",
+        "xa30",
+        "gender_code1",
+        "age",
+        "pm25",
+        "ecog",
+        "pm25xecog"
+      ],
+      "context": "Ecog main effect at mean PM2.5",
+      "corrected_clusters": 1,
+      "id": "ecog-pm25-loss",
+      "interaction": false,
+      "model": "pm25xecog",
+      "outcome": "loss_only",
+      "outcome_label": "Social loss minus nonsocial loss",
+      "term": "ecog",
+      "z": 2.6
+    },
+    {
+      "columns": [
+        "ones",
+        "delta_fd",
+        "delta_tsnr",
+        "e11",
+        "xa30",
+        "gender_code1",
+        "age",
+        "oafem",
+        "ecog",
+        "oafemxecog"
+      ],
+      "context": "Ecog main effect at mean OAFEM",
+      "corrected_clusters": 1,
+      "id": "ecog-oafem-win",
+      "interaction": false,
+      "model": "oafemxecog",
+      "outcome": "win_only",
+      "outcome_label": "Social win minus nonsocial win",
+      "term": "ecog",
+      "z": 3.1
+    }
+  ]
+}
