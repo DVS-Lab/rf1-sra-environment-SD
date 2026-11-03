@@ -1,0 +1,115 @@
+{
+  "atlas_available": true,
+  "caution": "Same-sample selected-cluster descriptions; mapwise cluster-FWE only.",
+  "clusters": [
+    {
+      "atlas_annotations": [
+        {
+          "atlas": "HarvardOxford-cort",
+          "cluster_overlap": [
+            {
+              "fraction": 0.9772727272727273,
+              "label": "Frontal Pole",
+              "voxels": 43
+            },
+            {
+              "fraction": 0.022727272727272728,
+              "label": "Unlabeled",
+              "voxels": 1
+            }
+          ],
+          "peak_label": "Frontal Pole"
+        },
+        {
+          "atlas": "HarvardOxford-sub",
+          "cluster_overlap": [
+            {
+              "fraction": 0.8409090909090909,
+              "label": "Left Cerebral Cortex",
+              "voxels": 37
+            },
+            {
+              "fraction": 0.1590909090909091,
+              "label": "Left Cerebral White Matter",
+              "voxels": 7
+            }
+          ],
+          "peak_label": "Left Cerebral White Matter"
+        }
+      ],
+      "cluster_fwe_p": 0.030300021171569824,
+      "component": 1,
+      "peak_atlas_labels": "HarvardOxford-cort: Frontal Pole; HarvardOxford-sub: Left Cerebral White Matter",
+      "peak_coefficient_t": -4.598762512207031,
+      "peak_mni_x": -20.800002098083496,
+      "peak_mni_y": 57.59999990463257,
+      "peak_mni_z": 11.160000801086426,
+      "volume_mm3": 952.657242826081,
+      "voxels": 44
+    }
+  ],
+  "context": "FEVS main effect at mean PM2.5; NOT an interaction or win-only effect",
+  "direction": "negative",
+  "exclusions_changed": false,
+  "family": "connectivity",
+  "job": "connectivity/social_specific/fevsxpm25/z-3p1",
+  "model_columns": [
+    "ones",
+    "delta_fd",
+    "delta_tsnr",
+    "e11",
+    "xa30",
+    "gender_code1",
+    "age",
+    "fevs",
+    "pm25",
+    "fevsxpm25"
+  ],
+  "n": 97,
+  "new_inference": false,
+  "original_results_changed": false,
+  "outcome": "social_specific",
+  "outcome_formula": "[Social VS PPI(win-loss)] - [Nonsocial VS PPI(win-loss)]",
+  "region_fits": [
+    {
+      "estimate": -0.11023174653731502,
+      "exclusions_made": false,
+      "hc3_ci": [
+        -0.15455282400838938,
+        -0.06591066906624066
+      ],
+      "id": "fevs-vs-cluster-1",
+      "leave_one_out_estimate_max": -0.0975463553992878,
+      "leave_one_out_estimate_min": -0.11448420896848903,
+      "max_cooks_d": 0.20037494883799853,
+      "max_leverage": 0.500868889540428,
+      "n": 97,
+      "n_cooks_above_4_over_n": 9,
+      "ols_ci": [
+        -0.1461785744219326,
+        -0.07428491865269743
+      ],
+      "residual_df": 87.0,
+      "residual_sd_by_era": {
+        "E11": {
+          "n": 25,
+          "sd": 0.9766847537445911
+        },
+        "XA30": {
+          "n": 5,
+          "sd": 0.6528698735860222
+        },
+        "XA60": {
+          "n": 67,
+          "sd": 0.6088135801041951
+        }
+      },
+      "selection": "SAME-SAMPLE SELECTED CLUSTER: descriptive only",
+      "term": "fevs",
+      "title": "VS coupling: domain-by-valence contrast\nFEVS main effect at mean PM2.5 | cluster 1"
+    }
+  ],
+  "seed": "Original VS PPI seed; unchanged",
+  "term": "fevs",
+  "z": 3.1
+}

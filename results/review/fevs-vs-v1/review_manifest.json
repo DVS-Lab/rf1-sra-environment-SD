@@ -1,0 +1,14 @@
+{
+  "exclusions_changed": false,
+  "job": "connectivity/social_specific/fevsxpm25/z-3p1",
+  "n": 97,
+  "new_inference": false,
+  "outputs": {
+    "README.md": "e16012bc8644cbfc9effb22f28c30ae37b3cf8e43023e51e281e5b3679f669fc",
+    "clusters.tsv": "747871c095ebdd75b1520c01ed1e6a4d72a651d5a132ac0f456f146c4adf4b86",
+    "fevs-vs-cluster-1-brain.png": "3f3eb8dced584f13734c3aeb0c18a31c22f52b40c9b21fd071755acdd7a67545",
+    "fevs-vs-cluster-1-scatter.png": "35ffad74513bd82c3a5212b4c90910b46f6de9fd9c237f5ab1873b9fe2a7d862",
+    "summary.json": "07a29fef5753dd8374019f5f42ad138557a077cdba65785968fa4785ca0bc03a"
+  },
+  "renderer_sha256": "c44c5eec0e83490fc1db0d96bea52e519a1e32c86f30afb0d5fa4a060c88f9c4"
+}
