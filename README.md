@@ -6,6 +6,11 @@ component of the RF1 brain-health/environment project.
 
 ## Current Analysis Status: N=97 Randomise Completed and Verified
 
+**Complete reward-component extension:** the [60-worker launcher](docs/reward-extension.md)
+adds wins/losses for all previous activation and VS-connectivity models, explicitly
+tests main effects/interactions, and fills missing older main-effect tests while
+preserving every compatible completed result and the same 97 participants.
+
 **PM2.5 additive component follow-up:** the [six-job component runner](docs/pm25-components.md)
 compares social-minus-nonsocial wins, losses and their valence difference with
 the same PM2.5 + Ecog adjustment model, preserving N=97 and all completed analyses.
