@@ -6,6 +6,10 @@ component of the RF1 brain-health/environment project.
 
 ## Current Analysis Status: N=97 Randomise Completed and Verified
 
+**PM2.5 additive component follow-up:** the [six-job component runner](docs/pm25-components.md)
+compares social-minus-nonsocial wins, losses and their valence difference with
+the same PM2.5 + Ecog adjustment model, preserving N=97 and all completed analyses.
+
 **Launch the remaining task activation, conditional effects and VS PPI:** use
 the [single 48-worker Linux2 launcher](docs/run-all-remaining.md). It preserves
 the completed original batch, averages task effects/covariates within person,
