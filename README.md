@@ -34,6 +34,11 @@ all completed directions including nulls, process activity and possible stale
 markers, without interrupting or restarting analyses. Its run record publishes
 through Git automatically.
 
+For the complete activation/connectivity audit, brain panels, scatterplots and
+descriptive Johnson-Neyman follow-ups, use the [full results-review launcher](docs/full-results-review.md).
+It covers 152 completed jobs / 336 directional maps, preserves the frozen
+cohort and inference, and publishes validated aggregate figures to GitHub.
+
 The published [Linux2 completion record](https://github.com/DVS-Lab/rf1-sra-linux2/blob/main/logs/records/20261101-232106_katie-overnight-20261101-231810-randomise.md)
 confirms all **24 jobs / 48 directional corrected maps** passed with command and
 check exit 0. N=97 input/order, image arithmetic, live scanner-era and full-rank
