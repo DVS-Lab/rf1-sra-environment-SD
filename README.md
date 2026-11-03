@@ -6,6 +6,11 @@ component of the RF1 brain-health/environment project.
 
 ## Current Analysis Status: Original N=97 Analyses Verified; Extension In Progress
 
+**FEVS loss moderation and Ecog figures:** the [read-only follow-up launcher](docs/reward-followup-review.md)
+maps the loss-specific FEVS x PM2.5 interaction and two new Ecog main effects,
+with descriptive JN/scatter and influence plots. The small validated report and
+progress logs publish automatically without touching running inference or exclusions.
+
 **Targeted FEVS brain/scatter review:** the [read-only reporting launcher](docs/fevs-win-review.md)
 refreshes live progress and maps the two completed FEVS win-specific activation
 main effects. It preserves running inference and publishes only a small aggregate
