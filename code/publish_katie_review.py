@@ -28,7 +28,11 @@ def payload(report):
     return files
 
 
-def publish(project, report):
+def publish(project, report, destination=None):
+    target = DESTINATION if destination is None else Path(destination)
+    if (target.is_absolute() or ".." in target.parts or len(target.parts) != 3
+            or target.parts[:2] != ("results", "review")):
+        raise ValueError("Use a versioned results/review/<name> destination")
     files = payload(report)
     workspace = Path(tempfile.mkdtemp(prefix="publish-review-",dir=project / "work")); workspace.chmod(0o777)
     clone = workspace / "repo"
@@ -43,7 +47,7 @@ def publish(project, report):
         git("clone","--no-checkout","--single-branch","--branch","main",REMOTE,str(clone),cwd=project)
         git("remote","set-url","origin",REMOTE)
         git("fetch","origin","main"); git("checkout","--detach","FETCH_HEAD")
-        destination = clone / DESTINATION
+        destination = clone / target
         if destination.exists():
             if any(not (destination/name).is_file() or base.cohort.digest(destination/name) != base.cohort.digest(report/name) for name in files):
                 raise ValueError("An existing published review differs; preserve both and choose a versioned destination")
@@ -54,7 +58,7 @@ def publish(project, report):
             value = git("config","--get",key,cwd=project).stdout.strip()
             if not value: raise ValueError("Missing source Git author identity")
             git("config",key,value)
-        git("add","--",str(DESTINATION)); git("commit","-m","Publish audited Katie activation/connectivity figures and descriptive JN review")
+        git("add","--",str(target)); git("commit","-m","Publish validated aggregate review: "+target.name)
         for attempt in range(3):
             pushed = git("push","origin","HEAD:main",check=False)
             if pushed.returncode == 0: break
@@ -64,7 +68,7 @@ def publish(project, report):
         else: raise RuntimeError("Remote kept advancing; staged review preserved for inspection")
         commit = git("rev-parse","HEAD").stdout.strip()
         print("PUBLISHED aggregate review at " + commit)
-        print("https://github.com/DVS-Lab/rf1-sra-environment-SD/blob/main/"+str(DESTINATION / "README.md"))
+        print("https://github.com/DVS-Lab/rf1-sra-environment-SD/blob/main/"+str(target / "README.md"))
         print("Live branch, index, working files, completed inference and exclusions unchanged.")
         shutil.rmtree(workspace)
     except BaseException:
@@ -75,4 +79,5 @@ if __name__ == "__main__":
     os.umask(0)
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--project",type=Path,required=True);parser.add_argument("--report",type=Path,required=True)
-    args=parser.parse_args();publish(args.project.resolve(),args.report.resolve())
+    parser.add_argument("--destination",type=Path)
+    args=parser.parse_args();publish(args.project.resolve(),args.report.resolve(),args.destination)

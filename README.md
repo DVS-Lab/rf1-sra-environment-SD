@@ -4,7 +4,12 @@ This repository contains the reproducible participant-generation, environmental
 linkage, Level 3 input-building, and group-analysis code for the Social Doors
 component of the RF1 brain-health/environment project.
 
-## Current Analysis Status: N=97 Randomise Completed and Verified
+## Current Analysis Status: Original N=97 Analyses Verified; Extension In Progress
+
+**Targeted FEVS brain/scatter review:** the [read-only reporting launcher](docs/fevs-win-review.md)
+refreshes live progress and maps the two completed FEVS win-specific activation
+main effects. It preserves running inference and publishes only a small aggregate
+report, with all 97 participants retained in the descriptive scatterplots.
 
 **Complete reward-component extension:** the [60-worker launcher](docs/reward-extension.md)
 adds wins/losses for all previous activation and VS-connectivity models, explicitly
