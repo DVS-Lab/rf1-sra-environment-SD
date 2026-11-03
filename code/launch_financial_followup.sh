@@ -4,8 +4,8 @@ set -euo pipefail
 umask 0000
 MODE=${1:-moderation}
 PROJECT=$(pwd -P)
-[[ "$MODE" == predictors || "$MODE" == moderation || "$MODE" == moderation-concurrent || "$MODE" == status ]] || {
-  echo "Usage: launch_financial_followup.sh [predictors|moderation|moderation-concurrent|status]"; exit 1;
+[[ "$MODE" == predictors || "$MODE" == moderation || "$MODE" == moderation-concurrent || "$MODE" == status || "$MODE" == snapshot ]] || {
+  echo "Usage: launch_financial_followup.sh [predictors|moderation|moderation-concurrent|status|snapshot]"; exit 1;
 }
 echo "=== Current financial coordinators ==="
 pgrep -u "$USER" -af '[p]ython[^ ]* .*code/run_financial_(models|moderation)\.py' || true
@@ -26,10 +26,12 @@ PY
 [[ "$MODE" != status ]] || exit 0
 if [[ "$MODE" == predictors ]]; then
   SCRIPT=run_financial_models; LABEL=katie-financial
+elif [[ "$MODE" == snapshot ]]; then
+  SCRIPT=run_financial_snapshot; LABEL=financial-snapshot
 else
   SCRIPT=run_financial_moderation; LABEL=katie-moderation
 fi
-if [[ "$MODE" != moderation-concurrent ]] && pgrep -u "$USER" -af "[r]un_financial_$( [[ "$MODE" == predictors ]] && echo models || echo moderation )\.(py|sh)( |$)"; then
+if [[ "$MODE" != moderation-concurrent && "$MODE" != snapshot ]] && pgrep -u "$USER" -af "[r]un_financial_$( [[ "$MODE" == predictors ]] && echo models || echo moderation )\.(py|sh)( |$)"; then
   echo "Already active: preserving it; no second launcher started."
   exit 0
 fi
@@ -44,6 +46,10 @@ if [[ ! -d "$RELEASE" ]]; then
   mv "$STAGE" "$RELEASE"
 fi
 [[ -x "$PROJECT/work/venv-katie/bin/python" ]] || { echo "Missing existing Katie environment; stopped."; exit 1; }
+if [[ "$MODE" == snapshot ]]; then
+  bash "$RELEASE/code/run_financial_snapshot.sh"
+  exit
+fi
 STAMP="$LABEL-$(date +%Y%m%d-%H%M%S)"
 LOG="$PROJECT/logs/runs/$STAMP.nohup.out"
 EXTRA=()

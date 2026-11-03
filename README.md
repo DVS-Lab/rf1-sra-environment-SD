@@ -28,6 +28,12 @@ N=97 and all existing jobs/results, can safely share inputs with the predictor
 batch using `moderation-concurrent`, and adds no three-way interactions or exclusions. Its three-line launcher also provides
 a read-only status mode for diagnosing interrupted terminal pastes.
 
+For a live progress check and a peek at verified completed financial results,
+use the [read-only snapshot](docs/financial-progress.md). It reports both batches,
+all completed directions including nulls, process activity and possible stale
+markers, without interrupting or restarting analyses. Its run record publishes
+through Git automatically.
+
 The published [Linux2 completion record](https://github.com/DVS-Lab/rf1-sra-linux2/blob/main/logs/records/20261101-232106_katie-overnight-20261101-231810-randomise.md)
 confirms all **24 jobs / 48 directional corrected maps** passed with command and
 check exit 0. N=97 input/order, image arithmetic, live scanner-era and full-rank
