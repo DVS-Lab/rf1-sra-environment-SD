@@ -30,7 +30,7 @@ if [[ ${1:-} == --worker ]]; then
     --check "$PYTHON" code/review_fevs_adjustment_maps.py check --project "$PROJECT" --report "$REPORT"
   bash "$UPSTREAM/code/run_logged.sh" --label "$STAMP-publish" --include-full-log -- \
     "$PYTHON" code/publish_katie_review.py --project "$PROJECT" --report "$REPORT" \
-    --destination results/review/fevs-adjustment-maps-v1
+    --destination results/review/fevs-adjustment-maps-v1 --sync-checkout
   exit 0
 fi
 

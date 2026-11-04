@@ -14,6 +14,23 @@ REMOTE = "https://github.com/DVS-Lab/rf1-sra-environment-SD.git"
 DESTINATION = Path("results/review/katie-review-v1")
 
 
+def sync_checkout(project):
+    """Opt-in completion sync: never commit, rebase, stash or discard local work."""
+    def git(*args):
+        result=subprocess.run(["git",*args],cwd=project,check=False,text=True,capture_output=True,
+                              env=dict(os.environ,GIT_TERMINAL_PROMPT="0",GIT_EDITOR="true"))
+        if result.returncode:
+            raise RuntimeError("Checkout sync stopped; no recovery attempted: "+result.stderr.strip())
+        return result.stdout.strip()
+    if git("symbolic-ref","--quiet","--short","HEAD")!="main":
+        raise ValueError("Checkout sync requires main; no branch switched")
+    if git("status","--porcelain"):
+        raise ValueError("Checkout sync requires a clean tree; no files stashed or discarded")
+    git("-c","remote.origin.url="+REMOTE,"fetch","origin","main")
+    git("merge","--ff-only","origin/main")
+    print("CHECKOUT SYNCED: "+git("rev-parse","--short","HEAD")+"; fast-forward only; frozen releases and imaging outputs unchanged.")
+
+
 def payload(report):
     manifest = json.loads((report / "review_manifest.json").read_text())
     files = ["review_manifest.json", *manifest["outputs"]]
@@ -80,4 +97,7 @@ if __name__ == "__main__":
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--project",type=Path,required=True);parser.add_argument("--report",type=Path,required=True)
     parser.add_argument("--destination",type=Path)
+    parser.add_argument("--sync-checkout",action="store_true",help="After publication, fast-forward a clean main checkout only")
     args=parser.parse_args();publish(args.project.resolve(),args.report.resolve(),args.destination)
+    if args.sync_checkout:
+        sync_checkout(args.project.resolve())

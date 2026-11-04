@@ -152,3 +152,32 @@ comparison or edit the frozen plan. The original analysis interpreter is now
 selected explicitly, and a missing interpreter stops rather than falling back.
 The initial map-review attempt failed before creating report figures; rerunning
 the same launch block fetches this reporting fix without rerunning inference.
+
+The corrected map review validated and published on November 4 at d8e622b:
+render/check/publication all exited 0. Original/adjusted clusters and all 6,580
+recorded sources verified, with N=97 and exclusions unchanged.
+
+The map review supports anatomical stability of the surviving clusters, not
+uniform statistical robustness. ADI-only Dice overlap is 0.977 for the PM2.5
+activation model and 0.989 for VS connectivity. With both ADI/Ecog, Dice is 0.717
+and 0.744 respectively. The apparent 15-mm peak changes remain inside the
+original corrected clusters; centroid changes are only 1.1 mm (activation) and
+1.3 mm (VS connectivity). Ecog-only activation has no corrected cluster
+(p=.0505 in the PM2.5 model); standalone FEVS activation also fails correction
+with Ecog or both. These are CDT-3.1 descriptions, not additional tests.
+
+The adjusted VS target remains predominantly left frontal-pole/cortex labeled.
+The activation cluster remains near the left ventral anterior frontal region,
+with approximately 64% standard-atlas white-matter labeling in the jointly
+adjusted PM2.5 model. Atlas sampling is approximate, not native tissue
+segmentation or proof of artifact; avoid describing this as clean cortical
+vmPFC/OFC localization. No exclusion or processing change follows from this
+anatomical description. All scoring remains provisional.
+
+Future map-review publications opt into `publish_katie_review.py --sync-checkout`
+after successful publication. It fetches through HTTPS and fast-forwards only a
+clean main checkout. Dirty trees, other branches or divergent history stop sync;
+there is no automatic commit, rebase, stash, reset or deletion. Frozen releases
+and native outputs are untouched. Other publishers retain their existing default
+of leaving the checkout unchanged. Already-published reports are still checked
+before an explicitly requested sync.
