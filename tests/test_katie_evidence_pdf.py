@@ -30,25 +30,29 @@ class EvidenceBrief(unittest.TestCase):
         self.assertEqual(checks["mat"], "f86c5c487df2196eef16f2627326f9899db469711f6c3e088ec1210589f06f37")
 
     @unittest.skipUnless(importlib.util.find_spec("pypdf"), "PDF runtime required")
-    def test_eleven_pages_context_content_conclusion_and_completed_evidence(self):
+    def test_twelve_pages_context_content_conclusion_and_completed_evidence(self):
         from pypdf import PdfReader
         reader = PdfReader(brief.OUTPUT)
-        self.assertEqual(len(reader.pages), 11)
+        self.assertEqual(len(reader.pages), 12)
         texts = [" ".join(p.extract_text().split()) for p in reader.pages]
         for text in texts:
             for label in ("Context", "Content", "Conclusion", "N=97", "PRELIMINARY"):
                 self.assertIn(label, text)
         self.assertIn("0.0021", texts[1])
         self.assertIn("0.0011", texts[1])
-        for text in texts[2:8]:
+        self.assertIn("Expected Striatal Activation Is Present", texts[0])
+        self.assertIn("11.79", texts[2])
+        self.assertIn("11.70", texts[2])
+        self.assertIn("66.63 [53.24, 80.02]", texts[2])
+        for text in texts[3:9]:
             self.assertIn("exact model-adjusted scatter", text)
             self.assertIn("descriptive only", text)
             self.assertIn("not across the exploratory model family", text)
-        self.assertIn("0.0505", texts[5])
-        self.assertIn("0.0353", texts[7])
-        self.assertIn("scoring-corrected", texts[8])
-        self.assertIn("not native FEAT screenshots", texts[9])
-        self.assertIn("unmodified native FEAT screenshots", texts[10])
+        self.assertIn("0.0505", texts[6])
+        self.assertIn("0.0353", texts[8])
+        self.assertIn("scoring-corrected", texts[9])
+        self.assertIn("not native FEAT screenshots", texts[10])
+        self.assertIn("unmodified native FEAT screenshots", texts[11])
         self.assertNotIn("awaiting evidence publication", " ".join(texts).lower())
         self.assertIn("not demonstrated", " ".join(texts).replace("do not demonstrate", "not demonstrated"))
         for subject in ("11120", "11461", "11679", "11853", "11914"):
@@ -63,6 +67,15 @@ class EvidenceBrief(unittest.TestCase):
         self.assertEqual(record["evidence_publication"], "11ab6e6")
         self.assertEqual(record["pdf_sha256"], brief.old.digest(brief.OUTPUT))
         self.assertEqual(record["builder_sha256"], brief.old.digest(Path(brief.__file__)))
+
+    def test_striatal_response_is_confirmed_separately_in_each_task(self):
+        peaks, roi = brief.striatal_task_check()
+        self.assertEqual(len(peaks), 6)
+        self.assertTrue(all(r["t"] > 7.5 and r["cluster_p"] < .001 for r in peaks))
+        for outcome in ("socialdoors", "doors", "average"):
+            self.assertGreater(float(roi[outcome]["descriptive_ci_lower"]), 0)
+        self.assertLess(float(roi["social_specific"]["descriptive_ci_lower"]), 0)
+        self.assertGreater(float(roi["social_specific"]["descriptive_ci_upper"]), 0)
 
 
 if __name__ == "__main__":

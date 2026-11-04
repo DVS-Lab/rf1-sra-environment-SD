@@ -61,6 +61,27 @@ def executed_design():
     return names, x, c, checks
 
 
+def striatal_task_check():
+    """Summarize existing corrected clusters and independent anatomical ROI data."""
+    clusters = old.rows(REVIEW / "katie-review-v1/clusters.tsv")
+    peaks = []
+    for outcome in ("socialdoors", "doors", "average"):
+        for side, bounds in (("Left", (-25, 0)), ("Right", (0, 25))):
+            matches = [r for r in clusters if r["batch"] == "group_activation" and r["outcome"] == outcome
+                       and r["z"] == "3.1" and r["direction"] == "positive"
+                       and bounds[0] < float(r["peak_x_mm"]) < bounds[1]
+                       and 0 < float(r["peak_y_mm"]) < 20 and -15 < float(r["peak_z_mm"]) < 0]
+            assert matches, "Previously reported ventral-striatal-region peak missing"
+            selected = max(matches, key=lambda r: float(r["peak_contrast_t"]))
+            peaks.append(dict(outcome=outcome, side=side,
+                              xyz=[float(selected[f"peak_{axis}_mm"]) for axis in "xyz"],
+                              t=float(selected["peak_contrast_t"]),
+                              cluster_p=float(selected["cluster_fwe_p_min"])))
+    roi = {r["outcome"]: r for r in old.rows(REVIEW / "katie-review-v1/vs_group_response.tsv")}
+    assert all(int(r["n"]) == 97 for r in roi.values())
+    return peaks, roi
+
+
 def design_plot(destination):
     import matplotlib
     matplotlib.use("Agg")
@@ -168,8 +189,10 @@ def build(output=OUTPUT, temporary=TEMP):
         p("Conclusion", "section")
         p(value)
 
-    heading("Task Effects Before Individual Differences",
-            "Do the tasks elicit reward responses, and do the two definitions of social specificity show a group-average effect?")
+    peaks, roi = striatal_task_check()
+    heading("Win > Loss: Expected Striatal Activation Is Present",
+            "Yes: both Social Doors and nonsocial Doors show bilateral ventral-striatal-region win > loss responses. "
+            "The across-task average confirms the expected reward response; social specificity is a separate question.")
     evidence_root = REVIEW / "katie-evidence-v1"
     evidence = json.loads((evidence_root / "summary.json").read_text())
     t = Table([[image(evidence_root / "group-average.png", 348, 170),
@@ -177,12 +200,13 @@ def build(output=OUTPUT, temporary=TEMP):
     story.append(t)
     table([
         ["Outcome", "Existing result", "Interpretation"],
-        ["Average win > loss across domains", "Minimum cluster-FWE p=.0001 at both CDTs; 11,811 corrected voxels at CDT 3.1", "Clear group task response (left figure)."],
+        ["Average win > loss across domains", "Minimum cluster-FWE p=.0001 at both CDTs; 11,811 corrected voxels at CDT 3.1", "Bilateral ventral-striatal-region peaks: t=11.79 left, 11.70 right (left figure)."],
         ["Double subtraction: (social win-loss) - (nonsocial win-loss)", "No corrected cluster in either direction at either CDT", "No detected group-average domain-by-valence effect (right figure)."],
         ["Social win - nonsocial win", "Corrected positive and negative clusters at both CDTs; see next page", "A domain difference in winning responses, not a win-loss interaction."],
     ], [237, 260, 215])
-    conclusion("Reward activation is present. A null group-average double subtraction does not rule out individual differences. "
-               "Social-winning and domain-by-valence contrasts answer different questions and must remain distinct.")
+    conclusion("The expected striatal reward response is present, not missing: averaged win > loss peaks near MNI [-12.7, 6.3, -9.6] "
+               "and [14.3, 9.0, -9.6] lie in corrected clusters with FWE p=.0001. "
+               "The null double subtraction means we do not detect a group-average social advantage in win-loss differentiation.")
     p("Figure rows: unthresholded context, corrected CDT 2.6, corrected CDT 3.1. Red/blue show positive/negative coefficients. "
       "All results use existing no-TEDANA sm-5 FEAT inputs; no preprocessing or exclusions changed.", "small")
 
@@ -195,9 +219,31 @@ def build(output=OUTPUT, temporary=TEMP):
           [[str(r["z"]), r["direction"], f"{r['min_cluster_fwe_p']:.4f}", r["significant_voxels"]] for r in means],
           [170, 160, 205, 177])
     conclusion("There are regions with social > nonsocial winning responses and regions showing the reverse, at both thresholds. "
-               "This establishes domain differentiation for winning, not a universal social-reward increase or a domain-by-valence interaction.")
+               "This establishes domain differentiation for winning, not a universal social-reward increase or a domain-by-valence interaction. "
+               "It should not be presented as proof of additional striatal activation for social wins.")
+    p("The displayed domain effects include temporal and posterior cortical areas, with both positive and negative regions. "
+      "These are coarse visual descriptions, not new atlas assignments; exact striatal overlap for this contrast has not been quantified.", "small")
     p("Both new intercept jobs and four directional maps passed validation, including the native sign-flip gate; 10,000 permutations, residual df=90. "
       "The pre-existing win-loss and double-subtraction tests were reused, not rerun.", "small")
+
+    story.append(PageBreak())
+    heading("Striatal Sanity Check: Both Tasks Work",
+            "Is the win > loss signal actually present in striatum, rather than merely somewhere in a large whole-brain map? "
+            "Existing bilateral cluster peaks and the pre-existing anatomical VS ROI both support it.")
+    story.append(image(REVIEW / "katie-review-v1/figures/vs-group-response.png", 690, 205))
+    table([["Win > loss outcome", "Left / right regional peak t", "Left / right cluster-FWE p", "Anatomical VS mean [descriptive 95% CI]"]] +
+          [[label,
+            " / ".join(f"{next(r for r in peaks if r['outcome'] == outcome and r['side'] == side)['t']:.2f}" for side in ("Left", "Right")),
+            " / ".join(f"{next(r for r in peaks if r['outcome'] == outcome and r['side'] == side)['cluster_p']:.4f}" for side in ("Left", "Right")),
+            f"{float(roi[outcome]['mean']):.2f} [{float(roi[outcome]['descriptive_ci_lower']):.2f}, {float(roi[outcome]['descriptive_ci_upper']):.2f}]"]
+           for outcome, label in (("socialdoors", "Social Doors"), ("doors", "Nonsocial Doors"), ("average", "Across-task average"))],
+          [160, 165, 160, 227])
+    p("ROI values are arbitrary COPE units, not percent signal change. The anatomical seed-VS mask was intersected with the common analysis mask, "
+      "and all 97 participants remain. These are descriptive ROI summaries, not new small-volume-corrected tests. "
+      "Peak p-values are for the containing cluster at CDT 3.1, not individual-voxel FWE claims or formal anatomical-nucleus labels.", "small")
+    conclusion("Yes, we recover the expected bilateral striatal-region win > loss response in both tasks. "
+               "The anatomical VS social-minus-nonsocial win-loss mean is -11.29 [descriptive 95% CI -29.65, 7.06], consistent with the null corrected double subtraction. "
+               "That quantity is not the social-win-minus-nonsocial-win contrast, because it also subtracts losses.")
 
     maps = old.rows(REVIEW / "fevs-imaging-adjustments-provisional-v1/maps.tsv")
     targets = [

@@ -6,6 +6,16 @@ complete results inventory nor prior PDF versions.
 
 ## Included
 
+- Explicit striatal sanity-check answer: both tasks show bilateral ventral-
+  striatal-region win-minus-loss peaks in corrected clusters. The across-task
+  average peaks at approximately [-12.7, 6.3, -9.6] and [14.3, 9.0, -9.6],
+  t=11.79/11.70, cluster-FWE p=.0001. Existing anatomical VS summaries also have
+  positive means in both tasks. Peak locations are regional descriptions, not
+  newly assigned atlas nuclei; cluster p-values are not voxel-FWE p-values.
+- The anatomical VS distribution plot and task-specific descriptive 95% CIs.
+  The double-subtraction ROI summary is kept distinct from social-minus-
+  nonsocial winning. No new ROI model, atlas overlap or inference is claimed.
+
 - All four original/ADI/Ecog/joint standalone and PM2.5-containing FEVS activation
   brain maps with their exact model-adjusted scatterplots beside them.
 - All four conditional FEVS VS-connectivity brain maps with matching scatters.

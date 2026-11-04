@@ -28,6 +28,10 @@ brain map is beside its exact model-adjusted scatterplot. All three task means,
 actual group designs and native FEAT screenshots are included from the validated
 evidence publication. The known screener MSPSS coding error explicitly prevents
 finalizing the behavioral support result. See the [scope and provenance](docs/katie-evidence-brief.md).
+The opening section now explicitly confirms the expected bilateral striatal-
+region win-minus-loss response in both tasks, with corrected-cluster peak
+statistics and anatomical VS distributions, rather than reporting only a
+generic whole-brain task effect.
 
 **Earlier preliminary brief:** [FEVS adjusted behavioral and neural results (PDF)](output/pdf/FEVS_Adjusted_Results_2026-11-04.pdf)
 includes the ADI/Ecog sensitivity checks, original/adjusted maps, the activation
