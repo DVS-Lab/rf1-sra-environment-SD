@@ -1,0 +1,33 @@
+{
+  "exclusions_changed": false,
+  "inputs": {
+    "code/check_fevs_behavioral_adjustments.py": "ebb62171e8ccbbe707ef6b6d500bd0489c3f6c1f2f3309256b2d0d43383d701e",
+    "code/freeze_katie_cohort.py": "9ee9a85295564d5a1f67367f52140b45d363c833bb20e8c54ebe48d0b0081be7",
+    "code/run_behavioral_moderation.py": "14fa4390d1ce27cf9f320b0e259333e9abe4b4f2441f898b1bfbc51900f35690",
+    "data/derived/FEVS_OAFEM_scores_katie-cohort-v1.csv": "5da8913fece651b6309139080c95a23d1bdba6daa09432a13aeb35f9a0e8723a",
+    "data/derived/financial-model-review-v1/provenance.json": "10ba2741158f4d294dd51716378a4da43cb618cc328bd7cf537ffad9f8e50a9b",
+    "data/derived/katie-cohort-v1/subjects.tsv": "bd0fa87fdf4c40b2aff5b6a209965056db87dec3c56d1e246fe2fd5f95036895",
+    "data/derived/model-review-v1/aligned_raw_terms.tsv": "cc975978ed099b7cb5acded868bc876a4081e7ca7b0d5767da96467c990e535b"
+  },
+  "model_family": [
+    [],
+    [
+      "adi"
+    ],
+    [
+      "ecog"
+    ],
+    [
+      "adi",
+      "ecog"
+    ]
+  ],
+  "n": 97,
+  "neural_analyses_changed": false,
+  "note": "Published aggregate sensitivity checks using the approved score export, not item-validated scores",
+  "outputs": {
+    "README.md": "38ec0b56f520b690ac8b1932fdf2ac538b395d8c7b3224a87046723f4f5677b1",
+    "adjustments.tsv": "ea5d3203e9c731579e5e55e09ad68041666dacedf3998975429f8c893f7d449f"
+  },
+  "provisional": true
+}

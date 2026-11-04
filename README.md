@@ -6,6 +6,11 @@ component of the RF1 brain-health/environment project.
 
 ## Current Analysis Status: N=97 Computation And Final Summary Verified
 
+**Requested behavioral sensitivity checks:** [FEVS PM2.5/support models with added ADI, Ecog or both](results/review/fevs-behavioral-adjustments-provisional-v1/README.md)
+retain N=97 and report all three requested additive adjustments. These checks
+remain provisional while scoring is reviewed and do not rerun or establish
+robustness of the neural models.
+
 **Shareable preliminary brief:** [FEVS main behavioral and neural results (PDF)](output/pdf/FEVS_Main_Results_2026-11-03.pdf)
 summarizes the PM2.5/support interaction and the two FEVS neural findings with
 figures, explicit contrast definitions, null-result boundaries and pending
