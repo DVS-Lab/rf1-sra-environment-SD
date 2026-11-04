@@ -17,11 +17,13 @@ retain N=97 and report all three requested additive adjustments. These checks
 remain provisional while scoring is reviewed and do not rerun or establish
 robustness of the neural models.
 
-**Shareable preliminary brief:** [FEVS main behavioral and neural results (PDF)](output/pdf/FEVS_Main_Results_2026-11-03.pdf)
-summarizes the PM2.5/support interaction and the two FEVS neural findings with
-figures, explicit contrast definitions, null-result boundaries and pending
-scoring checks. It is a focused summary, not a replacement for the full model
-inventory or provenance below.
+**Updated shareable preliminary brief:** [FEVS adjusted behavioral and neural results (PDF)](output/pdf/FEVS_Adjusted_Results_2026-11-04.pdf)
+includes the ADI/Ecog sensitivity checks, original/adjusted maps, the activation
+anatomy/statistical caveat, and an integrated account of PM2.5, support, ADI,
+Ecog and secondary OAFEM. Scoring remains provisional; contextual and neural
+associations are not a demonstrated pathway. This focused brief does not replace
+the complete model inventory, null results or provenance. The
+[November 3 brief](output/pdf/FEVS_Main_Results_2026-11-03.pdf) is preserved.
 
 **New behavioral moderation family:** the [behavioral runbook](docs/behavioral-moderation.md)
 fits the eight approved age/gender-adjusted FEVS/OAFEM models separately from
