@@ -1,0 +1,20 @@
+{
+  "exclusions_changed": false,
+  "models": 8,
+  "n": 97,
+  "neural_analyses_changed": false,
+  "new_neural_inference": false,
+  "outputs": {
+    "README.md": "0bea9cc6ea64894556f1d61a3d07a41d807f2f67f6f83ab3d78a7aa10a9a73bf",
+    "coefficients.tsv": "023f00abd64a42f93030c722539cb113123002636cb296b4a5af653459c4002a",
+    "conditional_slopes.tsv": "163ebea9474a1bac79e9933d87b3680effab5ef54f72fa23eddd29740a1dc12b",
+    "diagnostics.tsv": "980bdb9c7884d548c88c42732ab3a6d9bb8165ab3f9507468d2a842881d211e0",
+    "fevs-conditional-slopes.png": "4f166bf2a6bf0c5a051ceef57ebd46d5de768d347d13db0c0001ee6609afbd2c",
+    "interactions.tsv": "d3320294458fa64b19828c9faf6b120b9fc76c24f5fa43a9b8cc8f36dfacff51",
+    "oafem-conditional-slopes.png": "005b91a2fb5d39eae0d25e0103e5a7aacbad94bf83b4a2c76c5fd2554aa6c9fc"
+  },
+  "primary_tests": 2,
+  "provisional": true,
+  "scoring_passed": false,
+  "secondary_tests": 6
+}
