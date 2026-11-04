@@ -105,6 +105,18 @@ identical validated outputs; incompatible inputs/runtime versions stop rather
 than overwrite the completed report. Eight small regressions do not need a
 large `--jobs` value or any randomise workers.
 
+### Frozen-Release Path Fix
+
+The first Linux2 attempt stopped at the audit with `FileNotFoundError`, before
+any behavioral model was fitted. Its launcher intentionally did not pull the
+live checkout, but the original runner looked there for the newly added
+configuration and input receipts. The corrected launcher passes the frozen
+release as `--data-root` for audit, run and check. Only output paths resolve
+under the live project's ignored workspace. No pull or manual copying of
+config/data files is required, and the model formulas and score values are
+unchanged. The same launch block above resumes this stopped attempt; its
+original error/log record is preserved.
+
 ## Status And Publication
 
 Run this exact block to inspect the detached worker and latest log:

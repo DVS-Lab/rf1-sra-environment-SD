@@ -401,11 +401,14 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=("audit", "run", "check"))
     parser.add_argument("--project", type=Path, required=True)
+    parser.add_argument("--data-root", type=Path, default=Path(__file__).resolve().parents[1],
+                        help="Frozen code/data/config release; independent of the live output project")
     parser.add_argument("--root", type=Path)
     parser.add_argument("--scoring-spec", type=Path)
     parser.add_argument("--provisional", action="store_true", help="Explicitly authorize exported-score analyses while item documentation is pending")
     args = parser.parse_args()
     project = args.project.resolve()
+    data_root = args.data_root.resolve()
     default_name = "behavioral-moderation-provisional-v1" if args.provisional else "behavioral-moderation-v1"
     root = (args.root or project / "work" / default_name).resolve()
     if not root.is_relative_to(project / "work"):
@@ -414,11 +417,11 @@ def main():
     root.mkdir(parents=True, exist_ok=True)
     try:
         if args.command == "audit":
-            audit(project, root, spec, args.provisional)
+            audit(data_root, root, spec, args.provisional)
         elif args.command == "run":
-            run(project, root, spec, args.provisional)
+            run(data_root, root, spec, args.provisional)
         else:
-            check(project, root, spec, args.provisional)
+            check(data_root, root, spec, args.provisional)
     except Exception as exc:
         (root / "error-private.txt").write_text(traceback.format_exc())
         if isinstance(exc, ScoringRequired):
@@ -426,6 +429,10 @@ def main():
                        item_scoring_verified=False, models_run_by_this_attempt=False, reason=str(exc)))
             print("SCORING REQUIRED: " + str(exc), file=sys.stderr)
             return 2
+        if isinstance(exc, FileNotFoundError) and exc.filename:
+            missing = Path(exc.filename).resolve()
+            if missing.is_relative_to(data_root):
+                print(f"Missing frozen input: {missing.relative_to(data_root)}", file=sys.stderr)
         print(f"STOPPED ({type(exc).__name__}); inspect {root / 'error-private.txt'}. No neural processing changed.", file=sys.stderr)
         return 1
     return 0

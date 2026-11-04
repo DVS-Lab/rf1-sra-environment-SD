@@ -6,6 +6,8 @@ import sys
 import tempfile
 import unittest
 from unittest.mock import patch
+import shutil
+import subprocess
 
 import numpy as np
 
@@ -161,6 +163,40 @@ class BehavioralModeration(unittest.TestCase):
         self.save_spec()
         with self.assertRaises(ValueError):
             behavior.check(self.project, self.root, self.spec_path, provisional=True)
+
+    def frozen_cli(self, command):
+        code = self.project / "code"
+        code.mkdir(exist_ok=True)
+        for module in (behavior, behavior.cohort):
+            shutil.copyfile(module.__file__, code / Path(module.__file__).name)
+        live = self.project / "older-live-checkout"
+        live.mkdir(exist_ok=True)
+        return subprocess.run([sys.executable, str(code / "run_behavioral_moderation.py"), command,
+                               "--project", str(live), "--data-root", str(self.project), "--provisional"],
+                              capture_output=True, text=True)
+
+    def test_frozen_release_runs_with_old_live_checkout_and_keeps_native_outputs(self):
+        live = self.project / "older-live-checkout"
+        native = live / "derivatives/fsl/completed.dat"
+        native.parent.mkdir(parents=True)
+        native.write_bytes(b"preserve-completed-neural")
+        before = behavior.sha(native)
+        for command in ("audit", "run", "check"):
+            result = self.frozen_cli(command)
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertFalse((live / behavior.POLICY).exists())
+        self.assertFalse((live / behavior.SCORE_FILE).exists())
+        self.assertEqual(behavior.sha(native), before)
+        report = live / "work/behavioral-moderation-provisional-v1/report"
+        self.assertTrue((report / "interactions.tsv").exists())
+        self.assertTrue(json.loads((report / "review_manifest.json").read_text())["provisional"])
+
+    def test_missing_frozen_file_reports_relative_path_and_never_fits(self):
+        (self.project / behavior.POLICY).unlink()
+        result = self.frozen_cli("audit")
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("Missing frozen input: config/behavioral_moderation_v1.json", result.stderr)
+        self.assertFalse((self.project / "older-live-checkout/work/behavioral-moderation-provisional-v1/report").exists())
 
 
 if __name__ == "__main__":

@@ -24,7 +24,7 @@ if [[ ${1:-} == --worker ]]; then
   cd "$RELEASE"
   BASE="$PROJECT/work/venv-katie/bin/python"
   bash "$UPSTREAM/code/run_logged.sh" --label "$STAMP-scoring" --include-full-log -- \
-    "$BASE" code/run_behavioral_moderation.py audit --project "$PROJECT" --root "$ROOT" "${FLAGS[@]}"
+    "$BASE" code/run_behavioral_moderation.py audit --project "$PROJECT" --data-root "$RELEASE" --root "$ROOT" "${FLAGS[@]}"
   REQ=$(sha256sum code/requirements-review.txt | cut -c1-12)
   ENVIRONMENT="$PROJECT/work/venv-katie-review-$REQ"
   if [[ ! -x "$ENVIRONMENT/bin/python" ]]; then
@@ -37,8 +37,8 @@ if [[ ${1:-} == --worker ]]; then
     touch "$ENVIRONMENT/.requirements-complete"
   fi
   bash "$UPSTREAM/code/run_logged.sh" --label "$STAMP-models" --include-full-log -- \
-    "$PYTHON" code/run_behavioral_moderation.py run --project "$PROJECT" --root "$ROOT" "${FLAGS[@]}" \
-    --check "$PYTHON" code/run_behavioral_moderation.py check --project "$PROJECT" --root "$ROOT" "${FLAGS[@]}"
+    "$PYTHON" code/run_behavioral_moderation.py run --project "$PROJECT" --data-root "$RELEASE" --root "$ROOT" "${FLAGS[@]}" \
+    --check "$PYTHON" code/run_behavioral_moderation.py check --project "$PROJECT" --data-root "$RELEASE" --root "$ROOT" "${FLAGS[@]}"
   bash "$UPSTREAM/code/run_logged.sh" --label "$STAMP-publish" --include-full-log -- \
     "$PYTHON" code/publish_katie_review.py --project "$PROJECT" --report "$ROOT/report" \
       --destination "results/review/$NAME"
