@@ -6,6 +6,11 @@ component of the RF1 brain-health/environment project.
 
 ## Current Analysis Status: N=97 Computation And Final Summary Verified
 
+**Evidence-layout revision:** [matched brain/scatter panels, task-mean contrasts and actual designs](docs/katie-evidence.md).
+Existing win-loss and double-subtraction group tests are reused; only the missing
+social-win-minus-nonsocial-win intercept needs two new jobs. This supplies the
+context/content/conclusion revision without changing the cohort or exclusions.
+
 **Matched neural sensitivity checks:** [FEVS activation and VS connectivity with additive ADI/Ecog adjustments](docs/fevs-imaging-adjustments.md).
 All 18 jobs and 48 baseline/adjusted directional FEVS maps validated and
 [published successfully](results/review/fevs-imaging-adjustments-provisional-v1/README.md).
