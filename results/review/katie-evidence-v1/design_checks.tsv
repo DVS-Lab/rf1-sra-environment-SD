@@ -1,0 +1,5 @@
+id	columns	n	rank	residual_df	scaled_condition_number	contrasts	ones_contrasted
+activation_fevs-baseline	ones;delta_fd;delta_tsnr;e11;xa30;gender_code1;age;fevs	97	8	89	2.141538614120229	2	False
+activation_fevs_pm25-baseline	ones;delta_fd;delta_tsnr;e11;xa30;gender_code1;age;fevs;pm25;fevsxpm25	97	10	87	2.228935824519704	6	False
+activation_fevs_pm25-adi_ecog	ones;delta_fd;delta_tsnr;e11;xa30;gender_code1;age;fevs;pm25;fevsxpm25;adi;ecog	97	12	85	2.391992189354418	2	False
+task-mean-intercept	ones;delta_fd;delta_tsnr;e11;xa30;gender_code1;age	97	7	90	2.1397302408875025	2	True
