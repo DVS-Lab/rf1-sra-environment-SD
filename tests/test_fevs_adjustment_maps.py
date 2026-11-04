@@ -2,6 +2,8 @@ import json
 import os
 from pathlib import Path
 import shutil
+import subprocess
+import sys
 import tempfile
 from types import SimpleNamespace
 import unittest
@@ -39,6 +41,22 @@ class GeometryAndRendering(unittest.TestCase):
         self.assertIsNone(empty["peak_mni"]);self.assertIsNone(empty["peak_in_original"])
         self.assertEqual(empty["voxels"],0)
 
+    def test_exact_original_venv_used_and_validation_errors_propagate(self):
+        python=self.root/"work/venv-katie/bin/python"
+        python.parent.mkdir(parents=True);python.symlink_to(sys.executable)
+        frozen=self.root/"work/frozen-analysis-release"
+        with patch.object(review.subprocess,"run") as call:
+            self.assertEqual(review.check_analysis(self.root,frozen),python)
+            self.assertEqual(call.call_args.args[0],[str(python),str(frozen/"code/run_fevs_imaging_adjustments.py"),
+                                                    "check","--project",str(self.root)])
+            self.assertNotEqual(call.call_args.args[0][0],str(python.resolve()))
+        with patch.object(review.subprocess,"run",side_effect=subprocess.CalledProcessError(1,"check")):
+            with self.assertRaises(subprocess.CalledProcessError):
+                review.check_analysis(self.root,frozen)
+        python.unlink()
+        with self.assertRaisesRegex(ValueError,"Original analysis Python missing"):
+            review.check_analysis(self.root,frozen)
+
     def test_fixed_slice_signed_panels_nonblank_and_no_cluster_is_explicit(self):
         for target,sign in (("activation_fevs_pm25",1),("vs_fevs_pm25",-1)):
             rows=[]
@@ -68,6 +86,8 @@ class SavedMapReview(unittest.TestCase):
         moved=self.project/"work/frozen-analysis-release";moved.parent.mkdir()
         shutil.move(self.fixture.release,moved);self.fixture.release=moved
         self.fixture.root_patch=patch.object(review.adjustment,"ROOT",moved);self.fixture.root_patch.start()
+        python=self.project/"work/venv-katie/bin/python"
+        python.parent.mkdir(parents=True);python.symlink_to(sys.executable)
         # Synthetic negative VS association, positive activation. No study data.
         text=self.fixture.fake.read_text()
         text=text.replace("count=int(","negative='/connectivity/' in prefix or '/vs_fevs_pm25/' in prefix\ncount=int(")
@@ -102,6 +122,7 @@ class SavedMapReview(unittest.TestCase):
         with patch.object(review.subprocess,"run") as call,patch.object(review.views.background,"select",return_value=dict(path=str(self.anatomy))),patch.object(review,"render",side_effect=render):
             review.build(self.args)
         self.assertEqual(call.call_count,1)
+        self.assertEqual(call.call_args.args[0][0],str(self.project/"work/venv-katie/bin/python"))
         self.assertEqual(call.call_args.args[0][2],"check")
         self.assertIn(str(self.fixture.release),call.call_args.args[0][1])
         self.assertNotIn("randomise",call.call_args.args[0])

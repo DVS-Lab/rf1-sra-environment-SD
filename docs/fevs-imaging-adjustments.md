@@ -142,3 +142,13 @@ corrected contours use saved per-map cluster-FWE p<.05 at CDT Z-equivalent 3.1.
 All directions and both CDTs remain in the complete adjustment results. A missing
 adjusted contour does not establish absence of the association, and atlas labels
 are approximate nearest-voxel descriptions, not subject-specific segmentation.
+
+The map reviewer validates the frozen design with the original
+`work/venv-katie/bin/python`, while rendering uses the isolated review environment.
+The original strict checker reconstructs numeric designs and compares the saved
+job specification exactly; substituting the review environment can produce
+numeric-library differences and a false inventory mismatch. Do not loosen that
+comparison or edit the frozen plan. The original analysis interpreter is now
+selected explicitly, and a missing interpreter stops rather than falling back.
+The initial map-review attempt failed before creating report figures; rerunning
+the same launch block fetches this reporting fix without rerunning inference.

@@ -8,7 +8,6 @@ import json
 import os
 from pathlib import Path
 import subprocess
-import sys
 
 import matplotlib
 matplotlib.use("Agg")
@@ -22,6 +21,17 @@ import run_fevs_imaging_adjustments as adjustment
 base = adjustment.base
 ROOT = Path(__file__).resolve().parents[1]
 ORDER = ("baseline", "adi", "ecog", "adi_ecog")
+
+
+def check_analysis(project, frozen):
+    # Keep the venv path un-resolved: invoking its base-Python symlink target
+    # would bypass the original analysis environment and its numeric libraries.
+    python = project/"work/venv-katie/bin/python"
+    if not python.is_file() or not os.access(python,os.X_OK):
+        raise ValueError("Original analysis Python missing; do not substitute the plotting environment")
+    subprocess.run([str(python),str(frozen/"code/run_fevs_imaging_adjustments.py"),
+                    "check","--project",str(project)],check=True)
+    return python
 
 
 def geometry(selected, statistic, reference, original):
@@ -143,7 +153,7 @@ def build(args):
         raise ValueError("Unexpected cohort, scoring or frozen release identity")
     # The original release verifies its own ROOT and implementation hash; never
     # substitute this newly archived renderer's data directory for the old one.
-    subprocess.run([sys.executable,str(frozen/"code/run_fevs_imaging_adjustments.py"),"check", "--project",str(args.project)],check=True)
+    analysis_python = check_analysis(args.project,frozen)
     groups,evidence = collect(plan,output)
     anatomy = views.background.select([Path(os.environ.get("TEMPLATEFLOW_HOME",str(Path.home()/".cache/templateflow")))/
         "tpl-MNI152NLin6Asym/tpl-MNI152NLin6Asym_res-02_T1w.nii.gz",
@@ -151,7 +161,7 @@ def build(args):
     atlases = views.atlases(args.atlas_root)
     records = {r["path"]:r for r in plan["sources"]}
     paths = [path,output/"plan.sha256",output/"report/maps.tsv",Path(__file__),Path(views.__file__),
-             Path(adjustment.__file__),Path(views.background.__file__),Path(views.plots.__file__),Path(anatomy)]
+             Path(adjustment.__file__),Path(views.background.__file__),Path(views.plots.__file__),Path(anatomy),analysis_python]
     paths += [p for _,_,image,xml in atlases for p in (image,xml)]
     for r in evidence+[base.fingerprint(p) for p in paths]:
         adjustment.extension.audit.add_record(records,r["path"],r["sha256"],r["size"])
