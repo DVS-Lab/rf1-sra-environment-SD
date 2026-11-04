@@ -1,0 +1,12 @@
+{
+  "baseline_jobs_reused": 6,
+  "directional_maps": 48,
+  "exclusions_changed": false,
+  "jobs": 18,
+  "n": 97,
+  "note": "All requested sensitivity tests, including nulls; completed baseline inference unchanged",
+  "plan_sha256": "ffe6c4894af2a9865d4307fb2d390a6f10b4f36db416aa67c968a62efcbce068",
+  "provisional_scoring": true,
+  "result_records": 144,
+  "source_records": 6521
+}

@@ -1,0 +1,10 @@
+{
+  "n": 97,
+  "outputs": {
+    "README.md": "23664ab0d966ab853c399ea01bd8f1e0d59d1d3f5d5c00414133cf5179d765f0",
+    "clusters.tsv": "2acf841a80e61432ef40c4d792df97138b11f83067ac623a40ff592576147f19",
+    "maps.tsv": "1592cb3f09ac952d9a698756c1119717f406e9dcef1ff703e8568efbac35948c",
+    "provenance.json": "1ff12e8dc8954e4896990902d75fc5d8131cbbb4d85be7bdca14c16165b90b11"
+  },
+  "provisional_scoring": true
+}
