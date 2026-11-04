@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "n": 97,
+  "outcomes": ["fevs", "oafem"],
+  "exposures": ["adi", "pm25"],
+  "moderators": ["mspss", "ecog"],
+  "covariates": ["age", "gender_code1"],
+  "primary_family": "fevs_mspss",
+  "primary_tests": 2,
+  "secondary_tests": 6,
+  "estimator": "OLS with HC3 covariance and two-sided t inference",
+  "multiplicity": "Report raw HC3 p and Holm within the two primary or six secondary interactions; no selection decisions",
+  "continuous_predictors": "Mean-center, retain original units; no dichotomization",
+  "missing": "Stop; never drop or impute frozen participants",
+  "transformations": "None",
+  "three_way_interactions": false,
+  "imaging_quality_covariates": false,
+  "exclusions_changed": false,
+  "scoring_requirement": "Final results require item-to-total checks; user-authorized provisional runs may use the complete exported totals while verification is pending",
+  "interpretation": "Cross-sectional conditional associations, not causality, mediation or prospective prediction",
+  "timing": "Behavioral model family specified after the neural analyses; not preregistered"
+}

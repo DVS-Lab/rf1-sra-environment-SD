@@ -6,6 +6,14 @@ component of the RF1 brain-health/environment project.
 
 ## Current Analysis Status: N=97 Computation And Final Summary Verified
 
+**New behavioral moderation family:** the [behavioral runbook](docs/behavioral-moderation.md)
+fits the eight approved age/gender-adjusted FEVS/OAFEM models separately from
+the completed neural analyses. FEVS/support interactions lead; Ecog and OAFEM
+are secondary. The user authorized provisional use of complete exported totals
+while item-scoring documentation and MSPSS zero coding are checked afterward.
+The explicit provisional flag is recorded in every report; no cohort changes,
+three-way interactions or additional neural jobs are introduced.
+
 **Illustrated synthesis:** the [full final results summary](results/review/final-summary-v1/README.md)
 brings together the final map inventory, task-signal checks, FEVS activation and
 VS-connectivity findings, environmental/cognitive interactions, correlations,
