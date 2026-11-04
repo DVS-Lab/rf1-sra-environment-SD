@@ -1,0 +1,14 @@
+{
+  "n": 97,
+  "new_inference": false,
+  "outputs": {
+    "README.md": "56a591334d16301a57243321b1aa0c206c5feeed83638559a57d74e72918c6aa",
+    "activation_fevs.png": "1dba060865a422cdf5eddf1193f858d56ed38f1112e8bd8972f7a64b0edf2199",
+    "activation_fevs_pm25.png": "f46e75a097370190684b35e1a35272292c2e6653b314de581e0d44ee98add9d8",
+    "locations.json": "fd9f6e303eaa1038b6000cfa104fa7b9f0703082b1ce5c080a6da2763d352fce",
+    "locations.tsv": "130861e114376aea761c729f311f13027b2af0cdf3d1347a7f56cfd28a0133a8",
+    "vs_fevs_pm25.png": "c5d1532667b489748b8c31e2cc84c310495a4b8fceb839a4192137593fc2201c"
+  },
+  "provisional_scoring": true,
+  "renderer_sha256": "f2ff0e93d9951876fb09a27c42b9113f385ae526d7112bd146951a57045d787a"
+}

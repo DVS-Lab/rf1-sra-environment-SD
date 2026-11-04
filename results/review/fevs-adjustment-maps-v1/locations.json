@@ -1,0 +1,575 @@
+{
+  "atlas_annotations": [
+    {
+      "adjustment": "baseline",
+      "atlas": "cort",
+      "overlap": [
+        {
+          "fraction": 0.5535714285714286,
+          "label": "Unlabeled",
+          "voxels": 31
+        },
+        {
+          "fraction": 0.44642857142857145,
+          "label": "Frontal Pole",
+          "voxels": 25
+        }
+      ],
+      "peak_label": "Frontal Pole",
+      "target": "activation_fevs"
+    },
+    {
+      "adjustment": "baseline",
+      "atlas": "sub",
+      "overlap": [
+        {
+          "fraction": 0.7857142857142857,
+          "label": "Left Cerebral White Matter",
+          "voxels": 44
+        },
+        {
+          "fraction": 0.21428571428571427,
+          "label": "Left Cerebral Cortex",
+          "voxels": 12
+        }
+      ],
+      "peak_label": "Left Cerebral White Matter",
+      "target": "activation_fevs"
+    },
+    {
+      "adjustment": "adi",
+      "atlas": "cort",
+      "overlap": [
+        {
+          "fraction": 0.5660377358490566,
+          "label": "Unlabeled",
+          "voxels": 30
+        },
+        {
+          "fraction": 0.4339622641509434,
+          "label": "Frontal Pole",
+          "voxels": 23
+        }
+      ],
+      "peak_label": "Frontal Pole",
+      "target": "activation_fevs"
+    },
+    {
+      "adjustment": "adi",
+      "atlas": "sub",
+      "overlap": [
+        {
+          "fraction": 0.7924528301886793,
+          "label": "Left Cerebral White Matter",
+          "voxels": 42
+        },
+        {
+          "fraction": 0.20754716981132076,
+          "label": "Left Cerebral Cortex",
+          "voxels": 11
+        }
+      ],
+      "peak_label": "Left Cerebral White Matter",
+      "target": "activation_fevs"
+    },
+    {
+      "adjustment": "baseline",
+      "atlas": "cort",
+      "overlap": [
+        {
+          "fraction": 0.5970149253731343,
+          "label": "Frontal Pole",
+          "voxels": 40
+        },
+        {
+          "fraction": 0.40298507462686567,
+          "label": "Unlabeled",
+          "voxels": 27
+        }
+      ],
+      "peak_label": "Unlabeled",
+      "target": "activation_fevs_pm25"
+    },
+    {
+      "adjustment": "baseline",
+      "atlas": "sub",
+      "overlap": [
+        {
+          "fraction": 0.6567164179104478,
+          "label": "Left Cerebral White Matter",
+          "voxels": 44
+        },
+        {
+          "fraction": 0.34328358208955223,
+          "label": "Left Cerebral Cortex",
+          "voxels": 23
+        }
+      ],
+      "peak_label": "Left Cerebral White Matter",
+      "target": "activation_fevs_pm25"
+    },
+    {
+      "adjustment": "adi",
+      "atlas": "cort",
+      "overlap": [
+        {
+          "fraction": 0.6212121212121212,
+          "label": "Frontal Pole",
+          "voxels": 41
+        },
+        {
+          "fraction": 0.3787878787878788,
+          "label": "Unlabeled",
+          "voxels": 25
+        }
+      ],
+      "peak_label": "Unlabeled",
+      "target": "activation_fevs_pm25"
+    },
+    {
+      "adjustment": "adi",
+      "atlas": "sub",
+      "overlap": [
+        {
+          "fraction": 0.6363636363636364,
+          "label": "Left Cerebral White Matter",
+          "voxels": 42
+        },
+        {
+          "fraction": 0.36363636363636365,
+          "label": "Left Cerebral Cortex",
+          "voxels": 24
+        }
+      ],
+      "peak_label": "Left Cerebral White Matter",
+      "target": "activation_fevs_pm25"
+    },
+    {
+      "adjustment": "adi_ecog",
+      "atlas": "cort",
+      "overlap": [
+        {
+          "fraction": 0.5283018867924528,
+          "label": "Frontal Pole",
+          "voxels": 28
+        },
+        {
+          "fraction": 0.4716981132075472,
+          "label": "Unlabeled",
+          "voxels": 25
+        }
+      ],
+      "peak_label": "Unlabeled",
+      "target": "activation_fevs_pm25"
+    },
+    {
+      "adjustment": "adi_ecog",
+      "atlas": "sub",
+      "overlap": [
+        {
+          "fraction": 0.6415094339622641,
+          "label": "Left Cerebral White Matter",
+          "voxels": 34
+        },
+        {
+          "fraction": 0.3584905660377358,
+          "label": "Left Cerebral Cortex",
+          "voxels": 19
+        }
+      ],
+      "peak_label": "Left Cerebral White Matter",
+      "target": "activation_fevs_pm25"
+    },
+    {
+      "adjustment": "baseline",
+      "atlas": "cort",
+      "overlap": [
+        {
+          "fraction": 0.9772727272727273,
+          "label": "Frontal Pole",
+          "voxels": 43
+        },
+        {
+          "fraction": 0.022727272727272728,
+          "label": "Unlabeled",
+          "voxels": 1
+        }
+      ],
+      "peak_label": "Frontal Pole",
+      "target": "vs_fevs_pm25"
+    },
+    {
+      "adjustment": "baseline",
+      "atlas": "sub",
+      "overlap": [
+        {
+          "fraction": 0.8409090909090909,
+          "label": "Left Cerebral Cortex",
+          "voxels": 37
+        },
+        {
+          "fraction": 0.1590909090909091,
+          "label": "Left Cerebral White Matter",
+          "voxels": 7
+        }
+      ],
+      "peak_label": "Left Cerebral White Matter",
+      "target": "vs_fevs_pm25"
+    },
+    {
+      "adjustment": "adi",
+      "atlas": "cort",
+      "overlap": [
+        {
+          "fraction": 0.9767441860465116,
+          "label": "Frontal Pole",
+          "voxels": 42
+        },
+        {
+          "fraction": 0.023255813953488372,
+          "label": "Unlabeled",
+          "voxels": 1
+        }
+      ],
+      "peak_label": "Frontal Pole",
+      "target": "vs_fevs_pm25"
+    },
+    {
+      "adjustment": "adi",
+      "atlas": "sub",
+      "overlap": [
+        {
+          "fraction": 0.8604651162790697,
+          "label": "Left Cerebral Cortex",
+          "voxels": 37
+        },
+        {
+          "fraction": 0.13953488372093023,
+          "label": "Left Cerebral White Matter",
+          "voxels": 6
+        }
+      ],
+      "peak_label": "Left Cerebral Cortex",
+      "target": "vs_fevs_pm25"
+    },
+    {
+      "adjustment": "ecog",
+      "atlas": "cort",
+      "overlap": [
+        {
+          "fraction": 0.8809523809523809,
+          "label": "Frontal Pole",
+          "voxels": 37
+        },
+        {
+          "fraction": 0.11904761904761904,
+          "label": "Unlabeled",
+          "voxels": 5
+        }
+      ],
+      "peak_label": "Frontal Pole",
+      "target": "vs_fevs_pm25"
+    },
+    {
+      "adjustment": "ecog",
+      "atlas": "sub",
+      "overlap": [
+        {
+          "fraction": 0.8095238095238095,
+          "label": "Left Cerebral Cortex",
+          "voxels": 34
+        },
+        {
+          "fraction": 0.19047619047619047,
+          "label": "Left Cerebral White Matter",
+          "voxels": 8
+        }
+      ],
+      "peak_label": "Left Cerebral Cortex",
+      "target": "vs_fevs_pm25"
+    },
+    {
+      "adjustment": "adi_ecog",
+      "atlas": "cort",
+      "overlap": [
+        {
+          "fraction": 0.8809523809523809,
+          "label": "Frontal Pole",
+          "voxels": 37
+        },
+        {
+          "fraction": 0.11904761904761904,
+          "label": "Unlabeled",
+          "voxels": 5
+        }
+      ],
+      "peak_label": "Frontal Pole",
+      "target": "vs_fevs_pm25"
+    },
+    {
+      "adjustment": "adi_ecog",
+      "atlas": "sub",
+      "overlap": [
+        {
+          "fraction": 0.8095238095238095,
+          "label": "Left Cerebral Cortex",
+          "voxels": 34
+        },
+        {
+          "fraction": 0.19047619047619047,
+          "label": "Left Cerebral White Matter",
+          "voxels": 8
+        }
+      ],
+      "peak_label": "Left Cerebral Cortex",
+      "target": "vs_fevs_pm25"
+    }
+  ],
+  "atlas_available": true,
+  "exclusions_changed": false,
+  "locations": [
+    {
+      "adjustment": "baseline",
+      "centroid_mni": [
+        -28.369645088911057,
+        50.36785691976547,
+        -5.0158922118800024
+      ],
+      "cluster_fwe_p": 0.04110002517700195,
+      "dice": 1.0,
+      "direction": "positive",
+      "fraction_current_in_original": 1.0,
+      "original_overlap_voxels": 56,
+      "peak_in_original": true,
+      "peak_mni": [
+        -31.60000228881836,
+        49.49999976158142,
+        -6.659999370574951
+      ],
+      "peak_shift_mm": 0.0,
+      "target": "activation_fevs",
+      "voxels": 56
+    },
+    {
+      "adjustment": "adi",
+      "centroid_mni": [
+        -28.186794681369133,
+        50.315094115599145,
+        -4.922829542519911
+      ],
+      "cluster_fwe_p": 0.045799970626831055,
+      "dice": 0.9724770642201835,
+      "direction": "positive",
+      "fraction_current_in_original": 1.0,
+      "original_overlap_voxels": 53,
+      "peak_in_original": true,
+      "peak_mni": [
+        -31.60000228881836,
+        49.49999976158142,
+        -6.659999370574951
+      ],
+      "peak_shift_mm": 0.0,
+      "target": "activation_fevs",
+      "voxels": 53
+    },
+    {
+      "adjustment": "ecog",
+      "centroid_mni": null,
+      "cluster_fwe_p": 0.0666000247001648,
+      "dice": 0.0,
+      "direction": "positive",
+      "fraction_current_in_original": null,
+      "original_overlap_voxels": 0,
+      "peak_in_original": null,
+      "peak_mni": null,
+      "peak_shift_mm": null,
+      "target": "activation_fevs",
+      "voxels": 0
+    },
+    {
+      "adjustment": "adi_ecog",
+      "centroid_mni": null,
+      "cluster_fwe_p": 0.07090002298355103,
+      "dice": 0.0,
+      "direction": "positive",
+      "fraction_current_in_original": null,
+      "original_overlap_voxels": 0,
+      "peak_in_original": null,
+      "peak_mni": null,
+      "peak_shift_mm": null,
+      "target": "activation_fevs",
+      "voxels": 0
+    },
+    {
+      "adjustment": "baseline",
+      "centroid_mni": [
+        -30.471644059935613,
+        51.91791025204445,
+        -5.817760556491454
+      ],
+      "cluster_fwe_p": 0.03149998188018799,
+      "dice": 1.0,
+      "direction": "positive",
+      "fraction_current_in_original": 1.0,
+      "original_overlap_voxels": 67,
+      "peak_in_original": true,
+      "peak_mni": [
+        -31.60000228881836,
+        49.49999976158142,
+        -3.6899993419647217
+      ],
+      "peak_shift_mm": 0.0,
+      "target": "activation_fevs_pm25",
+      "voxels": 67
+    },
+    {
+      "adjustment": "adi",
+      "centroid_mni": [
+        -30.78182045618693,
+        52.15909071763357,
+        -5.939999363639138
+      ],
+      "cluster_fwe_p": 0.03229999542236328,
+      "dice": 0.9774436090225563,
+      "direction": "positive",
+      "fraction_current_in_original": 0.9848484848484849,
+      "original_overlap_voxels": 65,
+      "peak_in_original": true,
+      "peak_mni": [
+        -31.60000228881836,
+        49.49999976158142,
+        -3.6899993419647217
+      ],
+      "peak_shift_mm": 0.0,
+      "target": "activation_fevs_pm25",
+      "voxels": 66
+    },
+    {
+      "adjustment": "ecog",
+      "centroid_mni": null,
+      "cluster_fwe_p": 0.05049997568130493,
+      "dice": 0.0,
+      "direction": "positive",
+      "fraction_current_in_original": null,
+      "original_overlap_voxels": 0,
+      "peak_in_original": null,
+      "peak_mni": null,
+      "peak_shift_mm": null,
+      "target": "activation_fevs_pm25",
+      "voxels": 0
+    },
+    {
+      "adjustment": "adi_ecog",
+      "centroid_mni": [
+        -29.867926786530692,
+        51.588679043751846,
+        -4.978867278908783
+      ],
+      "cluster_fwe_p": 0.04769998788833618,
+      "dice": 0.7166666666666667,
+      "direction": "positive",
+      "fraction_current_in_original": 0.8113207547169812,
+      "original_overlap_voxels": 43,
+      "peak_in_original": true,
+      "peak_mni": [
+        -18.10000205039978,
+        54.89999985694885,
+        -6.659999370574951
+      ],
+      "peak_shift_mm": 14.840178827669655,
+      "target": "activation_fevs_pm25",
+      "voxels": 53
+    },
+    {
+      "adjustment": "baseline",
+      "centroid_mni": [
+        -21.16818392276764,
+        56.802272617816925,
+        21.62250090187246
+      ],
+      "cluster_fwe_p": 0.030300021171569824,
+      "dice": 1.0,
+      "direction": "negative",
+      "fraction_current_in_original": 1.0,
+      "original_overlap_voxels": 44,
+      "peak_in_original": true,
+      "peak_mni": [
+        -20.800002098083496,
+        57.59999990463257,
+        11.160000801086426
+      ],
+      "peak_shift_mm": 0.0,
+      "target": "vs_fevs_pm25",
+      "voxels": 44
+    },
+    {
+      "adjustment": "adi",
+      "centroid_mni": [
+        -21.176746290783548,
+        57.03488361558249,
+        21.589535785275835
+      ],
+      "cluster_fwe_p": 0.03200000524520874,
+      "dice": 0.9885057471264368,
+      "direction": "negative",
+      "fraction_current_in_original": 1.0,
+      "original_overlap_voxels": 43,
+      "peak_in_original": true,
+      "peak_mni": [
+        -23.500002145767212,
+        54.89999985694885,
+        26.010000944137573
+      ],
+      "peak_shift_mm": 15.333052688998471,
+      "target": "vs_fevs_pm25",
+      "voxels": 43
+    },
+    {
+      "adjustment": "ecog",
+      "centroid_mni": [
+        -20.092859228452046,
+        57.3428570429484,
+        21.97928661959512
+      ],
+      "cluster_fwe_p": 0.034900009632110596,
+      "dice": 0.7441860465116279,
+      "direction": "negative",
+      "fraction_current_in_original": 0.7619047619047619,
+      "original_overlap_voxels": 32,
+      "peak_in_original": true,
+      "peak_mni": [
+        -20.800002098083496,
+        54.89999985694885,
+        26.010000944137573
+      ],
+      "peak_shift_mm": 15.093458997397223,
+      "target": "vs_fevs_pm25",
+      "voxels": 42
+    },
+    {
+      "adjustment": "adi_ecog",
+      "centroid_mni": [
+        -20.092859228452046,
+        57.3428570429484,
+        21.97928661959512
+      ],
+      "cluster_fwe_p": 0.03530001640319824,
+      "dice": 0.7441860465116279,
+      "direction": "negative",
+      "fraction_current_in_original": 0.7619047619047619,
+      "original_overlap_voxels": 32,
+      "peak_in_original": true,
+      "peak_mni": [
+        -20.800002098083496,
+        54.89999985694885,
+        26.010000944137573
+      ],
+      "peak_shift_mm": 15.093458997397223,
+      "target": "vs_fevs_pm25",
+      "voxels": 42
+    }
+  ],
+  "n": 97,
+  "new_inference": false,
+  "provisional_scoring": true
+}

@@ -1,0 +1,13 @@
+target	adjustment	p	voxels	overlap	dice	peak_mni	peak_shift_mm	peak_in_original	atlas_peak
+activation_fevs	baseline	0.04110002517700195	56	56	1.0	-31.6, 49.5, -6.7	0.0	True	cort: Frontal Pole; sub: Left Cerebral White Matter
+activation_fevs	adi	0.045799970626831055	53	53	0.9724770642201835	-31.6, 49.5, -6.7	0.0	True	cort: Frontal Pole; sub: Left Cerebral White Matter
+activation_fevs	ecog	0.0666000247001648	0	0	0.0	none			
+activation_fevs	adi_ecog	0.07090002298355103	0	0	0.0	none			
+activation_fevs_pm25	baseline	0.03149998188018799	67	67	1.0	-31.6, 49.5, -3.7	0.0	True	cort: Unlabeled; sub: Left Cerebral White Matter
+activation_fevs_pm25	adi	0.03229999542236328	66	65	0.9774436090225563	-31.6, 49.5, -3.7	0.0	True	cort: Unlabeled; sub: Left Cerebral White Matter
+activation_fevs_pm25	ecog	0.05049997568130493	0	0	0.0	none			
+activation_fevs_pm25	adi_ecog	0.04769998788833618	53	43	0.7166666666666667	-18.1, 54.9, -6.7	14.840178827669655	True	cort: Unlabeled; sub: Left Cerebral White Matter
+vs_fevs_pm25	baseline	0.030300021171569824	44	44	1.0	-20.8, 57.6, 11.2	0.0	True	cort: Frontal Pole; sub: Left Cerebral White Matter
+vs_fevs_pm25	adi	0.03200000524520874	43	43	0.9885057471264368	-23.5, 54.9, 26.0	15.333052688998471	True	cort: Frontal Pole; sub: Left Cerebral Cortex
+vs_fevs_pm25	ecog	0.034900009632110596	42	32	0.7441860465116279	-20.8, 54.9, 26.0	15.093458997397223	True	cort: Frontal Pole; sub: Left Cerebral Cortex
+vs_fevs_pm25	adi_ecog	0.03530001640319824	42	32	0.7441860465116279	-20.8, 54.9, 26.0	15.093458997397223	True	cort: Frontal Pole; sub: Left Cerebral Cortex
