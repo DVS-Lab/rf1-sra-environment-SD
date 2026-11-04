@@ -57,10 +57,30 @@ Linux2 result root:
 - `subjects.tsv` and `source_order.tsv`: frozen cohort and source-image order.
 - `plan.json`, `plan.sha256` and job `success.json` receipts: frozen analysis provenance.
 
-These files remain in ignored derivatives. The completion record establishes
-execution and counts, but does not identify the seven final social-winning
-VS-PPI maps by model, direction and location. **Final scientific review remains
-pending that detailed extraction.** Do not infer their identities from counts.
+These files remain in ignored derivatives. The [final read-only extraction](https://github.com/DVS-Lab/rf1-sra-linux2/blob/main/logs/records/20261103-201516_reward-extension-status-20261103-201516-results.md)
+also exited 0: N=97, 220 completed jobs, zero pending, all 996 extension maps
+verified against 6,453 unique source/result files. The accompanying snapshot
+confirms zero recorded failures, no active extension workers and the complete
+1,328-row final catalog. No additional computation or exclusions are required.
+
+The seven social-win-minus-nonsocial-win VS-PPI maps are:
+
+| Model | Tested term | Direction | Z-equivalent CDT | Minimum cluster-FWE p |
+| --- | --- | --- | ---: | ---: |
+| OAFEM x Ecog | OAFEM at mean Ecog | Positive | 3.1 | 0.0264 |
+| OAFEM x Ecog | OAFEM at mean Ecog | Negative | 3.1 | 0.0297 |
+| OAFEM x Ecog | OAFEM at mean Ecog | Positive | 2.6 | 0.0310 |
+| OAFEM x MSPSS | OAFEM at mean MSPSS | Positive | 3.1 | 0.0441 |
+| ADI x Ecog | Ecog at mean ADI | Positive | 3.1 | 0.0479 |
+| OAFEM x Ecog | Ecog at mean OAFEM | Positive | 2.6 | 0.0487 |
+| Additive PM2.5 + Ecog | Ecog adjusted for PM2.5 | Positive | 2.6 | 0.0497 |
+
+None is a FEVS effect or an interaction. Positive and negative maps can reflect
+different brain regions; no anatomical interpretation follows from this table
+alone. The published extraction does not include those cluster coordinates or
+new influence diagnostics. Their anatomical/figure review remains a reporting
+follow-up. The previously reviewed FEVS social-winning activation associations
+remain present (standalone p=0.0411; conditional at mean PM2.5 p=0.0315).
 
 ## Read-Only Final Findings Extraction
 

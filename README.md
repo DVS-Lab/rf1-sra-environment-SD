@@ -4,15 +4,17 @@ This repository contains the reproducible participant-generation, environmental
 linkage, Level 3 input-building, and group-analysis code for the Social Doors
 component of the RF1 brain-health/environment project.
 
-## Current Analysis Status: N=97 Computation Complete; Final Findings Review Pending
+## Current Analysis Status: N=97 Computation And Final Summary Verified
 
 The [final computation record](docs/final-computation.md) confirms **220/220
 extension jobs completed**, with command/check exits 0 and all **1,328 scientific
 directional maps** validated, including retained analyses. The cohort, settled
 exclusions, no-TEDANA sm-5 inputs and VS seed are unchanged. No inference rerun
-is needed. The final counts include seven corrected Social Doors win minus
-Doors win VS-connectivity maps; their detailed model/cluster summary still needs
-to be retrieved from Linux2 before final scientific interpretation.
+is needed. The final read-only extraction also passed. The seven corrected
+Social Doors win minus Doors win VS-connectivity maps concern OAFEM or Ecog
+main effects in adjusted models, not FEVS or interaction effects. See the
+completion record for their exact model/term breakdown. New cluster anatomy
+and influence plots remain a reporting follow-up, not a computation blocker.
 
 **FEVS VS-connectivity figures:** the [read-only VS review launcher](docs/fevs-vs-review.md)
 maps the negative FEVS main effect at mean PM2.5 for domain-by-valence VS PPI,
