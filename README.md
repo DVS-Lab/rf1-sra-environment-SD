@@ -22,7 +22,14 @@ retain N=97 and report all three requested additive adjustments. These checks
 remain provisional while scoring is reviewed and do not rerun or establish
 robustness of the neural models.
 
-**Updated shareable preliminary brief:** [FEVS adjusted behavioral and neural results (PDF)](output/pdf/FEVS_Adjusted_Results_2026-11-04.pdf)
+**Latest illustrated brief:** [brain/scatter pairs, task effects and design review (PDF)](output/pdf/FEVS_Evidence_Brief_2026-11-04.pdf).
+Each section follows context/content/conclusion. Every original/ADI/Ecog/joint
+brain map is beside its exact model-adjusted scatterplot. All three task means,
+actual group designs and native FEAT screenshots are included from the validated
+evidence publication. The known screener MSPSS coding error explicitly prevents
+finalizing the behavioral support result. See the [scope and provenance](docs/katie-evidence-brief.md).
+
+**Earlier preliminary brief:** [FEVS adjusted behavioral and neural results (PDF)](output/pdf/FEVS_Adjusted_Results_2026-11-04.pdf)
 includes the ADI/Ecog sensitivity checks, original/adjusted maps, the activation
 anatomy/statistical caveat, and an integrated account of PM2.5, support, ADI,
 Ecog and secondary OAFEM. Scoring remains provisional; contextual and neural
