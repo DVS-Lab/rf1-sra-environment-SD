@@ -259,3 +259,11 @@ sub-*.html
 /data/derived/.*.lock
 /work/
 /logs/runs/
+
+# Local generated snapshots and legacy batch summaries. Keep the files on disk;
+# canonical validated aggregate reports remain tracked under results/review/.
+/results/progress/
+/results/randomise/katie-financial-moderation-v1/
+/results/randomise/katie-financial-v1/
+/results/randomise/katie-main-effects-v1/
+/results/randomise/katie-remaining-v1/

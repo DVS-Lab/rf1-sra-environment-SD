@@ -7,8 +7,10 @@ component of the RF1 brain-health/environment project.
 ## Current Analysis Status: N=97 Computation And Final Summary Verified
 
 **Matched neural sensitivity checks:** [FEVS activation and VS connectivity with additive ADI/Ecog adjustments](docs/fevs-imaging-adjustments.md).
-This isolated 18-job batch preserves N=97, baseline images/masks/design columns,
-completed results and provisional scoring. It tests FEVS main effects, not new interactions.
+All 18 jobs and 48 baseline/adjusted directional FEVS maps validated and
+[published successfully](results/review/fevs-imaging-adjustments-provisional-v1/README.md).
+N=97, baseline images/masks/design columns, completed results and provisional
+scoring are unchanged. These checks test FEVS main effects, not new interactions.
 
 **Requested behavioral sensitivity checks:** [FEVS PM2.5/support models with added ADI, Ecog or both](results/review/fevs-behavioral-adjustments-provisional-v1/README.md)
 retain N=97 and report all three requested additive adjustments. These checks

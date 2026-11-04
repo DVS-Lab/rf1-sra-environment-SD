@@ -81,3 +81,35 @@ hash/size changes still stop execution. The failed v1 plan/logs remain untouched
 and no old release, baseline receipt or completed result is edited. The same
 launch block above fetches the fix and starts the isolated v2 batch; subsequent
 launches reuse v2's recorded release and compatible completed jobs.
+
+## Completed Validation And Checkout Sync
+
+The November 4 v2 run completed all 18 jobs and all 48 baseline/adjusted
+directional maps. Command and independent check both exited 0. Aggregate
+publication also exited 0 at commit 3df0136. N=97, original results and exclusions
+are unchanged; scoring remains provisional.
+
+Frozen-release launchers and isolated publishers intentionally do not update
+the live checkout, so it can be behind origin/main after a successful run.
+Untracked results/progress/ and the four legacy results/randomise/ summary
+directories are local generated exports, not modified analysis code. They are
+now narrowly ignored without removing local files. Canonical results/review/
+reports and the original tracked results/randomise/katie-v1/ remain tracked.
+Do not add every local output just to silence git status.
+
+With the batch finished, synchronize the checkout without rebasing, resetting,
+deleting local files or rerunning processing:
+
+```bash
+(
+set -euo pipefail
+umask 0000
+cd /ZPOOL/data/projects/rf1-sra-environment-SD
+git -c remote.origin.url=https://github.com/DVS-Lab/rf1-sra-environment-SD.git fetch origin main
+git merge --ff-only origin/main
+git status --short --branch
+)
+```
+
+A fast-forward refuses divergent history or conflicting local files instead of
+discarding them. Completed processing and the frozen releases are not changed.
