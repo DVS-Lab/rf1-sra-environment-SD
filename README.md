@@ -6,6 +6,13 @@ component of the RF1 brain-health/environment project.
 
 ## Current Analysis Status: N=97 Computation And Final Summary Verified
 
+**Illustrated synthesis:** the [full final results summary](results/review/final-summary-v1/README.md)
+brings together the final map inventory, task-signal checks, FEVS activation and
+VS-connectivity findings, environmental/cognitive interactions, correlations,
+influence caveats and the remaining targeted figure work. It links existing
+validated figures and a compact aggregate table of all 69 corrected maps; no
+native statistical images or participant-level diagnostics are added.
+
 The [final computation record](docs/final-computation.md) confirms **220/220
 extension jobs completed**, with command/check exits 0 and all **1,328 scientific
 directional maps** validated, including retained analyses. The cohort, settled
