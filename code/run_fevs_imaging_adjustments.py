@@ -22,7 +22,7 @@ import summarize_katie_randomise as summary
 
 base = extension.base
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "katie-fevs-adjustments-provisional-v1"
+VERSION = "katie-fevs-adjustments-provisional-v2"
 TARGETS = (
     ("activation_fevs", "activation", "win_only", "fevs"),
     ("activation_fevs_pm25", "activation", "win_only", "fevsxpm25"),
@@ -123,6 +123,20 @@ def original_inputs(args):
     return folder, original, ids, values
 
 
+def normalize_sources(records):
+    # Older audit receipts allow omitted size; retain their recorded SHA, never
+    # adopt a live hash to make a changed source pass the new receipt schema.
+    extension.audit.verify_records(records, 24)
+    normalized = {}
+    for record in records.values():
+        path = Path(record["path"]).resolve()
+        size = path.stat().st_size
+        if "size" in record and size != record["size"]:
+            raise ValueError("Frozen source size changed while normalizing: " + record["path"])
+        extension.audit.add_record(normalized, path, record["sha256"], size)
+    return list(normalized.values())
+
+
 def build(args):
     if (args.output / "plan.json").exists():
         return check(args)
@@ -147,6 +161,7 @@ def build(args):
     for path in paths:
         r = base.fingerprint(path)
         extension.audit.add_record(records, r["path"], r["sha256"], r["size"])
+    sources = normalize_sources(records)
     stage = Path(tempfile.mkdtemp(prefix=".fevs-adjustments-", dir=args.output.parent))
     stage.chmod(0o777)
     for name, text in files.items():
@@ -155,7 +170,7 @@ def build(args):
         path.write_text(text)
     plan = dict(n=97, provisional_scoring=True, project=str(args.project), data_root=str(ROOT),
         original=str(folder), jobs=jobs, baselines=baselines, images=original["images"], masks=original["masks"],
-        randomise=original["randomise"], sources=list(records.values()),
+        randomise=original["randomise"], sources=sources,
         code_sha256=base.cohort.digest(Path(__file__)), exclusions_changed=False, existing_outputs_changed=False,
         outputs={str(p.relative_to(stage)): base.cohort.digest(p) for p in stage.rglob("*") if p.is_file()})
     base.write_json(stage / "plan.json", plan)

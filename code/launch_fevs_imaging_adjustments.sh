@@ -13,7 +13,7 @@ if [[ ${1:-} == --worker ]]; then
   bash "$UPSTREAM/code/run_logged.sh" --label "$STAMP" --include-full-log -- \
     "$PYTHON" code/run_fevs_imaging_adjustments.py run --project "$PROJECT" --jobs 18 \
     --check "$PYTHON" code/run_fevs_imaging_adjustments.py check-results --project "$PROJECT"
-  REPORT="$PROJECT/derivatives/fsl/randomise/katie-fevs-adjustments-provisional-v1/report"
+  REPORT="$PROJECT/derivatives/fsl/randomise/katie-fevs-adjustments-provisional-v2/report"
   bash "$UPSTREAM/code/run_logged.sh" --label "$STAMP-publish" --include-full-log -- \
     "$PYTHON" code/publish_katie_review.py --project "$PROJECT" --report "$REPORT" \
     --destination results/review/fevs-imaging-adjustments-provisional-v1
@@ -26,7 +26,7 @@ PROJECT=$(pwd -P)
 REV=$(git rev-parse FETCH_HEAD)
 RELEASE="$PROJECT/work/fevs-adjustments-release-${REV:0:12}"
 mkdir -p "$PROJECT/work" "$PROJECT/logs/runs"
-PLAN="$PROJECT/derivatives/fsl/randomise/katie-fevs-adjustments-provisional-v1/plan.json"
+PLAN="$PROJECT/derivatives/fsl/randomise/katie-fevs-adjustments-provisional-v2/plan.json"
 if [[ -f "$PLAN" ]]; then
   RELEASE=$("$PROJECT/work/venv-katie/bin/python" -c '
 import json, sys

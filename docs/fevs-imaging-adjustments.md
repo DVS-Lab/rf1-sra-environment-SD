@@ -56,7 +56,7 @@ when a plan exists, it automatically uses its recorded data_root release rather
 than newly fetched code. Never remove locks or completed success receipts.
 
 Native outputs:
-`/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-fevs-adjustments-provisional-v1/`.
+`/ZPOOL/data/projects/rf1-sra-environment-SD/derivatives/fsl/randomise/katie-fevs-adjustments-provisional-v2/`.
 All previous batches remain read-only. On success, sealed aggregate README,
 maps.tsv, clusters.tsv and provenance publish automatically to
 `results/review/fevs-imaging-adjustments-provisional-v1/` through isolated HTTPS
@@ -67,3 +67,17 @@ including failures; manual retry:
 python3 /ZPOOL/data/projects/rf1-sra-linux2/code/publish_run_logs.py \
   --project /ZPOOL/data/projects/rf1-sra-linux2
 ```
+
+## Receipt Compatibility Fix
+
+The initial v1 launch stopped before smoke tests or new randomise jobs. Inherited
+audit records may contain path/SHA-256 without size; the older parallel auditor
+accepts that valid schema, whereas the new strict verifier compared the entire
+record with a three-field fingerprint and misreported it as changed.
+
+V2 verifies every inherited SHA-256 and any recorded size before adding the
+missing size field. It never replaces a stored hash with a current hash. Real
+hash/size changes still stop execution. The failed v1 plan/logs remain untouched,
+and no old release, baseline receipt or completed result is edited. The same
+launch block above fetches the fix and starts the isolated v2 batch; subsequent
+launches reuse v2's recorded release and compatible completed jobs.

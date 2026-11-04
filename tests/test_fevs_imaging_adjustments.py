@@ -78,6 +78,10 @@ for i in range(1,count+1):
                     permutations=10000, seed=20261101, design=str(folder/"design.mat"),
                     contrast=str(folder/"design.con"), contrasts=definitions))
         (self.source / "subjects.tsv").write_text(base.review.tsv([dict(subject=s) for s in self.ids]))
+        legacy = self.project / "derivatives/fsl/randomise/katie-main-effects-v1/plan.json"
+        legacy.parent.mkdir(parents=True)
+        legacy.write_text('{"synthetic_legacy_receipt": true}\n')
+        self.original["sources"] = [dict(path=str(legacy), sha256=base.cohort.digest(legacy))]
         self.original["outputs"] = {str(p.relative_to(self.source)): base.cohort.digest(p)
                                     for p in self.source.rglob("*") if p.is_file()}
         base.write_json(self.source / "plan.json", self.original)
@@ -127,6 +131,7 @@ for i in range(1,count+1):
         runner.run(self.args)
         plan = runner.check(self.args)
         self.assertEqual(plan["data_root"], str(self.release))
+        self.assertTrue(all(set(r)=={"path", "sha256", "size"} for r in plan["sources"]))
         receipts = {str(p): p.stat().st_mtime_ns for p in self.args.output.rglob("success.json")}
         runner.run(self.args)
         self.assertEqual(receipts, {str(p): p.stat().st_mtime_ns for p in self.args.output.rglob("success.json")})
@@ -220,6 +225,31 @@ for i in range(1,count+1):
         with self.assertRaisesRegex(ValueError, "Unrecognized"):
             runner.build(self.args)
         self.assertEqual(path.read_text(), "preserve")
+
+    def test_optional_size_normalization_keeps_hash_and_rejects_real_changes(self):
+        record = self.original["sources"][0]
+        normalized = runner.normalize_sources({record["path"]: record})
+        self.assertEqual(normalized, [dict(record, path=str(Path(record["path"]).resolve()),
+                                           size=Path(record["path"]).stat().st_size)])
+        base.verify_sources(normalized)
+        Path(record["path"]).write_text("a genuinely changed source\n")
+        with self.assertRaisesRegex(ValueError, "fingerprint failure"):
+            runner.normalize_sources({record["path"]: record})
+
+    def test_incorrect_recorded_size_is_not_replaced(self):
+        record = dict(self.original["sources"][0], size=-1)
+        with self.assertRaisesRegex(ValueError, "fingerprint failure"):
+            runner.normalize_sources({record["path"]: record})
+
+    def test_failed_v1_plan_is_untouched(self):
+        failed = self.source.parent / "katie-fevs-adjustments-provisional-v1"
+        failed.mkdir()
+        (failed/"plan.json").write_text('{"preserve_failed_plan": true}\n')
+        before = (failed/"plan.json").read_bytes()
+        plan = runner.build(self.args)
+        self.assertIn("provisional-v2", str(self.args.output))
+        self.assertEqual((failed/"plan.json").read_bytes(), before)
+        self.assertTrue(all("size" in r for r in plan["sources"]))
 
 
 if __name__ == "__main__":
