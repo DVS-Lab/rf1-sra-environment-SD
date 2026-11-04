@@ -22,16 +22,19 @@ retain N=97 and report all three requested additive adjustments. These checks
 remain provisional while scoring is reviewed and do not rerun or establish
 robustness of the neural models.
 
-**Latest illustrated brief:** [brain/scatter pairs, task effects and design review (PDF)](output/pdf/FEVS_Evidence_Brief_2026-11-04.pdf).
-Each section follows context/content/conclusion. Every original/ADI/Ecog/joint
+**Current working results overview:** [behavior, basic activation, exploratory activation and connectivity (PDF)](output/pdf/FEVS_Working_Results_Overview_2026-11-04.pdf).
+Behavioral plots and results come first. Every subsection asks a specific
+question and follows context/content/conclusion; technical design views are in
+an appendix. Every original/ADI/Ecog/joint
 brain map is beside its exact model-adjusted scatterplot. All three task means,
 actual group designs and native FEAT screenshots are included from the validated
 evidence publication. The known screener MSPSS coding error explicitly prevents
 finalizing the behavioral support result. See the [scope and provenance](docs/katie-evidence-brief.md).
-The opening section now explicitly confirms the expected bilateral striatal-
+The basic-activation section explicitly confirms the expected bilateral striatal-
 region win-minus-loss response in both tasks, with corrected-cluster peak
 statistics and anatomical VS distributions, rather than reporting only a
-generic whole-brain task effect.
+generic whole-brain task effect. The prior
+[technical evidence brief](output/pdf/FEVS_Evidence_Brief_2026-11-04.pdf) is preserved unchanged.
 
 **Earlier preliminary brief:** [FEVS adjusted behavioral and neural results (PDF)](output/pdf/FEVS_Adjusted_Results_2026-11-04.pdf)
 includes the ADI/Ecog sensitivity checks, original/adjusted maps, the activation

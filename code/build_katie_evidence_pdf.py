@@ -8,9 +8,11 @@ from pathlib import Path
 import build_fevs_results_pdf as old
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "output/pdf/FEVS_Evidence_Brief_2026-11-04.pdf"
-TEMP = ROOT / "work/pdf-evidence-brief"
+OUTPUT = ROOT / "output/pdf/FEVS_Working_Results_Overview_2026-11-04.pdf"
+TEMP = ROOT / "work/pdf-results-overview"
 REVIEW = ROOT / "results/review"
+SECTIONS = ("1. Behavior", "2. Basic Activation", "3. Exploratory Activation",
+            "4. Exploratory Connectivity", "Appendix: Design Validation")
 
 
 def verified_inputs():
@@ -30,6 +32,11 @@ def verified_inputs():
     assert evidence["n"] == 97 and not evidence["exclusions_changed"]
     assert len(evidence["descriptive_fits"]) == 12 and len(evidence["group_means"]) == 12
     assert all(r["n"] == 97 and not r["exclusions_changed"] for r in evidence["descriptive_fits"])
+    for relative in ("data/derived/financial-model-review-v1/correlations.tsv",
+                     "data/derived/financial-model-review-v1/provenance.json",
+                     "results/review/fevs-behavioral-adjustments-provisional-v1/adjustments.tsv",
+                     "results/review/fevs-behavioral-adjustments-provisional-v1/provenance.json"):
+        sources[relative] = old.digest(ROOT / relative)
     return sources
 
 
@@ -107,6 +114,49 @@ def design_plot(destination):
     return checks
 
 
+def behavioral_plots(temporary):
+    """Visualize published estimates only; do not refit or correct the scores."""
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    estimates = [r for r in old.rows(REVIEW / "behavioral-moderation-provisional-v1/conditional_slopes.tsv")
+                 if r["model"] == "fevs_pm25_mspss"]
+    fig, ax = plt.subplots(figsize=(8, 3.1), layout="constrained")
+    x = [float(r["moderator_value"]) for r in estimates]
+    ax.fill_between(x, [float(r["ci_lower"]) for r in estimates],
+                    [float(r["ci_upper"]) for r in estimates], color="#126A70", alpha=.18,
+                    label="HC3 pointwise 95% interval")
+    ax.plot(x, [float(r["conditional_exposure_slope"]) for r in estimates], color="#126A70", lw=2,
+            label="Estimated PM2.5-FEVS slope")
+    ax.axhline(0, color="#54636b", lw=.8)
+    ax.set(xlim=(0, 7), xlabel="Original screener MSPSS mean (coding correction pending)",
+           ylabel="FEVS points per unit PM2.5")
+    ax.set_title("Historical scores: the entire support scale needs verification", fontsize=10)
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.legend(frameon=False, fontsize=8)
+    fig.savefig(temporary / "historical-pm25-support.png", dpi=200)
+    plt.close(fig)
+    correlations = [r for r in old.rows(ROOT / "data/derived/financial-model-review-v1/correlations.tsv")
+                    if r["variable_1"] == "fevs"]
+    labels = dict(adi="ADI", pm25="PM2.5", mspss="MSPSS (old coding)", ecog="Ecog", oafem="OAFEM")
+    fig, ax = plt.subplots(figsize=(8, 2.7), layout="constrained")
+    bars = ax.barh([labels[r["variable_2"]] for r in correlations],
+                   [float(r["pearson_r"]) for r in correlations],
+                   color=["#a6afb3" if r["variable_2"] == "mspss" else "#126A70" for r in correlations])
+    for bar, row in zip(bars, correlations):
+        value = float(row["pearson_r"])
+        if row["variable_2"] == "mspss":
+            bar.set_hatch("///")
+        ax.text(value + (.025 if value >= 0 else -.025), bar.get_y() + bar.get_height()/2,
+                f"{value:.2f}", va="center", ha="left" if value >= 0 else "right", fontsize=9)
+    ax.axvline(0, color="#54636b", lw=.8)
+    ax.set(xlim=(-.65, .65), xlabel="Unadjusted Pearson correlation with FEVS (N=97)")
+    ax.spines[["top", "right"]].set_visible(False)
+    fig.savefig(temporary / "fevs-descriptive-correlations.png", dpi=200)
+    plt.close(fig)
+
+
 def build(output=OUTPUT, temporary=TEMP):
     from PIL import Image as PILImage
     from reportlab.lib import colors
@@ -121,6 +171,8 @@ def build(output=OUTPUT, temporary=TEMP):
     assert old.digest(design) == design_record["figure_sha256"], "Design figure changed"
     curve = temporary / "historical-pm25-support.png"
     assert old.digest(curve) == design_record["behavioral_figure_sha256"], "Behavioral figure changed"
+    correlation_plot = temporary / "fevs-descriptive-correlations.png"
+    assert old.digest(correlation_plot) == design_record["correlation_figure_sha256"], "Correlation figure changed"
     design_checks = design_record["design_hashes"]
     audit = json.loads((REVIEW / "katie-review-v1/audit.json").read_text())
     for extension, sha in design_checks.items():
@@ -135,11 +187,15 @@ def build(output=OUTPUT, temporary=TEMP):
                   ("body", "Helvetica", 10, 13), ("small", "Helvetica", 8.5, 11))}
     width = 712
     story = []
+    page_metadata = []
 
     def p(value, style="body"):
         story.append(Paragraph(value, styles[style]))
 
-    def heading(title, context):
+    def heading(title, context, section):
+        assert section in SECTIONS and title.endswith("?"), "Each subsection must ask a specific question"
+        page_metadata.append(dict(section=section, question=title))
+        p(section, "section")
         p(title, "title")
         p("PRELIMINARY | Frozen N=97 | Exploratory, not preregistered", "small")
         p("Context", "section")
@@ -190,29 +246,29 @@ def build(output=OUTPUT, temporary=TEMP):
         p(value)
 
     peaks, roi = striatal_task_check()
-    heading("Win > Loss: Expected Striatal Activation Is Present",
+    heading("Do wins elicit the expected striatal response?",
             "Yes: both Social Doors and nonsocial Doors show bilateral ventral-striatal-region win > loss responses. "
-            "The across-task average confirms the expected reward response; social specificity is a separate question.")
+            "This is expected-effect/task validation, not a preregistered confirmatory analysis. Social specificity is a separate question.", SECTIONS[1])
     evidence_root = REVIEW / "katie-evidence-v1"
     evidence = json.loads((evidence_root / "summary.json").read_text())
-    t = Table([[image(evidence_root / "group-average.png", 348, 170),
-                image(evidence_root / "group-social_specific.png", 348, 170)]], colWidths=[356, 356])
-    story.append(t)
-    table([
-        ["Outcome", "Existing result", "Interpretation"],
-        ["Average win > loss across domains", "Minimum cluster-FWE p=.0001 at both CDTs; 11,811 corrected voxels at CDT 3.1", "Bilateral ventral-striatal-region peaks: t=11.79 left, 11.70 right (left figure)."],
-        ["Double subtraction: (social win-loss) - (nonsocial win-loss)", "No corrected cluster in either direction at either CDT", "No detected group-average domain-by-valence effect (right figure)."],
-        ["Social win - nonsocial win", "Corrected positive and negative clusters at both CDTs; see next page", "A domain difference in winning responses, not a win-loss interaction."],
-    ], [237, 260, 215])
+    story.append(image(evidence_root / "group-average.png", 690, 240))
+    table([["Win > loss outcome", "Left / right regional peak t", "Left / right cluster-FWE p", "Anatomical VS mean [descriptive 95% CI]"]] +
+          [[label,
+            " / ".join(f"{next(r for r in peaks if r['outcome'] == outcome and r['side'] == side)['t']:.2f}" for side in ("Left", "Right")),
+            " / ".join(f"{next(r for r in peaks if r['outcome'] == outcome and r['side'] == side)['cluster_p']:.4f}" for side in ("Left", "Right")),
+            f"{float(roi[outcome]['mean']):.2f} [{float(roi[outcome]['descriptive_ci_lower']):.2f}, {float(roi[outcome]['descriptive_ci_upper']):.2f}]"]
+           for outcome, label in (("socialdoors", "Social Doors"), ("doors", "Nonsocial Doors"), ("average", "Across-task average"))],
+          [160, 165, 160, 227])
     conclusion("The expected striatal reward response is present, not missing: averaged win > loss peaks near MNI [-12.7, 6.3, -9.6] "
                "and [14.3, 9.0, -9.6] lie in corrected clusters with FWE p=.0001. "
-               "The null double subtraction means we do not detect a group-average social advantage in win-loss differentiation.")
+               "Both tasks therefore recover the expected reward response; this is task validation, not the novel financial-vulnerability result.")
     p("Figure rows: unthresholded context, corrected CDT 2.6, corrected CDT 3.1. Red/blue show positive/negative coefficients. "
-      "All results use existing no-TEDANA sm-5 FEAT inputs; no preprocessing or exclusions changed.", "small")
+      "Cluster p-values are not voxel-FWE claims. ROI summaries are descriptive COPE units, not percent signal change or new ROI tests. "
+      "Existing no-TEDANA sm-5 FEAT inputs and exclusions are unchanged.", "small")
 
     story.append(PageBreak())
-    heading("Group Mean: Social Win Minus Nonsocial Win",
-            "Does the response to winning differ between social and nonsocial contexts? This is distinct from the double subtraction, which additionally references losses.")
+    heading("Do winning responses differ by social context?",
+            "Compare social win minus nonsocial win. This is distinct from the double subtraction, which additionally references losses.", SECTIONS[1])
     story.append(image(evidence_root / "group-social_win.png", 690, 265))
     means = [r for r in evidence["group_means"] if r["outcome"] == "social_win"]
     table([["CDT (Z-equivalent)", "Direction", "Minimum cluster-FWE p", "Corrected voxels"]] +
@@ -227,23 +283,20 @@ def build(output=OUTPUT, temporary=TEMP):
       "The pre-existing win-loss and double-subtraction tests were reused, not rerun.", "small")
 
     story.append(PageBreak())
-    heading("Striatal Sanity Check: Both Tasks Work",
-            "Is the win > loss signal actually present in striatum, rather than merely somewhere in a large whole-brain map? "
-            "Existing bilateral cluster peaks and the pre-existing anatomical VS ROI both support it.")
-    story.append(image(REVIEW / "katie-review-v1/figures/vs-group-response.png", 690, 205))
-    table([["Win > loss outcome", "Left / right regional peak t", "Left / right cluster-FWE p", "Anatomical VS mean [descriptive 95% CI]"]] +
-          [[label,
-            " / ".join(f"{next(r for r in peaks if r['outcome'] == outcome and r['side'] == side)['t']:.2f}" for side in ("Left", "Right")),
-            " / ".join(f"{next(r for r in peaks if r['outcome'] == outcome and r['side'] == side)['cluster_p']:.4f}" for side in ("Left", "Right")),
-            f"{float(roi[outcome]['mean']):.2f} [{float(roi[outcome]['descriptive_ci_lower']):.2f}, {float(roi[outcome]['descriptive_ci_upper']):.2f}]"]
-           for outcome, label in (("socialdoors", "Social Doors"), ("doors", "Nonsocial Doors"), ("average", "Across-task average"))],
-          [160, 165, 160, 227])
+    heading("Is win-loss differentiation stronger for social outcomes?",
+            "Test (social win-loss) minus (nonsocial win-loss). A social-winning difference alone does not answer this domain-by-valence question.", SECTIONS[1])
+    story.append(Table([[image(evidence_root / "group-social_specific.png", 348, 170),
+                         image(REVIEW / "katie-review-v1/figures/vs-group-response.png", 348, 170)]], colWidths=[356, 356]))
+    table([["CDT", "Direction", "Minimum cluster-FWE p", "Corrected voxels"]] +
+          [[r["z"], r["direction"], f"{r['min_cluster_fwe_p']:.4f}", r["significant_voxels"]]
+           for r in evidence["group_means"] if r["outcome"] == "social_specific"], [120, 150, 250, 192])
     p("ROI values are arbitrary COPE units, not percent signal change. The anatomical seed-VS mask was intersected with the common analysis mask, "
       "and all 97 participants remain. These are descriptive ROI summaries, not new small-volume-corrected tests. "
-      "Peak p-values are for the containing cluster at CDT 3.1, not individual-voxel FWE claims or formal anatomical-nucleus labels.", "small")
-    conclusion("Yes, we recover the expected bilateral striatal-region win > loss response in both tasks. "
-               "The anatomical VS social-minus-nonsocial win-loss mean is -11.29 [descriptive 95% CI -29.65, 7.06], consistent with the null corrected double subtraction. "
-               "That quantity is not the social-win-minus-nonsocial-win contrast, because it also subtracts losses.")
+      "The ROI intervals do not replace the whole-brain cluster-corrected tests.", "small")
+    conclusion("No corrected group-average domain-by-valence effect was detected at either CDT. "
+               "The anatomical VS social-minus-nonsocial win-loss mean is -11.29 [descriptive 95% CI -29.65, 7.06]. "
+               "This does not establish equivalence and does not rule out individual-difference associations. "
+               "The contrast is not social win minus nonsocial win, because it also subtracts losses.")
 
     maps = old.rows(REVIEW / "fevs-imaging-adjustments-provisional-v1/maps.tsv")
     targets = [
@@ -260,7 +313,13 @@ def build(output=OUTPUT, temporary=TEMP):
     for target, title, folder, brain, scatter, direction, context, takeaway in targets:
         for half, selected in enumerate((("baseline", "adi"), ("ecog", "adi_ecog"))):
             story.append(PageBreak())
-            heading(title + (": Original / +ADI" if half == 0 else ": +Ecog / +Both"), context)
+            questions = {
+                "activation_fevs": ("Does FEVS relate to social-winning activation?", "Does the activation association persist with Ecog adjustment?"),
+                "activation_fevs_pm25": ("Does the FEVS activation effect remain when PM2.5 is modeled?", "Does PM2.5-adjusted activation survive ADI/Ecog control?"),
+                "vs_fevs_pm25": ("Does FEVS relate to socially differentiated VS connectivity?", "Does the connectivity association persist with ADI/Ecog control?"),
+            }
+            heading(questions[target][half], context + (" Rows: original and +ADI." if half == 0 else " Rows: +Ecog and +ADI/Ecog."),
+                    SECTIONS[3] if target.startswith("vs_") else SECTIONS[2])
             path = evidence_root / (target + "-paired.png")
             box = (0, 120, 2485, 950) if half == 0 else (0, 975, 2485, 1800)
             story.append(FigurePanel(path, box))
@@ -285,24 +344,42 @@ def build(output=OUTPUT, temporary=TEMP):
               "None of these focal models contains MSPSS.", "small")
 
     story.append(PageBreak())
-    heading("Behavioral Context: Support Result Awaiting Correction",
-            "Does perceived support moderate the PM2.5-FEVS association? The previous screener MSPSS coding is now known to be incorrect, so this is a historical result awaiting rerun.")
+    heading("Does perceived support modify the PM2.5-FEVS association?",
+            "FEVS is the primary financial-vulnerability outcome. These age/gender-adjusted models ask whether the PM2.5 association varies with perceived support. "
+            "The displayed findings use the original screener MSPSS scores and remain provisional pending their coding correction.", SECTIONS[0])
     story.append(image(curve, 690, 215))
     adjustments = old.rows(REVIEW / "fevs-behavioral-adjustments-provisional-v1/adjustments.tsv")
     table([["Historical fit", "Interaction b", "HC3 p (uncorrected sensitivity check)"]] +
           [[r["adjustment"], f"{float(r['interaction_beta']):.3f}", f"{float(r['hc3_p']):.6f}"] for r in adjustments],
           [240, 180, 292])
-    p("The displayed conditional-slope panels use the old scores. Pointwise intervals and any JN regions are exploratory, "
+    p("The displayed conditional-slope plot uses the old scores. Pointwise intervals and any JN regions are exploratory, "
       "not simultaneous bands. Original primary behavioral interaction: b=-.802, HC3 CI [-1.208,-.396], p=.000168; "
       "Holm p=.000336 across the original two primary tests. Those numbers are not scoring-corrected findings.", "small")
-    conclusion("Do not finalize the support-buffering story yet. Obtain corrected screener and pre-scan scores/dates, verify scoring, "
-               "and assess agreement. Preserve N=97; rerun only MSPSS-dependent models and their existing multiplicity summaries after verification.")
+    conclusion("In the original export, the PM2.5-FEVS association becomes less positive as reported support increases, and the interaction persists after adding ADI/Ecog. "
+               "That is the candidate behavioral pattern, not a finalized buffering result: the coding correction can affect all 97 scores, not just five low values. "
+               "Verify both MSPSS administrations, assess agreement, then rerun the affected models and original multiplicity summaries without changing the cohort.")
     p("The focal FEVS neural models shown earlier do not include MSPSS and are unaffected by its correction. "
       "No matching corrected neural PM2.5 x support result has been established. Separate behavioral and neural associations do not demonstrate mediation.", "small")
 
     story.append(PageBreak())
-    heading("Design Audit And Reporting Decisions",
-            "Were the intended coefficients actually contrasted, and does each design retain the same 97 image-volume rows?")
+    heading("How does financial vulnerability relate to the other measures?",
+            "Before linking behavior to brain responses, inspect the already-computed marginal associations. "
+            "These descriptive correlations are not adjusted effects, causal paths or criteria for choosing whichever model is significant.", SECTIONS[0])
+    story.append(image(correlation_plot, 690, 190))
+    pairs = [r for r in old.rows(ROOT / "data/derived/financial-model-review-v1/correlations.tsv") if r["variable_1"] == "fevs"]
+    labels = dict(adi="ADI", pm25="PM2.5", mspss="MSPSS (old coding; pending)", ecog="Ecog", oafem="OAFEM (secondary)")
+    table([["Measure paired with FEVS", "Pearson r", "Spearman rho", "N"]] +
+          [[labels[r["variable_2"]], f"{float(r['pearson_r']):.2f}", f"{float(r['spearman_rho']):.2f}", r["n"]] for r in pairs],
+          [352, 120, 140, 100])
+    conclusion("FEVS has modest descriptive associations with Ecog and OAFEM, but weak marginal associations with ADI and PM2.5. "
+               "The MSPSS association needs rescoring. Neither weak exposure correlations nor the support interaction establish an environment-brain-FEVS pathway.")
+    p("Next specific question: does Ecog agree with objective cognitive performance? "
+      "Inventory NIH EXAMINER/TabCAT executive measures, Salthouse Letter/Pattern Comparisons, and WIAT-IV Math Fluency, with assessment dates and availability within N=97. "
+      "No comparison results are available yet; no cohort or neural-model changes are implied.", "small")
+
+    story.append(PageBreak())
+    heading("Did the group designs test the intended effects?",
+            "Check the actual contrast weights, rank and image-volume ordering rather than inferring the test from the presence of a column of ones.", SECTIONS[4])
     story.append(Table([[image(evidence_root / "design-activation_fevs-baseline.png", 345, 235),
                          image(evidence_root / "design-activation_fevs_pm25-adi_ecog.png", 345, 235)]], colWidths=[356, 356]))
     p("Left: standalone FEVS. Right: FEVS/PM2.5 with additive ADI and Ecog. These published heatmaps read actual executed .mat/.con files, "
@@ -320,8 +397,8 @@ def build(output=OUTPUT, temporary=TEMP):
                "Activation is qualified; the VS-connectivity sensitivity result is more consistent. The environmental-support behavioral link awaits corrected MSPSS scoring.")
 
     story.append(PageBreak())
-    heading("Native FEAT Design Views: Outcome-Phase Check",
-            "Are the reward estimates tied to the intended task model? These are unmodified native FEAT screenshots from the first frozen participant's two activation L1s, not custom group-design heatmaps.")
+    heading("Were the intended win and loss outcomes modeled?",
+            "Inspect unmodified native FEAT screenshots from the first frozen participant's two activation L1s, not custom group-design heatmaps.", SECTIONS[4])
     table([["Social Doors", "Nonsocial Doors"]], [356, 356])
     story.append(Table([[image(evidence_root / "L1-socialdoors-design.png", 345, 137),
                          image(evidence_root / "L1-doors-design.png", 345, 137)],
@@ -334,6 +411,7 @@ def build(output=OUTPUT, temporary=TEMP):
                "N=97, previous analyses and exclusions remain unchanged. The remaining measurement issue is scoring verification and the planned comparison of MSPSS administrations, not a new imaging exclusion.")
 
     output.parent.mkdir(parents=True, exist_ok=True)
+    ordered_metadata = []
     def footer(canvas, document):
         canvas.saveState()
         canvas.setStrokeColor(teal)
@@ -341,9 +419,16 @@ def build(output=OUTPUT, temporary=TEMP):
         canvas.setFont("Helvetica", 8)
         canvas.drawString(40, 22, "PRELIMINARY | N=97 | Scoring unresolved | Existing results preserved | November 4, 2026")
         canvas.drawRightString(752, 22, str(document.page))
+        info = ordered_metadata[document.page - 1]
+        key = "page-" + str(document.page)
+        canvas.bookmarkPage(key)
+        if document.page == 1 or ordered_metadata[document.page - 2]["section"] != info["section"]:
+            canvas.bookmarkPage(key + "-section")
+            canvas.addOutlineEntry(info["section"], key + "-section", level=0)
+        canvas.addOutlineEntry(info["question"], key, level=1)
         canvas.restoreState()
     doc = SimpleDocTemplate(str(output), pagesize=(792, 612), leftMargin=40, rightMargin=40,
-                            topMargin=39, bottomMargin=36, title="FEVS Evidence Brief: Maps, Associations And Designs",
+                            topMargin=39, bottomMargin=36, title="FEVS Working Results: Behavior, Activation And Connectivity",
                             author="RF1-SRA research team")
     pages = [[]]
     for item in story:
@@ -351,15 +436,20 @@ def build(output=OUTPUT, temporary=TEMP):
             pages.append([])
         else:
             pages[-1].append(item)
+    assert len(pages) == len(page_metadata)
+    order = sorted(range(len(pages)), key=lambda i: SECTIONS.index(page_metadata[i]["section"]))
+    ordered_metadata.extend(page_metadata[i] for i in order)
     framed = []
-    for index, contents in enumerate(pages):
+    for index, original_index in enumerate(order):
         if index:
             framed.append(PageBreak())
-        framed.append(KeepInFrame(width, 520, contents, mode="shrink", hAlign="LEFT", vAlign="TOP"))
+        framed.append(KeepInFrame(width, 520, pages[original_index], mode="shrink", hAlign="LEFT", vAlign="TOP"))
     doc.build(framed, onFirstPage=footer, onLaterPages=footer)
     provenance = dict(n=97, exclusions_changed=False, new_analysis=False,
                       mspss_status="Known screener coding error; corrected scores and reliability comparison pending",
                       unpublished_evidence_batch=False, evidence_publication="11ab6e6", design_hashes=design_checks,
+                      sections=list(SECTIONS), pages=ordered_metadata,
+                      derived_figures={key: value for key, value in design_record.items() if key.endswith("sha256")},
                       inputs=sources, pdf_sha256=old.digest(output), builder_sha256=old.digest(Path(__file__)))
     output.with_suffix(".provenance.json").write_text(json.dumps(provenance, indent=2, sort_keys=True) + "\n")
     print(output)
@@ -374,9 +464,10 @@ if __name__ == "__main__":
     if args.figures_only:
         verified_inputs()
         checks = design_plot(args.temporary / "executed-fevs-design.png")
-        old.behavioral_figure(args.temporary / "historical-pm25-support.png")
+        behavioral_plots(args.temporary)
         record = dict(design_hashes=checks, figure_sha256=old.digest(args.temporary / "executed-fevs-design.png"),
-                      behavioral_figure_sha256=old.digest(args.temporary / "historical-pm25-support.png"))
+                      behavioral_figure_sha256=old.digest(args.temporary / "historical-pm25-support.png"),
+                      correlation_figure_sha256=old.digest(args.temporary / "fevs-descriptive-correlations.png"))
         (args.temporary / "design-checks.json").write_text(json.dumps(record, indent=2) + "\n")
     else:
         build(args.output, args.temporary)

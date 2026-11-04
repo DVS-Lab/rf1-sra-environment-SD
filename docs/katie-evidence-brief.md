@@ -1,8 +1,26 @@
-# Illustrated Evidence Brief
+# Question-Driven Working Results Overview
 
-The [November 4 evidence brief](../output/pdf/FEVS_Evidence_Brief_2026-11-04.pdf)
-uses context, content and conclusion for each section. It replaces neither the
-complete results inventory nor prior PDF versions.
+The [current November 4 working overview](../output/pdf/FEVS_Working_Results_Overview_2026-11-04.pdf)
+is organized around the intended results scaffold, not the processing audit.
+Every subsection asks a specific question and provides context, numerical/visual
+content, and a plain-English conclusion. This is working structure, not a final
+manuscript Results section or a preregistered analysis.
+
+1. **Behavior:** Does support modify the PM2.5-FEVS association? How does FEVS
+   relate to the other measures? The behavioral curve and results lead the PDF.
+2. **Basic activation:** Do wins elicit expected striatal activation? Do winning
+   responses differ by domain? Is win-loss differentiation stronger socially?
+   These are expected-effect/task-validation checks, not retroactive claims of
+   preregistered confirmatory testing.
+3. **Exploratory activation:** Does FEVS relate to social-winning activation, and
+   do associations persist with PM2.5, ADI and Ecog in the model?
+4. **Exploratory connectivity:** Does FEVS relate to socially differentiated VS
+   coupling, and does that association persist after ADI/Ecog adjustment?
+
+Group and native L1 design checks are in an appendix. PDF bookmarks identify
+the four sections, appendix, and each question. The prior
+[technical evidence brief](../output/pdf/FEVS_Evidence_Brief_2026-11-04.pdf) is
+preserved unchanged; the new filename distinguishes the reorganized overview.
 
 ## Included
 
@@ -29,6 +47,12 @@ complete results inventory nor prior PDF versions.
   intercept-test status, plus native FEAT design and covariance screenshots.
 - Historical behavioral conditional slopes, explicitly labeled as using the
   now-known erroneous screener MSPSS coding, not corrected findings.
+- A descriptive FEVS correlation figure/table reused from the published
+  correlations, with old-coded MSPSS visibly distinguished. Neither this plot nor
+  the behavioral curve fits a new model. The entire support scale needs
+  verification, not only the five scores below one.
+- The next behavioral question (Ecog versus objective cognitive measures) is
+  explicitly a pending data inventory, with no invented results or cohort changes.
 
 No ROI p-values are sold as independent confirmation. All 97 observations remain.
 The four-row paired panels are split into two rows per page using a layout
