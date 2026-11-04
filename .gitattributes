@@ -6,3 +6,4 @@
 *.tsv text eol=lf
 *.fsf text eol=lf
 *.xlsx binary
+*.pdf binary
