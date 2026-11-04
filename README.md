@@ -4,7 +4,15 @@ This repository contains the reproducible participant-generation, environmental
 linkage, Level 3 input-building, and group-analysis code for the Social Doors
 component of the RF1 brain-health/environment project.
 
-## Current Analysis Status: Original N=97 Analyses Verified; Extension In Progress
+## Current Analysis Status: N=97 Computation Complete; Final Findings Review Pending
+
+The [final computation record](docs/final-computation.md) confirms **220/220
+extension jobs completed**, with command/check exits 0 and all **1,328 scientific
+directional maps** validated, including retained analyses. The cohort, settled
+exclusions, no-TEDANA sm-5 inputs and VS seed are unchanged. No inference rerun
+is needed. The final counts include seven corrected Social Doors win minus
+Doors win VS-connectivity maps; their detailed model/cluster summary still needs
+to be retrieved from Linux2 before final scientific interpretation.
 
 **FEVS VS-connectivity figures:** the [read-only VS review launcher](docs/fevs-vs-review.md)
 maps the negative FEVS main effect at mean PM2.5 for domain-by-valence VS PPI,
@@ -60,7 +68,8 @@ through Git automatically.
 
 For the complete activation/connectivity audit, brain panels, scatterplots and
 descriptive Johnson-Neyman follow-ups, use the [full results-review launcher](docs/full-results-review.md).
-It covers 152 completed jobs / 336 directional maps, preserves the frozen
+This earlier review covers 152 completed jobs / 336 directional maps, not the
+final 1,328-map catalog. It preserves the frozen
 cohort and inference, and publishes validated aggregate figures to GitHub.
 
 The published [Linux2 completion record](https://github.com/DVS-Lab/rf1-sra-linux2/blob/main/logs/records/20261101-232106_katie-overnight-20261101-231810-randomise.md)

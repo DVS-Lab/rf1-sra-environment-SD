@@ -1,5 +1,11 @@
 # Complete Reward-Component Model Extension
 
+**Completed:** all 220 extension jobs and the full 1,328-map catalog passed
+validation. See the [final computation record](final-computation.md) for verified
+counts and the read-only command to retrieve the detailed final findings.
+Launch/resume instructions below are retained for provenance, not a request to
+rerun completed inference.
+
 The frozen **97-person** cohort, settled exclusions, no-TEDANA sm-5 activation
 inputs and original VS seed are unchanged. No preprocessing or L1 FEAT rerun
 is performed. Missing or incompatible source estimates stop validation; they do
