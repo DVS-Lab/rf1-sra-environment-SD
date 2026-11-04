@@ -113,3 +113,32 @@ git status --short --branch
 
 A fast-forward refuses divergent history or conflicting local files instead of
 discarding them. Completed processing and the frozen releases are not changed.
+
+## Read-Only Anatomy Comparison
+
+Render the original and ADI/Ecog-adjusted maps on identical original-peak slices,
+with original corrected contours in cyan and adjusted corrected contours in gold:
+
+```bash
+(
+set -euo pipefail
+umask 0000
+cd /ZPOOL/data/projects/rf1-sra-environment-SD
+git -c remote.origin.url=https://github.com/DVS-Lab/rf1-sra-environment-SD.git fetch origin main
+bash <(git show FETCH_HEAD:code/launch_fevs_adjustment_maps.sh)
+)
+```
+
+No inference, participant-level refitting, image smoothing or source changes.
+This uses the existing review environment, preparing that isolated environment
+only if missing. Three PNGs, overlap/Dice, peak/centroid coordinates, peak shift,
+whether the adjusted peak is within the original corrected cluster, and available
+Harvard-Oxford atlas labels publish automatically through Git to
+`results/review/fevs-adjustment-maps-v1/`. Local outputs and input hashes stay in
+`work/fevs-adjustment-map-review-v1/`. Logs publish on exit.
+
+The background t shading at |t|>=2 is display-only, not new inference. Focal
+corrected contours use saved per-map cluster-FWE p<.05 at CDT Z-equivalent 3.1.
+All directions and both CDTs remain in the complete adjustment results. A missing
+adjusted contour does not establish absence of the association, and atlas labels
+are approximate nearest-voxel descriptions, not subject-specific segmentation.
