@@ -6,6 +6,12 @@ component of the RF1 brain-health/environment project.
 
 ## Current Analysis Status: N=97 Computation And Final Summary Verified
 
+**Shareable preliminary brief:** [FEVS main behavioral and neural results (PDF)](output/pdf/FEVS_Main_Results_2026-11-03.pdf)
+summarizes the PM2.5/support interaction and the two FEVS neural findings with
+figures, explicit contrast definitions, null-result boundaries and pending
+scoring checks. It is a focused summary, not a replacement for the full model
+inventory or provenance below.
+
 **New behavioral moderation family:** the [behavioral runbook](docs/behavioral-moderation.md)
 fits the eight approved age/gender-adjusted FEVS/OAFEM models separately from
 the completed neural analyses. FEVS/support interactions lead; Ecog and OAFEM
