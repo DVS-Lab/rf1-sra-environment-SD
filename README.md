@@ -44,6 +44,10 @@ associations are not a demonstrated pathway. This focused brief does not replace
 the complete model inventory, null results or provenance. The
 [November 3 brief](output/pdf/FEVS_Main_Results_2026-11-03.pdf) is preserved.
 
+**Corrected MSPSS neural refits:** the [corrected-MSPSS runbook](docs/corrected-mspss.md)
+launches only the 64 affected activation/VS-PPI jobs, using corrected screener means for the same
+97 participants. Original results and exclusions remain untouched; aggregate results/logs publish automatically.
+
 **New behavioral moderation family:** the [behavioral runbook](docs/behavioral-moderation.md)
 fits the eight approved age/gender-adjusted FEVS/OAFEM models separately from
 the completed neural analyses. FEVS/support interactions lead; Ecog and OAFEM

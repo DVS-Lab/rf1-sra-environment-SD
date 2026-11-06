@@ -1,0 +1,12 @@
+{
+  "administration": "island_screener",
+  "exclusions_changed": false,
+  "field": "mspss_sum",
+  "item_scoring_note": "Corrected REDCap means supplied by acquisition team; no independent item-level rescore claimed.",
+  "n": 97,
+  "raw_export_sha256": "75924cc86f754d347078b8cc349598e24e3a4527a9004fee392624dd30ee4511",
+  "roster_sha256": "bd0fa87fdf4c40b2aff5b6a209965056db87dec3c56d1e246fe2fd5f95036895",
+  "scores_sha256": "ac5a9599d21ff1b86626a6d44824867f0b43fd1728d7377d991cadb9e1686889",
+  "source": "Ryan's revised MSPSS Island-Screener / RF1 Prescan export, 2026-11-05",
+  "timing_note": "Selected screener record preserved, including repeat screeners after scan; not prescan retest or an average of administrations."
+}
