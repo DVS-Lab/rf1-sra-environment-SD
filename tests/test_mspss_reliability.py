@@ -53,6 +53,24 @@ class Agreement(unittest.TestCase):
         self.assertEqual(len(rows), 97)
         self.assertEqual(len({r["subject"] for r in rows}), 97)
 
+    def test_full_export_keeps_reversed_and_same_day_pairs_in_primary_analysis(self):
+        rows = []
+        for i in range(12):
+            row = {"rf1-id": str(10000+i), "screener_date": "1/1/2025", "fs_date": "2/1/2025"}
+            for a, b in audit.SCALES.values():
+                row[a], row[b] = str(1+i*.4), str(1.2+i*.35)
+            rows.append(row)
+        rows[0]["screener_date"] = "3/1/2025"
+        rows[1]["screener_date"] = "2/1/2025"
+        original = [dict(r) for r in rows]
+        result = audit.population_review(rows, bootstrap=200)
+        self.assertEqual(result["n"], 12)
+        self.assertEqual(result["scales"]["total"]["n"], 12)
+        self.assertEqual(result["n_scan_before_screener"], 1)
+        self.assertEqual(result["n_same_day"], 1)
+        self.assertEqual(result["scan_after_screener_sensitivity"]["n"], 10)
+        self.assertEqual(rows, original)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -4,7 +4,9 @@
 ICC(A,1): two-way, single-measure absolute agreement for the two observed
 administrations. Percentile CIs resample paired participants, not occasions.
 McGraw/Wong ANOVA formula; see https://pmc.ncbi.nlm.nih.gov/articles/PMC6439259/.
-The fs_date field is not assumed to be a verified questionnaire timestamp.
+Ryan clarified that fs_date is the scan visit date associated with the pre-scan
+retest. Date-order checks identify repeated/later screeners without swapping
+occasions or changing the paper cohort.
 """
 import argparse
 import csv
@@ -91,6 +93,35 @@ def agreement(x, y, bootstrap=5000):
                 absolute_difference_at_least_3=int((np.abs(delta)>=3).sum()))
 
 
+def date_gaps(rows):
+    return np.array([(datetime.strptime(r["fs_date"], "%m/%d/%Y")-
+                      datetime.strptime(r["screener_date"], "%m/%d/%Y")).days for r in rows])
+
+
+def scale_agreement(rows, bootstrap):
+    return {name: agreement(np.array([float(r[a]) for r in rows]),
+                            np.array([float(r[b]) for r in rows]), bootstrap) for name, (a, b) in SCALES.items()}
+
+
+def population_review(records, bootstrap=5000):
+    """All supplied pairs are primary; chronology is a descriptive sensitivity."""
+    gaps = date_gaps(records)
+    ordered = [r for r, days in zip(records, gaps) if days > 0]
+    reverse = [dict(subject=r["rf1-id"], screener_date=r["screener_date"], scan_date=r["fs_date"],
+                    scan_minus_screener_days=int(days)) for r, days in zip(records, gaps) if days < 0]
+    chronological = None
+    if len(ordered) >= 3:
+        chronological = dict(n=len(ordered), interval_days=describe(gaps[gaps>0]),
+                             total=agreement(np.array([float(r["mspss_sum"]) for r in ordered]),
+                                             np.array([float(r["mspss_retest_scoring"]) for r in ordered]), bootstrap),
+                             purpose="Date-order sensitivity only; no cohort exclusions, swapping or imputation")
+    return dict(n=len(records), scales=scale_agreement(records, bootstrap),
+                signed_interval_days=describe(gaps), absolute_interval_days=describe(np.abs(gaps)),
+                n_scan_before_screener=int((gaps<0).sum()), n_same_day=int((gaps==0).sum()),
+                n_scan_after_screener=int((gaps>0).sum()), reversed_date_records=reverse,
+                scan_after_screener_sensitivity=chronological)
+
+
 def review(source, project=ROOT, bootstrap=5000):
     records = read(source)
     ids = [r["subject"] for r in read(project/"data/derived/katie-cohort-v1/subjects.tsv", "\t")]
@@ -124,13 +155,9 @@ def review(source, project=ROOT, bootstrap=5000):
                               max_total_minus_mean_subscales=float(np.abs(errors).max()),
                               discrepancies_beyond_rounding=int((np.abs(errors)>.00501).sum()),
                               nonquarter_subscale_rows=int((np.abs(values[:, 1:]*4-np.round(values[:, 1:]*4))>.02001).any(axis=1).sum()))
-    def gaps(selected):
-        return np.array([(datetime.strptime(r["fs_date"], "%m/%d/%Y")-
-                          datetime.strptime(r["screener_date"], "%m/%d/%Y")).days for r in selected])
-    intervals = gaps(rows)
-    all_intervals = gaps(records)
-    scales = {name: agreement(np.array([float(r[a]) for r in rows]),
-                              np.array([float(r[b]) for r in rows]), bootstrap) for name, (a, b) in SCALES.items()}
+    intervals = date_gaps(rows)
+    all_intervals = date_gaps(records)
+    scales = scale_agreement(rows, bootstrap)
     delta = np.array([float(r["mspss_retest_scoring"])-float(r["mspss_sum"]) for r in rows])
     return dict(source_sha256=sha(source), old_covariates_sha256=sha(old_path),
                 frozen_roster_sha256=sha(project/"data/derived/katie-cohort-v1/subjects.tsv"),
@@ -139,7 +166,8 @@ def review(source, project=ROOT, bootstrap=5000):
                 interval_days=describe(intervals),
                 cohort_dates_reversed=int((intervals<0).sum()), all_dates_reversed=int((all_intervals<0).sum()),
                 all_same_dates=int((all_intervals==0).sum()),
-                fs_date_semantics="Export label only; actual prescan questionnaire date not independently verified",
+                fs_date_semantics="Scan visit date associated with prescan retest, as clarified by Ryan",
+                full_export=population_review(records, bootstrap),
                 interval_vs_absolute_change_spearman=float(stats.spearmanr(intervals, np.abs(delta)).statistic),
                 correction_change=describe(changes), correction_unchanged=int((np.abs(changes)<1e-7).sum()),
                 correction_old_new_r=float(stats.pearsonr(old_values, new).statistic),
@@ -189,6 +217,7 @@ if __name__ == "__main__":
     result, rows = review(args.source, args.project, args.bootstrap)
     args.output.mkdir(parents=True, exist_ok=True)
     plot(rows, result, args.output/"agreement.png")
+    plot(read(args.source), result["full_export"], args.output/"full-sample-agreement.png")
     if sha(args.source) != original:
         raise ValueError("Input changed during read-only review")
     (args.output/"summary-private.json").write_text(json.dumps(result, indent=2, allow_nan=False)+"\n")
