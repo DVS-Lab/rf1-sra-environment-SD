@@ -1,0 +1,9 @@
+{
+  "code_sha256": "c5ee41e801cadff2260f379a3357bb1a3ce17664bfe7886c005b48f539f909ad",
+  "n": 97,
+  "outputs": {
+    "README.md": "a3ff2813e9c6a59261f0d25a8b1ce460bbe86f9f43ff33f40f6ec077c54e8492",
+    "coefficients.tsv": "df0f9abb06ea25a89b83de986d043b20fce70a12b1e74c8592d1f11822174874",
+    "summary.json": "9691c559ad62896cf24adbcc419a9f42f66e0b11f2830fae736f0b7317e0279a"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "comparison": {
+    "absolute_hc3_t_ratio": 1.0584964515825928,
+    "beta_change": 0.007224726171672566,
+    "beta_magnitude_ratio": 0.9344587525951347,
+    "caution": "Selected original region; descriptive comparison. Regional coefficient/SE changes do not fully explain voxelwise cluster extent, permutation correction, or whole-brain p changes.",
+    "hc3_ci_width_ratio": 0.8829618485410959,
+    "hc3_se_change_percent": -11.718291431398297,
+    "hc3_se_ratio": 0.882817085686017,
+    "magnitude_reduction_percent": 6.554124740486533,
+    "ols_se_ratio": 1.011384513121905,
+    "sign_changed": false
+  },
+  "confidence_intervals": "HC3, t-based, 95%; descriptive selected-region estimates",
+  "corrected_mspss_sha256": "ac5a9599d21ff1b86626a6d44824867f0b43fd1728d7377d991cadb9e1686889",
+  "exclusions_changed": false,
+  "financial_scoring_provisional": true,
+  "fits": [
+    {
+      "beta": -0.11023174653731502,
+      "exclusions_changed": false,
+      "hc3_ci_width": 0.08864215494214872,
+      "hc3_lower": -0.15455282400838938,
+      "hc3_se": 0.02229869833086032,
+      "hc3_t": -4.943416198637909,
+      "hc3_upper": -0.06591066906624066,
+      "model": "original",
+      "n": 97,
+      "ols_se": 0.01808546896166004,
+      "ols_t": -6.095044965159532,
+      "rank": 10,
+      "residual_df": 87,
+      "selected_cluster_descriptive": true
+    },
+    {
+      "beta": -0.10300702036564245,
+      "exclusions_changed": false,
+      "hc3_ci_width": 0.07826764098638588,
+      "hc3_lower": -0.14214084085883538,
+      "hc3_se": 0.01968567187504176,
+      "hc3_t": -5.232588504954136,
+      "hc3_upper": -0.06387319987244951,
+      "model": "add_corrected_mspss",
+      "n": 97,
+      "ols_se": 0.018291363220369866,
+      "ols_t": -5.631456722204851,
+      "rank": 11,
+      "residual_df": 86,
+      "selected_cluster_descriptive": true
+    }
+  ],
+  "model_columns": {
+    "add_corrected_mspss": [
+      "ones",
+      "delta_fd",
+      "delta_tsnr",
+      "e11",
+      "xa30",
+      "gender_code1",
+      "age",
+      "fevs",
+      "pm25",
+      "fevsxpm25",
+      "mspss"
+    ],
+    "original": [
+      "ones",
+      "delta_fd",
+      "delta_tsnr",
+      "e11",
+      "xa30",
+      "gender_code1",
+      "age",
+      "fevs",
+      "pm25",
+      "fevsxpm25"
+    ]
+  },
+  "n": 97,
+  "new_randomise_jobs": 0,
+  "outcome": "[Social VS PPI(win-loss)] - [nonsocial VS PPI(win-loss)]",
+  "participant_data_published": false,
+  "roi_selection": "Original negative FEVS cluster, CDT3.1, p=.0303; fixed in both models",
+  "roi_voxels": 44,
+  "tested_coefficient": "FEVS at mean PM2.5"
+}
