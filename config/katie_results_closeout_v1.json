@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "authorized_by": "User brief supplied November 7, 2026",
+  "brief_sha256": "331f01a126958fa75e20a34c7eb324dded6df0ec2ca43ac18c579f7fb9ac89e4",
+  "n": 97,
+  "new_scientific_jobs": 2,
+  "new_directional_maps": 4,
+  "outcome": "connectivity/social_specific",
+  "tested_coefficient": "fevs",
+  "retained_model": [
+    "fevs",
+    "pm25",
+    "fevsxpm25"
+  ],
+  "additive_covariate": "corrected_island_screener_mspss",
+  "new_interactions": false,
+  "permutations": 10000,
+  "seed": 20261101,
+  "cluster_forming_z": [
+    2.6,
+    3.1
+  ],
+  "selected_roi_followups": [
+    "ADI x corrected MSPSS activation: social win minus nonsocial win",
+    "Original FEVS VS domain-by-valence cluster: social/nonsocial component descriptions"
+  ],
+  "conditional_percentiles": [
+    16,
+    50,
+    84
+  ],
+  "conditional_percentile_method": "nearest observed score",
+  "exclusions_changed": false,
+  "financial_score_modifications": false,
+  "financial_scoring_documentation": "Unresolved unless explicit documentation is supplied",
+  "cognitive_recovery": "Deferred; not part of this closeout",
+  "manuscript_results_drafting": false
+}

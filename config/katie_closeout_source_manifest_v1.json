@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "base_revision": "e70bfb35d11b9bbf32ef5ffc64200ebfaa14e023",
+  "files": {
+    "code/run_katie_support_sensitivity.py": {
+      "sha256": "6eb50d5f427c74b14da5bcecc3075ad4aa91dff607430fee5de2ab821c31a256",
+      "previous_sha256": null
+    },
+    "code/review_katie_closeout.py": {
+      "sha256": "6773e48c804121debf0fe6b02d73d4b115936a1f1705b7137191a3ad55cefa61",
+      "previous_sha256": null
+    },
+    "code/publish_katie_closeout_sources.py": {
+      "sha256": "addd414f76aa17c232c2132c274014de6b6a0ea3cd74c328b4e8729ac5b74338",
+      "previous_sha256": null
+    },
+    "code/launch_katie_closeout.sh": {
+      "sha256": "4ce7a6f29cbb5befc5f9ac75c6b131d196fa5b3a01837d1f6c1e10c572ca5752",
+      "previous_sha256": null
+    },
+    "tests/test_katie_closeout.py": {
+      "sha256": "80cb8a6860d300ce500a2ba50579e6896f3bef306c7a23614dcf54680aa6b255",
+      "previous_sha256": null
+    },
+    "config/katie_results_closeout_v1.json": {
+      "sha256": "69f4643b54ef74a56c6a0b16dbadbb1eb3f6a56ff19db653c7f62a41874cb7d4",
+      "previous_sha256": null
+    },
+    "docs/katie-results-closeout.md": {
+      "sha256": "e5045e85160c0e8752ca85b9cd4f800634d5ae8f4e04e93265949b2e704abc09",
+      "previous_sha256": null
+    }
+  }
+}
