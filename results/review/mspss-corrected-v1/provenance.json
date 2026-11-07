@@ -1,0 +1,17 @@
+{
+  "administration": "island_screener",
+  "directional_maps": 384,
+  "exclusions_changed": false,
+  "existing_outputs_changed": false,
+  "jobs": 64,
+  "n": 97,
+  "plan_sha256": "9a2896629bbf364e8c851a0e3aa71c7adeca18caaa3db9641cce2488fbdced5b",
+  "raw_export_sha256": "75924cc86f754d347078b8cc349598e24e3a4527a9004fee392624dd30ee4511",
+  "result_records": 832,
+  "scope": [
+    "adixmspss",
+    "pm25xmspss",
+    "fevsxmspss",
+    "oafemxmspss"
+  ]
+}

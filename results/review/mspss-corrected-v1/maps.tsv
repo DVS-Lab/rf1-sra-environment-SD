@@ -1,0 +1,385 @@
+job	outcome	model	direction	z	t_cutoff	n	min_cluster_fwe_p	significant_voxels	significant_clusters	max_contrast_t	family	term	outcome_label
+activation/social_specific/adixmspss/z-2p6	activation/social_specific	adixmspss	positive	2.6	2.6592120486993496	97	0.7562000006437302	0	0	3.9015493392944336	activation	adi	(Social win-loss) - (Doors win-loss)
+activation/social_specific/adixmspss/z-2p6	activation/social_specific	adixmspss	negative	2.6	2.6592120486993496	97	0.1388000249862671	0	0	4.604650020599365	activation	adi	(Social win-loss) - (Doors win-loss)
+activation/social_specific/adixmspss/z-2p6	activation/social_specific	adixmspss	positive	2.6	2.6592120486993496	97	0.3391000032424927	0	0	4.870800018310547	activation	mspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/adixmspss/z-2p6	activation/social_specific	adixmspss	negative	2.6	2.6592120486993496	97	0.14020001888275146	0	0	4.012068271636963	activation	mspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/adixmspss/z-2p6	activation/social_specific	adixmspss	positive	2.6	2.6592120486993496	97	0.3241000175476074	0	0	3.912155866622925	activation	adixmspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/adixmspss/z-2p6	activation/social_specific	adixmspss	negative	2.6	2.6592120486993496	97	0.7019999921321869	0	0	4.4824066162109375	activation	adixmspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/adixmspss/z-3p1	activation/social_specific	adixmspss	positive	3.1	3.1972100156535084	97	0.6119000017642975	0	0	3.9015493392944336	activation	adi	(Social win-loss) - (Doors win-loss)
+activation/social_specific/adixmspss/z-3p1	activation/social_specific	adixmspss	negative	3.1	3.1972100156535084	97	0.08700001239776611	0	0	4.604650020599365	activation	adi	(Social win-loss) - (Doors win-loss)
+activation/social_specific/adixmspss/z-3p1	activation/social_specific	adixmspss	positive	3.1	3.1972100156535084	97	0.33079999685287476	0	0	4.870800018310547	activation	mspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/adixmspss/z-3p1	activation/social_specific	adixmspss	negative	3.1	3.1972100156535084	97	0.6216000020503998	0	0	4.012068271636963	activation	mspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/adixmspss/z-3p1	activation/social_specific	adixmspss	positive	3.1	3.1972100156535084	97	0.2095000147819519	0	0	3.912155866622925	activation	adixmspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/adixmspss/z-3p1	activation/social_specific	adixmspss	negative	3.1	3.1972100156535084	97	0.5843999981880188	0	0	4.4824066162109375	activation	adixmspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/pm25xmspss/z-2p6	activation/social_specific	pm25xmspss	positive	2.6	2.6592120486993496	97	0.9494000002741814	0	0	3.4081666469573975	activation	pm25	(Social win-loss) - (Doors win-loss)
+activation/social_specific/pm25xmspss/z-2p6	activation/social_specific	pm25xmspss	negative	2.6	2.6592120486993496	97	0.16500002145767212	0	0	5.330169677734375	activation	pm25	(Social win-loss) - (Doors win-loss)
+activation/social_specific/pm25xmspss/z-2p6	activation/social_specific	pm25xmspss	positive	2.6	2.6592120486993496	97	0.28439998626708984	0	0	4.953843593597412	activation	mspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/pm25xmspss/z-2p6	activation/social_specific	pm25xmspss	negative	2.6	2.6592120486993496	97	0.4524000287055969	0	0	3.7693333625793457	activation	mspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/pm25xmspss/z-2p6	activation/social_specific	pm25xmspss	positive	2.6	2.6592120486993496	97	0.6868999898433685	0	0	5.791454315185547	activation	pm25xmspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/pm25xmspss/z-2p6	activation/social_specific	pm25xmspss	negative	2.6	2.6592120486993496	97	0.5397999882698059	0	0	4.201023101806641	activation	pm25xmspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/pm25xmspss/z-3p1	activation/social_specific	pm25xmspss	positive	3.1	3.1972100156535084	97	0.9972999999299645	0	0	3.4081666469573975	activation	pm25	(Social win-loss) - (Doors win-loss)
+activation/social_specific/pm25xmspss/z-3p1	activation/social_specific	pm25xmspss	negative	3.1	3.1972100156535084	97	0.20440000295639038	0	0	5.330169677734375	activation	pm25	(Social win-loss) - (Doors win-loss)
+activation/social_specific/pm25xmspss/z-3p1	activation/social_specific	pm25xmspss	positive	3.1	3.1972100156535084	97	0.1834999918937683	0	0	4.953843593597412	activation	mspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/pm25xmspss/z-3p1	activation/social_specific	pm25xmspss	negative	3.1	3.1972100156535084	97	0.7659000009298325	0	0	3.7693333625793457	activation	mspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/pm25xmspss/z-3p1	activation/social_specific	pm25xmspss	positive	3.1	3.1972100156535084	97	0.3797000050544739	0	0	5.791454315185547	activation	pm25xmspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/pm25xmspss/z-3p1	activation/social_specific	pm25xmspss	negative	3.1	3.1972100156535084	97	0.546999990940094	0	0	4.201023101806641	activation	pm25xmspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/fevsxmspss/z-2p6	activation/social_specific	fevsxmspss	positive	2.6	2.6592120486993496	97	0.7078999876976013	0	0	3.921177625656128	activation	fevs	(Social win-loss) - (Doors win-loss)
+activation/social_specific/fevsxmspss/z-2p6	activation/social_specific	fevsxmspss	negative	2.6	2.6592120486993496	97	0.3634999990463257	0	0	5.236672878265381	activation	fevs	(Social win-loss) - (Doors win-loss)
+activation/social_specific/fevsxmspss/z-2p6	activation/social_specific	fevsxmspss	positive	2.6	2.6592120486993496	97	0.352400004863739	0	0	4.5276312828063965	activation	mspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/fevsxmspss/z-2p6	activation/social_specific	fevsxmspss	negative	2.6	2.6592120486993496	97	0.21380001306533813	0	0	3.9372246265411377	activation	mspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/fevsxmspss/z-2p6	activation/social_specific	fevsxmspss	positive	2.6	2.6592120486993496	97	0.3083000183105469	0	0	5.013147354125977	activation	fevsxmspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/fevsxmspss/z-2p6	activation/social_specific	fevsxmspss	negative	2.6	2.6592120486993496	97	0.660400003194809	0	0	4.421567440032959	activation	fevsxmspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/fevsxmspss/z-3p1	activation/social_specific	fevsxmspss	positive	3.1	3.1972100156535084	97	0.9086000025272369	0	0	3.921177625656128	activation	fevs	(Social win-loss) - (Doors win-loss)
+activation/social_specific/fevsxmspss/z-3p1	activation/social_specific	fevsxmspss	negative	3.1	3.1972100156535084	97	0.2940000295639038	0	0	5.236672878265381	activation	fevs	(Social win-loss) - (Doors win-loss)
+activation/social_specific/fevsxmspss/z-3p1	activation/social_specific	fevsxmspss	positive	3.1	3.1972100156535084	97	0.25099998712539673	0	0	4.5276312828063965	activation	mspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/fevsxmspss/z-3p1	activation/social_specific	fevsxmspss	negative	3.1	3.1972100156535084	97	0.30559998750686646	0	0	3.9372246265411377	activation	mspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/fevsxmspss/z-3p1	activation/social_specific	fevsxmspss	positive	3.1	3.1972100156535084	97	0.27149999141693115	0	0	5.013147354125977	activation	fevsxmspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/fevsxmspss/z-3p1	activation/social_specific	fevsxmspss	negative	3.1	3.1972100156535084	97	0.7991999983787537	0	0	4.421567440032959	activation	fevsxmspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/oafemxmspss/z-2p6	activation/social_specific	oafemxmspss	positive	2.6	2.6592120486993496	97	0.932499997317791	0	0	3.867485761642456	activation	oafem	(Social win-loss) - (Doors win-loss)
+activation/social_specific/oafemxmspss/z-2p6	activation/social_specific	oafemxmspss	negative	2.6	2.6592120486993496	97	0.8456999957561493	0	0	3.885929822921753	activation	oafem	(Social win-loss) - (Doors win-loss)
+activation/social_specific/oafemxmspss/z-2p6	activation/social_specific	oafemxmspss	positive	2.6	2.6592120486993496	97	0.12559998035430908	0	0	5.011789798736572	activation	mspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/oafemxmspss/z-2p6	activation/social_specific	oafemxmspss	negative	2.6	2.6592120486993496	97	0.24299997091293335	0	0	3.8115715980529785	activation	mspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/oafemxmspss/z-2p6	activation/social_specific	oafemxmspss	positive	2.6	2.6592120486993496	97	0.2558000087738037	0	0	4.448918342590332	activation	oafemxmspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/oafemxmspss/z-2p6	activation/social_specific	oafemxmspss	negative	2.6	2.6592120486993496	97	0.17559999227523804	0	0	5.012232780456543	activation	oafemxmspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/oafemxmspss/z-3p1	activation/social_specific	oafemxmspss	positive	3.1	3.1972100156535084	97	0.9200000017881393	0	0	3.867485761642456	activation	oafem	(Social win-loss) - (Doors win-loss)
+activation/social_specific/oafemxmspss/z-3p1	activation/social_specific	oafemxmspss	negative	3.1	3.1972100156535084	97	0.8592000007629395	0	0	3.885929822921753	activation	oafem	(Social win-loss) - (Doors win-loss)
+activation/social_specific/oafemxmspss/z-3p1	activation/social_specific	oafemxmspss	positive	3.1	3.1972100156535084	97	0.2215999960899353	0	0	5.011789798736572	activation	mspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/oafemxmspss/z-3p1	activation/social_specific	oafemxmspss	negative	3.1	3.1972100156535084	97	0.7627999931573868	0	0	3.8115715980529785	activation	mspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/oafemxmspss/z-3p1	activation/social_specific	oafemxmspss	positive	3.1	3.1972100156535084	97	0.33009999990463257	0	0	4.448918342590332	activation	oafemxmspss	(Social win-loss) - (Doors win-loss)
+activation/social_specific/oafemxmspss/z-3p1	activation/social_specific	oafemxmspss	negative	3.1	3.1972100156535084	97	0.2045000195503235	0	0	5.012232780456543	activation	oafemxmspss	(Social win-loss) - (Doors win-loss)
+activation/average/adixmspss/z-2p6	activation/average	adixmspss	positive	2.6	2.6592120486993496	97	0.20520001649856567	0	0	4.539491176605225	activation	adi	Mean of Social and Doors win-loss
+activation/average/adixmspss/z-2p6	activation/average	adixmspss	negative	2.6	2.6592120486993496	97	0.5322000086307526	0	0	4.290863513946533	activation	adi	Mean of Social and Doors win-loss
+activation/average/adixmspss/z-2p6	activation/average	adixmspss	positive	2.6	2.6592120486993496	97	0.5200000107288361	0	0	4.480219841003418	activation	mspss	Mean of Social and Doors win-loss
+activation/average/adixmspss/z-2p6	activation/average	adixmspss	negative	2.6	2.6592120486993496	97	0.9363000020384789	0	0	4.26444149017334	activation	mspss	Mean of Social and Doors win-loss
+activation/average/adixmspss/z-2p6	activation/average	adixmspss	positive	2.6	2.6592120486993496	97	0.21439999341964722	0	0	4.225393295288086	activation	adixmspss	Mean of Social and Doors win-loss
+activation/average/adixmspss/z-2p6	activation/average	adixmspss	negative	2.6	2.6592120486993496	97	0.5740000009536743	0	0	4.219420909881592	activation	adixmspss	Mean of Social and Doors win-loss
+activation/average/adixmspss/z-3p1	activation/average	adixmspss	positive	3.1	3.1972100156535084	97	0.24559998512268066	0	0	4.539491176605225	activation	adi	Mean of Social and Doors win-loss
+activation/average/adixmspss/z-3p1	activation/average	adixmspss	negative	3.1	3.1972100156535084	97	0.45749998092651367	0	0	4.290863513946533	activation	adi	Mean of Social and Doors win-loss
+activation/average/adixmspss/z-3p1	activation/average	adixmspss	positive	3.1	3.1972100156535084	97	0.791700005531311	0	0	4.480219841003418	activation	mspss	Mean of Social and Doors win-loss
+activation/average/adixmspss/z-3p1	activation/average	adixmspss	negative	3.1	3.1972100156535084	97	0.8526999950408936	0	0	4.26444149017334	activation	mspss	Mean of Social and Doors win-loss
+activation/average/adixmspss/z-3p1	activation/average	adixmspss	positive	3.1	3.1972100156535084	97	0.3083000183105469	0	0	4.225393295288086	activation	adixmspss	Mean of Social and Doors win-loss
+activation/average/adixmspss/z-3p1	activation/average	adixmspss	negative	3.1	3.1972100156535084	97	0.5679999887943268	0	0	4.219420909881592	activation	adixmspss	Mean of Social and Doors win-loss
+activation/average/pm25xmspss/z-2p6	activation/average	pm25xmspss	positive	2.6	2.6592120486993496	97	0.6723999977111816	0	0	3.868321657180786	activation	pm25	Mean of Social and Doors win-loss
+activation/average/pm25xmspss/z-2p6	activation/average	pm25xmspss	negative	2.6	2.6592120486993496	97	0.7996000051498413	0	0	4.167333602905273	activation	pm25	Mean of Social and Doors win-loss
+activation/average/pm25xmspss/z-2p6	activation/average	pm25xmspss	positive	2.6	2.6592120486993496	97	0.7168000042438507	0	0	4.227222442626953	activation	mspss	Mean of Social and Doors win-loss
+activation/average/pm25xmspss/z-2p6	activation/average	pm25xmspss	negative	2.6	2.6592120486993496	97	0.955800000578165	0	0	4.374967575073242	activation	mspss	Mean of Social and Doors win-loss
+activation/average/pm25xmspss/z-2p6	activation/average	pm25xmspss	positive	2.6	2.6592120486993496	97	0.527999997138977	0	0	4.000807285308838	activation	pm25xmspss	Mean of Social and Doors win-loss
+activation/average/pm25xmspss/z-2p6	activation/average	pm25xmspss	negative	2.6	2.6592120486993496	97	0.9962999999988824	0	0	3.448122024536133	activation	pm25xmspss	Mean of Social and Doors win-loss
+activation/average/pm25xmspss/z-3p1	activation/average	pm25xmspss	positive	3.1	3.1972100156535084	97	0.7112999856472015	0	0	3.868321657180786	activation	pm25	Mean of Social and Doors win-loss
+activation/average/pm25xmspss/z-3p1	activation/average	pm25xmspss	negative	3.1	3.1972100156535084	97	0.6021000146865845	0	0	4.167333602905273	activation	pm25	Mean of Social and Doors win-loss
+activation/average/pm25xmspss/z-3p1	activation/average	pm25xmspss	positive	3.1	3.1972100156535084	97	0.5421000123023987	0	0	4.227222442626953	activation	mspss	Mean of Social and Doors win-loss
+activation/average/pm25xmspss/z-3p1	activation/average	pm25xmspss	negative	3.1	3.1972100156535084	97	0.8482999950647354	0	0	4.374967575073242	activation	mspss	Mean of Social and Doors win-loss
+activation/average/pm25xmspss/z-3p1	activation/average	pm25xmspss	positive	3.1	3.1972100156535084	97	0.40640002489089966	0	0	4.000807285308838	activation	pm25xmspss	Mean of Social and Doors win-loss
+activation/average/pm25xmspss/z-3p1	activation/average	pm25xmspss	negative	3.1	3.1972100156535084	97	0.9976999999489635	0	0	3.448122024536133	activation	pm25xmspss	Mean of Social and Doors win-loss
+activation/average/fevsxmspss/z-2p6	activation/average	fevsxmspss	positive	2.6	2.6592120486993496	97	0.6816999912261963	0	0	4.3018879890441895	activation	fevs	Mean of Social and Doors win-loss
+activation/average/fevsxmspss/z-2p6	activation/average	fevsxmspss	negative	2.6	2.6592120486993496	97	0.5607999861240387	0	0	4.183694362640381	activation	fevs	Mean of Social and Doors win-loss
+activation/average/fevsxmspss/z-2p6	activation/average	fevsxmspss	positive	2.6	2.6592120486993496	97	0.47200000286102295	0	0	4.50823450088501	activation	mspss	Mean of Social and Doors win-loss
+activation/average/fevsxmspss/z-2p6	activation/average	fevsxmspss	negative	2.6	2.6592120486993496	97	0.7258999943733215	0	0	4.184697151184082	activation	mspss	Mean of Social and Doors win-loss
+activation/average/fevsxmspss/z-2p6	activation/average	fevsxmspss	positive	2.6	2.6592120486993496	97	0.28689998388290405	0	0	4.35365104675293	activation	fevsxmspss	Mean of Social and Doors win-loss
+activation/average/fevsxmspss/z-2p6	activation/average	fevsxmspss	negative	2.6	2.6592120486993496	97	0.9832000005990267	0	0	3.528367280960083	activation	fevsxmspss	Mean of Social and Doors win-loss
+activation/average/fevsxmspss/z-3p1	activation/average	fevsxmspss	positive	3.1	3.1972100156535084	97	0.5370999872684479	0	0	4.3018879890441895	activation	fevs	Mean of Social and Doors win-loss
+activation/average/fevsxmspss/z-3p1	activation/average	fevsxmspss	negative	3.1	3.1972100156535084	97	0.4074000120162964	0	0	4.183694362640381	activation	fevs	Mean of Social and Doors win-loss
+activation/average/fevsxmspss/z-3p1	activation/average	fevsxmspss	positive	3.1	3.1972100156535084	97	0.6633000075817108	0	0	4.50823450088501	activation	mspss	Mean of Social and Doors win-loss
+activation/average/fevsxmspss/z-3p1	activation/average	fevsxmspss	negative	3.1	3.1972100156535084	97	0.8527999967336655	0	0	4.184697151184082	activation	mspss	Mean of Social and Doors win-loss
+activation/average/fevsxmspss/z-3p1	activation/average	fevsxmspss	positive	3.1	3.1972100156535084	97	0.2703999876976013	0	0	4.35365104675293	activation	fevsxmspss	Mean of Social and Doors win-loss
+activation/average/fevsxmspss/z-3p1	activation/average	fevsxmspss	negative	3.1	3.1972100156535084	97	0.9739999994635582	0	0	3.528367280960083	activation	fevsxmspss	Mean of Social and Doors win-loss
+activation/average/oafemxmspss/z-2p6	activation/average	oafemxmspss	positive	2.6	2.6592120486993496	97	0.7463000118732452	0	0	5.0161824226379395	activation	oafem	Mean of Social and Doors win-loss
+activation/average/oafemxmspss/z-2p6	activation/average	oafemxmspss	negative	2.6	2.6592120486993496	97	0.8481999933719635	0	0	4.814701080322266	activation	oafem	Mean of Social and Doors win-loss
+activation/average/oafemxmspss/z-2p6	activation/average	oafemxmspss	positive	2.6	2.6592120486993496	97	0.6881999969482422	0	0	4.3091607093811035	activation	mspss	Mean of Social and Doors win-loss
+activation/average/oafemxmspss/z-2p6	activation/average	oafemxmspss	negative	2.6	2.6592120486993496	97	0.5006000101566315	0	0	4.389063358306885	activation	mspss	Mean of Social and Doors win-loss
+activation/average/oafemxmspss/z-2p6	activation/average	oafemxmspss	positive	2.6	2.6592120486993496	97	0.6477000117301941	0	0	4.382948875427246	activation	oafemxmspss	Mean of Social and Doors win-loss
+activation/average/oafemxmspss/z-2p6	activation/average	oafemxmspss	negative	2.6	2.6592120486993496	97	0.15520000457763672	0	0	4.493283748626709	activation	oafemxmspss	Mean of Social and Doors win-loss
+activation/average/oafemxmspss/z-3p1	activation/average	oafemxmspss	positive	3.1	3.1972100156535084	97	0.689300000667572	0	0	5.0161824226379395	activation	oafem	Mean of Social and Doors win-loss
+activation/average/oafemxmspss/z-3p1	activation/average	oafemxmspss	negative	3.1	3.1972100156535084	97	0.5825000107288361	0	0	4.814701080322266	activation	oafem	Mean of Social and Doors win-loss
+activation/average/oafemxmspss/z-3p1	activation/average	oafemxmspss	positive	3.1	3.1972100156535084	97	0.8595999926328659	0	0	4.3091607093811035	activation	mspss	Mean of Social and Doors win-loss
+activation/average/oafemxmspss/z-3p1	activation/average	oafemxmspss	negative	3.1	3.1972100156535084	97	0.7873000055551529	0	0	4.389063358306885	activation	mspss	Mean of Social and Doors win-loss
+activation/average/oafemxmspss/z-3p1	activation/average	oafemxmspss	positive	3.1	3.1972100156535084	97	0.7048999965190887	0	0	4.382948875427246	activation	oafemxmspss	Mean of Social and Doors win-loss
+activation/average/oafemxmspss/z-3p1	activation/average	oafemxmspss	negative	3.1	3.1972100156535084	97	0.156499981880188	0	0	4.493283748626709	activation	oafemxmspss	Mean of Social and Doors win-loss
+activation/win_only/adixmspss/z-2p6	activation/win_only	adixmspss	positive	2.6	2.6592120486993496	97	0.8853000029921532	0	0	3.9566490650177	activation	adi	Social win - Doors win
+activation/win_only/adixmspss/z-2p6	activation/win_only	adixmspss	negative	2.6	2.6592120486993496	97	0.3725000023841858	0	0	4.20590877532959	activation	adi	Social win - Doors win
+activation/win_only/adixmspss/z-2p6	activation/win_only	adixmspss	positive	2.6	2.6592120486993496	97	0.6351000070571899	0	0	4.062908172607422	activation	mspss	Social win - Doors win
+activation/win_only/adixmspss/z-2p6	activation/win_only	adixmspss	negative	2.6	2.6592120486993496	97	0.4236999750137329	0	0	4.09458065032959	activation	mspss	Social win - Doors win
+activation/win_only/adixmspss/z-2p6	activation/win_only	adixmspss	positive	2.6	2.6592120486993496	97	0.048200011253356934	215	1	4.659428596496582	activation	adixmspss	Social win - Doors win
+activation/win_only/adixmspss/z-2p6	activation/win_only	adixmspss	negative	2.6	2.6592120486993496	97	0.6444000005722046	0	0	4.223153591156006	activation	adixmspss	Social win - Doors win
+activation/win_only/adixmspss/z-3p1	activation/win_only	adixmspss	positive	3.1	3.1972100156535084	97	0.9157999977469444	0	0	3.9566490650177	activation	adi	Social win - Doors win
+activation/win_only/adixmspss/z-3p1	activation/win_only	adixmspss	negative	3.1	3.1972100156535084	97	0.4545000195503235	0	0	4.20590877532959	activation	adi	Social win - Doors win
+activation/win_only/adixmspss/z-3p1	activation/win_only	adixmspss	positive	3.1	3.1972100156535084	97	0.4715999960899353	0	0	4.062908172607422	activation	mspss	Social win - Doors win
+activation/win_only/adixmspss/z-3p1	activation/win_only	adixmspss	negative	3.1	3.1972100156535084	97	0.6313000023365021	0	0	4.09458065032959	activation	mspss	Social win - Doors win
+activation/win_only/adixmspss/z-3p1	activation/win_only	adixmspss	positive	3.1	3.1972100156535084	97	0.025499999523162842	87	1	4.659428596496582	activation	adixmspss	Social win - Doors win
+activation/win_only/adixmspss/z-3p1	activation/win_only	adixmspss	negative	3.1	3.1972100156535084	97	0.44440001249313354	0	0	4.223153591156006	activation	adixmspss	Social win - Doors win
+activation/win_only/pm25xmspss/z-2p6	activation/win_only	pm25xmspss	positive	2.6	2.6592120486993496	97	0.9367000013589859	0	0	3.9118852615356445	activation	pm25	Social win - Doors win
+activation/win_only/pm25xmspss/z-2p6	activation/win_only	pm25xmspss	negative	2.6	2.6592120486993496	97	0.37209999561309814	0	0	4.324270725250244	activation	pm25	Social win - Doors win
+activation/win_only/pm25xmspss/z-2p6	activation/win_only	pm25xmspss	positive	2.6	2.6592120486993496	97	0.48000001907348633	0	0	4.0720534324646	activation	mspss	Social win - Doors win
+activation/win_only/pm25xmspss/z-2p6	activation/win_only	pm25xmspss	negative	2.6	2.6592120486993496	97	0.5861999988555908	0	0	4.280465126037598	activation	mspss	Social win - Doors win
+activation/win_only/pm25xmspss/z-2p6	activation/win_only	pm25xmspss	positive	2.6	2.6592120486993496	97	0.27469998598098755	0	0	4.098083019256592	activation	pm25xmspss	Social win - Doors win
+activation/win_only/pm25xmspss/z-2p6	activation/win_only	pm25xmspss	negative	2.6	2.6592120486993496	97	0.5561000108718872	0	0	4.9714579582214355	activation	pm25xmspss	Social win - Doors win
+activation/win_only/pm25xmspss/z-3p1	activation/win_only	pm25xmspss	positive	3.1	3.1972100156535084	97	0.9165999963879585	0	0	3.9118852615356445	activation	pm25	Social win - Doors win
+activation/win_only/pm25xmspss/z-3p1	activation/win_only	pm25xmspss	negative	3.1	3.1972100156535084	97	0.4318000078201294	0	0	4.324270725250244	activation	pm25	Social win - Doors win
+activation/win_only/pm25xmspss/z-3p1	activation/win_only	pm25xmspss	positive	3.1	3.1972100156535084	97	0.35360002517700195	0	0	4.0720534324646	activation	mspss	Social win - Doors win
+activation/win_only/pm25xmspss/z-3p1	activation/win_only	pm25xmspss	negative	3.1	3.1972100156535084	97	0.7671999931335449	0	0	4.280465126037598	activation	mspss	Social win - Doors win
+activation/win_only/pm25xmspss/z-3p1	activation/win_only	pm25xmspss	positive	3.1	3.1972100156535084	97	0.5334999859333038	0	0	4.098083019256592	activation	pm25xmspss	Social win - Doors win
+activation/win_only/pm25xmspss/z-3p1	activation/win_only	pm25xmspss	negative	3.1	3.1972100156535084	97	0.5864999890327454	0	0	4.9714579582214355	activation	pm25xmspss	Social win - Doors win
+activation/win_only/fevsxmspss/z-2p6	activation/win_only	fevsxmspss	positive	2.6	2.6592120486993496	97	0.14749997854232788	0	0	4.0848870277404785	activation	fevs	Social win - Doors win
+activation/win_only/fevsxmspss/z-2p6	activation/win_only	fevsxmspss	negative	2.6	2.6592120486993496	97	0.27859997749328613	0	0	4.284611701965332	activation	fevs	Social win - Doors win
+activation/win_only/fevsxmspss/z-2p6	activation/win_only	fevsxmspss	positive	2.6	2.6592120486993496	97	0.4028000235557556	0	0	3.8167643547058105	activation	mspss	Social win - Doors win
+activation/win_only/fevsxmspss/z-2p6	activation/win_only	fevsxmspss	negative	2.6	2.6592120486993496	97	0.5555000007152557	0	0	4.184632778167725	activation	mspss	Social win - Doors win
+activation/win_only/fevsxmspss/z-2p6	activation/win_only	fevsxmspss	positive	2.6	2.6592120486993496	97	0.6453000009059906	0	0	4.062351703643799	activation	fevsxmspss	Social win - Doors win
+activation/win_only/fevsxmspss/z-2p6	activation/win_only	fevsxmspss	negative	2.6	2.6592120486993496	97	0.6789999902248383	0	0	4.046114444732666	activation	fevsxmspss	Social win - Doors win
+activation/win_only/fevsxmspss/z-3p1	activation/win_only	fevsxmspss	positive	3.1	3.1972100156535084	97	0.12010002136230469	0	0	4.0848870277404785	activation	fevs	Social win - Doors win
+activation/win_only/fevsxmspss/z-3p1	activation/win_only	fevsxmspss	negative	3.1	3.1972100156535084	97	0.35500001907348633	0	0	4.284611701965332	activation	fevs	Social win - Doors win
+activation/win_only/fevsxmspss/z-3p1	activation/win_only	fevsxmspss	positive	3.1	3.1972100156535084	97	0.524399995803833	0	0	3.8167643547058105	activation	mspss	Social win - Doors win
+activation/win_only/fevsxmspss/z-3p1	activation/win_only	fevsxmspss	negative	3.1	3.1972100156535084	97	0.5175999999046326	0	0	4.184632778167725	activation	mspss	Social win - Doors win
+activation/win_only/fevsxmspss/z-3p1	activation/win_only	fevsxmspss	positive	3.1	3.1972100156535084	97	0.7427000105381012	0	0	4.062351703643799	activation	fevsxmspss	Social win - Doors win
+activation/win_only/fevsxmspss/z-3p1	activation/win_only	fevsxmspss	negative	3.1	3.1972100156535084	97	0.6243999898433685	0	0	4.046114444732666	activation	fevsxmspss	Social win - Doors win
+activation/win_only/oafemxmspss/z-2p6	activation/win_only	oafemxmspss	positive	2.6	2.6592120486993496	97	0.484499990940094	0	0	4.736562252044678	activation	oafem	Social win - Doors win
+activation/win_only/oafemxmspss/z-2p6	activation/win_only	oafemxmspss	negative	2.6	2.6592120486993496	97	0.865899994969368	0	0	4.223324775695801	activation	oafem	Social win - Doors win
+activation/win_only/oafemxmspss/z-2p6	activation/win_only	oafemxmspss	positive	2.6	2.6592120486993496	97	0.25220000743865967	0	0	4.0703535079956055	activation	mspss	Social win - Doors win
+activation/win_only/oafemxmspss/z-2p6	activation/win_only	oafemxmspss	negative	2.6	2.6592120486993496	97	0.5884999930858612	0	0	4.263381004333496	activation	mspss	Social win - Doors win
+activation/win_only/oafemxmspss/z-2p6	activation/win_only	oafemxmspss	positive	2.6	2.6592120486993496	97	0.09600001573562622	0	0	4.784278392791748	activation	oafemxmspss	Social win - Doors win
+activation/win_only/oafemxmspss/z-2p6	activation/win_only	oafemxmspss	negative	2.6	2.6592120486993496	97	0.5171000063419342	0	0	4.438831806182861	activation	oafemxmspss	Social win - Doors win
+activation/win_only/oafemxmspss/z-3p1	activation/win_only	oafemxmspss	positive	3.1	3.1972100156535084	97	0.5239999890327454	0	0	4.736562252044678	activation	oafem	Social win - Doors win
+activation/win_only/oafemxmspss/z-3p1	activation/win_only	oafemxmspss	negative	3.1	3.1972100156535084	97	0.8539000004529953	0	0	4.223324775695801	activation	oafem	Social win - Doors win
+activation/win_only/oafemxmspss/z-3p1	activation/win_only	oafemxmspss	positive	3.1	3.1972100156535084	97	0.17330002784729004	0	0	4.0703535079956055	activation	mspss	Social win - Doors win
+activation/win_only/oafemxmspss/z-3p1	activation/win_only	oafemxmspss	negative	3.1	3.1972100156535084	97	0.7014999985694885	0	0	4.263381004333496	activation	mspss	Social win - Doors win
+activation/win_only/oafemxmspss/z-3p1	activation/win_only	oafemxmspss	positive	3.1	3.1972100156535084	97	0.07270002365112305	0	0	4.784278392791748	activation	oafemxmspss	Social win - Doors win
+activation/win_only/oafemxmspss/z-3p1	activation/win_only	oafemxmspss	negative	3.1	3.1972100156535084	97	0.34390002489089966	0	0	4.438831806182861	activation	oafemxmspss	Social win - Doors win
+activation/loss_only/adixmspss/z-2p6	activation/loss_only	adixmspss	positive	2.6	2.6592120486993496	97	0.5990999937057495	0	0	3.979085922241211	activation	adi	Social loss - Doors loss
+activation/loss_only/adixmspss/z-2p6	activation/loss_only	adixmspss	negative	2.6	2.6592120486993496	97	0.636000007390976	0	0	3.8807337284088135	activation	adi	Social loss - Doors loss
+activation/loss_only/adixmspss/z-2p6	activation/loss_only	adixmspss	positive	2.6	2.6592120486993496	97	0.3349999785423279	0	0	3.8462703227996826	activation	mspss	Social loss - Doors loss
+activation/loss_only/adixmspss/z-2p6	activation/loss_only	adixmspss	negative	2.6	2.6592120486993496	97	0.6563000082969666	0	0	4.2708940505981445	activation	mspss	Social loss - Doors loss
+activation/loss_only/adixmspss/z-2p6	activation/loss_only	adixmspss	positive	2.6	2.6592120486993496	97	0.3019999861717224	0	0	4.485567092895508	activation	adixmspss	Social loss - Doors loss
+activation/loss_only/adixmspss/z-2p6	activation/loss_only	adixmspss	negative	2.6	2.6592120486993496	97	0.24830001592636108	0	0	4.154748916625977	activation	adixmspss	Social loss - Doors loss
+activation/loss_only/adixmspss/z-3p1	activation/loss_only	adixmspss	positive	3.1	3.1972100156535084	97	0.8047000020742416	0	0	3.979085922241211	activation	adi	Social loss - Doors loss
+activation/loss_only/adixmspss/z-3p1	activation/loss_only	adixmspss	negative	3.1	3.1972100156535084	97	0.7251999974250793	0	0	3.8807337284088135	activation	adi	Social loss - Doors loss
+activation/loss_only/adixmspss/z-3p1	activation/loss_only	adixmspss	positive	3.1	3.1972100156535084	97	0.6696000099182129	0	0	3.8462703227996826	activation	mspss	Social loss - Doors loss
+activation/loss_only/adixmspss/z-3p1	activation/loss_only	adixmspss	negative	3.1	3.1972100156535084	97	0.5609999895095825	0	0	4.2708940505981445	activation	mspss	Social loss - Doors loss
+activation/loss_only/adixmspss/z-3p1	activation/loss_only	adixmspss	positive	3.1	3.1972100156535084	97	0.48329997062683105	0	0	4.485567092895508	activation	adixmspss	Social loss - Doors loss
+activation/loss_only/adixmspss/z-3p1	activation/loss_only	adixmspss	negative	3.1	3.1972100156535084	97	0.5764000117778778	0	0	4.154748916625977	activation	adixmspss	Social loss - Doors loss
+activation/loss_only/pm25xmspss/z-2p6	activation/loss_only	pm25xmspss	positive	2.6	2.6592120486993496	97	0.8351999968290329	0	0	4.070746421813965	activation	pm25	Social loss - Doors loss
+activation/loss_only/pm25xmspss/z-2p6	activation/loss_only	pm25xmspss	negative	2.6	2.6592120486993496	97	0.48100000619888306	0	0	4.253427028656006	activation	pm25	Social loss - Doors loss
+activation/loss_only/pm25xmspss/z-2p6	activation/loss_only	pm25xmspss	positive	2.6	2.6592120486993496	97	0.5162000060081482	0	0	3.728961944580078	activation	mspss	Social loss - Doors loss
+activation/loss_only/pm25xmspss/z-2p6	activation/loss_only	pm25xmspss	negative	2.6	2.6592120486993496	97	0.689300000667572	0	0	4.319723606109619	activation	mspss	Social loss - Doors loss
+activation/loss_only/pm25xmspss/z-2p6	activation/loss_only	pm25xmspss	positive	2.6	2.6592120486993496	97	0.1412000060081482	0	0	4.640627384185791	activation	pm25xmspss	Social loss - Doors loss
+activation/loss_only/pm25xmspss/z-2p6	activation/loss_only	pm25xmspss	negative	2.6	2.6592120486993496	97	0.7677000015974045	0	0	4.426440238952637	activation	pm25xmspss	Social loss - Doors loss
+activation/loss_only/pm25xmspss/z-3p1	activation/loss_only	pm25xmspss	positive	3.1	3.1972100156535084	97	0.8074000030755997	0	0	4.070746421813965	activation	pm25	Social loss - Doors loss
+activation/loss_only/pm25xmspss/z-3p1	activation/loss_only	pm25xmspss	negative	3.1	3.1972100156535084	97	0.7220999896526337	0	0	4.253427028656006	activation	pm25	Social loss - Doors loss
+activation/loss_only/pm25xmspss/z-3p1	activation/loss_only	pm25xmspss	positive	3.1	3.1972100156535084	97	0.4934999942779541	0	0	3.728961944580078	activation	mspss	Social loss - Doors loss
+activation/loss_only/pm25xmspss/z-3p1	activation/loss_only	pm25xmspss	negative	3.1	3.1972100156535084	97	0.5575000047683716	0	0	4.319723606109619	activation	mspss	Social loss - Doors loss
+activation/loss_only/pm25xmspss/z-3p1	activation/loss_only	pm25xmspss	positive	3.1	3.1972100156535084	97	0.1499999761581421	0	0	4.640627384185791	activation	pm25xmspss	Social loss - Doors loss
+activation/loss_only/pm25xmspss/z-3p1	activation/loss_only	pm25xmspss	negative	3.1	3.1972100156535084	97	0.507099986076355	0	0	4.426440238952637	activation	pm25xmspss	Social loss - Doors loss
+activation/loss_only/fevsxmspss/z-2p6	activation/loss_only	fevsxmspss	positive	2.6	2.6592120486993496	97	0.28700000047683716	0	0	4.246707916259766	activation	fevs	Social loss - Doors loss
+activation/loss_only/fevsxmspss/z-2p6	activation/loss_only	fevsxmspss	negative	2.6	2.6592120486993496	97	0.7405000030994415	0	0	3.9279744625091553	activation	fevs	Social loss - Doors loss
+activation/loss_only/fevsxmspss/z-2p6	activation/loss_only	fevsxmspss	positive	2.6	2.6592120486993496	97	0.7892999947071075	0	0	3.955838441848755	activation	mspss	Social loss - Doors loss
+activation/loss_only/fevsxmspss/z-2p6	activation/loss_only	fevsxmspss	negative	2.6	2.6592120486993496	97	0.5246999859809875	0	0	4.1846513748168945	activation	mspss	Social loss - Doors loss
+activation/loss_only/fevsxmspss/z-2p6	activation/loss_only	fevsxmspss	positive	2.6	2.6592120486993496	97	0.5613000094890594	0	0	4.486752033233643	activation	fevsxmspss	Social loss - Doors loss
+activation/loss_only/fevsxmspss/z-2p6	activation/loss_only	fevsxmspss	negative	2.6	2.6592120486993496	97	0.9041000008583069	0	0	4.378733158111572	activation	fevsxmspss	Social loss - Doors loss
+activation/loss_only/fevsxmspss/z-3p1	activation/loss_only	fevsxmspss	positive	3.1	3.1972100156535084	97	0.2613000273704529	0	0	4.246707916259766	activation	fevs	Social loss - Doors loss
+activation/loss_only/fevsxmspss/z-3p1	activation/loss_only	fevsxmspss	negative	3.1	3.1972100156535084	97	0.6647999882698059	0	0	3.9279744625091553	activation	fevs	Social loss - Doors loss
+activation/loss_only/fevsxmspss/z-3p1	activation/loss_only	fevsxmspss	positive	3.1	3.1972100156535084	97	0.811599999666214	0	0	3.955838441848755	activation	mspss	Social loss - Doors loss
+activation/loss_only/fevsxmspss/z-3p1	activation/loss_only	fevsxmspss	negative	3.1	3.1972100156535084	97	0.5155999958515167	0	0	4.1846513748168945	activation	mspss	Social loss - Doors loss
+activation/loss_only/fevsxmspss/z-3p1	activation/loss_only	fevsxmspss	positive	3.1	3.1972100156535084	97	0.564300000667572	0	0	4.486752033233643	activation	fevsxmspss	Social loss - Doors loss
+activation/loss_only/fevsxmspss/z-3p1	activation/loss_only	fevsxmspss	negative	3.1	3.1972100156535084	97	0.9437999986112118	0	0	4.378733158111572	activation	fevsxmspss	Social loss - Doors loss
+activation/loss_only/oafemxmspss/z-2p6	activation/loss_only	oafemxmspss	positive	2.6	2.6592120486993496	97	0.4118000268936157	0	0	4.93195915222168	activation	oafem	Social loss - Doors loss
+activation/loss_only/oafemxmspss/z-2p6	activation/loss_only	oafemxmspss	negative	2.6	2.6592120486993496	97	0.7987000048160553	0	0	4.65348482131958	activation	oafem	Social loss - Doors loss
+activation/loss_only/oafemxmspss/z-2p6	activation/loss_only	oafemxmspss	positive	2.6	2.6592120486993496	97	0.1599000096321106	0	0	4.4153666496276855	activation	mspss	Social loss - Doors loss
+activation/loss_only/oafemxmspss/z-2p6	activation/loss_only	oafemxmspss	negative	2.6	2.6592120486993496	97	0.8417000025510788	0	0	4.200716018676758	activation	mspss	Social loss - Doors loss
+activation/loss_only/oafemxmspss/z-2p6	activation/loss_only	oafemxmspss	positive	2.6	2.6592120486993496	97	0.041499972343444824	273	1	5.0499372482299805	activation	oafemxmspss	Social loss - Doors loss
+activation/loss_only/oafemxmspss/z-2p6	activation/loss_only	oafemxmspss	negative	2.6	2.6592120486993496	97	0.5428000092506409	0	0	4.634411334991455	activation	oafemxmspss	Social loss - Doors loss
+activation/loss_only/oafemxmspss/z-3p1	activation/loss_only	oafemxmspss	positive	3.1	3.1972100156535084	97	0.3166000247001648	0	0	4.93195915222168	activation	oafem	Social loss - Doors loss
+activation/loss_only/oafemxmspss/z-3p1	activation/loss_only	oafemxmspss	negative	3.1	3.1972100156535084	97	0.6096000075340271	0	0	4.65348482131958	activation	oafem	Social loss - Doors loss
+activation/loss_only/oafemxmspss/z-3p1	activation/loss_only	oafemxmspss	positive	3.1	3.1972100156535084	97	0.36559998989105225	0	0	4.4153666496276855	activation	mspss	Social loss - Doors loss
+activation/loss_only/oafemxmspss/z-3p1	activation/loss_only	oafemxmspss	negative	3.1	3.1972100156535084	97	0.6895000040531158	0	0	4.200716018676758	activation	mspss	Social loss - Doors loss
+activation/loss_only/oafemxmspss/z-3p1	activation/loss_only	oafemxmspss	positive	3.1	3.1972100156535084	97	0.0810999870300293	0	0	5.0499372482299805	activation	oafemxmspss	Social loss - Doors loss
+activation/loss_only/oafemxmspss/z-3p1	activation/loss_only	oafemxmspss	negative	3.1	3.1972100156535084	97	0.45660001039505005	0	0	4.634411334991455	activation	oafemxmspss	Social loss - Doors loss
+connectivity/social_specific/adixmspss/z-2p6	connectivity/social_specific	adixmspss	positive	2.6	2.6592120486993496	97	0.5338000059127808	0	0	4.155303478240967	connectivity	adi	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/adixmspss/z-2p6	connectivity/social_specific	adixmspss	negative	2.6	2.6592120486993496	97	0.21369999647140503	0	0	5.081445217132568	connectivity	adi	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/adixmspss/z-2p6	connectivity/social_specific	adixmspss	positive	2.6	2.6592120486993496	97	0.7069000005722046	0	0	3.7560250759124756	connectivity	mspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/adixmspss/z-2p6	connectivity/social_specific	adixmspss	negative	2.6	2.6592120486993496	97	0.8340000063180923	0	0	3.8710086345672607	connectivity	mspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/adixmspss/z-2p6	connectivity/social_specific	adixmspss	positive	2.6	2.6592120486993496	97	0.6480000019073486	0	0	4.769284248352051	connectivity	adixmspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/adixmspss/z-2p6	connectivity/social_specific	adixmspss	negative	2.6	2.6592120486993496	97	0.12440001964569092	0	0	4.263040065765381	connectivity	adixmspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/adixmspss/z-3p1	connectivity/social_specific	adixmspss	positive	3.1	3.1972100156535084	97	0.62049999833107	0	0	4.155303478240967	connectivity	adi	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/adixmspss/z-3p1	connectivity/social_specific	adixmspss	negative	3.1	3.1972100156535084	97	0.2378000020980835	0	0	5.081445217132568	connectivity	adi	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/adixmspss/z-3p1	connectivity/social_specific	adixmspss	positive	3.1	3.1972100156535084	97	0.7161999940872192	0	0	3.7560250759124756	connectivity	mspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/adixmspss/z-3p1	connectivity/social_specific	adixmspss	negative	3.1	3.1972100156535084	97	0.8605999946594238	0	0	3.8710086345672607	connectivity	mspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/adixmspss/z-3p1	connectivity/social_specific	adixmspss	positive	3.1	3.1972100156535084	97	0.5060999989509583	0	0	4.769284248352051	connectivity	adixmspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/adixmspss/z-3p1	connectivity/social_specific	adixmspss	negative	3.1	3.1972100156535084	97	0.2993999719619751	0	0	4.263040065765381	connectivity	adixmspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/pm25xmspss/z-2p6	connectivity/social_specific	pm25xmspss	positive	2.6	2.6592120486993496	97	0.871399998664856	0	0	3.6027884483337402	connectivity	pm25	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/pm25xmspss/z-2p6	connectivity/social_specific	pm25xmspss	negative	2.6	2.6592120486993496	97	0.7226000130176544	0	0	3.9104061126708984	connectivity	pm25	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/pm25xmspss/z-2p6	connectivity/social_specific	pm25xmspss	positive	2.6	2.6592120486993496	97	0.6829000115394592	0	0	3.817434549331665	connectivity	mspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/pm25xmspss/z-2p6	connectivity/social_specific	pm25xmspss	negative	2.6	2.6592120486993496	97	0.34310001134872437	0	0	4.057083606719971	connectivity	mspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/pm25xmspss/z-2p6	connectivity/social_specific	pm25xmspss	positive	2.6	2.6592120486993496	97	0.9989000000059605	0	0	2.7785677909851074	connectivity	pm25xmspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/pm25xmspss/z-2p6	connectivity/social_specific	pm25xmspss	negative	2.6	2.6592120486993496	97	0.12889999151229858	0	0	4.336029052734375	connectivity	pm25xmspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/pm25xmspss/z-3p1	connectivity/social_specific	pm25xmspss	positive	3.1	3.1972100156535084	97	0.9437000006437302	0	0	3.6027884483337402	connectivity	pm25	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/pm25xmspss/z-3p1	connectivity/social_specific	pm25xmspss	negative	3.1	3.1972100156535084	97	0.5482000112533569	0	0	3.9104061126708984	connectivity	pm25	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/pm25xmspss/z-3p1	connectivity/social_specific	pm25xmspss	positive	3.1	3.1972100156535084	97	0.8014000058174133	0	0	3.817434549331665	connectivity	mspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/pm25xmspss/z-3p1	connectivity/social_specific	pm25xmspss	negative	3.1	3.1972100156535084	97	0.3806999921798706	0	0	4.057083606719971	connectivity	mspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/pm25xmspss/z-3p1	connectivity/social_specific	pm25xmspss	positive	3.1	3.1972100156535084	97	1.0	0	0	2.7785677909851074	connectivity	pm25xmspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/pm25xmspss/z-3p1	connectivity/social_specific	pm25xmspss	negative	3.1	3.1972100156535084	97	0.3264999985694885	0	0	4.336029052734375	connectivity	pm25xmspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/fevsxmspss/z-2p6	connectivity/social_specific	fevsxmspss	positive	2.6	2.6592120486993496	97	0.9191000014543533	0	0	4.116833686828613	connectivity	fevs	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/fevsxmspss/z-2p6	connectivity/social_specific	fevsxmspss	negative	2.6	2.6592120486993496	97	0.13340002298355103	0	0	4.7825398445129395	connectivity	fevs	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/fevsxmspss/z-2p6	connectivity/social_specific	fevsxmspss	positive	2.6	2.6592120486993496	97	0.9635000005364418	0	0	3.837559938430786	connectivity	mspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/fevsxmspss/z-2p6	connectivity/social_specific	fevsxmspss	negative	2.6	2.6592120486993496	97	0.3514000177383423	0	0	4.390768527984619	connectivity	mspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/fevsxmspss/z-2p6	connectivity/social_specific	fevsxmspss	positive	2.6	2.6592120486993496	97	0.7939999997615814	0	0	4.45006799697876	connectivity	fevsxmspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/fevsxmspss/z-2p6	connectivity/social_specific	fevsxmspss	negative	2.6	2.6592120486993496	97	0.42079997062683105	0	0	4.816916465759277	connectivity	fevsxmspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/fevsxmspss/z-3p1	connectivity/social_specific	fevsxmspss	positive	3.1	3.1972100156535084	97	0.8648000061511993	0	0	4.116833686828613	connectivity	fevs	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/fevsxmspss/z-3p1	connectivity/social_specific	fevsxmspss	negative	3.1	3.1972100156535084	97	0.2615000009536743	0	0	4.7825398445129395	connectivity	fevs	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/fevsxmspss/z-3p1	connectivity/social_specific	fevsxmspss	positive	3.1	3.1972100156535084	97	0.8734000027179718	0	0	3.837559938430786	connectivity	mspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/fevsxmspss/z-3p1	connectivity/social_specific	fevsxmspss	negative	3.1	3.1972100156535084	97	0.6191999912261963	0	0	4.390768527984619	connectivity	mspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/fevsxmspss/z-3p1	connectivity/social_specific	fevsxmspss	positive	3.1	3.1972100156535084	97	0.9065999984741211	0	0	4.45006799697876	connectivity	fevsxmspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/fevsxmspss/z-3p1	connectivity/social_specific	fevsxmspss	negative	3.1	3.1972100156535084	97	0.32520002126693726	0	0	4.816916465759277	connectivity	fevsxmspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/oafemxmspss/z-2p6	connectivity/social_specific	oafemxmspss	positive	2.6	2.6592120486993496	97	0.5085999965667725	0	0	5.627979278564453	connectivity	oafem	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/oafemxmspss/z-2p6	connectivity/social_specific	oafemxmspss	negative	2.6	2.6592120486993496	97	0.05119997262954712	0	0	6.548031330108643	connectivity	oafem	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/oafemxmspss/z-2p6	connectivity/social_specific	oafemxmspss	positive	2.6	2.6592120486993496	97	0.5624000132083893	0	0	4.016564846038818	connectivity	mspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/oafemxmspss/z-2p6	connectivity/social_specific	oafemxmspss	negative	2.6	2.6592120486993496	97	0.6590000092983246	0	0	4.126626014709473	connectivity	mspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/oafemxmspss/z-2p6	connectivity/social_specific	oafemxmspss	positive	2.6	2.6592120486993496	97	0.16780000925064087	0	0	4.590542316436768	connectivity	oafemxmspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/oafemxmspss/z-2p6	connectivity/social_specific	oafemxmspss	negative	2.6	2.6592120486993496	97	0.1495000123977661	0	0	4.937954425811768	connectivity	oafemxmspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/oafemxmspss/z-3p1	connectivity/social_specific	oafemxmspss	positive	3.1	3.1972100156535084	97	0.4399999976158142	0	0	5.627979278564453	connectivity	oafem	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/oafemxmspss/z-3p1	connectivity/social_specific	oafemxmspss	negative	3.1	3.1972100156535084	97	0.05879998207092285	0	0	6.548031330108643	connectivity	oafem	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/oafemxmspss/z-3p1	connectivity/social_specific	oafemxmspss	positive	3.1	3.1972100156535084	97	0.4035000205039978	0	0	4.016564846038818	connectivity	mspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/oafemxmspss/z-3p1	connectivity/social_specific	oafemxmspss	negative	3.1	3.1972100156535084	97	0.4337000250816345	0	0	4.126626014709473	connectivity	mspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/oafemxmspss/z-3p1	connectivity/social_specific	oafemxmspss	positive	3.1	3.1972100156535084	97	0.23229998350143433	0	0	4.590542316436768	connectivity	oafemxmspss	(Social win-loss) - (Doors win-loss)
+connectivity/social_specific/oafemxmspss/z-3p1	connectivity/social_specific	oafemxmspss	negative	3.1	3.1972100156535084	97	0.09390002489089966	0	0	4.937954425811768	connectivity	oafemxmspss	(Social win-loss) - (Doors win-loss)
+connectivity/average/adixmspss/z-2p6	connectivity/average	adixmspss	positive	2.6	2.6592120486993496	97	0.6980000138282776	0	0	4.438983917236328	connectivity	adi	Mean of Social and Doors win-loss
+connectivity/average/adixmspss/z-2p6	connectivity/average	adixmspss	negative	2.6	2.6592120486993496	97	0.0812000036239624	0	0	5.4327392578125	connectivity	adi	Mean of Social and Doors win-loss
+connectivity/average/adixmspss/z-2p6	connectivity/average	adixmspss	positive	2.6	2.6592120486993496	97	0.6243999898433685	0	0	3.6006271839141846	connectivity	mspss	Mean of Social and Doors win-loss
+connectivity/average/adixmspss/z-2p6	connectivity/average	adixmspss	negative	2.6	2.6592120486993496	97	0.7892999947071075	0	0	3.662977457046509	connectivity	mspss	Mean of Social and Doors win-loss
+connectivity/average/adixmspss/z-2p6	connectivity/average	adixmspss	positive	2.6	2.6592120486993496	97	0.3758999705314636	0	0	5.259740352630615	connectivity	adixmspss	Mean of Social and Doors win-loss
+connectivity/average/adixmspss/z-2p6	connectivity/average	adixmspss	negative	2.6	2.6592120486993496	97	0.16019999980926514	0	0	5.147529602050781	connectivity	adixmspss	Mean of Social and Doors win-loss
+connectivity/average/adixmspss/z-3p1	connectivity/average	adixmspss	positive	3.1	3.1972100156535084	97	0.5295999944210052	0	0	4.438983917236328	connectivity	adi	Mean of Social and Doors win-loss
+connectivity/average/adixmspss/z-3p1	connectivity/average	adixmspss	negative	3.1	3.1972100156535084	97	0.028199970722198486	47	1	5.4327392578125	connectivity	adi	Mean of Social and Doors win-loss
+connectivity/average/adixmspss/z-3p1	connectivity/average	adixmspss	positive	3.1	3.1972100156535084	97	0.8507000058889389	0	0	3.6006271839141846	connectivity	mspss	Mean of Social and Doors win-loss
+connectivity/average/adixmspss/z-3p1	connectivity/average	adixmspss	negative	3.1	3.1972100156535084	97	0.8563999980688095	0	0	3.662977457046509	connectivity	mspss	Mean of Social and Doors win-loss
+connectivity/average/adixmspss/z-3p1	connectivity/average	adixmspss	positive	3.1	3.1972100156535084	97	0.24070000648498535	0	0	5.259740352630615	connectivity	adixmspss	Mean of Social and Doors win-loss
+connectivity/average/adixmspss/z-3p1	connectivity/average	adixmspss	negative	3.1	3.1972100156535084	97	0.09249997138977051	0	0	5.147529602050781	connectivity	adixmspss	Mean of Social and Doors win-loss
+connectivity/average/pm25xmspss/z-2p6	connectivity/average	pm25xmspss	positive	2.6	2.6592120486993496	97	0.7901999950408936	0	0	3.6356704235076904	connectivity	pm25	Mean of Social and Doors win-loss
+connectivity/average/pm25xmspss/z-2p6	connectivity/average	pm25xmspss	negative	2.6	2.6592120486993496	97	0.1875	0	0	4.273715972900391	connectivity	pm25	Mean of Social and Doors win-loss
+connectivity/average/pm25xmspss/z-2p6	connectivity/average	pm25xmspss	positive	2.6	2.6592120486993496	97	0.62049999833107	0	0	3.8240625858306885	connectivity	mspss	Mean of Social and Doors win-loss
+connectivity/average/pm25xmspss/z-2p6	connectivity/average	pm25xmspss	negative	2.6	2.6592120486993496	97	0.5862999856472015	0	0	4.3215436935424805	connectivity	mspss	Mean of Social and Doors win-loss
+connectivity/average/pm25xmspss/z-2p6	connectivity/average	pm25xmspss	positive	2.6	2.6592120486993496	97	0.9703000001609325	0	0	3.9590389728546143	connectivity	pm25xmspss	Mean of Social and Doors win-loss
+connectivity/average/pm25xmspss/z-2p6	connectivity/average	pm25xmspss	negative	2.6	2.6592120486993496	97	0.42900002002716064	0	0	3.914304733276367	connectivity	pm25xmspss	Mean of Social and Doors win-loss
+connectivity/average/pm25xmspss/z-3p1	connectivity/average	pm25xmspss	positive	3.1	3.1972100156535084	97	0.6906000077724457	0	0	3.6356704235076904	connectivity	pm25	Mean of Social and Doors win-loss
+connectivity/average/pm25xmspss/z-3p1	connectivity/average	pm25xmspss	negative	3.1	3.1972100156535084	97	0.37769997119903564	0	0	4.273715972900391	connectivity	pm25	Mean of Social and Doors win-loss
+connectivity/average/pm25xmspss/z-3p1	connectivity/average	pm25xmspss	positive	3.1	3.1972100156535084	97	0.6940999925136566	0	0	3.8240625858306885	connectivity	mspss	Mean of Social and Doors win-loss
+connectivity/average/pm25xmspss/z-3p1	connectivity/average	pm25xmspss	negative	3.1	3.1972100156535084	97	0.679500013589859	0	0	4.3215436935424805	connectivity	mspss	Mean of Social and Doors win-loss
+connectivity/average/pm25xmspss/z-3p1	connectivity/average	pm25xmspss	positive	3.1	3.1972100156535084	97	0.9028000012040138	0	0	3.9590389728546143	connectivity	pm25xmspss	Mean of Social and Doors win-loss
+connectivity/average/pm25xmspss/z-3p1	connectivity/average	pm25xmspss	negative	3.1	3.1972100156535084	97	0.49699997901916504	0	0	3.914304733276367	connectivity	pm25xmspss	Mean of Social and Doors win-loss
+connectivity/average/fevsxmspss/z-2p6	connectivity/average	fevsxmspss	positive	2.6	2.6592120486993496	97	0.5144000053405762	0	0	4.429366111755371	connectivity	fevs	Mean of Social and Doors win-loss
+connectivity/average/fevsxmspss/z-2p6	connectivity/average	fevsxmspss	negative	2.6	2.6592120486993496	97	0.3352000117301941	0	0	4.539492607116699	connectivity	fevs	Mean of Social and Doors win-loss
+connectivity/average/fevsxmspss/z-2p6	connectivity/average	fevsxmspss	positive	2.6	2.6592120486993496	97	0.6482999920845032	0	0	4.083619594573975	connectivity	mspss	Mean of Social and Doors win-loss
+connectivity/average/fevsxmspss/z-2p6	connectivity/average	fevsxmspss	negative	2.6	2.6592120486993496	97	0.558899998664856	0	0	4.673506736755371	connectivity	mspss	Mean of Social and Doors win-loss
+connectivity/average/fevsxmspss/z-2p6	connectivity/average	fevsxmspss	positive	2.6	2.6592120486993496	97	0.39569997787475586	0	0	4.290711879730225	connectivity	fevsxmspss	Mean of Social and Doors win-loss
+connectivity/average/fevsxmspss/z-2p6	connectivity/average	fevsxmspss	negative	2.6	2.6592120486993496	97	0.24400001764297485	0	0	4.5209550857543945	connectivity	fevsxmspss	Mean of Social and Doors win-loss
+connectivity/average/fevsxmspss/z-3p1	connectivity/average	fevsxmspss	positive	3.1	3.1972100156535084	97	0.4104999899864197	0	0	4.429366111755371	connectivity	fevs	Mean of Social and Doors win-loss
+connectivity/average/fevsxmspss/z-3p1	connectivity/average	fevsxmspss	negative	3.1	3.1972100156535084	97	0.18519997596740723	0	0	4.539492607116699	connectivity	fevs	Mean of Social and Doors win-loss
+connectivity/average/fevsxmspss/z-3p1	connectivity/average	fevsxmspss	positive	3.1	3.1972100156535084	97	0.4897000193595886	0	0	4.083619594573975	connectivity	mspss	Mean of Social and Doors win-loss
+connectivity/average/fevsxmspss/z-3p1	connectivity/average	fevsxmspss	negative	3.1	3.1972100156535084	97	0.46710002422332764	0	0	4.673506736755371	connectivity	mspss	Mean of Social and Doors win-loss
+connectivity/average/fevsxmspss/z-3p1	connectivity/average	fevsxmspss	positive	3.1	3.1972100156535084	97	0.35420000553131104	0	0	4.290711879730225	connectivity	fevsxmspss	Mean of Social and Doors win-loss
+connectivity/average/fevsxmspss/z-3p1	connectivity/average	fevsxmspss	negative	3.1	3.1972100156535084	97	0.20899999141693115	0	0	4.5209550857543945	connectivity	fevsxmspss	Mean of Social and Doors win-loss
+connectivity/average/oafemxmspss/z-2p6	connectivity/average	oafemxmspss	positive	2.6	2.6592120486993496	97	0.29589998722076416	0	0	5.15205192565918	connectivity	oafem	Mean of Social and Doors win-loss
+connectivity/average/oafemxmspss/z-2p6	connectivity/average	oafemxmspss	negative	2.6	2.6592120486993496	97	0.008899986743927002	405	1	5.94881534576416	connectivity	oafem	Mean of Social and Doors win-loss
+connectivity/average/oafemxmspss/z-2p6	connectivity/average	oafemxmspss	positive	2.6	2.6592120486993496	97	0.6008000075817108	0	0	3.916405200958252	connectivity	mspss	Mean of Social and Doors win-loss
+connectivity/average/oafemxmspss/z-2p6	connectivity/average	oafemxmspss	negative	2.6	2.6592120486993496	97	0.2013000249862671	0	0	4.386003017425537	connectivity	mspss	Mean of Social and Doors win-loss
+connectivity/average/oafemxmspss/z-2p6	connectivity/average	oafemxmspss	positive	2.6	2.6592120486993496	97	0.20520001649856567	0	0	5.119822978973389	connectivity	oafemxmspss	Mean of Social and Doors win-loss
+connectivity/average/oafemxmspss/z-2p6	connectivity/average	oafemxmspss	negative	2.6	2.6592120486993496	97	0.07899999618530273	0	0	5.486042022705078	connectivity	oafemxmspss	Mean of Social and Doors win-loss
+connectivity/average/oafemxmspss/z-3p1	connectivity/average	oafemxmspss	positive	3.1	3.1972100156535084	97	0.24790000915527344	0	0	5.15205192565918	connectivity	oafem	Mean of Social and Doors win-loss
+connectivity/average/oafemxmspss/z-3p1	connectivity/average	oafemxmspss	negative	3.1	3.1972100156535084	97	0.0070999860763549805	115	1	5.94881534576416	connectivity	oafem	Mean of Social and Doors win-loss
+connectivity/average/oafemxmspss/z-3p1	connectivity/average	oafemxmspss	positive	3.1	3.1972100156535084	97	0.495199978351593	0	0	3.916405200958252	connectivity	mspss	Mean of Social and Doors win-loss
+connectivity/average/oafemxmspss/z-3p1	connectivity/average	oafemxmspss	negative	3.1	3.1972100156535084	97	0.19870001077651978	0	0	4.386003017425537	connectivity	mspss	Mean of Social and Doors win-loss
+connectivity/average/oafemxmspss/z-3p1	connectivity/average	oafemxmspss	positive	3.1	3.1972100156535084	97	0.2781999707221985	0	0	5.119822978973389	connectivity	oafemxmspss	Mean of Social and Doors win-loss
+connectivity/average/oafemxmspss/z-3p1	connectivity/average	oafemxmspss	negative	3.1	3.1972100156535084	97	0.034900009632110596	119	2	5.486042022705078	connectivity	oafemxmspss	Mean of Social and Doors win-loss
+connectivity/win_only/adixmspss/z-2p6	connectivity/win_only	adixmspss	positive	2.6	2.6592120486993496	97	0.439300000667572	0	0	4.326737880706787	connectivity	adi	Social win - Doors win
+connectivity/win_only/adixmspss/z-2p6	connectivity/win_only	adixmspss	negative	2.6	2.6592120486993496	97	0.1784999966621399	0	0	4.747207164764404	connectivity	adi	Social win - Doors win
+connectivity/win_only/adixmspss/z-2p6	connectivity/win_only	adixmspss	positive	2.6	2.6592120486993496	97	0.4366999864578247	0	0	3.9353888034820557	connectivity	mspss	Social win - Doors win
+connectivity/win_only/adixmspss/z-2p6	connectivity/win_only	adixmspss	negative	2.6	2.6592120486993496	97	0.8928000032901764	0	0	3.7548859119415283	connectivity	mspss	Social win - Doors win
+connectivity/win_only/adixmspss/z-2p6	connectivity/win_only	adixmspss	positive	2.6	2.6592120486993496	97	0.5701000094413757	0	0	4.061055660247803	connectivity	adixmspss	Social win - Doors win
+connectivity/win_only/adixmspss/z-2p6	connectivity/win_only	adixmspss	negative	2.6	2.6592120486993496	97	0.15890002250671387	0	0	5.03368616104126	connectivity	adixmspss	Social win - Doors win
+connectivity/win_only/adixmspss/z-3p1	connectivity/win_only	adixmspss	positive	3.1	3.1972100156535084	97	0.20069998502731323	0	0	4.326737880706787	connectivity	adi	Social win - Doors win
+connectivity/win_only/adixmspss/z-3p1	connectivity/win_only	adixmspss	negative	3.1	3.1972100156535084	97	0.08730000257492065	0	0	4.747207164764404	connectivity	adi	Social win - Doors win
+connectivity/win_only/adixmspss/z-3p1	connectivity/win_only	adixmspss	positive	3.1	3.1972100156535084	97	0.7003999948501587	0	0	3.9353888034820557	connectivity	mspss	Social win - Doors win
+connectivity/win_only/adixmspss/z-3p1	connectivity/win_only	adixmspss	negative	3.1	3.1972100156535084	97	0.7858999967575073	0	0	3.7548859119415283	connectivity	mspss	Social win - Doors win
+connectivity/win_only/adixmspss/z-3p1	connectivity/win_only	adixmspss	positive	3.1	3.1972100156535084	97	0.5058000087738037	0	0	4.061055660247803	connectivity	adixmspss	Social win - Doors win
+connectivity/win_only/adixmspss/z-3p1	connectivity/win_only	adixmspss	negative	3.1	3.1972100156535084	97	0.24500000476837158	0	0	5.03368616104126	connectivity	adixmspss	Social win - Doors win
+connectivity/win_only/pm25xmspss/z-2p6	connectivity/win_only	pm25xmspss	positive	2.6	2.6592120486993496	97	0.9384999983012676	0	0	3.375731945037842	connectivity	pm25	Social win - Doors win
+connectivity/win_only/pm25xmspss/z-2p6	connectivity/win_only	pm25xmspss	negative	2.6	2.6592120486993496	97	0.4692000150680542	0	0	3.6317710876464844	connectivity	pm25	Social win - Doors win
+connectivity/win_only/pm25xmspss/z-2p6	connectivity/win_only	pm25xmspss	positive	2.6	2.6592120486993496	97	0.45080000162124634	0	0	4.336339950561523	connectivity	mspss	Social win - Doors win
+connectivity/win_only/pm25xmspss/z-2p6	connectivity/win_only	pm25xmspss	negative	2.6	2.6592120486993496	97	0.6074000000953674	0	0	4.060625076293945	connectivity	mspss	Social win - Doors win
+connectivity/win_only/pm25xmspss/z-2p6	connectivity/win_only	pm25xmspss	positive	2.6	2.6592120486993496	97	0.9992000000202097	0	0	2.9447858333587646	connectivity	pm25xmspss	Social win - Doors win
+connectivity/win_only/pm25xmspss/z-2p6	connectivity/win_only	pm25xmspss	negative	2.6	2.6592120486993496	97	0.9567000009119511	0	0	3.444826126098633	connectivity	pm25xmspss	Social win - Doors win
+connectivity/win_only/pm25xmspss/z-3p1	connectivity/win_only	pm25xmspss	positive	3.1	3.1972100156535084	97	0.987300000153482	0	0	3.375731945037842	connectivity	pm25	Social win - Doors win
+connectivity/win_only/pm25xmspss/z-3p1	connectivity/win_only	pm25xmspss	negative	3.1	3.1972100156535084	97	0.6092999875545502	0	0	3.6317710876464844	connectivity	pm25	Social win - Doors win
+connectivity/win_only/pm25xmspss/z-3p1	connectivity/win_only	pm25xmspss	positive	3.1	3.1972100156535084	97	0.6195000112056732	0	0	4.336339950561523	connectivity	mspss	Social win - Doors win
+connectivity/win_only/pm25xmspss/z-3p1	connectivity/win_only	pm25xmspss	negative	3.1	3.1972100156535084	97	0.6225999891757965	0	0	4.060625076293945	connectivity	mspss	Social win - Doors win
+connectivity/win_only/pm25xmspss/z-3p1	connectivity/win_only	pm25xmspss	positive	3.1	3.1972100156535084	97	1.0	0	0	2.9447858333587646	connectivity	pm25xmspss	Social win - Doors win
+connectivity/win_only/pm25xmspss/z-3p1	connectivity/win_only	pm25xmspss	negative	3.1	3.1972100156535084	97	0.9704999998211861	0	0	3.444826126098633	connectivity	pm25xmspss	Social win - Doors win
+connectivity/win_only/fevsxmspss/z-2p6	connectivity/win_only	fevsxmspss	positive	2.6	2.6592120486993496	97	0.47130000591278076	0	0	5.070096015930176	connectivity	fevs	Social win - Doors win
+connectivity/win_only/fevsxmspss/z-2p6	connectivity/win_only	fevsxmspss	negative	2.6	2.6592120486993496	97	0.171999990940094	0	0	4.620476722717285	connectivity	fevs	Social win - Doors win
+connectivity/win_only/fevsxmspss/z-2p6	connectivity/win_only	fevsxmspss	positive	2.6	2.6592120486993496	97	0.4381999969482422	0	0	4.237212181091309	connectivity	mspss	Social win - Doors win
+connectivity/win_only/fevsxmspss/z-2p6	connectivity/win_only	fevsxmspss	negative	2.6	2.6592120486993496	97	0.5051999986171722	0	0	4.2774810791015625	connectivity	mspss	Social win - Doors win
+connectivity/win_only/fevsxmspss/z-2p6	connectivity/win_only	fevsxmspss	positive	2.6	2.6592120486993496	97	0.576200008392334	0	0	4.450316429138184	connectivity	fevsxmspss	Social win - Doors win
+connectivity/win_only/fevsxmspss/z-2p6	connectivity/win_only	fevsxmspss	negative	2.6	2.6592120486993496	97	0.5566000044345856	0	0	4.412937641143799	connectivity	fevsxmspss	Social win - Doors win
+connectivity/win_only/fevsxmspss/z-3p1	connectivity/win_only	fevsxmspss	positive	3.1	3.1972100156535084	97	0.4811999797821045	0	0	5.070096015930176	connectivity	fevs	Social win - Doors win
+connectivity/win_only/fevsxmspss/z-3p1	connectivity/win_only	fevsxmspss	negative	3.1	3.1972100156535084	97	0.26190000772476196	0	0	4.620476722717285	connectivity	fevs	Social win - Doors win
+connectivity/win_only/fevsxmspss/z-3p1	connectivity/win_only	fevsxmspss	positive	3.1	3.1972100156535084	97	0.27319997549057007	0	0	4.237212181091309	connectivity	mspss	Social win - Doors win
+connectivity/win_only/fevsxmspss/z-3p1	connectivity/win_only	fevsxmspss	negative	3.1	3.1972100156535084	97	0.5530000030994415	0	0	4.2774810791015625	connectivity	mspss	Social win - Doors win
+connectivity/win_only/fevsxmspss/z-3p1	connectivity/win_only	fevsxmspss	positive	3.1	3.1972100156535084	97	0.5313999950885773	0	0	4.450316429138184	connectivity	fevsxmspss	Social win - Doors win
+connectivity/win_only/fevsxmspss/z-3p1	connectivity/win_only	fevsxmspss	negative	3.1	3.1972100156535084	97	0.421999990940094	0	0	4.412937641143799	connectivity	fevsxmspss	Social win - Doors win
+connectivity/win_only/oafemxmspss/z-2p6	connectivity/win_only	oafemxmspss	positive	2.6	2.6592120486993496	97	0.06940001249313354	0	0	5.737061500549316	connectivity	oafem	Social win - Doors win
+connectivity/win_only/oafemxmspss/z-2p6	connectivity/win_only	oafemxmspss	negative	2.6	2.6592120486993496	97	0.14480000734329224	0	0	5.350521087646484	connectivity	oafem	Social win - Doors win
+connectivity/win_only/oafemxmspss/z-2p6	connectivity/win_only	oafemxmspss	positive	2.6	2.6592120486993496	97	0.3654000163078308	0	0	4.56052303314209	connectivity	mspss	Social win - Doors win
+connectivity/win_only/oafemxmspss/z-2p6	connectivity/win_only	oafemxmspss	negative	2.6	2.6592120486993496	97	0.5857000052928925	0	0	4.748603820800781	connectivity	mspss	Social win - Doors win
+connectivity/win_only/oafemxmspss/z-2p6	connectivity/win_only	oafemxmspss	positive	2.6	2.6592120486993496	97	0.40460002422332764	0	0	4.566744804382324	connectivity	oafemxmspss	Social win - Doors win
+connectivity/win_only/oafemxmspss/z-2p6	connectivity/win_only	oafemxmspss	negative	2.6	2.6592120486993496	97	0.09219998121261597	0	0	4.855373382568359	connectivity	oafemxmspss	Social win - Doors win
+connectivity/win_only/oafemxmspss/z-3p1	connectivity/win_only	oafemxmspss	positive	3.1	3.1972100156535084	97	0.062300026416778564	0	0	5.737061500549316	connectivity	oafem	Social win - Doors win
+connectivity/win_only/oafemxmspss/z-3p1	connectivity/win_only	oafemxmspss	negative	3.1	3.1972100156535084	97	0.17750000953674316	0	0	5.350521087646484	connectivity	oafem	Social win - Doors win
+connectivity/win_only/oafemxmspss/z-3p1	connectivity/win_only	oafemxmspss	positive	3.1	3.1972100156535084	97	0.27799999713897705	0	0	4.56052303314209	connectivity	mspss	Social win - Doors win
+connectivity/win_only/oafemxmspss/z-3p1	connectivity/win_only	oafemxmspss	negative	3.1	3.1972100156535084	97	0.5620000064373016	0	0	4.748603820800781	connectivity	mspss	Social win - Doors win
+connectivity/win_only/oafemxmspss/z-3p1	connectivity/win_only	oafemxmspss	positive	3.1	3.1972100156535084	97	0.3743000030517578	0	0	4.566744804382324	connectivity	oafemxmspss	Social win - Doors win
+connectivity/win_only/oafemxmspss/z-3p1	connectivity/win_only	oafemxmspss	negative	3.1	3.1972100156535084	97	0.07889997959136963	0	0	4.855373382568359	connectivity	oafemxmspss	Social win - Doors win
+connectivity/loss_only/adixmspss/z-2p6	connectivity/loss_only	adixmspss	positive	2.6	2.6592120486993496	97	0.546999990940094	0	0	4.89630126953125	connectivity	adi	Social loss - Doors loss
+connectivity/loss_only/adixmspss/z-2p6	connectivity/loss_only	adixmspss	negative	2.6	2.6592120486993496	97	0.14219999313354492	0	0	4.570216178894043	connectivity	adi	Social loss - Doors loss
+connectivity/loss_only/adixmspss/z-2p6	connectivity/loss_only	adixmspss	positive	2.6	2.6592120486993496	97	0.5667000114917755	0	0	4.1125168800354	connectivity	mspss	Social loss - Doors loss
+connectivity/loss_only/adixmspss/z-2p6	connectivity/loss_only	adixmspss	negative	2.6	2.6592120486993496	97	0.7484000027179718	0	0	4.030019283294678	connectivity	mspss	Social loss - Doors loss
+connectivity/loss_only/adixmspss/z-2p6	connectivity/loss_only	adixmspss	positive	2.6	2.6592120486993496	97	0.4657999873161316	0	0	4.49122428894043	connectivity	adixmspss	Social loss - Doors loss
+connectivity/loss_only/adixmspss/z-2p6	connectivity/loss_only	adixmspss	negative	2.6	2.6592120486993496	97	0.16769999265670776	0	0	4.02815055847168	connectivity	adixmspss	Social loss - Doors loss
+connectivity/loss_only/adixmspss/z-3p1	connectivity/loss_only	adixmspss	positive	3.1	3.1972100156535084	97	0.37720000743865967	0	0	4.89630126953125	connectivity	adi	Social loss - Doors loss
+connectivity/loss_only/adixmspss/z-3p1	connectivity/loss_only	adixmspss	negative	3.1	3.1972100156535084	97	0.0910000205039978	0	0	4.570216178894043	connectivity	adi	Social loss - Doors loss
+connectivity/loss_only/adixmspss/z-3p1	connectivity/loss_only	adixmspss	positive	3.1	3.1972100156535084	97	0.33969998359680176	0	0	4.1125168800354	connectivity	mspss	Social loss - Doors loss
+connectivity/loss_only/adixmspss/z-3p1	connectivity/loss_only	adixmspss	negative	3.1	3.1972100156535084	97	0.4976999759674072	0	0	4.030019283294678	connectivity	mspss	Social loss - Doors loss
+connectivity/loss_only/adixmspss/z-3p1	connectivity/loss_only	adixmspss	positive	3.1	3.1972100156535084	97	0.4077000021934509	0	0	4.49122428894043	connectivity	adixmspss	Social loss - Doors loss
+connectivity/loss_only/adixmspss/z-3p1	connectivity/loss_only	adixmspss	negative	3.1	3.1972100156535084	97	0.33869999647140503	0	0	4.02815055847168	connectivity	adixmspss	Social loss - Doors loss
+connectivity/loss_only/pm25xmspss/z-2p6	connectivity/loss_only	pm25xmspss	positive	2.6	2.6592120486993496	97	0.9785999990999699	0	0	3.4876468181610107	connectivity	pm25	Social loss - Doors loss
+connectivity/loss_only/pm25xmspss/z-2p6	connectivity/loss_only	pm25xmspss	negative	2.6	2.6592120486993496	97	0.3808000087738037	0	0	4.029339790344238	connectivity	pm25	Social loss - Doors loss
+connectivity/loss_only/pm25xmspss/z-2p6	connectivity/loss_only	pm25xmspss	positive	2.6	2.6592120486993496	97	0.28289997577667236	0	0	4.601770401000977	connectivity	mspss	Social loss - Doors loss
+connectivity/loss_only/pm25xmspss/z-2p6	connectivity/loss_only	pm25xmspss	negative	2.6	2.6592120486993496	97	0.7186000049114227	0	0	4.112421035766602	connectivity	mspss	Social loss - Doors loss
+connectivity/loss_only/pm25xmspss/z-2p6	connectivity/loss_only	pm25xmspss	positive	2.6	2.6592120486993496	97	0.7107999920845032	0	0	3.590033531188965	connectivity	pm25xmspss	Social loss - Doors loss
+connectivity/loss_only/pm25xmspss/z-2p6	connectivity/loss_only	pm25xmspss	negative	2.6	2.6592120486993496	97	0.9868999999016523	0	0	2.9406778812408447	connectivity	pm25xmspss	Social loss - Doors loss
+connectivity/loss_only/pm25xmspss/z-3p1	connectivity/loss_only	pm25xmspss	positive	3.1	3.1972100156535084	97	0.9875999996438622	0	0	3.4876468181610107	connectivity	pm25	Social loss - Doors loss
+connectivity/loss_only/pm25xmspss/z-3p1	connectivity/loss_only	pm25xmspss	negative	3.1	3.1972100156535084	97	0.4952999949455261	0	0	4.029339790344238	connectivity	pm25	Social loss - Doors loss
+connectivity/loss_only/pm25xmspss/z-3p1	connectivity/loss_only	pm25xmspss	positive	3.1	3.1972100156535084	97	0.16109997034072876	0	0	4.601770401000977	connectivity	mspss	Social loss - Doors loss
+connectivity/loss_only/pm25xmspss/z-3p1	connectivity/loss_only	pm25xmspss	negative	3.1	3.1972100156535084	97	0.43379998207092285	0	0	4.112421035766602	connectivity	mspss	Social loss - Doors loss
+connectivity/loss_only/pm25xmspss/z-3p1	connectivity/loss_only	pm25xmspss	positive	3.1	3.1972100156535084	97	0.784500002861023	0	0	3.590033531188965	connectivity	pm25xmspss	Social loss - Doors loss
+connectivity/loss_only/pm25xmspss/z-3p1	connectivity/loss_only	pm25xmspss	negative	3.1	3.1972100156535084	97	1.0	0	0	2.9406778812408447	connectivity	pm25xmspss	Social loss - Doors loss
+connectivity/loss_only/fevsxmspss/z-2p6	connectivity/loss_only	fevsxmspss	positive	2.6	2.6592120486993496	97	0.2793999910354614	0	0	4.437014102935791	connectivity	fevs	Social loss - Doors loss
+connectivity/loss_only/fevsxmspss/z-2p6	connectivity/loss_only	fevsxmspss	negative	2.6	2.6592120486993496	97	0.7567999958992004	0	0	4.281766891479492	connectivity	fevs	Social loss - Doors loss
+connectivity/loss_only/fevsxmspss/z-2p6	connectivity/loss_only	fevsxmspss	positive	2.6	2.6592120486993496	97	0.29989999532699585	0	0	4.374597072601318	connectivity	mspss	Social loss - Doors loss
+connectivity/loss_only/fevsxmspss/z-2p6	connectivity/loss_only	fevsxmspss	negative	2.6	2.6592120486993496	97	0.7161999940872192	0	0	4.1863203048706055	connectivity	mspss	Social loss - Doors loss
+connectivity/loss_only/fevsxmspss/z-2p6	connectivity/loss_only	fevsxmspss	positive	2.6	2.6592120486993496	97	0.32440000772476196	0	0	4.625434398651123	connectivity	fevsxmspss	Social loss - Doors loss
+connectivity/loss_only/fevsxmspss/z-2p6	connectivity/loss_only	fevsxmspss	negative	2.6	2.6592120486993496	97	0.4121999740600586	0	0	4.789902210235596	connectivity	fevsxmspss	Social loss - Doors loss
+connectivity/loss_only/fevsxmspss/z-3p1	connectivity/loss_only	fevsxmspss	positive	3.1	3.1972100156535084	97	0.6297999918460846	0	0	4.437014102935791	connectivity	fevs	Social loss - Doors loss
+connectivity/loss_only/fevsxmspss/z-3p1	connectivity/loss_only	fevsxmspss	negative	3.1	3.1972100156535084	97	0.7921999990940094	0	0	4.281766891479492	connectivity	fevs	Social loss - Doors loss
+connectivity/loss_only/fevsxmspss/z-3p1	connectivity/loss_only	fevsxmspss	positive	3.1	3.1972100156535084	97	0.18000000715255737	0	0	4.374597072601318	connectivity	mspss	Social loss - Doors loss
+connectivity/loss_only/fevsxmspss/z-3p1	connectivity/loss_only	fevsxmspss	negative	3.1	3.1972100156535084	97	0.44419997930526733	0	0	4.1863203048706055	connectivity	mspss	Social loss - Doors loss
+connectivity/loss_only/fevsxmspss/z-3p1	connectivity/loss_only	fevsxmspss	positive	3.1	3.1972100156535084	97	0.0910000205039978	0	0	4.625434398651123	connectivity	fevsxmspss	Social loss - Doors loss
+connectivity/loss_only/fevsxmspss/z-3p1	connectivity/loss_only	fevsxmspss	negative	3.1	3.1972100156535084	97	0.32499998807907104	0	0	4.789902210235596	connectivity	fevsxmspss	Social loss - Doors loss
+connectivity/loss_only/oafemxmspss/z-2p6	connectivity/loss_only	oafemxmspss	positive	2.6	2.6592120486993496	97	0.0034999847412109375	1356	4	5.748158931732178	connectivity	oafem	Social loss - Doors loss
+connectivity/loss_only/oafemxmspss/z-2p6	connectivity/loss_only	oafemxmspss	negative	2.6	2.6592120486993496	97	0.659500002861023	0	0	4.620547294616699	connectivity	oafem	Social loss - Doors loss
+connectivity/loss_only/oafemxmspss/z-2p6	connectivity/loss_only	oafemxmspss	positive	2.6	2.6592120486993496	97	0.07639998197555542	0	0	4.742627143859863	connectivity	mspss	Social loss - Doors loss
+connectivity/loss_only/oafemxmspss/z-2p6	connectivity/loss_only	oafemxmspss	negative	2.6	2.6592120486993496	97	0.5780999958515167	0	0	4.335467338562012	connectivity	mspss	Social loss - Doors loss
+connectivity/loss_only/oafemxmspss/z-2p6	connectivity/loss_only	oafemxmspss	positive	2.6	2.6592120486993496	97	0.45069998502731323	0	0	5.086720943450928	connectivity	oafemxmspss	Social loss - Doors loss
+connectivity/loss_only/oafemxmspss/z-2p6	connectivity/loss_only	oafemxmspss	negative	2.6	2.6592120486993496	97	0.06639999151229858	0	0	5.514564037322998	connectivity	oafemxmspss	Social loss - Doors loss
+connectivity/loss_only/oafemxmspss/z-3p1	connectivity/loss_only	oafemxmspss	positive	3.1	3.1972100156535084	97	0.01230001449584961	218	2	5.748158931732178	connectivity	oafem	Social loss - Doors loss
+connectivity/loss_only/oafemxmspss/z-3p1	connectivity/loss_only	oafemxmspss	negative	3.1	3.1972100156535084	97	0.4531000256538391	0	0	4.620547294616699	connectivity	oafem	Social loss - Doors loss
+connectivity/loss_only/oafemxmspss/z-3p1	connectivity/loss_only	oafemxmspss	positive	3.1	3.1972100156535084	97	0.05779999494552612	0	0	4.742627143859863	connectivity	mspss	Social loss - Doors loss
+connectivity/loss_only/oafemxmspss/z-3p1	connectivity/loss_only	oafemxmspss	negative	3.1	3.1972100156535084	97	0.32899999618530273	0	0	4.335467338562012	connectivity	mspss	Social loss - Doors loss
+connectivity/loss_only/oafemxmspss/z-3p1	connectivity/loss_only	oafemxmspss	positive	3.1	3.1972100156535084	97	0.21789997816085815	0	0	5.086720943450928	connectivity	oafemxmspss	Social loss - Doors loss
+connectivity/loss_only/oafemxmspss/z-3p1	connectivity/loss_only	oafemxmspss	negative	3.1	3.1972100156535084	97	0.07050001621246338	0	0	5.514564037322998	connectivity	oafemxmspss	Social loss - Doors loss

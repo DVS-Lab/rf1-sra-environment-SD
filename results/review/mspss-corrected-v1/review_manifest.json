@@ -1,0 +1,9 @@
+{
+  "n": 97,
+  "outputs": {
+    "README.md": "c5ad8ae09ac6a8d5d314ebae732d326a86e93e1f51bb8c856cd649af86118de8",
+    "clusters.tsv": "b2418f3af7425ba9706821c72eab32f53c3fd8b0fe228419e403268e705f8247",
+    "maps.tsv": "865aa999b2c9c4b4d6dfe4d654fb4e31b8e7dcbc2c504a5f627d72f9f4902d19",
+    "provenance.json": "d1f31b0ffc3613adb574cd535777a9c6f280af368443fce5247fa809127230fb"
+  }
+}
