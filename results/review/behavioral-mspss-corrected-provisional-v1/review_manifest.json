@@ -1,0 +1,24 @@
+{
+  "corrected_mspss": true,
+  "exclusions_changed": false,
+  "models": 8,
+  "n": 97,
+  "neural_analyses_changed": false,
+  "new_neural_inference": false,
+  "outputs": {
+    "README.md": "08cb8c57dc680f9a30f40011e916df3d9c2feaaab0831733e88c4dd6b1889109",
+    "adjustment_comparison.tsv": "0aeab6cc36440ed23d65eab4d6ffd70f2091a362b64d184ba5b0dea1adca90a4",
+    "adjustments.tsv": "c1e934e695e7e600a135118bf295063a8fb99d5c043e4d08857c537e4079da41",
+    "coefficients.tsv": "adfbc9c26595c288310ee53d1a0e532a974b20e69f7aba75fa81ad9df2cb3ff3",
+    "comparison.tsv": "d5979e43078f6ac3b91ed8262dc29b832e545709f1ec40316a41e600ecea96ac",
+    "conditional_slopes.tsv": "006dfd12014fd2220e11faa364d845d67ae0ed16574f911e300994a9e1a7638b",
+    "diagnostics.tsv": "5d18accaf39feee7b6060c54573e5780b8bdce19152ecb9fa52864330b3840a8",
+    "fevs-conditional-slopes.png": "22d15ccd52f5cc9fc067c78969fc5769d0a8cfe977aa14df9e9f69eb7e22e3b2",
+    "interactions.tsv": "324f42fc13ece3b23cd4f837fca699b35d2e63110df436709d68808da8bd8a9e",
+    "oafem-conditional-slopes.png": "155c26c34651e4c031bc89143af189eb056ced0416788ea9bdcec8ffcd9044ce",
+    "provenance.json": "60ac382d7157540f68d368720e560b3149b35742bbb05198073f32c0eff7f28f"
+  },
+  "provisional": true,
+  "scoring_passed": false,
+  "sensitivity_fits": 4
+}

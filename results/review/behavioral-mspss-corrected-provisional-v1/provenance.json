@@ -1,0 +1,19 @@
+{
+  "administration": "island_screener",
+  "changed_scores": 82,
+  "corrected_mspss": true,
+  "corrected_scores_sha256": "ac5a9599d21ff1b86626a6d44824867f0b43fd1728d7377d991cadb9e1686889",
+  "correction_receipt_sha256": "cf40b025ce7cc77697eda79f843b2fd704fae03f554ce4f5dab11a66394c8d69",
+  "exclusions_changed": false,
+  "models": 8,
+  "n": 97,
+  "neural_analyses_changed": false,
+  "packages": {
+    "matplotlib": "3.10.3",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "statsmodels": "0.14.4"
+  },
+  "provisional_financial_scoring": true,
+  "sensitivity_fits": 4
+}
