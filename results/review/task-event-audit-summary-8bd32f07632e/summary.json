@@ -1,0 +1,103 @@
+{
+  "EV_status_counts": {
+    "doors/decision-missed/MATCH": 28,
+    "doors/decision-missed/MATCH_INTENTIONAL_EMPTY": 69,
+    "doors/decision/MATCH": 97,
+    "doors/loss/MATCH": 97,
+    "doors/win/MATCH": 97,
+    "socialdoors/decision-missed/MATCH": 29,
+    "socialdoors/decision-missed/MATCH_INTENTIONAL_EMPTY": 68,
+    "socialdoors/decision/MATCH": 97,
+    "socialdoors/loss/MATCH": 97,
+    "socialdoors/win/MATCH": 97
+  },
+  "acquisition_identity_independently_verified": false,
+  "anonymized_PDF_example": {
+    "canonical_four_EV_timing_identical": false,
+    "inspection_error_present": false,
+    "shared_consumed_EV_files": [],
+    "task_columns_identical": false,
+    "task_columns_max_abs_difference": 0.5930033,
+    "tasks": {
+      "doors": {
+        "BIDS_fields_match_source": true,
+        "EV_statuses": {
+          "decision": {
+            "path_consumed": true,
+            "shape": "3",
+            "status": "MATCH"
+          },
+          "decision-missed": {
+            "path_consumed": true,
+            "shape": "3",
+            "status": "MATCH"
+          },
+          "loss": {
+            "path_consumed": true,
+            "shape": "3",
+            "status": "MATCH"
+          },
+          "win": {
+            "path_consumed": true,
+            "shape": "3",
+            "status": "MATCH"
+          }
+        },
+        "PNG_matches_PDF_source": {
+          "design.png": true,
+          "design_cov.png": true
+        },
+        "historical_fingerprint_used": false,
+        "source_status": "available"
+      },
+      "socialdoors": {
+        "BIDS_fields_match_source": true,
+        "EV_statuses": {
+          "decision": {
+            "path_consumed": true,
+            "shape": "3",
+            "status": "MATCH"
+          },
+          "decision-missed": {
+            "path_consumed": true,
+            "shape": "3",
+            "status": "MATCH"
+          },
+          "loss": {
+            "path_consumed": true,
+            "shape": "3",
+            "status": "MATCH"
+          },
+          "win": {
+            "path_consumed": true,
+            "shape": "3",
+            "status": "MATCH"
+          }
+        },
+        "PNG_matches_PDF_source": {
+          "design.png": true,
+          "design_cov.png": true
+        },
+        "historical_fingerprint_used": false,
+        "source_status": "available"
+      }
+    }
+  },
+  "counts": {
+    "BIDS_vs_source_mismatches": 0,
+    "EV_vs_own_BIDS_mismatches": 0,
+    "identical_canonical_timing": 0,
+    "identical_task_columns": 0,
+    "pair_errors": 0,
+    "pairs_inspected": 97,
+    "pairs_sharing_EV_files": 0,
+    "unresolved_sources": 0
+  },
+  "n": 97,
+  "scope": "Existing model EVs, canonical BIDS events, current source resolution, task-column comparisons, and screenshot provenance. No independent scanner/task-identity validation.",
+  "source_audit_sha256": "8bd32f07632e5306cf2f22f2668c4e4113b06a39ad7477bddcc7e5cd249d43e0",
+  "source_status_counts": {
+    "doors/available": 97,
+    "socialdoors/available": 97
+  }
+}
