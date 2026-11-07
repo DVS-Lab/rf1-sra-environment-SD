@@ -1,0 +1,65 @@
+{
+  "repository": "DVS-Lab/rf1-sra-linux2",
+  "revision": "8c961f750253825f7deabf8191fca4ca2938a6c5",
+  "records": [
+    {
+      "url": "https://github.com/DVS-Lab/rf1-sra-linux2/blob/8c961f750253825f7deabf8191fca4ca2938a6c5/logs/records/20261107-151420_katie-closeout-20261107-151420-tests.md",
+      "sha256": "16f250fa03951aafb9f6b4729afbcd9963933433ceeea6aca9237d6a8df0ba21",
+      "command_exit": 0,
+      "check_exit": "none",
+      "tests_passed": 3,
+      "all_9671_native_fingerprints_checked": false
+    },
+    {
+      "url": "https://github.com/DVS-Lab/rf1-sra-linux2/blob/8c961f750253825f7deabf8191fca4ca2938a6c5/logs/records/20261107-151435_katie-closeout-20261107-151420-regression-corrected.md",
+      "sha256": "425a3e57c5e677ffb44af026cefba07c6e56136bdf24b67b0d95487cc9d4f2f5",
+      "command_exit": 0,
+      "check_exit": "none",
+      "tests_passed": 7,
+      "all_9671_native_fingerprints_checked": false
+    },
+    {
+      "url": "https://github.com/DVS-Lab/rf1-sra-linux2/blob/8c961f750253825f7deabf8191fca4ca2938a6c5/logs/records/20261107-151449_katie-closeout-20261107-151420-regression-adjustments.md",
+      "sha256": "bbb2e1053912fd4f7aaaf4cf37d8030af55104123adfcd690dc948ba8d6df040",
+      "command_exit": 0,
+      "check_exit": "none",
+      "tests_passed": 14,
+      "all_9671_native_fingerprints_checked": false
+    },
+    {
+      "url": "https://github.com/DVS-Lab/rf1-sra-linux2/blob/8c961f750253825f7deabf8191fca4ca2938a6c5/logs/records/20261107-151516_katie-closeout-20261107-151420-source-publish.md",
+      "sha256": "087b9b372f6dc1015207407fcb5be834f2d47a2c699b015d7b6120119412ca61",
+      "command_exit": 0,
+      "check_exit": "none",
+      "tests_passed": null,
+      "all_9671_native_fingerprints_checked": false
+    },
+    {
+      "url": "https://github.com/DVS-Lab/rf1-sra-linux2/blob/8c961f750253825f7deabf8191fca4ca2938a6c5/logs/records/20261107-151522_katie-closeout-20261107-151420-sensitivity.md",
+      "sha256": "a6b01de87cf891ea6f0e6d8a80a66d2715dbc1f4e304f27fdaf1ce550a2b461a",
+      "command_exit": 0,
+      "check_exit": "0",
+      "tests_passed": null,
+      "all_9671_native_fingerprints_checked": false
+    },
+    {
+      "url": "https://github.com/DVS-Lab/rf1-sra-linux2/blob/8c961f750253825f7deabf8191fca4ca2938a6c5/logs/records/20261107-155732_katie-closeout-20261107-151420-descriptions.md",
+      "sha256": "1cbc49865b8ef9edb2c54a6502cb7123d1e19494b8bb9b20bba0acb0fc0187c4",
+      "command_exit": 0,
+      "check_exit": "0",
+      "tests_passed": null,
+      "all_9671_native_fingerprints_checked": true
+    },
+    {
+      "url": "https://github.com/DVS-Lab/rf1-sra-linux2/blob/8c961f750253825f7deabf8191fca4ca2938a6c5/logs/records/20261107-155825_katie-closeout-20261107-151420-evidence-publish.md",
+      "sha256": "f7add6075b87a41381058f9b68e167f8f9447d722c789b8638eed3f84268b3cd",
+      "command_exit": 0,
+      "check_exit": "none",
+      "tests_passed": null,
+      "all_9671_native_fingerprints_checked": false
+    }
+  ],
+  "test_total": 24,
+  "all_commands_passed": true,
+  "descriptive_native_integrity_checked": true
+}

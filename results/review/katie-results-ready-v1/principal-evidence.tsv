@@ -1,0 +1,7 @@
+question	outcome	coefficient	direction	estimate	location	corrected_p	correction	sensitivity
+1	FEVS	PM2.5 × corrected MSPSS	negative	-0.989	Behavioral; not applicable	0.0005	Holm, two primary tests	HC3 b=-0.989; +ADI -0.990; +ECog -0.883; +both -0.879; all CIs exclude zero
+2	Social win − nonsocial win activation	FEVS at mean PM2.5	positive	67 voxels	MNI (-31.6, 49.5, -3.7); atlas white-matter overlap	0.0315	Cluster-FWE per map, CDT 3.1	+ECog p=.0505; +both .0477; standalone +ECog .0666
+2	VS PPI domain-by-valence	FEVS at mean PM2.5	negative	44 voxels	Left frontal target; MNI (-20.8, 57.6, 11.2)	0.0303	Cluster-FWE per map, CDT 3.1	+ADI .0320; +ECog .0349; +both .0353; +corrected MSPSS .0751 (no cluster)
+3	Social win − nonsocial win activation	ADI × corrected MSPSS	positive	87 voxels	Right posterior temporal vicinity; MNI (54.8, -31.5, 8.2)	0.0255	Cluster-FWE per map, CDT 3.1	Also CDT 2.6: p=.0482; LOO interaction 1.160 to 1.335; selected-region descriptive
+3	VS PPI domain-by-valence	ADI × ECog	positive	48 voxels	MNI (-20.8, -72.0, -18.5)	0.0473	Cluster-FWE per map, CDT 3.1	CDT 2.6 p=.0383; influence limitations; not an activation interaction
+3	VS PPI domain-by-valence	PM2.5 × ECog	positive / negative at separate targets	131 / 145 voxels	Multiple targets; coordinates in supplementary cluster table	.0194 / .0167	Minimum cluster-FWE per sign, CDT 3.1	Influential observations; one negative-cluster HC3 interval includes zero

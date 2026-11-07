@@ -4,7 +4,36 @@ This repository contains the reproducible participant-generation, environmental
 linkage, Level 3 input-building, and group-analysis code for the Social Doors
 component of the RF1 brain-health/environment project.
 
-## Current Analysis Status: N=97 Computation And Final Summary Verified
+## Current Results: Corrected MSPSS And Final Support Sensitivity
+
+The [Results-ready evidence report, November 7, 2026 (PDF)](output/pdf/FEVS_Results_Ready_2026-11-07.pdf)
+organizes the corrected evidence around the three scientific questions. See the
+[supported conclusions](results/review/katie-results-ready-v1/results-summary.md),
+[principal evidence table](results/review/katie-results-ready-v1/principal-evidence.tsv),
+[complete model/null inventories](results/review/katie-results-ready-v1/README.md),
+and [reuse, new analyses, and checks](results/review/katie-results-ready-v1/analysis-record.json).
+
+The corrected behavioral PM2.5 × MSPSS interaction predicts FEVS (b=-0.989;
+HC3 CI [-1.505,-0.473]; primary-family Holm p=.000509). Corrected ADI × MSPSS
+predicts social-minus-nonsocial winning activation (87 voxels; cluster-FWE
+p=.0255, CDT3.1), with a selected-region crossover that does not establish
+protective buffering. The original FEVS domain-by-valence VS-PPI finding is
+**sensitive to corrected-support adjustment**: the two new jobs yield no
+corrected clusters, negative-direction p=.0751 at CDT3.1 and .1021 at CDT2.6.
+Selected-region social/nonsocial component plots are descriptive.
+
+Frozen N=97, exclusions, source images/masks, and historical reports are
+preserved. The canonical 1,328-map inventory replaces the 384 historical support
+maps with their corrected counterparts (71 maps with clusters); the four new
+sensitivity maps are separate. Correction is per map, not across the exploratory
+search. Financial scoring documentation remains provisional. No manuscript
+Results section has been drafted. [Reporting methods and reproduction](docs/katie-results-ready.md).
+
+## Historical Analysis And Reporting Record
+
+The records below preserve earlier workflows and report versions. Their
+historical MSPSS estimates and coding caveats are superseded by the corrected
+November 7 report above; use its current conclusions and inventories.
 
 **Evidence-layout revision:** [matched brain/scatter panels, task-mean contrasts and actual designs](docs/katie-evidence.md).
 Existing win-loss and double-subtraction group tests are reused; only the missing
@@ -22,7 +51,7 @@ retain N=97 and report all three requested additive adjustments. These checks
 remain provisional while scoring is reviewed and do not rerun or establish
 robustness of the neural models.
 
-**Current working results overview:** [behavior, basic activation, exploratory activation and connectivity (PDF)](output/pdf/FEVS_Working_Results_Overview_2026-11-04.pdf).
+**Historical working results overview:** [behavior, basic activation, exploratory activation and connectivity (PDF)](output/pdf/FEVS_Working_Results_Overview_2026-11-04.pdf).
 Behavioral plots and results come first. Every subsection asks a specific
 question and follows context/content/conclusion; technical design views are in
 an appendix. Every original/ADI/Ecog/joint

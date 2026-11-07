@@ -1,0 +1,16 @@
+variable_1	variable_2	n	pearson_r	spearman_rho	mspss_administration
+fevs	oafem	97	0.3348170640966691	0.3451191275441541	corrected_island_screener
+fevs	adi	97	0.08522337102828162	0.08176431856649974	corrected_island_screener
+fevs	pm25	97	0.11143675876591957	0.1200657860321096	corrected_island_screener
+fevs	mspss	97	-0.2869015705012261	-0.3606341633143977	corrected_island_screener
+fevs	ecog	97	0.3927512115367812	0.29674763891841693	corrected_island_screener
+oafem	adi	97	0.16172649797116787	0.12058016003494695	corrected_island_screener
+oafem	pm25	97	0.07338953832282608	0.12202276817783342	corrected_island_screener
+oafem	mspss	97	-0.12147966701681014	-0.2607710327516482	corrected_island_screener
+oafem	ecog	97	0.45782232501490383	0.32585001547989695	corrected_island_screener
+adi	pm25	97	0.061951617953393656	0.18845941656994536	corrected_island_screener
+adi	mspss	97	-0.19447794040390085	-0.1603870442658627	corrected_island_screener
+adi	ecog	97	0.24285344061941186	0.22605284812299423	corrected_island_screener
+pm25	mspss	97	0.032809479402924634	-0.042615115833055134	corrected_island_screener
+pm25	ecog	97	0.08707002245126338	0.09465932428744804	corrected_island_screener
+mspss	ecog	97	-0.14459368459924068	-0.27105504247587464	corrected_island_screener

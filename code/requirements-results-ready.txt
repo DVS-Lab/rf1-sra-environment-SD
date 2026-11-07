@@ -1,0 +1,9 @@
+# Reporting environment used for the delivered PDF; Linux2 inference uses its existing environments.
+reportlab==4.4.3
+Pillow==11.3.0
+numpy==2.0.2
+scipy==1.13.1
+matplotlib==3.9.4
+# PDF validation / rendering
+PyMuPDF==1.26.5
+pypdf==6.21.4
