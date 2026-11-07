@@ -1,0 +1,9 @@
+job	outcome	model	direction	z	t_cutoff	n	min_cluster_fwe_p	significant_voxels	significant_clusters	max_contrast_t	adjustment	family	term	baseline_overlap_voxels	baseline_dice
+connectivity/social_specific/fevsxpm25/z-2p6	connectivity/social_specific	fevsxpm25	positive	2.6	2.6592120486993496	97	0.8056000024080276	0	0	4.464583396911621	baseline	connectivity	fevs	0	
+connectivity/social_specific/fevsxpm25/z-2p6	connectivity/social_specific	fevsxpm25	negative	2.6	2.6592120486993496	97	0.0504000186920166	0	0	4.758227348327637	baseline	connectivity	fevs	0	
+connectivity/social_specific/fevsxpm25/z-3p1	connectivity/social_specific	fevsxpm25	positive	3.1	3.1972100156535084	97	0.6182000041007996	0	0	4.464583396911621	baseline	connectivity	fevs	0	
+connectivity/social_specific/fevsxpm25/z-3p1	connectivity/social_specific	fevsxpm25	negative	3.1	3.1972100156535084	97	0.030300021171569824	44	1	4.758227348327637	baseline	connectivity	fevs	44	1.0
+connectivity/social_specific/fevsxpm25_add_mspss/z-2p6	connectivity/social_specific	fevsxpm25_add_mspss	positive	2.6	2.659915326107025	97	0.8367999941110611	0	0	4.159948348999023	add_mspss	connectivity	fevs	0	
+connectivity/social_specific/fevsxpm25_add_mspss/z-2p6	connectivity/social_specific	fevsxpm25_add_mspss	negative	2.6	2.659915326107025	97	0.10210001468658447	0	0	4.460220813751221	add_mspss	connectivity	fevs	0	
+connectivity/social_specific/fevsxpm25_add_mspss/z-3p1	connectivity/social_specific	fevsxpm25_add_mspss	positive	3.1	3.1983727611028256	97	0.6146000027656555	0	0	4.159948348999023	add_mspss	connectivity	fevs	0	
+connectivity/social_specific/fevsxpm25_add_mspss/z-3p1	connectivity/social_specific	fevsxpm25_add_mspss	negative	3.1	3.1983727611028256	97	0.07510000467300415	0	0	4.460220813751221	add_mspss	connectivity	fevs	0	0.0

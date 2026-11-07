@@ -1,0 +1,438 @@
+{
+  "adi_support": {
+    "cluster": {
+      "atlas": [
+        {
+          "atlas": "HarvardOxford-cort",
+          "overlap": [
+            {
+              "fraction": 0.6206896551724138,
+              "label": "Middle Temporal Gyrus, posterior division",
+              "voxels": 54
+            },
+            {
+              "fraction": 0.20689655172413793,
+              "label": "Superior Temporal Gyrus, posterior division",
+              "voxels": 18
+            },
+            {
+              "fraction": 0.10344827586206896,
+              "label": "Unlabeled",
+              "voxels": 9
+            },
+            {
+              "fraction": 0.06896551724137931,
+              "label": "Planum Temporale",
+              "voxels": 6
+            }
+          ],
+          "peak_label": "Superior Temporal Gyrus, posterior division"
+        },
+        {
+          "atlas": "HarvardOxford-sub",
+          "overlap": [
+            {
+              "fraction": 0.7701149425287356,
+              "label": "Right Cerebral Cortex",
+              "voxels": 67
+            },
+            {
+              "fraction": 0.22988505747126436,
+              "label": "Right Cerebral White Matter",
+              "voxels": 20
+            }
+          ],
+          "peak_label": "Right Cerebral White Matter"
+        }
+      ],
+      "cluster_fwe_p": 0.025499999523162842,
+      "component": 1,
+      "peak_directional_t": 4.428481578826904,
+      "peak_mni": [
+        54.79999923706055,
+        -31.500001668930054,
+        8.190000772476196
+      ],
+      "tissue_note": "Atlas labels are approximate; not native tissue segmentation",
+      "voxels": 87
+    },
+    "conditional_slopes": [
+      {
+        "hc3_lower": -2.5353644458464135,
+        "hc3_upper": -0.7057940252748958,
+        "moderator": 3.416666667,
+        "n": 97,
+        "percentile": 16,
+        "slope": -1.6205792355606545
+      },
+      {
+        "hc3_lower": 0.3404308163857712,
+        "hc3_upper": 2.48915027635727,
+        "moderator": 5.833333333,
+        "n": 97,
+        "percentile": 50,
+        "slope": 1.4147905463715205
+      },
+      {
+        "hc3_lower": 1.2733329040378474,
+        "hc3_upper": 4.2776142025180715,
+        "moderator": 6.916666667,
+        "n": 97,
+        "percentile": 84,
+        "slope": 2.7754735532779593
+      }
+    ],
+    "contrast": "Social win - nonsocial win activation",
+    "fit": {
+      "beta": 1.256015082525318,
+      "exclusions_changed": false,
+      "hc3_lower": 0.7528678739728526,
+      "hc3_upper": 1.7591622910777835,
+      "loo_beta_max": 1.3353269185100731,
+      "loo_beta_min": 1.1601270609445087,
+      "max_cooks_d": 0.15393977979097628,
+      "max_leverage": 0.2522953128083385,
+      "n": 97,
+      "n_cooks_above_4_over_n": 9,
+      "residual_df": 87,
+      "selected_cluster_descriptive": true,
+      "term": "adixmspss"
+    },
+    "job": "activation/win_only/adixmspss/z-3p1",
+    "new_permutation_analysis": false,
+    "pattern": "ADI slope increases as corrected support increases. Protective buffering is not established by this interaction or by the value of the activation contrast."
+  },
+  "behavior": {
+    "beta": -0.9888250699391419,
+    "conditional_slopes": [
+      {
+        "hc3_lower": 0.9129038938044911,
+        "hc3_upper": 3.8259298704021205,
+        "moderator": 3.416666667,
+        "n": 97,
+        "percentile": 16,
+        "slope": 2.3694168821033057
+      },
+      {
+        "hc3_lower": -0.7607705069906902,
+        "hc3_upper": 0.7202831011432166,
+        "moderator": 5.833333333,
+        "n": 97,
+        "percentile": 50,
+        "slope": -0.020243702923736784
+      },
+      {
+        "hc3_lower": -2.0146818433775358,
+        "hc3_upper": -0.16825988198984687,
+        "moderator": 6.916666667,
+        "n": 97,
+        "percentile": 84,
+        "slope": -1.0914708626836913
+      }
+    ],
+    "exclusions_changed": false,
+    "hc3_lower": -1.5047087710737668,
+    "hc3_upper": -0.472941368804517,
+    "loo_beta_max": -0.9002527508529321,
+    "loo_beta_min": -1.1836864590398621,
+    "max_cooks_d": 0.17977897706977247,
+    "max_leverage": 0.3257978998811215,
+    "n": 97,
+    "n_cooks_above_4_over_n": 3,
+    "provisional_financial_scoring": true,
+    "published_interaction": {
+      "ci_lower": "-1.5047087710737668",
+      "ci_upper": "-0.472941368804517",
+      "delta_r_squared": "0.10381563308561981",
+      "exposure": "pm25",
+      "family": "primary",
+      "hc3_p": "0.0002545195925483058",
+      "hc3_se": "0.2597108509766446",
+      "holm_family_p": "0.0005090391850966116",
+      "interaction_beta": "-0.9888250699391419",
+      "model": "fevs_pm25_mspss",
+      "moderator": "mspss",
+      "n": "97",
+      "outcome": "fevs",
+      "r_squared": "0.22492594280637035",
+      "residual_df": "91"
+    },
+    "reproduction": "Existing model reproduced solely to recover HC3 covariance for exact observed-percentile contrasts; no new formula",
+    "residual_df": 91,
+    "selected_cluster_descriptive": true,
+    "term": "interaction"
+  },
+  "canonical_maps": 1328,
+  "cohort_changed": false,
+  "corrected_maps_with_clusters": 71,
+  "exclusions_changed": false,
+  "financial_scoring": "Provisional exported totals; versions/scoring rules/timepoint provenance still undocumented in the supplied repository",
+  "n": 97,
+  "new_sensitivity_maps": 4,
+  "selected_cluster_plots_descriptive": true,
+  "vs_components": {
+    "caution": "Component associations describe a region selected from the difference contrast; no independent confirmation or significance comparison between components",
+    "cluster": {
+      "atlas": [
+        {
+          "atlas": "HarvardOxford-cort",
+          "overlap": [
+            {
+              "fraction": 0.9772727272727273,
+              "label": "Frontal Pole",
+              "voxels": 43
+            },
+            {
+              "fraction": 0.022727272727272728,
+              "label": "Unlabeled",
+              "voxels": 1
+            }
+          ],
+          "peak_label": "Frontal Pole"
+        },
+        {
+          "atlas": "HarvardOxford-sub",
+          "overlap": [
+            {
+              "fraction": 0.8409090909090909,
+              "label": "Left Cerebral Cortex",
+              "voxels": 37
+            },
+            {
+              "fraction": 0.1590909090909091,
+              "label": "Left Cerebral White Matter",
+              "voxels": 7
+            }
+          ],
+          "peak_label": "Left Cerebral White Matter"
+        }
+      ],
+      "cluster_fwe_p": 0.030300021171569824,
+      "component": 1,
+      "peak_directional_t": 4.598762512207031,
+      "peak_mni": [
+        -20.800002098083496,
+        57.59999990463257,
+        11.160000801086426
+      ],
+      "tissue_note": "Atlas labels are approximate; not native tissue segmentation",
+      "voxels": 44
+    },
+    "covariates": "Original signed-difference QC, scanner era, age/gender, PM2.5, FEVS x PM2.5 retained for every component",
+    "fits": {
+      "difference": {
+        "beta": -0.11023174653731502,
+        "exclusions_changed": false,
+        "hc3_lower": -0.15455282400838938,
+        "hc3_upper": -0.06591066906624066,
+        "loo_beta_max": -0.0975463553992878,
+        "loo_beta_min": -0.11448420896848903,
+        "max_cooks_d": 0.20037494883799853,
+        "max_leverage": 0.500868889540428,
+        "n": 97,
+        "n_cooks_above_4_over_n": 9,
+        "residual_df": 87,
+        "selected_cluster_descriptive": true,
+        "term": "fevs"
+      },
+      "doors": {
+        "beta": 0.06749404097891468,
+        "exclusions_changed": false,
+        "hc3_lower": 0.03921932138996577,
+        "hc3_upper": 0.09576876056786358,
+        "loo_beta_max": 0.0722974811875044,
+        "loo_beta_min": 0.06016640729211363,
+        "max_cooks_d": 0.1050456076303584,
+        "max_leverage": 0.500868889540428,
+        "n": 97,
+        "n_cooks_above_4_over_n": 8,
+        "residual_df": 87,
+        "selected_cluster_descriptive": true,
+        "term": "fevs"
+      },
+      "socialdoors": {
+        "beta": -0.04273770559328224,
+        "exclusions_changed": false,
+        "hc3_lower": -0.08279320280379754,
+        "hc3_upper": -0.0026822083827669346,
+        "loo_beta_max": -0.030782334647524848,
+        "loo_beta_min": -0.049469484977628334,
+        "max_cooks_d": 0.2981637772644009,
+        "max_leverage": 0.500868889540428,
+        "n": 97,
+        "n_cooks_above_4_over_n": 7,
+        "residual_df": 87,
+        "selected_cluster_descriptive": true,
+        "term": "fevs"
+      }
+    },
+    "model_columns": [
+      "ones",
+      "delta_fd",
+      "delta_tsnr",
+      "e11",
+      "xa30",
+      "gender_code1",
+      "age",
+      "fevs",
+      "pm25",
+      "fevsxpm25"
+    ],
+    "new_permutation_analysis": false,
+    "seed": "Original VS; unchanged"
+  },
+  "vs_support_sensitivity": {
+    "baseline_maps_reused": 4,
+    "caution": "Whole-brain sensitivity uses original images/mask. Original frontal cuts are fixed for visual comparison; all adjusted cluster peaks are separately reported.",
+    "clusters": [],
+    "maps": [
+      {
+        "adjustment": "baseline",
+        "baseline_dice": "",
+        "baseline_overlap_voxels": "0",
+        "direction": "positive",
+        "family": "connectivity",
+        "job": "connectivity/social_specific/fevsxpm25/z-2p6",
+        "max_contrast_t": "4.464583396911621",
+        "min_cluster_fwe_p": "0.8056000024080276",
+        "model": "fevsxpm25",
+        "n": "97",
+        "outcome": "connectivity/social_specific",
+        "significant_clusters": "0",
+        "significant_voxels": "0",
+        "t_cutoff": "2.6592120486993496",
+        "term": "fevs",
+        "z": "2.6"
+      },
+      {
+        "adjustment": "baseline",
+        "baseline_dice": "",
+        "baseline_overlap_voxels": "0",
+        "direction": "negative",
+        "family": "connectivity",
+        "job": "connectivity/social_specific/fevsxpm25/z-2p6",
+        "max_contrast_t": "4.758227348327637",
+        "min_cluster_fwe_p": "0.0504000186920166",
+        "model": "fevsxpm25",
+        "n": "97",
+        "outcome": "connectivity/social_specific",
+        "significant_clusters": "0",
+        "significant_voxels": "0",
+        "t_cutoff": "2.6592120486993496",
+        "term": "fevs",
+        "z": "2.6"
+      },
+      {
+        "adjustment": "baseline",
+        "baseline_dice": "",
+        "baseline_overlap_voxels": "0",
+        "direction": "positive",
+        "family": "connectivity",
+        "job": "connectivity/social_specific/fevsxpm25/z-3p1",
+        "max_contrast_t": "4.464583396911621",
+        "min_cluster_fwe_p": "0.6182000041007996",
+        "model": "fevsxpm25",
+        "n": "97",
+        "outcome": "connectivity/social_specific",
+        "significant_clusters": "0",
+        "significant_voxels": "0",
+        "t_cutoff": "3.1972100156535084",
+        "term": "fevs",
+        "z": "3.1"
+      },
+      {
+        "adjustment": "baseline",
+        "baseline_dice": "1.0",
+        "baseline_overlap_voxels": "44",
+        "direction": "negative",
+        "family": "connectivity",
+        "job": "connectivity/social_specific/fevsxpm25/z-3p1",
+        "max_contrast_t": "4.758227348327637",
+        "min_cluster_fwe_p": "0.030300021171569824",
+        "model": "fevsxpm25",
+        "n": "97",
+        "outcome": "connectivity/social_specific",
+        "significant_clusters": "1",
+        "significant_voxels": "44",
+        "t_cutoff": "3.1972100156535084",
+        "term": "fevs",
+        "z": "3.1"
+      },
+      {
+        "adjustment": "add_mspss",
+        "baseline_dice": "",
+        "baseline_overlap_voxels": "0",
+        "direction": "positive",
+        "family": "connectivity",
+        "job": "connectivity/social_specific/fevsxpm25_add_mspss/z-2p6",
+        "max_contrast_t": "4.159948348999023",
+        "min_cluster_fwe_p": "0.8367999941110611",
+        "model": "fevsxpm25_add_mspss",
+        "n": "97",
+        "outcome": "connectivity/social_specific",
+        "significant_clusters": "0",
+        "significant_voxels": "0",
+        "t_cutoff": "2.659915326107025",
+        "term": "fevs",
+        "z": "2.6"
+      },
+      {
+        "adjustment": "add_mspss",
+        "baseline_dice": "",
+        "baseline_overlap_voxels": "0",
+        "direction": "negative",
+        "family": "connectivity",
+        "job": "connectivity/social_specific/fevsxpm25_add_mspss/z-2p6",
+        "max_contrast_t": "4.460220813751221",
+        "min_cluster_fwe_p": "0.10210001468658447",
+        "model": "fevsxpm25_add_mspss",
+        "n": "97",
+        "outcome": "connectivity/social_specific",
+        "significant_clusters": "0",
+        "significant_voxels": "0",
+        "t_cutoff": "2.659915326107025",
+        "term": "fevs",
+        "z": "2.6"
+      },
+      {
+        "adjustment": "add_mspss",
+        "baseline_dice": "",
+        "baseline_overlap_voxels": "0",
+        "direction": "positive",
+        "family": "connectivity",
+        "job": "connectivity/social_specific/fevsxpm25_add_mspss/z-3p1",
+        "max_contrast_t": "4.159948348999023",
+        "min_cluster_fwe_p": "0.6146000027656555",
+        "model": "fevsxpm25_add_mspss",
+        "n": "97",
+        "outcome": "connectivity/social_specific",
+        "significant_clusters": "0",
+        "significant_voxels": "0",
+        "t_cutoff": "3.1983727611028256",
+        "term": "fevs",
+        "z": "3.1"
+      },
+      {
+        "adjustment": "add_mspss",
+        "baseline_dice": "0.0",
+        "baseline_overlap_voxels": "0",
+        "direction": "negative",
+        "family": "connectivity",
+        "job": "connectivity/social_specific/fevsxpm25_add_mspss/z-3p1",
+        "max_contrast_t": "4.460220813751221",
+        "min_cluster_fwe_p": "0.07510000467300415",
+        "model": "fevsxpm25_add_mspss",
+        "n": "97",
+        "outcome": "connectivity/social_specific",
+        "significant_clusters": "0",
+        "significant_voxels": "0",
+        "t_cutoff": "3.1983727611028256",
+        "term": "fevs",
+        "z": "3.1"
+      }
+    ],
+    "new_jobs": 2,
+    "new_maps": 4,
+    "provisional_financial_scoring": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "exclusions_changed": false,
+  "n": 97,
+  "new_jobs": 2,
+  "outputs": {
+    "README.md": "f6cc7fb17e7de4068836ddfe10cb5c4323f5e111659d989d07eaaea44a555d43",
+    "adi-support-influence.png": "89a0900b6c0ee860482356e4c2df7a1014c80ec3876e570729804f0d3eb9c08e",
+    "adi_conditional_slopes.tsv": "b642cff46fd879f99ffbaedcd45f381ce916338247976e8a4b4eaceb8c5e8001",
+    "behavioral_conditional_slopes.tsv": "72d2596c111ecbdee541d578479713801c1886a0d0d3a5da1cdd17b57f9c038a",
+    "figure-1-behavior.png": "e9e2c9723177dc4f90efac699e51180fe5e4a047e0cd67e80db4ac29b2b34db9",
+    "figure-2-vs-components.png": "90af00179545c5d69f4c5f697da288e77cd1259390b7ecc8f7bc5c5e56af2579",
+    "figure-2-vs-original-brain.png": "eb89ad2a0b8b38efe3ea53df0a2b6c706c8a8a94685b7ce3be0ab1388c052e05",
+    "figure-2-vs-support-brain.png": "fc42d3696b555811b062374c9b72365eac180248ef83eafaa0d02a99b316dcf5",
+    "figure-3-adi-support-brain.png": "9291b8c03061ff90b45f404edb9f481b616d3d31b9689b5ee193ebfaa86aa07e",
+    "figure-3-adi-support-conditional.png": "27a723246db309b717d2e436c830beea15e4ddce3042c89d7eeec347be4e71f1",
+    "scientific_clusters.tsv": "c46bcd9b1fab3544651268824473b451718057fa223317bc78a16a15d2b0c0e2",
+    "scientific_inventory.tsv": "215a832915bc2f7df2fbb70e23519c549020b1fdd4ae0a42ac5b0ec1f4cf052b",
+    "summary.json": "fce6a4b138e9fb05b1e3377d39d0124bc8def7183b8c7a78d9fc9030cc4bfdf5",
+    "vs_component_estimates.tsv": "882a6abbbfe9cd9d5b00c0405d04957f0ad7e1d9b89686f6372dab7d84120b6c",
+    "vs_support_sensitivity_maps.tsv": "20f91eb3782301b84fca517de9ede3f239602eb4a33c009e0b12c33d307e7c79"
+  },
+  "renderer_sha256": "6773e48c804121debf0fe6b02d73d4b115936a1f1705b7137191a3ad55cefa61"
+}
