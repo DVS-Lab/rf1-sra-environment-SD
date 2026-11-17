@@ -110,6 +110,9 @@ def vs_conclusion(vs):
         note="Spatial support from the losing contrast is threshold-dependent."
     else:
         note="There is some spatial support from losing at both matched thresholds; this does not establish that losing explains the interaction."
+    within = [r for r in vs["map_overlap"] if r["outcome_a"]==r["outcome_b"]=="social_specific"][0]
+    if within["shared_voxels"]==0:
+        note += " The social-by-valence clusters at the two thresholds do not overlap each other."
     avg = [r for r in vs["map_overlap"] if (r["outcome_a"]=="average") != (r["outcome_b"]=="average")]
     max_shared = max(r["shared_voxels"] for r in avg)
     return (f"{intersection}. {note} The domain-average clusters share at most {max_shared} corrected voxels "
@@ -184,8 +187,9 @@ def make_pdf(out, b, n, fixed, figs):
         by_sign={r["direction"]:r for r in a["group_overlap"] if r["z"]==z}
         rows.append([z,*[f"{by_sign[s]['shared_voxels']}/87 voxels (Dice {by_sign[s]['dice']:.3f})" for s in ("positive","negative","either")]])
     grid(rows,[65,221,221,221])
-    p(f"Support tails in these same 97 participants: n={a['support'][0]['n']} low and n={a['support'][-1]['n']} high. "
-      "Group-mean and moderation maps test different hypotheses. Neither their overlap nor selected-region component intervals provide independent confirmation.")
+    p(f"Support tails: n={a['support'][0]['n']} low and n={a['support'][-1]['n']} high. The component signs "
+      "are unchanged under single-case omission. The group-mean and moderation maps test different hypotheses; "
+      "spatial overlap and selected-region intervals do not provide independent confirmation.")
 
     story.append(PageBreak())
     header("03 / ADI × ECOG IN VS CONNECTIVITY", "Do the same locations recur?")
@@ -199,7 +203,11 @@ def make_pdf(out, b, n, fixed, figs):
             rows.append([f"{LABELS[r['outcome_a']]} / {LABELS[r['outcome_b']]}",f"{r['z_a']} / {r['z_b']}",
                         f"{r['shared_voxels']} ({r['voxels_a']} / {r['voxels_b']})",f"{r['dice']:.3f}"])
     grid(rows,[344,98,171,115])
-    p("Dice uses exact corrected-voxel masks. Full contrast/CDT and component pairings, including peak distances and both directional overlap fractions, are supplied as aggregate tables.")
+    recurrence={r["outcome_a"]:r for r in vs["map_overlap"] if r["outcome_a"]==r["outcome_b"]}
+    p(f"The stricter domain-average map retains {recurrence['average']['shared_voxels']} of its corrected voxels "
+      f"in the looser map; the stricter losing map retains {recurrence['loss_only']['shared_voxels']}. "
+      "These are within-contrast recurrences, not replication across contrasts. See the aggregate tables "
+      "for pairwise overlap fractions and peak distances.")
 
     story.append(PageBreak())
     header("04 / LOCATIONS AND REPORTING DECISIONS", "What should move into the paper?")
@@ -211,7 +219,11 @@ def make_pdf(out, b, n, fixed, figs):
         rows.append([f"{r['id']} {LABELS[r['outcome']]}",f'{r["z"]} / {r["direction"]}',
                      loc,f'{r["voxels"]} / {r["p"]:.4f}',f'{r["max_cooks_d"]:.3f} / {sign}'])
     grid(rows,[159,86,272,91,120])
-    p("Cook's D is a diagnostic only. Component-wise HC3 intervals, signed coefficients and leave-one-out ranges are in the cluster table. Atlas labels are approximate; null signs/CDTs remain in the complete map table.")
+    max_cook=max(r["max_cooks_d"] for r in vs["clusters"])
+    fixed_signs=sum(r["loo_beta_min"]>0 or r["loo_beta_max"]<0 for r in vs["clusters"])
+    p(f"Leave-one-out sign held in {fixed_signs}/{len(vs['clusters'])} selected clusters, but Cook's D reached "
+      f"{max_cook:.2f}; influence is not negligible. This does not retest the whole-brain maps. See the cluster table for HC3 intervals "
+      "and leave-one-out ranges, and the map table for null signs/CDTs. Atlas labels are approximate.")
     p("Main text","heading")
     p("Lead with the behavioral PM2.5-by-support association, framed as attenuation. Report the original FEVS-VS result "
       "with its support-adjusted whole-brain null at CDT 3.1 (p=.0751). The later fixed frontal-region estimate "

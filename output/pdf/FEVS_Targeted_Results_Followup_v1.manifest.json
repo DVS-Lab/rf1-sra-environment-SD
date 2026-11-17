@@ -1,0 +1,14 @@
+{
+  "n": 97,
+  "new_permutation_jobs": 0,
+  "exclusions_changed": false,
+  "pdf_sha256": "678c73e5c01676ddbc66d95ccc1d939215738afbfd887f0d5ab3b76a26c83769",
+  "spec_sha256": "15c5d905b98799b1e432f2acb975bf2a7dee1b878883ce2d2591ffc4127f7a2d",
+  "builder_sha256": "74bba942125aa2a410045c8fc2b6fb9afe07dcfdf4ce098498c6afca25ba3c8d",
+  "historical_pdf_sha256": "b38afcc004f9d85d690b1fa7c33d666a78b17f424bf94e413c6d4e969b259ee1",
+  "source_manifests": {
+    "katie-targeted-behavior-v1": "ef6b2abaeabb8b4b160d0a4f61bd03184647894f4645b9af11adc61a76f7acc7",
+    "katie-targeted-native-v1": "d9523079c5daa139b3e00cdb0ae4d1ae21eb38a9ef460c14da66eb81b03bbeca",
+    "fevs-vs-fixed-roi-mspss-v1": "6adee573a3a5007c5782e539588dfc100cc5fba4043dc472bd173779db3a4651"
+  }
+}

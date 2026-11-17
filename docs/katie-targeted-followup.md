@@ -65,3 +65,7 @@ The builder requires and verifies both targeted aggregate manifests, the fixed-f
 diagnostic, and the November 7 PDF and selected-cluster figure seals. It refuses missing native
 data or an existing destination. It writes `output/pdf/FEVS_Targeted_Results_Followup_v1.pdf` and
 its SHA-256 manifest; render and inspect every page before sharing. The previous PDF is retained.
+
+The [Linux2 native run record](https://github.com/DVS-Lab/rf1-sra-linux2/blob/67e5f161/logs/records/20261116-222609_katie-targeted-20261116-222555-1425437-native.md)
+records successful build and check exits and verification of 6,715 input fingerprints.
+The published imaging payload is at commit `b1cdea3`.

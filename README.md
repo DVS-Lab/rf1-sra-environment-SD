@@ -4,6 +4,21 @@ This repository contains the reproducible participant-generation, environmental
 linkage, Level 3 input-building, and group-analysis code for the Social Doors
 component of the RF1 brain-health/environment project.
 
+## Targeted Results Follow-up
+
+The [targeted follow-up PDF](output/pdf/FEVS_Targeted_Results_Followup_v1.pdf)
+extends the November 7 evidence report below. The quadratic sensitivity supports
+attenuation of the PM2.5-FEVS association at higher support more clearly than a
+protective reversal. Opposing social and nonsocial winning estimates contribute
+to the fixed ADI-by-MSPSS activation contrast. The ADI-by-ECog losing and
+social-by-valence maps overlap at the lower threshold but not at the higher one;
+the social-by-valence locations are not stable across thresholds.
+
+See the [behavioral aggregates](results/review/katie-targeted-behavior-v1),
+[imaging aggregates](results/review/katie-targeted-native-v1), and
+[reproduction instructions](docs/katie-targeted-followup.md). N=97, all exclusions,
+and the existing permutation outputs are unchanged. No manuscript Results section was drafted.
+
 ## Current Results: Corrected MSPSS And Final Support Sensitivity
 
 The [Results-ready evidence report, November 7, 2026 (PDF)](output/pdf/FEVS_Results_Ready_2026-11-07.pdf)
