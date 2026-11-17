@@ -1,0 +1,16 @@
+outcome_a	z_a	outcome_b	z_b	voxels_a	voxels_b	shared_voxels	fraction_a	fraction_b	dice
+average	2.6	average	3.1	259	66	66	0.2548262548262548	1.0	0.40615384615384614
+average	2.6	loss_only	2.6	259	742	0	0.0	0.0	0.0
+average	2.6	loss_only	3.1	259	230	0	0.0	0.0	0.0
+average	2.6	social_specific	2.6	259	188	0	0.0	0.0	0.0
+average	2.6	social_specific	3.1	259	48	0	0.0	0.0	0.0
+average	3.1	loss_only	2.6	66	742	0	0.0	0.0	0.0
+average	3.1	loss_only	3.1	66	230	0	0.0	0.0	0.0
+average	3.1	social_specific	2.6	66	188	0	0.0	0.0	0.0
+average	3.1	social_specific	3.1	66	48	0	0.0	0.0	0.0
+loss_only	2.6	loss_only	3.1	742	230	230	0.30997304582210244	1.0	0.4732510288065844
+loss_only	2.6	social_specific	2.6	742	188	46	0.06199460916442048	0.24468085106382978	0.0989247311827957
+loss_only	2.6	social_specific	3.1	742	48	0	0.0	0.0	0.0
+loss_only	3.1	social_specific	2.6	230	188	16	0.06956521739130435	0.0851063829787234	0.07655502392344497
+loss_only	3.1	social_specific	3.1	230	48	0	0.0	0.0	0.0
+social_specific	2.6	social_specific	3.1	188	48	0	0.0	0.0	0.0

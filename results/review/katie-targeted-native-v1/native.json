@@ -1,0 +1,1777 @@
+{
+  "activation": {
+    "cluster": {
+      "atlas": [
+        {
+          "atlas": "HarvardOxford-cort",
+          "overlap": [
+            {
+              "fraction": 0.6206896551724138,
+              "label": "Middle Temporal Gyrus, posterior division",
+              "voxels": 54
+            },
+            {
+              "fraction": 0.20689655172413793,
+              "label": "Superior Temporal Gyrus, posterior division",
+              "voxels": 18
+            },
+            {
+              "fraction": 0.10344827586206896,
+              "label": "Unlabeled",
+              "voxels": 9
+            },
+            {
+              "fraction": 0.06896551724137931,
+              "label": "Planum Temporale",
+              "voxels": 6
+            }
+          ],
+          "peak_label": "Superior Temporal Gyrus, posterior division"
+        },
+        {
+          "atlas": "HarvardOxford-sub",
+          "overlap": [
+            {
+              "fraction": 0.7701149425287356,
+              "label": "Right Cerebral Cortex",
+              "voxels": 67
+            },
+            {
+              "fraction": 0.22988505747126436,
+              "label": "Right Cerebral White Matter",
+              "voxels": 20
+            }
+          ],
+          "peak_label": "Right Cerebral White Matter"
+        }
+      ],
+      "component": 1,
+      "p": 0.025499999523162842,
+      "peak": [
+        54.79999923706055,
+        -31.500001668930054,
+        8.190000772476196
+      ],
+      "voxels": 87
+    },
+    "fits": [
+      {
+        "beta": 0.5145567285469915,
+        "component": "socialdoors",
+        "exclusions_changed": false,
+        "hc3_lower": 0.15268084528326858,
+        "hc3_upper": 0.8764326118107144,
+        "loo_beta_max": 0.5961427633694771,
+        "loo_beta_min": 0.44402670279130085,
+        "max_cooks_d": 0.18024775016906108,
+        "max_leverage": 0.2522953128083385,
+        "n": 97,
+        "n_cooks_above_4_over_n": 10,
+        "residual_df": 87,
+        "selected_cluster_descriptive": true,
+        "term": "adixmspss"
+      },
+      {
+        "beta": -0.741458354052892,
+        "component": "doors",
+        "exclusions_changed": false,
+        "hc3_lower": -1.154624427814213,
+        "hc3_upper": -0.3282922802915708,
+        "loo_beta_max": -0.6169623041091885,
+        "loo_beta_min": -0.7944514574895188,
+        "max_cooks_d": 0.11680978513685336,
+        "max_leverage": 0.2522953128083385,
+        "n": 97,
+        "n_cooks_above_4_over_n": 9,
+        "residual_df": 87,
+        "selected_cluster_descriptive": true,
+        "term": "adixmspss"
+      },
+      {
+        "beta": 1.256015082525318,
+        "component": "difference",
+        "exclusions_changed": false,
+        "hc3_lower": 0.7528678739728526,
+        "hc3_upper": 1.7591622910777835,
+        "loo_beta_max": 1.3353269185100731,
+        "loo_beta_min": 1.1601270609445087,
+        "max_cooks_d": 0.15393977979097628,
+        "max_leverage": 0.2522953128083385,
+        "n": 97,
+        "n_cooks_above_4_over_n": 9,
+        "residual_df": 87,
+        "selected_cluster_descriptive": true,
+        "term": "adixmspss"
+      }
+    ],
+    "group_overlap": [
+      {
+        "dice": 0.0,
+        "direction": "positive",
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "shared_voxels": 0,
+        "voxels_a": 87,
+        "voxels_b": 1196,
+        "z": 2.6
+      },
+      {
+        "dice": 0.0009624639076034649,
+        "direction": "negative",
+        "fraction_a": 0.011494252873563218,
+        "fraction_b": 0.0005022601707684581,
+        "shared_voxels": 1,
+        "voxels_a": 87,
+        "voxels_b": 1991,
+        "z": 2.6
+      },
+      {
+        "dice": 0.0006108735491753207,
+        "direction": "either",
+        "fraction_a": 0.011494252873563218,
+        "fraction_b": 0.00031377470975839345,
+        "shared_voxels": 1,
+        "voxels_a": 87,
+        "voxels_b": 3187,
+        "z": 2.6
+      },
+      {
+        "dice": 0.0,
+        "direction": "positive",
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "shared_voxels": 0,
+        "voxels_a": 87,
+        "voxels_b": 762,
+        "z": 3.1
+      },
+      {
+        "dice": 0.0,
+        "direction": "negative",
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "shared_voxels": 0,
+        "voxels_a": 87,
+        "voxels_b": 1008,
+        "z": 3.1
+      },
+      {
+        "dice": 0.0,
+        "direction": "either",
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "shared_voxels": 0,
+        "voxels_a": 87,
+        "voxels_b": 1770,
+        "z": 3.1
+      }
+    ],
+    "support": [
+      {
+        "exposure": "ADI",
+        "exposure_max": 96.0,
+        "exposure_min": 9.0,
+        "exposure_q10": 15.0,
+        "exposure_q90": 85.5,
+        "group": "lower_tail",
+        "lower_support_cut": 3.416666667,
+        "n": 16,
+        "support_max": 3.416666667,
+        "support_min": 1.0,
+        "upper_support_cut": 6.916666667
+      },
+      {
+        "exposure": "ADI",
+        "exposure_max": 96.0,
+        "exposure_min": 5.0,
+        "exposure_q10": 14.4,
+        "exposure_q90": 65.80000000000001,
+        "group": "middle",
+        "lower_support_cut": 3.416666667,
+        "n": 65,
+        "support_max": 6.833333333,
+        "support_min": 3.583333333,
+        "upper_support_cut": 6.916666667
+      },
+      {
+        "exposure": "ADI",
+        "exposure_max": 77.0,
+        "exposure_min": 7.0,
+        "exposure_q10": 15.0,
+        "exposure_q90": 59.5,
+        "group": "upper_tail",
+        "lower_support_cut": 3.416666667,
+        "n": 16,
+        "support_max": 7.0,
+        "support_min": 6.916666667,
+        "upper_support_cut": 6.916666667
+      }
+    ]
+  },
+  "exclusions_changed": false,
+  "n": 97,
+  "new_permutation_jobs": 0,
+  "vs": {
+    "cluster_overlap": [
+      {
+        "a": "C01",
+        "b": "C02",
+        "dice": 0.40615384615384614,
+        "fraction_a": 0.2548262548262548,
+        "fraction_b": 1.0,
+        "peak_distance_mm": 0.0,
+        "shared_voxels": 66,
+        "voxels_a": 259,
+        "voxels_b": 66
+      },
+      {
+        "a": "C01",
+        "b": "C03",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 108.04218076194257,
+        "shared_voxels": 0,
+        "voxels_a": 259,
+        "voxels_b": 300
+      },
+      {
+        "a": "C01",
+        "b": "C04",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 96.03388126506874,
+        "shared_voxels": 0,
+        "voxels_a": 259,
+        "voxels_b": 273
+      },
+      {
+        "a": "C01",
+        "b": "C05",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 55.61541335198272,
+        "shared_voxels": 0,
+        "voxels_a": 259,
+        "voxels_b": 169
+      },
+      {
+        "a": "C01",
+        "b": "C06",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 108.04218076194257,
+        "shared_voxels": 0,
+        "voxels_a": 259,
+        "voxels_b": 116
+      },
+      {
+        "a": "C01",
+        "b": "C07",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 96.03388126506874,
+        "shared_voxels": 0,
+        "voxels_a": 259,
+        "voxels_b": 63
+      },
+      {
+        "a": "C01",
+        "b": "C08",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 62.759176477874355,
+        "shared_voxels": 0,
+        "voxels_a": 259,
+        "voxels_b": 51
+      },
+      {
+        "a": "C01",
+        "b": "C09",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 70.83268847659934,
+        "shared_voxels": 0,
+        "voxels_a": 259,
+        "voxels_b": 188
+      },
+      {
+        "a": "C01",
+        "b": "C10",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 105.1836293334171,
+        "shared_voxels": 0,
+        "voxels_a": 259,
+        "voxels_b": 48
+      },
+      {
+        "a": "C02",
+        "b": "C03",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 108.04218076194257,
+        "shared_voxels": 0,
+        "voxels_a": 66,
+        "voxels_b": 300
+      },
+      {
+        "a": "C02",
+        "b": "C04",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 96.03388126506874,
+        "shared_voxels": 0,
+        "voxels_a": 66,
+        "voxels_b": 273
+      },
+      {
+        "a": "C02",
+        "b": "C05",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 55.61541335198272,
+        "shared_voxels": 0,
+        "voxels_a": 66,
+        "voxels_b": 169
+      },
+      {
+        "a": "C02",
+        "b": "C06",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 108.04218076194257,
+        "shared_voxels": 0,
+        "voxels_a": 66,
+        "voxels_b": 116
+      },
+      {
+        "a": "C02",
+        "b": "C07",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 96.03388126506874,
+        "shared_voxels": 0,
+        "voxels_a": 66,
+        "voxels_b": 63
+      },
+      {
+        "a": "C02",
+        "b": "C08",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 62.759176477874355,
+        "shared_voxels": 0,
+        "voxels_a": 66,
+        "voxels_b": 51
+      },
+      {
+        "a": "C02",
+        "b": "C09",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 70.83268847659934,
+        "shared_voxels": 0,
+        "voxels_a": 66,
+        "voxels_b": 188
+      },
+      {
+        "a": "C02",
+        "b": "C10",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 105.1836293334171,
+        "shared_voxels": 0,
+        "voxels_a": 66,
+        "voxels_b": 48
+      },
+      {
+        "a": "C03",
+        "b": "C04",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 79.67699682887094,
+        "shared_voxels": 0,
+        "voxels_a": 300,
+        "voxels_b": 273
+      },
+      {
+        "a": "C03",
+        "b": "C05",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 109.4096521195785,
+        "shared_voxels": 0,
+        "voxels_a": 300,
+        "voxels_b": 169
+      },
+      {
+        "a": "C03",
+        "b": "C06",
+        "dice": 0.5576923076923077,
+        "fraction_a": 0.38666666666666666,
+        "fraction_b": 1.0,
+        "peak_distance_mm": 0.0,
+        "shared_voxels": 116,
+        "voxels_a": 300,
+        "voxels_b": 116
+      },
+      {
+        "a": "C03",
+        "b": "C07",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 79.67699682887094,
+        "shared_voxels": 0,
+        "voxels_a": 300,
+        "voxels_b": 63
+      },
+      {
+        "a": "C03",
+        "b": "C08",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 99.35266429628082,
+        "shared_voxels": 0,
+        "voxels_a": 300,
+        "voxels_b": 51
+      },
+      {
+        "a": "C03",
+        "b": "C09",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 107.23759826785228,
+        "shared_voxels": 0,
+        "voxels_a": 300,
+        "voxels_b": 188
+      },
+      {
+        "a": "C03",
+        "b": "C10",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 26.022454201013637,
+        "shared_voxels": 0,
+        "voxels_a": 300,
+        "voxels_b": 48
+      },
+      {
+        "a": "C04",
+        "b": "C05",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 57.005179400864805,
+        "shared_voxels": 0,
+        "voxels_a": 273,
+        "voxels_b": 169
+      },
+      {
+        "a": "C04",
+        "b": "C06",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 79.67699682887094,
+        "shared_voxels": 0,
+        "voxels_a": 273,
+        "voxels_b": 116
+      },
+      {
+        "a": "C04",
+        "b": "C07",
+        "dice": 0.375,
+        "fraction_a": 0.23076923076923078,
+        "fraction_b": 1.0,
+        "peak_distance_mm": 0.0,
+        "shared_voxels": 63,
+        "voxels_a": 273,
+        "voxels_b": 63
+      },
+      {
+        "a": "C04",
+        "b": "C08",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 49.03009737554782,
+        "shared_voxels": 0,
+        "voxels_a": 273,
+        "voxels_b": 51
+      },
+      {
+        "a": "C04",
+        "b": "C09",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 43.4867675236953,
+        "shared_voxels": 0,
+        "voxels_a": 273,
+        "voxels_b": 188
+      },
+      {
+        "a": "C04",
+        "b": "C10",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 57.036502446813124,
+        "shared_voxels": 0,
+        "voxels_a": 273,
+        "voxels_b": 48
+      },
+      {
+        "a": "C05",
+        "b": "C06",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 109.4096521195785,
+        "shared_voxels": 0,
+        "voxels_a": 169,
+        "voxels_b": 116
+      },
+      {
+        "a": "C05",
+        "b": "C07",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 57.005179400864805,
+        "shared_voxels": 0,
+        "voxels_a": 169,
+        "voxels_b": 63
+      },
+      {
+        "a": "C05",
+        "b": "C08",
+        "dice": 0.4636363636363636,
+        "fraction_a": 0.30177514792899407,
+        "fraction_b": 1.0,
+        "peak_distance_mm": 19.469977231357706,
+        "shared_voxels": 51,
+        "voxels_a": 169,
+        "voxels_b": 51
+      },
+      {
+        "a": "C05",
+        "b": "C09",
+        "dice": 0.25770308123249297,
+        "fraction_a": 0.27218934911242604,
+        "fraction_b": 0.24468085106382978,
+        "peak_distance_mm": 17.756477905148195,
+        "shared_voxels": 46,
+        "voxels_a": 169,
+        "voxels_b": 188
+      },
+      {
+        "a": "C05",
+        "b": "C10",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 95.29164264656157,
+        "shared_voxels": 0,
+        "voxels_a": 169,
+        "voxels_b": 48
+      },
+      {
+        "a": "C06",
+        "b": "C07",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 79.67699682887094,
+        "shared_voxels": 0,
+        "voxels_a": 116,
+        "voxels_b": 63
+      },
+      {
+        "a": "C06",
+        "b": "C08",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 99.35266429628082,
+        "shared_voxels": 0,
+        "voxels_a": 116,
+        "voxels_b": 51
+      },
+      {
+        "a": "C06",
+        "b": "C09",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 107.23759826785228,
+        "shared_voxels": 0,
+        "voxels_a": 116,
+        "voxels_b": 188
+      },
+      {
+        "a": "C06",
+        "b": "C10",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 26.022454201013637,
+        "shared_voxels": 0,
+        "voxels_a": 116,
+        "voxels_b": 48
+      },
+      {
+        "a": "C07",
+        "b": "C08",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 49.03009737554782,
+        "shared_voxels": 0,
+        "voxels_a": 63,
+        "voxels_b": 51
+      },
+      {
+        "a": "C07",
+        "b": "C09",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 43.4867675236953,
+        "shared_voxels": 0,
+        "voxels_a": 63,
+        "voxels_b": 188
+      },
+      {
+        "a": "C07",
+        "b": "C10",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 57.036502446813124,
+        "shared_voxels": 0,
+        "voxels_a": 63,
+        "voxels_b": 48
+      },
+      {
+        "a": "C08",
+        "b": "C09",
+        "dice": 0.13389121338912133,
+        "fraction_a": 0.3137254901960784,
+        "fraction_b": 0.0851063829787234,
+        "peak_distance_mm": 23.42162496147016,
+        "shared_voxels": 16,
+        "voxels_a": 51,
+        "voxels_b": 188
+      },
+      {
+        "a": "C08",
+        "b": "C10",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 86.13000115854987,
+        "shared_voxels": 0,
+        "voxels_a": 51,
+        "voxels_b": 48
+      },
+      {
+        "a": "C09",
+        "b": "C10",
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "peak_distance_mm": 89.66114346637048,
+        "shared_voxels": 0,
+        "voxels_a": 188,
+        "voxels_b": 48
+      }
+    ],
+    "clusters": [
+      {
+        "atlas": [
+          {
+            "atlas": "HarvardOxford-cort",
+            "overlap": [
+              {
+                "fraction": 0.5019305019305019,
+                "label": "Precentral Gyrus",
+                "voxels": 130
+              },
+              {
+                "fraction": 0.2972972972972973,
+                "label": "Postcentral Gyrus",
+                "voxels": 77
+              },
+              {
+                "fraction": 0.20077220077220076,
+                "label": "Unlabeled",
+                "voxels": 52
+              }
+            ],
+            "peak_label": "Unlabeled"
+          },
+          {
+            "atlas": "HarvardOxford-sub",
+            "overlap": [
+              {
+                "fraction": 0.4594594594594595,
+                "label": "Right Cerebral Cortex",
+                "voxels": 119
+              },
+              {
+                "fraction": 0.28957528957528955,
+                "label": "Right Cerebral White Matter",
+                "voxels": 75
+              },
+              {
+                "fraction": 0.1891891891891892,
+                "label": "Left Cerebral Cortex",
+                "voxels": 49
+              },
+              {
+                "fraction": 0.05405405405405406,
+                "label": "Left Cerebral White Matter",
+                "voxels": 14
+              },
+              {
+                "fraction": 0.007722007722007722,
+                "label": "Unlabeled",
+                "voxels": 2
+              }
+            ],
+            "peak_label": "Right Cerebral White Matter"
+          }
+        ],
+        "beta": 0.025242802691929588,
+        "component": 1,
+        "direction": "positive",
+        "exclusions_changed": false,
+        "hc3_lower": 0.004864126477318032,
+        "hc3_upper": 0.04562147890654114,
+        "id": "C01",
+        "loo_beta_max": 0.028600575851239197,
+        "loo_beta_min": 0.016781036054561254,
+        "max_cooks_d": 0.972607739265535,
+        "max_leverage": 0.31693239841993215,
+        "n": 97,
+        "n_cooks_above_4_over_n": 11,
+        "outcome": "average",
+        "p": 0.02249997854232788,
+        "peak": [
+          14.29999852180481,
+          -18.000001430511475,
+          64.62000131607056
+        ],
+        "residual_df": 87,
+        "selected_cluster_descriptive": true,
+        "term": "adixecog",
+        "voxels": 259,
+        "z": 2.6
+      },
+      {
+        "atlas": [
+          {
+            "atlas": "HarvardOxford-cort",
+            "overlap": [
+              {
+                "fraction": 0.6212121212121212,
+                "label": "Precentral Gyrus",
+                "voxels": 41
+              },
+              {
+                "fraction": 0.3787878787878788,
+                "label": "Unlabeled",
+                "voxels": 25
+              }
+            ],
+            "peak_label": "Unlabeled"
+          },
+          {
+            "atlas": "HarvardOxford-sub",
+            "overlap": [
+              {
+                "fraction": 0.6818181818181818,
+                "label": "Right Cerebral White Matter",
+                "voxels": 45
+              },
+              {
+                "fraction": 0.3181818181818182,
+                "label": "Right Cerebral Cortex",
+                "voxels": 21
+              }
+            ],
+            "peak_label": "Right Cerebral White Matter"
+          }
+        ],
+        "beta": 0.025835075807407144,
+        "component": 1,
+        "direction": "positive",
+        "exclusions_changed": false,
+        "hc3_lower": 0.0013992763170460228,
+        "hc3_upper": 0.05027087529776826,
+        "id": "C02",
+        "loo_beta_max": 0.029084808230118702,
+        "loo_beta_min": 0.015919359269851344,
+        "max_cooks_d": 1.282254425064244,
+        "max_leverage": 0.31693239841993215,
+        "n": 97,
+        "n_cooks_above_4_over_n": 8,
+        "outcome": "average",
+        "p": 0.023800015449523926,
+        "peak": [
+          14.29999852180481,
+          -18.000001430511475,
+          64.62000131607056
+        ],
+        "residual_df": 87,
+        "selected_cluster_descriptive": true,
+        "term": "adixecog",
+        "voxels": 66,
+        "z": 3.1
+      },
+      {
+        "atlas": [
+          {
+            "atlas": "HarvardOxford-cort",
+            "overlap": [
+              {
+                "fraction": 0.49,
+                "label": "Lateral Occipital Cortex, inferior division",
+                "voxels": 147
+              },
+              {
+                "fraction": 0.15666666666666668,
+                "label": "Unlabeled",
+                "voxels": 47
+              },
+              {
+                "fraction": 0.11333333333333333,
+                "label": "Inferior Temporal Gyrus, temporooccipital part",
+                "voxels": 34
+              },
+              {
+                "fraction": 0.06666666666666667,
+                "label": "Temporal Occipital Fusiform Cortex",
+                "voxels": 20
+              },
+              {
+                "fraction": 0.05,
+                "label": "Middle Temporal Gyrus, posterior division",
+                "voxels": 15
+              },
+              {
+                "fraction": 0.04,
+                "label": "Inferior Temporal Gyrus, posterior division",
+                "voxels": 12
+              },
+              {
+                "fraction": 0.03666666666666667,
+                "label": "Occipital Fusiform Gyrus",
+                "voxels": 11
+              },
+              {
+                "fraction": 0.03333333333333333,
+                "label": "Middle Temporal Gyrus, temporooccipital part",
+                "voxels": 10
+              },
+              {
+                "fraction": 0.013333333333333334,
+                "label": "Temporal Fusiform Cortex, posterior division",
+                "voxels": 4
+              }
+            ],
+            "peak_label": "Lateral Occipital Cortex, inferior division"
+          },
+          {
+            "atlas": "HarvardOxford-sub",
+            "overlap": [
+              {
+                "fraction": 0.81,
+                "label": "Left Cerebral Cortex",
+                "voxels": 243
+              },
+              {
+                "fraction": 0.17666666666666667,
+                "label": "Left Cerebral White Matter",
+                "voxels": 53
+              },
+              {
+                "fraction": 0.013333333333333334,
+                "label": "Unlabeled",
+                "voxels": 4
+              }
+            ],
+            "peak_label": "Left Cerebral Cortex"
+          }
+        ],
+        "beta": -0.05299794735100135,
+        "component": 1,
+        "direction": "negative",
+        "exclusions_changed": false,
+        "hc3_lower": -0.10275395529139718,
+        "hc3_upper": -0.003241939410605521,
+        "id": "C03",
+        "loo_beta_max": -0.03350655778715092,
+        "loo_beta_min": -0.06150449356829544,
+        "max_cooks_d": 1.0773391682402,
+        "max_leverage": 0.31979355742610777,
+        "n": 97,
+        "n_cooks_above_4_over_n": 8,
+        "outcome": "loss_only",
+        "p": 0.017000019550323486,
+        "peak": [
+          -45.10000252723694,
+          -69.30000233650208,
+          -9.62999939918518
+        ],
+        "residual_df": 87,
+        "selected_cluster_descriptive": true,
+        "term": "adixecog",
+        "voxels": 300,
+        "z": 2.6
+      },
+      {
+        "atlas": [
+          {
+            "atlas": "HarvardOxford-cort",
+            "overlap": [
+              {
+                "fraction": 0.4358974358974359,
+                "label": "Lateral Occipital Cortex, inferior division",
+                "voxels": 119
+              },
+              {
+                "fraction": 0.23076923076923078,
+                "label": "Occipital Fusiform Gyrus",
+                "voxels": 63
+              },
+              {
+                "fraction": 0.20512820512820512,
+                "label": "Unlabeled",
+                "voxels": 56
+              },
+              {
+                "fraction": 0.08058608058608059,
+                "label": "Temporal Occipital Fusiform Cortex",
+                "voxels": 22
+              },
+              {
+                "fraction": 0.03296703296703297,
+                "label": "Inferior Temporal Gyrus, temporooccipital part",
+                "voxels": 9
+              },
+              {
+                "fraction": 0.007326007326007326,
+                "label": "Middle Temporal Gyrus, temporooccipital part",
+                "voxels": 2
+              },
+              {
+                "fraction": 0.003663003663003663,
+                "label": "Inferior Temporal Gyrus, posterior division",
+                "voxels": 1
+              },
+              {
+                "fraction": 0.003663003663003663,
+                "label": "Occipital Pole",
+                "voxels": 1
+              }
+            ],
+            "peak_label": "Unlabeled"
+          },
+          {
+            "atlas": "HarvardOxford-sub",
+            "overlap": [
+              {
+                "fraction": 0.7362637362637363,
+                "label": "Right Cerebral Cortex",
+                "voxels": 201
+              },
+              {
+                "fraction": 0.2271062271062271,
+                "label": "Right Cerebral White Matter",
+                "voxels": 62
+              },
+              {
+                "fraction": 0.03663003663003663,
+                "label": "Unlabeled",
+                "voxels": 10
+              }
+            ],
+            "peak_label": "Right Cerebral White Matter"
+          }
+        ],
+        "beta": -0.048749104277894,
+        "component": 2,
+        "direction": "negative",
+        "exclusions_changed": false,
+        "hc3_lower": -0.09267782492604204,
+        "hc3_upper": -0.004820383629745968,
+        "id": "C04",
+        "loo_beta_max": -0.03372005229831217,
+        "loo_beta_min": -0.054930481661460674,
+        "max_cooks_d": 0.9488057315468174,
+        "max_leverage": 0.31979355742610777,
+        "n": 97,
+        "n_cooks_above_4_over_n": 8,
+        "outcome": "loss_only",
+        "p": 0.019800007343292236,
+        "peak": [
+          33.19999885559082,
+          -82.80000257492065,
+          -3.6899993419647217
+        ],
+        "residual_df": 87,
+        "selected_cluster_descriptive": true,
+        "term": "adixecog",
+        "voxels": 273,
+        "z": 2.6
+      },
+      {
+        "atlas": [
+          {
+            "atlas": "HarvardOxford-cort",
+            "overlap": [
+              {
+                "fraction": 0.5680473372781065,
+                "label": "Lateral Occipital Cortex, superior division",
+                "voxels": 96
+              },
+              {
+                "fraction": 0.25443786982248523,
+                "label": "Angular Gyrus",
+                "voxels": 43
+              },
+              {
+                "fraction": 0.14201183431952663,
+                "label": "Unlabeled",
+                "voxels": 24
+              },
+              {
+                "fraction": 0.03550295857988166,
+                "label": "Superior Parietal Lobule",
+                "voxels": 6
+              }
+            ],
+            "peak_label": "Angular Gyrus"
+          },
+          {
+            "atlas": "HarvardOxford-sub",
+            "overlap": [
+              {
+                "fraction": 0.7633136094674556,
+                "label": "Right Cerebral Cortex",
+                "voxels": 129
+              },
+              {
+                "fraction": 0.23668639053254437,
+                "label": "Right Cerebral White Matter",
+                "voxels": 40
+              }
+            ],
+            "peak_label": "Right Cerebral Cortex"
+          }
+        ],
+        "beta": -0.054726591282726514,
+        "component": 3,
+        "direction": "negative",
+        "exclusions_changed": false,
+        "hc3_lower": -0.12182358374196457,
+        "hc3_upper": 0.012370401176511545,
+        "id": "C05",
+        "loo_beta_max": -0.023834293147968373,
+        "loo_beta_min": -0.06401263931140955,
+        "max_cooks_d": 1.8496784366921921,
+        "max_leverage": 0.31979355742610777,
+        "n": 97,
+        "n_cooks_above_4_over_n": 10,
+        "outcome": "loss_only",
+        "p": 0.04409998655319214,
+        "peak": [
+          49.399999141693115,
+          -55.800002098083496,
+          43.83000111579895
+        ],
+        "residual_df": 87,
+        "selected_cluster_descriptive": true,
+        "term": "adixecog",
+        "voxels": 169,
+        "z": 2.6
+      },
+      {
+        "atlas": [
+          {
+            "atlas": "HarvardOxford-cort",
+            "overlap": [
+              {
+                "fraction": 0.8103448275862069,
+                "label": "Lateral Occipital Cortex, inferior division",
+                "voxels": 94
+              },
+              {
+                "fraction": 0.12931034482758622,
+                "label": "Unlabeled",
+                "voxels": 15
+              },
+              {
+                "fraction": 0.04310344827586207,
+                "label": "Occipital Fusiform Gyrus",
+                "voxels": 5
+              },
+              {
+                "fraction": 0.017241379310344827,
+                "label": "Inferior Temporal Gyrus, temporooccipital part",
+                "voxels": 2
+              }
+            ],
+            "peak_label": "Lateral Occipital Cortex, inferior division"
+          },
+          {
+            "atlas": "HarvardOxford-sub",
+            "overlap": [
+              {
+                "fraction": 0.8362068965517241,
+                "label": "Left Cerebral Cortex",
+                "voxels": 97
+              },
+              {
+                "fraction": 0.16379310344827586,
+                "label": "Left Cerebral White Matter",
+                "voxels": 19
+              }
+            ],
+            "peak_label": "Left Cerebral Cortex"
+          }
+        ],
+        "beta": -0.05460234509116091,
+        "component": 1,
+        "direction": "negative",
+        "exclusions_changed": false,
+        "hc3_lower": -0.11134663437032546,
+        "hc3_upper": 0.002141944188003647,
+        "id": "C06",
+        "loo_beta_max": -0.03196873535945483,
+        "loo_beta_min": -0.06379361002846456,
+        "max_cooks_d": 1.1432128684724459,
+        "max_leverage": 0.31979355742610777,
+        "n": 97,
+        "n_cooks_above_4_over_n": 7,
+        "outcome": "loss_only",
+        "p": 0.009199976921081543,
+        "peak": [
+          -45.10000252723694,
+          -69.30000233650208,
+          -9.62999939918518
+        ],
+        "residual_df": 87,
+        "selected_cluster_descriptive": true,
+        "term": "adixecog",
+        "voxels": 116,
+        "z": 3.1
+      },
+      {
+        "atlas": [
+          {
+            "atlas": "HarvardOxford-cort",
+            "overlap": [
+              {
+                "fraction": 0.4603174603174603,
+                "label": "Lateral Occipital Cortex, inferior division",
+                "voxels": 29
+              },
+              {
+                "fraction": 0.3333333333333333,
+                "label": "Unlabeled",
+                "voxels": 21
+              },
+              {
+                "fraction": 0.19047619047619047,
+                "label": "Occipital Fusiform Gyrus",
+                "voxels": 12
+              },
+              {
+                "fraction": 0.015873015873015872,
+                "label": "Occipital Pole",
+                "voxels": 1
+              }
+            ],
+            "peak_label": "Unlabeled"
+          },
+          {
+            "atlas": "HarvardOxford-sub",
+            "overlap": [
+              {
+                "fraction": 0.5396825396825397,
+                "label": "Right Cerebral White Matter",
+                "voxels": 34
+              },
+              {
+                "fraction": 0.4603174603174603,
+                "label": "Right Cerebral Cortex",
+                "voxels": 29
+              }
+            ],
+            "peak_label": "Right Cerebral White Matter"
+          }
+        ],
+        "beta": -0.04303743437008172,
+        "component": 2,
+        "direction": "negative",
+        "exclusions_changed": false,
+        "hc3_lower": -0.08198239431663686,
+        "hc3_upper": -0.0040924744235265875,
+        "id": "C07",
+        "loo_beta_max": -0.029560223177253278,
+        "loo_beta_min": -0.04918363913612941,
+        "max_cooks_d": 0.9178096317635941,
+        "max_leverage": 0.31979355742610777,
+        "n": 97,
+        "n_cooks_above_4_over_n": 12,
+        "outcome": "loss_only",
+        "p": 0.02869999408721924,
+        "peak": [
+          33.19999885559082,
+          -82.80000257492065,
+          -3.6899993419647217
+        ],
+        "residual_df": 87,
+        "selected_cluster_descriptive": true,
+        "term": "adixecog",
+        "voxels": 63,
+        "z": 3.1
+      },
+      {
+        "atlas": [
+          {
+            "atlas": "HarvardOxford-cort",
+            "overlap": [
+              {
+                "fraction": 0.803921568627451,
+                "label": "Lateral Occipital Cortex, superior division",
+                "voxels": 41
+              },
+              {
+                "fraction": 0.1568627450980392,
+                "label": "Unlabeled",
+                "voxels": 8
+              },
+              {
+                "fraction": 0.0392156862745098,
+                "label": "Angular Gyrus",
+                "voxels": 2
+              }
+            ],
+            "peak_label": "Lateral Occipital Cortex, superior division"
+          },
+          {
+            "atlas": "HarvardOxford-sub",
+            "overlap": [
+              {
+                "fraction": 0.7450980392156863,
+                "label": "Right Cerebral Cortex",
+                "voxels": 38
+              },
+              {
+                "fraction": 0.2549019607843137,
+                "label": "Right Cerebral White Matter",
+                "voxels": 13
+              }
+            ],
+            "peak_label": "Right Cerebral Cortex"
+          }
+        ],
+        "beta": -0.06427053789800834,
+        "component": 3,
+        "direction": "negative",
+        "exclusions_changed": false,
+        "hc3_lower": -0.14720229693369397,
+        "hc3_upper": 0.018661221137677292,
+        "id": "C08",
+        "loo_beta_max": -0.02632685201408668,
+        "loo_beta_min": -0.07389648438389632,
+        "max_cooks_d": 1.712422931265303,
+        "max_leverage": 0.31979355742610777,
+        "n": 97,
+        "n_cooks_above_4_over_n": 9,
+        "outcome": "loss_only",
+        "p": 0.04280000925064087,
+        "peak": [
+          38.59999895095825,
+          -72.00000238418579,
+          43.83000111579895
+        ],
+        "residual_df": 87,
+        "selected_cluster_descriptive": true,
+        "term": "adixecog",
+        "voxels": 51,
+        "z": 3.1
+      },
+      {
+        "atlas": [
+          {
+            "atlas": "HarvardOxford-cort",
+            "overlap": [
+              {
+                "fraction": 0.5319148936170213,
+                "label": "Lateral Occipital Cortex, superior division",
+                "voxels": 100
+              },
+              {
+                "fraction": 0.30851063829787234,
+                "label": "Angular Gyrus",
+                "voxels": 58
+              },
+              {
+                "fraction": 0.07446808510638298,
+                "label": "Unlabeled",
+                "voxels": 14
+              },
+              {
+                "fraction": 0.0425531914893617,
+                "label": "Middle Temporal Gyrus, temporooccipital part",
+                "voxels": 8
+              },
+              {
+                "fraction": 0.0425531914893617,
+                "label": "Lateral Occipital Cortex, inferior division",
+                "voxels": 8
+              }
+            ],
+            "peak_label": "Lateral Occipital Cortex, superior division"
+          },
+          {
+            "atlas": "HarvardOxford-sub",
+            "overlap": [
+              {
+                "fraction": 0.8404255319148937,
+                "label": "Right Cerebral Cortex",
+                "voxels": 158
+              },
+              {
+                "fraction": 0.15425531914893617,
+                "label": "Right Cerebral White Matter",
+                "voxels": 29
+              },
+              {
+                "fraction": 0.005319148936170213,
+                "label": "Unlabeled",
+                "voxels": 1
+              }
+            ],
+            "peak_label": "Right Cerebral Cortex"
+          }
+        ],
+        "beta": 0.04105642057793515,
+        "component": 1,
+        "direction": "positive",
+        "exclusions_changed": false,
+        "hc3_lower": 0.006660773873405579,
+        "hc3_upper": 0.07545206728246472,
+        "id": "C09",
+        "loo_beta_max": 0.04824521735248202,
+        "loo_beta_min": 0.027702710255204845,
+        "max_cooks_d": 0.7247986245265421,
+        "max_leverage": 0.31979355742610777,
+        "n": 97,
+        "n_cooks_above_4_over_n": 10,
+        "outcome": "social_specific",
+        "p": 0.03829997777938843,
+        "peak": [
+          54.79999923706055,
+          -63.900002241134644,
+          28.980000972747803
+        ],
+        "residual_df": 87,
+        "selected_cluster_descriptive": true,
+        "term": "adixecog",
+        "voxels": 188,
+        "z": 2.6
+      },
+      {
+        "atlas": [
+          {
+            "atlas": "HarvardOxford-cort",
+            "overlap": [
+              {
+                "fraction": 0.4166666666666667,
+                "label": "Unlabeled",
+                "voxels": 20
+              },
+              {
+                "fraction": 0.375,
+                "label": "Occipital Fusiform Gyrus",
+                "voxels": 18
+              },
+              {
+                "fraction": 0.1875,
+                "label": "Temporal Occipital Fusiform Cortex",
+                "voxels": 9
+              },
+              {
+                "fraction": 0.020833333333333332,
+                "label": "Lingual Gyrus",
+                "voxels": 1
+              }
+            ],
+            "peak_label": "Unlabeled"
+          },
+          {
+            "atlas": "HarvardOxford-sub",
+            "overlap": [
+              {
+                "fraction": 0.6458333333333334,
+                "label": "Left Cerebral Cortex",
+                "voxels": 31
+              },
+              {
+                "fraction": 0.3541666666666667,
+                "label": "Unlabeled",
+                "voxels": 17
+              }
+            ],
+            "peak_label": "Unlabeled"
+          }
+        ],
+        "beta": 0.06695999833221171,
+        "component": 1,
+        "direction": "positive",
+        "exclusions_changed": false,
+        "hc3_lower": 0.004885880710776079,
+        "hc3_upper": 0.12903411595364733,
+        "id": "C10",
+        "loo_beta_max": 0.07480347480978246,
+        "loo_beta_min": 0.04477566625364374,
+        "max_cooks_d": 0.5740002552684387,
+        "max_leverage": 0.31979355742610777,
+        "n": 97,
+        "n_cooks_above_4_over_n": 7,
+        "outcome": "social_specific",
+        "p": 0.047299981117248535,
+        "peak": [
+          -20.800002098083496,
+          -72.00000238418579,
+          -18.53999948501587
+        ],
+        "residual_df": 87,
+        "selected_cluster_descriptive": true,
+        "term": "adixecog",
+        "voxels": 48,
+        "z": 3.1
+      }
+    ],
+    "map_overlap": [
+      {
+        "dice": 0.40615384615384614,
+        "fraction_a": 0.2548262548262548,
+        "fraction_b": 1.0,
+        "outcome_a": "average",
+        "outcome_b": "average",
+        "shared_voxels": 66,
+        "voxels_a": 259,
+        "voxels_b": 66,
+        "z_a": 2.6,
+        "z_b": 3.1
+      },
+      {
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "outcome_a": "average",
+        "outcome_b": "loss_only",
+        "shared_voxels": 0,
+        "voxels_a": 259,
+        "voxels_b": 742,
+        "z_a": 2.6,
+        "z_b": 2.6
+      },
+      {
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "outcome_a": "average",
+        "outcome_b": "loss_only",
+        "shared_voxels": 0,
+        "voxels_a": 259,
+        "voxels_b": 230,
+        "z_a": 2.6,
+        "z_b": 3.1
+      },
+      {
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "outcome_a": "average",
+        "outcome_b": "social_specific",
+        "shared_voxels": 0,
+        "voxels_a": 259,
+        "voxels_b": 188,
+        "z_a": 2.6,
+        "z_b": 2.6
+      },
+      {
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "outcome_a": "average",
+        "outcome_b": "social_specific",
+        "shared_voxels": 0,
+        "voxels_a": 259,
+        "voxels_b": 48,
+        "z_a": 2.6,
+        "z_b": 3.1
+      },
+      {
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "outcome_a": "average",
+        "outcome_b": "loss_only",
+        "shared_voxels": 0,
+        "voxels_a": 66,
+        "voxels_b": 742,
+        "z_a": 3.1,
+        "z_b": 2.6
+      },
+      {
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "outcome_a": "average",
+        "outcome_b": "loss_only",
+        "shared_voxels": 0,
+        "voxels_a": 66,
+        "voxels_b": 230,
+        "z_a": 3.1,
+        "z_b": 3.1
+      },
+      {
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "outcome_a": "average",
+        "outcome_b": "social_specific",
+        "shared_voxels": 0,
+        "voxels_a": 66,
+        "voxels_b": 188,
+        "z_a": 3.1,
+        "z_b": 2.6
+      },
+      {
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "outcome_a": "average",
+        "outcome_b": "social_specific",
+        "shared_voxels": 0,
+        "voxels_a": 66,
+        "voxels_b": 48,
+        "z_a": 3.1,
+        "z_b": 3.1
+      },
+      {
+        "dice": 0.4732510288065844,
+        "fraction_a": 0.30997304582210244,
+        "fraction_b": 1.0,
+        "outcome_a": "loss_only",
+        "outcome_b": "loss_only",
+        "shared_voxels": 230,
+        "voxels_a": 742,
+        "voxels_b": 230,
+        "z_a": 2.6,
+        "z_b": 3.1
+      },
+      {
+        "dice": 0.0989247311827957,
+        "fraction_a": 0.06199460916442048,
+        "fraction_b": 0.24468085106382978,
+        "outcome_a": "loss_only",
+        "outcome_b": "social_specific",
+        "shared_voxels": 46,
+        "voxels_a": 742,
+        "voxels_b": 188,
+        "z_a": 2.6,
+        "z_b": 2.6
+      },
+      {
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "outcome_a": "loss_only",
+        "outcome_b": "social_specific",
+        "shared_voxels": 0,
+        "voxels_a": 742,
+        "voxels_b": 48,
+        "z_a": 2.6,
+        "z_b": 3.1
+      },
+      {
+        "dice": 0.07655502392344497,
+        "fraction_a": 0.06956521739130435,
+        "fraction_b": 0.0851063829787234,
+        "outcome_a": "loss_only",
+        "outcome_b": "social_specific",
+        "shared_voxels": 16,
+        "voxels_a": 230,
+        "voxels_b": 188,
+        "z_a": 3.1,
+        "z_b": 2.6
+      },
+      {
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "outcome_a": "loss_only",
+        "outcome_b": "social_specific",
+        "shared_voxels": 0,
+        "voxels_a": 230,
+        "voxels_b": 48,
+        "z_a": 3.1,
+        "z_b": 3.1
+      },
+      {
+        "dice": 0.0,
+        "fraction_a": 0.0,
+        "fraction_b": 0.0,
+        "outcome_a": "social_specific",
+        "outcome_b": "social_specific",
+        "shared_voxels": 0,
+        "voxels_a": 188,
+        "voxels_b": 48,
+        "z_a": 2.6,
+        "z_b": 3.1
+      }
+    ],
+    "maps": [
+      {
+        "clusters": 1,
+        "direction": "positive",
+        "map": "average/2.6/positive",
+        "min_p": 0.02249997854232788,
+        "outcome": "average",
+        "voxels": 259,
+        "z": 2.6
+      },
+      {
+        "clusters": 0,
+        "direction": "negative",
+        "map": "average/2.6/negative",
+        "min_p": 0.2821999788284302,
+        "outcome": "average",
+        "voxels": 0,
+        "z": 2.6
+      },
+      {
+        "clusters": 1,
+        "direction": "positive",
+        "map": "average/3.1/positive",
+        "min_p": 0.023800015449523926,
+        "outcome": "average",
+        "voxels": 66,
+        "z": 3.1
+      },
+      {
+        "clusters": 0,
+        "direction": "negative",
+        "map": "average/3.1/negative",
+        "min_p": 0.11019998788833618,
+        "outcome": "average",
+        "voxels": 0,
+        "z": 3.1
+      },
+      {
+        "clusters": 0,
+        "direction": "positive",
+        "map": "loss_only/2.6/positive",
+        "min_p": 0.4383999705314636,
+        "outcome": "loss_only",
+        "voxels": 0,
+        "z": 2.6
+      },
+      {
+        "clusters": 3,
+        "direction": "negative",
+        "map": "loss_only/2.6/negative",
+        "min_p": 0.017000019550323486,
+        "outcome": "loss_only",
+        "voxels": 742,
+        "z": 2.6
+      },
+      {
+        "clusters": 0,
+        "direction": "positive",
+        "map": "loss_only/3.1/positive",
+        "min_p": 0.37150001525878906,
+        "outcome": "loss_only",
+        "voxels": 0,
+        "z": 3.1
+      },
+      {
+        "clusters": 3,
+        "direction": "negative",
+        "map": "loss_only/3.1/negative",
+        "min_p": 0.009199976921081543,
+        "outcome": "loss_only",
+        "voxels": 230,
+        "z": 3.1
+      },
+      {
+        "clusters": 1,
+        "direction": "positive",
+        "map": "social_specific/2.6/positive",
+        "min_p": 0.03829997777938843,
+        "outcome": "social_specific",
+        "voxels": 188,
+        "z": 2.6
+      },
+      {
+        "clusters": 0,
+        "direction": "negative",
+        "map": "social_specific/2.6/negative",
+        "min_p": 0.4154999852180481,
+        "outcome": "social_specific",
+        "voxels": 0,
+        "z": 2.6
+      },
+      {
+        "clusters": 1,
+        "direction": "positive",
+        "map": "social_specific/3.1/positive",
+        "min_p": 0.047299981117248535,
+        "outcome": "social_specific",
+        "voxels": 48,
+        "z": 3.1
+      },
+      {
+        "clusters": 0,
+        "direction": "negative",
+        "map": "social_specific/3.1/negative",
+        "min_p": 0.5245999991893768,
+        "outcome": "social_specific",
+        "voxels": 0,
+        "z": 3.1
+      }
+    ]
+  }
+}

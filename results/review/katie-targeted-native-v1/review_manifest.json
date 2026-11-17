@@ -1,0 +1,21 @@
+{
+  "kind": "native",
+  "n": 97,
+  "new_permutation_jobs": 0,
+  "outputs": {
+    "README.md": "abf3695b0897a819bdf7b195cbc9e9afbd3bfbd7e21d1f263961f9f488cb4d0c",
+    "activation.png": "718683adc987b9df03abbcaae539d9d56d8c787a990a6ca67a926a38fb80dbad",
+    "activation_components.tsv": "f91b16176835fd26e753734c69057424ebd0981ef0ed0f682a61a3b43ef2182f",
+    "activation_group_overlap.tsv": "677431e8cda03ec75e7eab319b7c4f87035a732cbdcc961e9a3fe83ecacb0592",
+    "activation_slopes.tsv": "6598503239b6d83fd95b67b40c83eea4b9fb95712249b571ae9d396210afaa3e",
+    "activation_tail_counts.tsv": "f889c2e78a24a0739461ef94fd94a4b67fe3ad2e57451404b1bfc30be9c03cb2",
+    "native.json": "5620acbcfe5a4e3c0ee8a00ca28552da28c62785abc0c0b01e5664575d261ff8",
+    "vs_cluster_overlap.tsv": "9994266df3c44f84f5fd4e1a9902a2dac3b7a319ad01de618d5d1853e8b05cba",
+    "vs_clusters.tsv": "03b5829f614f941a061574544ed76301305ee482201b7cbb30a21468d28d5062",
+    "vs_map_overlap.tsv": "af3c7b94cb68f997dcec7cf7d366a67fc75e8a65b840ab65ffb16f9296537332",
+    "vs_maps.tsv": "a0dff19ce4009039bee61d45a2d04bff6add7704ebc08b61296f28e9ffdb8c9b",
+    "vs_overlap.png": "43e0911cca5fd815bd3c7bdd7d5c4fca2ddf08e89758eee67b344f7c4cc9c984"
+  },
+  "renderer_sha256": "9523291510ddb6f3851f694f83aa2fcd4689f9c396a2d1affccf9a3efb30e6e4",
+  "spec_sha256": "15c5d905b98799b1e432f2acb975bf2a7dee1b878883ce2d2591ffc4127f7a2d"
+}
