@@ -1,0 +1,18 @@
+{
+  "n": 97,
+  "preserved_evidence": "c595332",
+  "behavior": {
+    "outcome": "FEVS",
+    "reference": "PM2.5 * corrected MSPSS + age + gender",
+    "one_sensitivity": "Add centered MSPSS squared and centered PM2.5 times centered MSPSS squared to the reference",
+    "rationale": "One curvature term for the conditional PM2.5 slope, retaining hierarchy. No knots or alternative specifications selected from results.",
+    "support_levels": [16, 50, 84],
+    "tail_rule": "At or below the nearest observed 16th percentile and at or above the nearest observed 84th percentile, including ties",
+    "intervals": "Two-sided HC3 pointwise t intervals; descriptive sensitivity, not a new confirmatory test"
+  },
+  "activation": "Positive ADI x corrected MSPSS, Social win minus Doors win, Z-equivalent CDT 3.1, existing 87-voxel component",
+  "connectivity": "Existing ADI x ECog interaction only; average, loss_only, social_specific; both signs and CDTs 2.6 and 3.1",
+  "spatial_rule": "Exact common grid; native 1-p > 0.95 in mask; 26-connected descriptive components; no resampling for overlap",
+  "new_permutation_jobs": 0,
+  "exclusions_changed": false
+}

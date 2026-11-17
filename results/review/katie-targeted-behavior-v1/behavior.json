@@ -1,0 +1,143 @@
+{
+  "anchors": [
+    {
+      "hc3_lower": 0.9129038938044942,
+      "hc3_upper": 3.8259298704021223,
+      "loo_max": 2.8809098839952973,
+      "loo_min": 2.11418055509816,
+      "model": "linear",
+      "percentile": 16,
+      "pm25_slope": 2.3694168821033084,
+      "support": 3.416666667
+    },
+    {
+      "hc3_lower": -0.7607705069906912,
+      "hc3_upper": 0.7202831011432154,
+      "loo_max": 0.07273226527129732,
+      "loo_min": -0.11866528644595202,
+      "model": "linear",
+      "percentile": 50,
+      "pm25_slope": -0.02024370292373794,
+      "support": 5.833333333
+    },
+    {
+      "hc3_lower": -2.014681843377538,
+      "hc3_upper": -0.16825988198984976,
+      "loo_max": -0.984743540231407,
+      "loo_min": -1.2619927226442198,
+      "model": "linear",
+      "percentile": 84,
+      "pm25_slope": -1.091470862683694,
+      "support": 6.916666667
+    },
+    {
+      "hc3_lower": 0.31085677512795273,
+      "hc3_upper": 3.6589711936546974,
+      "loo_max": 2.2425992166962843,
+      "loo_min": 1.5633272283958835,
+      "model": "quadratic_support",
+      "percentile": 16,
+      "pm25_slope": 1.984913984391325,
+      "support": 3.416666667
+    },
+    {
+      "hc3_lower": -1.0741014947376721,
+      "hc3_upper": 1.192629012968719,
+      "loo_max": 0.24944521145818616,
+      "loo_min": -0.16419834783571374,
+      "model": "quadratic_support",
+      "percentile": 50,
+      "pm25_slope": 0.05926375911552345,
+      "support": 5.833333333
+    },
+    {
+      "hc3_lower": -1.7774260748688906,
+      "hc3_upper": 0.17925621272158265,
+      "loo_max": -0.5785035089387505,
+      "loo_min": -0.9659382536424663,
+      "model": "quadratic_support",
+      "percentile": 84,
+      "pm25_slope": -0.799084931073654,
+      "support": 6.916666667
+    }
+  ],
+  "authorization_sha256": "15c5d905b98799b1e432f2acb975bf2a7dee1b878883ce2d2591ffc4127f7a2d",
+  "baseline_holm_p": 0.0005090391850966116,
+  "financial_scoring_provisional": true,
+  "fits": [
+    {
+      "beta": -0.9888250699391434,
+      "exclusions_changed": false,
+      "hc3_lower": -1.504708771073768,
+      "hc3_upper": -0.47294136880451876,
+      "loo_beta_max": -0.9002527508529319,
+      "loo_beta_min": -1.1836864590398632,
+      "max_cooks_d": 0.17977897706977247,
+      "max_leverage": 0.32579789988112157,
+      "model": "linear",
+      "n": 97,
+      "n_cooks_above_4_over_n": 3,
+      "r_squared": 0.22492594280637035,
+      "residual_df": 91,
+      "term": "interaction"
+    },
+    {
+      "beta": -0.7951455609185785,
+      "exclusions_changed": false,
+      "hc3_lower": -1.4356470166522248,
+      "hc3_upper": -0.1546441051849322,
+      "loo_beta_max": -0.6548693184929871,
+      "loo_beta_min": -0.9035756730810519,
+      "max_cooks_d": 0.33964080774581457,
+      "max_leverage": 0.5682376761597348,
+      "model": "quadratic_support",
+      "n": 97,
+      "n_cooks_above_4_over_n": 5,
+      "r_squared": 0.32586294759984646,
+      "residual_df": 89,
+      "term": "interaction"
+    }
+  ],
+  "n": 97,
+  "tails": [
+    {
+      "exposure": "PM2.5",
+      "exposure_max": 10.2364,
+      "exposure_min": 6.6818,
+      "exposure_q10": 7.09545,
+      "exposure_q90": 9.649999999999999,
+      "group": "lower_tail",
+      "lower_support_cut": 3.416666667,
+      "n": 16,
+      "support_max": 3.416666667,
+      "support_min": 1.0,
+      "upper_support_cut": 6.916666667
+    },
+    {
+      "exposure": "PM2.5",
+      "exposure_max": 10.0091,
+      "exposure_min": 6.3182,
+      "exposure_q10": 7.5036,
+      "exposure_q90": 9.1909,
+      "group": "middle",
+      "lower_support_cut": 3.416666667,
+      "n": 65,
+      "support_max": 6.833333333,
+      "support_min": 3.583333333,
+      "upper_support_cut": 6.916666667
+    },
+    {
+      "exposure": "PM2.5",
+      "exposure_max": 10.2364,
+      "exposure_min": 7.3636,
+      "exposure_q10": 7.62275,
+      "exposure_q90": 10.0,
+      "group": "upper_tail",
+      "lower_support_cut": 3.416666667,
+      "n": 16,
+      "support_max": 7.0,
+      "support_min": 6.916666667,
+      "upper_support_cut": 6.916666667
+    }
+  ]
+}

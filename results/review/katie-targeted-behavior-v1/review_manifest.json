@@ -1,0 +1,17 @@
+{
+  "kind": "behavior",
+  "n": 97,
+  "new_permutation_jobs": 0,
+  "outputs": {
+    "README.md": "d046b84bc8fd084318a0d1310067499d3c744d1834db049e0b41fcbc9c198310",
+    "behavior.json": "898a05de527edf00af65bcdc2b3a4deae9aafbfc6a12f25196ee1325985667a5",
+    "behavior.png": "f21b38e3ee50e8a26f442093ab6b692a936095210d62d5f0037e8377d64b0153",
+    "behavior_anchors.tsv": "66f089a07f2c6bc283c34f6d1c4c32393c3ea16b331e75258b36a59ad9efcd54",
+    "behavior_coefficients.tsv": "9d35f25fb8733e81b33e4be8b437354201d2c5688e187b8181afa4e5968bf462",
+    "behavior_curves.tsv": "c1a330377f1e98e24b7befdc1c13ceeedf2d279b3d5ccbdcd09d9a44d7289403",
+    "behavior_influence.tsv": "a982ff3ac01ee0e235eca7a7925a14c0f659135cf5e4d4dc1fe47cf8f8b4ef2d",
+    "behavior_tail_counts.tsv": "7ea9c1ea27eff0517da1816bc7ea6a91bb1ece8c9205fabe9446838daef54eeb"
+  },
+  "renderer_sha256": "9523291510ddb6f3851f694f83aa2fcd4689f9c396a2d1affccf9a3efb30e6e4",
+  "spec_sha256": "15c5d905b98799b1e432f2acb975bf2a7dee1b878883ce2d2591ffc4127f7a2d"
+}
