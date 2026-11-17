@@ -50,3 +50,18 @@ Only aggregate tables and figures are publishable; input fingerprints stay under
 Selected-region fits and influence ranges describe the observed clusters, not independent tests.
 Cluster-FWE is mapwise only; recurrence across CDTs is not replication, nor does a non-overlap at
 p < .05 prove that underlying signals have no common spatial support.
+
+## Assemble the evidence PDF
+
+After the Linux2 launcher publishes `results/review/katie-targeted-native-v1`, fast-forward a
+clean checkout. With the reporting environment (`reportlab` and `pypdf`), run:
+
+```bash
+python -m unittest discover -s tests -p test_katie_targeted_report.py -v
+python code/build_katie_targeted_report.py
+```
+
+The builder requires and verifies both targeted aggregate manifests, the fixed-frontal-region
+diagnostic, and the November 7 PDF and selected-cluster figure seals. It refuses missing native
+data or an existing destination. It writes `output/pdf/FEVS_Targeted_Results_Followup_v1.pdf` and
+its SHA-256 manifest; render and inspect every page before sharing. The previous PDF is retained.
