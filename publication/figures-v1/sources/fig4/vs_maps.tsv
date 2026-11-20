@@ -1,0 +1,13 @@
+map	outcome	z	direction	min_p	voxels	clusters
+average/2.6/positive	average	2.6	positive	0.02249997854232788	259	1
+average/2.6/negative	average	2.6	negative	0.2821999788284302	0	0
+average/3.1/positive	average	3.1	positive	0.023800015449523926	66	1
+average/3.1/negative	average	3.1	negative	0.11019998788833618	0	0
+loss_only/2.6/positive	loss_only	2.6	positive	0.4383999705314636	0	0
+loss_only/2.6/negative	loss_only	2.6	negative	0.017000019550323486	742	3
+loss_only/3.1/positive	loss_only	3.1	positive	0.37150001525878906	0	0
+loss_only/3.1/negative	loss_only	3.1	negative	0.009199976921081543	230	3
+social_specific/2.6/positive	social_specific	2.6	positive	0.03829997777938843	188	1
+social_specific/2.6/negative	social_specific	2.6	negative	0.4154999852180481	0	0
+social_specific/3.1/positive	social_specific	3.1	positive	0.047299981117248535	48	1
+social_specific/3.1/negative	social_specific	3.1	negative	0.5245999991893768	0	0

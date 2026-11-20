@@ -4,6 +4,11 @@ This repository contains the reproducible participant-generation, environmental
 linkage, Level 3 input-building, and group-analysis code for the Social Doors
 component of the RF1 brain-health/environment project.
 
+**Manuscript figures:** [Katie and Jacob's figure editing kit](publication/figures-v1/README.md)
+contains Figures 1–4 as SVG and PDF, panel sources, captions and the Linux2
+map/extraction instructions. The ADI × ECog connectivity overlap figure is now
+main-text Figure 4; the cluster catalogue remains Supplementary Table S1.
+
 ## Targeted Results Follow-up
 
 The [targeted follow-up PDF](output/pdf/FEVS_Targeted_Results_Followup_v1.pdf)
