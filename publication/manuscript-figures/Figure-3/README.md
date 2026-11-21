@@ -1,0 +1,7 @@
+# Figure 3 | Financial vulnerability and feedback-dependent coupling
+
+[SVG](Figure-3.svg) · [PDF](Figure-3.pdf) · [PNG](Figure-3.png) · [Plotted estimate and CI](plotted-values.tsv) · [Signed t map](FEVS_at_mean_PM25_domain_by_valence_z3p1_negative_signed-t.nii.gz) · [Mask](FEVS_at_mean_PM25_domain_by_valence_z3p1_negative_mask.nii.gz)
+
+**Caption.** At mean PM₂.₅, higher financial vulnerability was associated with a smaller social relative to monetary win–loss difference in ventral striatal coupling. **A:** The ventral striatal seed showed a negative FEVS association with a target near the left frontal pole (44 voxels; peak MNI −20.8, 57.6, 11.2 mm; within-map cluster-FWE p = .0303 at Z-equivalent CDT 3.1). **B:** The diamond shows the fixed-region FEVS slope for (social win − social loss) − (monetary win − monetary loss): −0.110 COPE units per FEVS point (pointwise 95% HC3 CI −0.155 to −0.066). The region was selected from this contrast in the same 97 participants; no corrected whole-brain cluster survived adding perceived support.
+
+Former supplemental Figure S2. Panel B is a **coefficient and interval**, not a participant scatterplot. Neither single-task coefficient is plotted. The original Linux2 extraction is `work/katie-figure-sources-v1/extractions/Fig2_VS_PPI_components_and_adjusted_points.tsv` (old numbering); the map shows connectivity with a left frontal target, not striatal activation.

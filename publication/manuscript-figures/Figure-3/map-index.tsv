@@ -1,0 +1,2 @@
+stem	job	tstat	direction	voxels	cluster_p	peak_mni_mm	mask_sha256	signed_t_sha256
+FEVS_at_mean_PM25_domain_by_valence_z3p1_negative	connectivity/social_specific/fevsxpm25/z-3p1	2	negative	44	0.030300021171569824	-20.800002098083496,57.59999990463257,11.160000801086426	30d794c65b97c4d60ea4630fe9511494d777fbb010f171a990ecb30f4cb8df72	b329c86435e636239b1078c8729b3860830caad9c256cc79efc55a3c0ce8a586

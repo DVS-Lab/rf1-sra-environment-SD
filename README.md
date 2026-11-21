@@ -4,10 +4,11 @@ This repository contains the reproducible participant-generation, environmental
 linkage, Level 3 input-building, and group-analysis code for the Social Doors
 component of the RF1 brain-health/environment project.
 
-**Manuscript figures:** [Katie and Jacob's figure editing kit](publication/figures-v1/README.md)
-contains Figures 1–4 as SVG and PDF, panel sources, captions and the Linux2
-map/extraction instructions. The ADI × ECog connectivity overlap figure is now
-main-text Figure 4; the cluster catalogue remains Supplementary Table S1.
+**Manuscript figures:** [Katie and Jacob's current figure kit](publication/manuscript-figures/README.md)
+contains the PM₂.₅–vulnerability slope (Figure 1), social-minus-monetary
+winning activation (Figure 2), and the social-minus-monetary win–loss
+contrast in ventral striatal coupling (Figure 3, formerly supplemental Figure S2).
+Each imaging figure's folder includes its signed t map, mask, plotted values and artwork.
 
 ## Targeted Results Follow-up
 

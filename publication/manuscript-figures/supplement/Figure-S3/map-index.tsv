@@ -1,0 +1,2 @@
+stem	job	tstat	direction	voxels	cluster_p	peak_mni_mm	mask_sha256	signed_t_sha256
+ADIxMSPSS_social_minus_nonsocial_win_z3p1_positive	activation/win_only/adixmspss/z-3p1	5	positive	87	0.025499999523162842	54.79999923706055,-31.500001668930054,8.190000772476196	f4ea70d4199ed87235a1a893cb110d21d019bfd960abb361ecdd9a796ce913a1	64cd31702e6d3f45ae95d333294b56fdad32ae4d4d06c1f725487c6c0c6f5f5f

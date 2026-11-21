@@ -1,0 +1,7 @@
+# Figure 2 | Deprivation and social relative to monetary winning
+
+[SVG](Figure-2.svg) · [PDF](Figure-2.pdf) · [PNG](Figure-2.png) · [Plotted values](plotted-values.tsv) · [Signed t map](ADIxMSPSS_social_minus_nonsocial_win_z3p1_positive_signed-t.nii.gz) · [Mask](ADIxMSPSS_social_minus_nonsocial_win_z3p1_positive_mask.nii.gz)
+
+**Caption.** Perceived support modifies the association between neighborhood deprivation and social relative to monetary winning activation. **A:** The ADI × support interaction mapped to a right posterior temporal cluster near the temporoparietal junction (87 voxels; peak MNI 54.8, −31.5, 8.2 mm; within-map cluster-FWE p = .0255 at Z-equivalent CDT 3.1). Colors show the signed voxelwise t statistic. **B:** The curve shows the estimated change in the social-minus-monetary winning activation contrast per one-rank increase in Area Deprivation Index (ADI) across corrected MSPSS scores. Shading shows the pointwise 95% HC3 interval. Estimates describe the selected cluster in the same sample (N = 97).
+
+This is a **winning contrast**, not the difference of win–loss contrasts. The separate task curves remain in supplemental Figure S3. Use the [published anchors](published-anchors.tsv) to check edits. The original Linux2 extraction is `work/katie-figure-sources-v1/extractions/Fig3_winning_COPEs.tsv` in the analysis repository (its prefix uses the old numbering); no individual records are bundled.
