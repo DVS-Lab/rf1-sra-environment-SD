@@ -48,6 +48,30 @@ def activation_curve(anchors, x):
     return [dict(component=anchors[0]["component"],support=float(a),slope=float(v),
                  hc3_lower=float(v-h),hc3_upper=float(v+h)) for a,v,h in zip(x,val,half)]
 
+def stage_adjusted_scatter(out, contrast):
+    review = ROOT / "results/review/fevs-vs-v1"
+    panel = review / "fevs-vs-cluster-1-scatter.png"
+    summary = review / "summary.json"
+    receipt = json.loads((review / "review_manifest.json").read_text())
+    for path in (panel, summary):
+        if sha(path) != receipt["outputs"][path.name]:
+            raise ValueError(f"Changed sealed Figure 3 source: {path.name}")
+    # Fixed crop of the adjusted middle panel, including the original axes and ticks.
+    if sha(panel) != "35ffad74513bd82c3a5212b4c90910b46f6de9fd9c237f5ab1873b9fe2a7d862":
+        raise ValueError("Scatter layout changed; do not apply the saved crop")
+    report = json.loads(summary.read_text())
+    fit, = report["region_fits"]
+    cluster, = report["clusters"]
+    if (report["job"] != "connectivity/social_specific/fevsxpm25/z-3p1"
+            or report["direction"] != "negative" or fit["term"] != "fevs"
+            or cluster["voxels"] != 44 or fit["n"] != int(contrast["n"])
+            or not np.allclose([fit["estimate"], *fit["hc3_ci"]],
+                               [float(contrast[k]) for k in ("beta","hc3_lower","hc3_upper")],
+                               rtol=0, atol=1e-12)):
+        raise ValueError("Scatter is not the Figure 3 fixed-region FEVS contrast")
+    with Image.open(panel) as image:
+        image.convert("RGB").crop((744,128,1415,578)).save(out / "adjusted-scatter.png")
+
 def stage():
     for record in read(OLD/"sources/provenance.tsv"):
         if sha(OLD/record["asset"]) != record["sha256"]:
@@ -69,6 +93,7 @@ def stage():
     if len(fevs)!=1 or fevs[0]["n"]!="97":
         raise ValueError("Wrong fixed-region connectivity contrast")
     table(f3/"plotted-values.tsv",[{k:fevs[0][k] for k in ("component","n","beta","hc3_lower","hc3_upper")}])
+    stage_adjusted_scatter(f3, fevs[0])
     shutil.copyfile(source/"fig1/histograms.json",s1/"histogram-counts.json")
     for out,path in [(f2,source/"fig3/figure-3-adi-support-brain.png"),
                      (f3,source/"fig2/figure-2-vs-original-brain.png")]:

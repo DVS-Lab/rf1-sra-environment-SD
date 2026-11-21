@@ -78,25 +78,18 @@ def activation(folder):
     return fig
 
 def connectivity(folder):
-    fig=plt.figure(figsize=(6.5,4.25))
-    label(fig,.918,"A","Target near the left frontal pole")
-    im=fig.add_axes((.07,.49,.88,.405))
-    with Image.open(folder/"brain-slices.png") as plate:
-        im.imshow(plate,aspect="equal")
-    im.axis("off")
-    label(fig,.405,"B","Social minus monetary win–loss coupling")
-    row,=read(folder)
-    if row["component"]!="difference" or row["n"]!="97":
-        raise ValueError("Figure 3 requires the N=97 social-minus-monetary contrast")
-    b,lo,hi=(float(row[k]) for k in ("beta","hc3_lower","hc3_upper"))
-    ax=fig.add_axes((.115,.17,.79,.168))
-    ax.axvline(0,color=GRAY,lw=.85)
-    ax.errorbar(b,0,xerr=[[b-lo],[hi-b]],fmt="D",ms=6,elinewidth=1.6,color=BLUE,capsize=4)
-    ax.set(yticks=[],ylim=(-1,1),xlim=(-.175,.025),xticks=[-.15,-.10,-.05,0],
-           xlabel="Vulnerability–connectivity slope (COPE units per FEVS point)")
-    ax.spines["left"].set_visible(False)
-    ax.xaxis.grid(color=GRID,linewidth=.65)
-    ax.set_axisbelow(True)
+    fig=plt.figure(figsize=(6.5,6.35))
+    brain(fig,folder,"Target near the left frontal pole")
+    label(fig,.587,"B","Social minus monetary win–loss coupling")
+    ax=fig.add_axes((.15,.107,.72,.455))
+    with Image.open(folder/"adjusted-scatter.png") as plate:
+        ax.imshow(plate,interpolation="none")
+    ax.axis("off")
+    fig.text(.146,.335,"Adjusted coupling difference (COPE units)",rotation=90,
+             ha="center",va="center")
+    fig.text(.526,.077,"Financial exploitation vulnerability (FEVS score)",ha="center")
+    fig.text(.526,.030,"N = 97. Line at mean PM₂.₅; shading: pointwise 95% OLS CI for the fitted mean.",
+             ha="center",color=GRAY,fontsize=8)
     return fig
 
 def supplemental_components(folder):
@@ -121,10 +114,12 @@ def supplemental_diagnostics(folder):
     ax.imshow(data,interpolation="none"); ax.axis("off")
     return fig
 
-def run(output):
+def run(output, only=None):
     os.environ.setdefault("SOURCE_DATE_EPOCH","0")
     style()
     for name,build in zip(IDS,(behavior,activation,connectivity,supplemental_diagnostics,supplemental_components)):
+        if only is not None and name!=only:
+            continue
         src=ROOT/name
         target=output/name
         target.mkdir(parents=True,exist_ok=True)
@@ -135,10 +130,15 @@ def run(output):
                 if src.resolve()!=target.resolve():
                     (target/(stem+".png")).write_bytes((src/(stem+".png")).read_bytes())
                 continue
-            fig.savefig(target/(stem+"."+fmt),dpi=400)
+            path=target/(stem+"."+fmt)
+            fig.savefig(path,dpi=400)
+            if fmt=="svg":
+                path.write_text("".join(line.rstrip()+"\n" for line in path.read_text().splitlines()))
         plt.close(fig)
 
 if __name__=="__main__":
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output",type=Path,default=ROOT)
-    run(parser.parse_args().output)
+    parser.add_argument("--figure",choices=IDS,help="Render only the named figure")
+    args=parser.parse_args()
+    run(args.output,args.figure)

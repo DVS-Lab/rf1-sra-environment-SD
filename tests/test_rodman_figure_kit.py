@@ -2,9 +2,11 @@ import csv
 from hashlib import sha256
 from pathlib import Path
 import unittest
+from xml.etree import ElementTree
 
 import nibabel as nib
 import numpy as np
+from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[1]
 KIT=ROOT/"publication/manuscript-figures"
@@ -63,6 +65,17 @@ class ManuscriptKit(unittest.TestCase):
             np.testing.assert_array_equal(signed>0,region)
             xyz=nib.affines.apply_affine(mask.affine,np.unravel_index(signed.argmax(),signed.shape))
             np.testing.assert_allclose(xyz,[float(n) for n in row["peak_mni_mm"].split(",")],atol=1e-5)
+
+    def test_figure3_shows_sealed_adjusted_scatter_not_coefficient(self):
+        f3=KIT/"Figure-3"
+        validated=ROOT/"results/review/fevs-vs-v1/fevs-vs-cluster-1-scatter.png"
+        self.assertEqual(sha256(validated.read_bytes()).hexdigest(),
+                         "35ffad74513bd82c3a5212b4c90910b46f6de9fd9c237f5ab1873b9fe2a7d862")
+        with Image.open(validated) as source, Image.open(f3/"adjusted-scatter.png") as panel:
+            np.testing.assert_array_equal(source.convert("RGB").crop((744,128,1415,578)),panel)
+        svg=ElementTree.parse(f3/"Figure-3.svg")
+        self.assertEqual(len(svg.findall(".//{http://www.w3.org/2000/svg}image")),2)
+        self.assertIn("Financial exploitation vulnerability (FEVS score)"," ".join(svg.getroot().itertext()))
 
 if __name__=="__main__":
     unittest.main()
