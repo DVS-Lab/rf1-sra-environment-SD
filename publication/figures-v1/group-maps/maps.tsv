@@ -1,0 +1,13 @@
+stem	job	tstat	direction	voxels	cluster_p	peak_mni_mm
+Fig2_FEVS_at_mean_PM25_domain_by_valence_z3p1_negative	connectivity/social_specific/fevsxpm25/z-3p1	2	negative	44	0.030300021171569824	-20.800002098083496,57.59999990463257,11.160000801086426
+Fig3_ADIxMSPSS_social_minus_nonsocial_win_z3p1_positive	activation/win_only/adixmspss/z-3p1	5	positive	87	0.025499999523162842	54.79999923706055,-31.500001668930054,8.190000772476196
+Fig4_C01_ADIxECog_average_z2p6_positive	average/adixecog/z-2p6	1	positive	259	0.02249997854232788	14.29999852180481,-18.000001430511475,64.62000131607056
+Fig4_C02_ADIxECog_average_z3p1_positive	average/adixecog/z-3p1	1	positive	66	0.023800015449523926	14.29999852180481,-18.000001430511475,64.62000131607056
+Fig4_C03_ADIxECog_loss_only_z2p6_negative	connectivity/loss_only/adixecog/z-2p6	6	negative	300	0.017000019550323486	-45.10000252723694,-69.30000233650208,-9.62999939918518
+Fig4_C04_ADIxECog_loss_only_z2p6_negative	connectivity/loss_only/adixecog/z-2p6	6	negative	273	0.019800007343292236	33.19999885559082,-82.80000257492065,-3.6899993419647217
+Fig4_C05_ADIxECog_loss_only_z2p6_negative	connectivity/loss_only/adixecog/z-2p6	6	negative	169	0.04409998655319214	49.399999141693115,-55.800002098083496,43.83000111579895
+Fig4_C06_ADIxECog_loss_only_z3p1_negative	connectivity/loss_only/adixecog/z-3p1	6	negative	116	0.009199976921081543	-45.10000252723694,-69.30000233650208,-9.62999939918518
+Fig4_C07_ADIxECog_loss_only_z3p1_negative	connectivity/loss_only/adixecog/z-3p1	6	negative	63	0.02869999408721924	33.19999885559082,-82.80000257492065,-3.6899993419647217
+Fig4_C08_ADIxECog_loss_only_z3p1_negative	connectivity/loss_only/adixecog/z-3p1	6	negative	51	0.04280000925064087	38.59999895095825,-72.00000238418579,43.83000111579895
+Fig4_C09_ADIxECog_social_specific_z2p6_positive	social_specific/adixecog/z-2p6	1	positive	188	0.03829997777938843	54.79999923706055,-63.900002241134644,28.980000972747803
+Fig4_C10_ADIxECog_social_specific_z3p1_positive	social_specific/adixecog/z-3p1	1	positive	48	0.047299981117248535	-20.800002098083496,-72.00000238418579,-18.53999948501587
