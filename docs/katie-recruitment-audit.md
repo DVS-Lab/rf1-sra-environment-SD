@@ -1,21 +1,47 @@
-# Verify the recruitment denominator
+# Katie's baseline imaging denominator
 
-The manuscript's 164 is a recruitment count, not the denominator of the October imaging handoff. The ID list behind 164 must come from the report/export used to count recruitment, with its cutoff and age definition. Do not use an arbitrary 164-row workbook, today's age-filtered BIDS table, the 137 task IDs, the 110 linked participants, the 97 analyzed participants, or the earlier 33-ID screener investigation as a substitute.
+For this secondary analysis, start the participant flow at **151 adults aged 55
+or older in the baseline imaging roster**. The Linux2 comparison of IDs in the
+current age-filtered BIDS table and the frozen roster returned no differences in
+either direction. Neither table is a recruitment register.
 
-On Linux2, from this repository:
+| Stage | Change from the preceding stage | Remaining |
+| --- | --- | ---: |
+| Baseline imaging roster, age 55+ | Starting denominator | 151 |
+| Usable Social Doors run | 9 without a documented baseline acquisition, 2 partial, 1 with no recorded choices | 139 |
+| Social Doors imaging pool | 2 below 95% reference-mask coverage | 137 |
+| Linked analysis workbook | 2 without a screener match, 24 with incomplete required fields, 1 without a numeric ADI rank; no further loss for PM2.5 | 110 |
+| Final paired analytic sample | 11 above the task/session mean FD fence on either or both runs; 2 below 95% coverage on the monetary run; no additional exclusions for low tSNR | **97** |
+
+The 137 are **not** the final paired-QC pool: both the Social Doors and monetary
+Doors runs must pass for the final analysis. The last step reproduces the
+[frozen cohort reconciliation](katie-cohort.md).
+
+## Why the flow does not begin at 164
+
+A conference abstract described 164 older adults as completing both tasks;
+an archived Methods draft described 164 as recruited. Neither identifies the
+participants counted. The historical recruitment tracker examined also does not
+identify a group of 164 under either definition. Subtracting 151 from 164
+therefore does **not** establish that 13 people were excluded, withdrew, or
+failed to complete scanning. Describe recruitment procedures separately from
+the verified baseline imaging denominator.
+
+## Reproducibility
+
+From the analysis checkout on Linux2, the following is optional, read-only and
+noninteractive. It verifies the frozen imaging counts and reports any live age
+roster differences; it does not search for files, require a recruitment export,
+or alter eligibility.
 
 ```bash
 python3 code/audit_katie_recruitment.py
 ```
 
-This validates the historical 151/139/137 counts, compares the current scanner-age pool to the frozen pool (a date/age check only), and lists candidate filenames in bounded project locations without opening them. It cannot identify a recruitment roster by filename. Add `--search-root /path/to/recruitment/exports` to search another accessible directory. Jacob's pipeline used a private screener export on Windows; the recruitment source may not be on Linux2. If necessary, ask the owner of the 164 count for **the dated RF1-ID list, its inclusion rule, and the date at which age was defined**. If the original count was a typo or included repeat visits, document that finding instead of manufacturing a 164-person list.
-
-Export one row per person from that source to `work/recruitment-input/recruited_164.tsv` with the header `rf1_id` (CSV also supported). Use five-digit IDs with or without the `sub-` prefix. IDs alone are sufficient to identify discrepancies. Optional columns `documented_disposition` and `evidence_ref` carry visit outcomes when known and traceable to a record. A source reference is required for every supplied disposition; do not include names, birth dates, addresses or clinical notes. No automatic deduplication, age re-filtering or participant changes.
-
-```bash
-read -r -p "Source report/version, cutoff and age definition: " NOTE
-python3 code/audit_katie_recruitment.py \
-  --roster work/recruitment-input/recruited_164.tsv --source-note "$NOTE"
-```
-
-The comparison writes a new ignored `work/recruitment-flow-*/` directory each time. `counts.json` is aggregate-only; `discrepancies.tsv` has the two directional differences; `provenance.json` records hashes and the source description. Inspect recruitment-only **and** imaging-only IDs. The difference of 13 is not automatically 13 omitted people. Historical age-filter status and the documented October source exclusions can explain technical nonmembership, not necessarily the participant's visit outcome. The October 15 inventory, when available, and current BIDS evidence are follow-up leads, not proof of a missed visit or withdrawal. Resolve other mismatches against dated visit/disposition records, add only supported reasons to the private input, and rerun. Never publish the recruitment list or individual discrepancy report.
+If a dated primary roster for the historical count independently becomes
+available, the separate `--roster` / `--source-note` mode compares unique
+IDs in both directions and writes only to ignored `work/`. Its inputs are
+a CSV or TSV with an `rf1_id` column and a description of the report, cutoff,
+and age rule. Optional columns `documented_disposition` and `evidence_ref`
+must be supplied together. Do not publish the roster or individual discrepancies.
+Such a comparison is not required to reproduce the imaging study sample.

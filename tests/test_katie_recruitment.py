@@ -10,6 +10,14 @@ import audit_katie_recruitment as audit
 
 
 class RecruitmentAudit(unittest.TestCase):
+    def test_default_finishes_without_roster_search_or_prompt(self):
+        with tempfile.TemporaryDirectory() as tmp, patch.object(sys,"argv",["audit","--upstream",tmp]), \
+             patch.object(audit,"frozen",return_value=({}, {})), patch.object(audit,"candidates") as search, \
+             patch("builtins.input",side_effect=AssertionError("unexpected prompt")), patch("builtins.print") as output:
+            audit.main()
+            search.assert_not_called()
+            self.assertIn("No recruitment comparison performed", output.call_args.args[0])
+
     def test_net_thirteen_is_not_always_thirteen_missing(self):
         recruits = {str(n): ("", "") for n in range(10000, 10164)}
         imaging = {str(n): {} for n in range(10016, 10167)}

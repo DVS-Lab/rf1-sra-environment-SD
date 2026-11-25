@@ -1,4 +1,4 @@
-"""Reconcile the independently sourced recruitment denominator with the frozen imaging roster."""
+"""Verify the frozen imaging denominator and optionally compare an independently sourced historical roster."""
 import argparse
 import csv
 from decimal import Decimal, InvalidOperation
@@ -140,7 +140,8 @@ def main():
     parser.add_argument("--upstream",type=Path,default=ROOT.parent/"rf1-sra-linux2")
     parser.add_argument("--roster",type=Path,help="Confirmed original 164-ID recruitment export, not a downstream roster")
     parser.add_argument("--source-note",help="Provenance: recruitment report/version, cutoff and age rule")
-    parser.add_argument("--search-root",type=Path,action="append",default=[])
+    parser.add_argument("--search-root",type=Path,action="append",default=[],
+                        help="Optional bounded filename search; no directories are searched by default")
     args=parser.parse_args()
     all_rows,imaging=frozen(args.upstream)
     print("Frozen baseline: 151 age-eligible; 12 without a usable Social Doors run; 2 failed the original coverage rule; 137 selected.")
@@ -155,11 +156,12 @@ def main():
     else:
         print("Current BIDS participants.tsv unavailable; live age comparison not performed.")
     if not args.roster:
-        roots=[ROOT,args.upstream,ROOT.parent/"rf1-sra",ROOT.parent/"rf1-sra-socdoors",*args.search_root]
-        print("Possible source files (names only; none accepted as the 164). Bounded search, excluding imaging and work trees:")
-        for p in sorted(set(candidates(roots))):
-            print(p)
-        print("NOT RECONCILED: identify the dated roster behind the manuscript count and rerun with --roster and --source-note.")
+        if args.search_root:
+            print("Candidate filenames only; no file is treated as a recruitment roster:")
+            for p in sorted(set(candidates(args.search_root))):
+                print(p)
+        print("Verified baseline imaging flow: 151 -> 139 -> 137. No recruitment comparison performed; "
+              "the difference from the historical figure of 164 is not an exclusion count.")
         return
     if not (args.source_note or "").strip():
         raise ValueError("Provide --source-note identifying the authority, cutoff and age rule for this roster")
